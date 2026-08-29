@@ -17,6 +17,14 @@
 - **使用汇总报告**：`usage-report-20260829.md`（64 决策/132 reason/53 脚本命中/领域热度/省钱量化/加速建议）
 - **反馈瓶颈识别**：当前反馈 0 条，学习闭环缺数据——建议 reason 后 `yihe_feedback adopted/rejected` 喂数据
 
+### 2026-08-29 · 分发渠道 + 埋点回传（发布 v1.0.0 配套）
+- **GitHub 仓库就绪**：`pkg-dev-repo`（main 分支 + 本地身份 + 124 文件初始 commit）——README（徽章/简介）/LICENSE（Apache-2.0 + 商业说明）/.gitignore
+- **npm 包结构**：`@yihe/pkg-dev`（package.json + 11 个 bin 入口：smoke/expand/secure/learn/token/share/telemetry 等）
+- **CHANNELS.md**：四分发渠道指南（GitHub 公开仓库/npm/内部分发/社区传播 + 回传端点建议）
+- **telemetry-export.mjs**：埋点导出器——匿名聚合统计（实例 id 盐化、不含问题/决策/脚本内容）→ 可回传 JSON
+- **telemetry-merge.mjs**：回传汇聚器——多实例去重合并 → 全局报告（计数/领域热度/脚本池/安全/省钱 + 进化建议）
+- **实测闭环**：实例 A 导出（reason 136/script_hit 16/省 19200 token）→ 模拟实例 B → merge 2 实例（456 reason/244 决策/50 script_hit/省 60000 token + 进化建议生成）
+
 ### 2026-08-29 · 发布 v1.0.0（面向开发者分发）
 - **发布产物**：`pkg-dev-release-v1.0.0.zip`（225.5 KB）——27 包 / 55 asm / 10 工具 / 23 文档 / 一键安装器，自包含可分发
 - **bootstrap-install.mjs**：新用户一键安装器（--dry-run 预览计划）——27 包导入 + 55 库建立 + 开脚本短路 + 许可引导 + 冒烟，3 分钟部署
