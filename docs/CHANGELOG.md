@@ -17,10 +17,20 @@
 - **使用汇总报告**：`usage-report-20260829.md`（64 决策/132 reason/53 脚本命中/领域热度/省钱量化/加速建议）
 - **反馈瓶颈识别**：当前反馈 0 条，学习闭环缺数据——建议 reason 后 `yihe_feedback adopted/rejected` 喂数据
 
+### 2026-08-29 · 收款方案 + 密钥签发（商业化落地）
+- **pkg-dev-payment.md**：收款方案——三阶段渠道（个人微信/支付宝收款码起步 → 商户号/Stripe 升级 → 平台化）+ 手动/自动交付流程 + 合规要点（个人收款/发票/税务）
+- **key-issue.mjs**：密钥签发器——生成正式 PRO-/TEAM-/ENT- 密钥（16 位随机）+ 台账（keys.json：买主/档位/包/时间/状态）；支持 --list/--validate
+- **实测闭环**：签发 PRO-29C1-... + TEAM-2704-... → 台账记录 → `yihe_license op=activate` **真实激活成功**——「收钱→发密钥→激活」全链路打通
+- **推荐起步**：微信收款码 + 首批 10 单验证付费意愿（¥99×10=¥990）→ 反馈迭代
+- 发布包更新：232.3 KB（含 key-issue + 收款方案）
+
 ### 2026-08-29 · 分发渠道 + 埋点回传（发布 v1.0.0 配套）
-- **GitHub 仓库就绪**：`pkg-dev-repo`（main 分支 + 本地身份 + 124 文件初始 commit）——README（徽章/简介）/LICENSE（Apache-2.0 + 商业说明）/.gitignore
+- **GitHub 仓库就绪（可后推）**：`pkg-dev-repo`（main + 124 文件 2 commits）——当前无 GitHub 账号，仓库本地就绪，有账号后 `git remote add origin && git push` 即可
+- **无 GitHub 分发方案**：CHANNELS.md 适配为本地 zip（227.7 KB）分发/内网共享/即时通讯群文件——**不需要 GitHub 也能启动飞轮（分发靠 zip、进化靠回传、增长靠口碑）**
 - **npm 包结构**：`@yihe/pkg-dev`（package.json + 11 个 bin 入口：smoke/expand/secure/learn/token/share/telemetry 等）
-- **CHANNELS.md**：四分发渠道指南（GitHub 公开仓库/npm/内部分发/社区传播 + 回传端点建议）
+- **telemetry-export.mjs**：埋点导出器——匿名聚合统计（实例 id 盐化、不含问题/决策/脚本内容）→ 可回传 JSON
+- **telemetry-merge.mjs**：回传汇聚器——多实例去重合并 → 全局报告（计数/领域热度/脚本池/安全/省钱 + 进化建议）
+- **实测闭环**：实例 A 导出（reason 136/script_hit 16/省 19200 token）→ 模拟实例 B → merge 2 实例（456 reason/244 决策/50 script_hit/省 60000 token + 进化建议生成）
 - **telemetry-export.mjs**：埋点导出器——匿名聚合统计（实例 id 盐化、不含问题/决策/脚本内容）→ 可回传 JSON
 - **telemetry-merge.mjs**：回传汇聚器——多实例去重合并 → 全局报告（计数/领域热度/脚本池/安全/省钱 + 进化建议）
 - **实测闭环**：实例 A 导出（reason 136/script_hit 16/省 19200 token）→ 模拟实例 B → merge 2 实例（456 reason/244 决策/50 script_hit/省 60000 token + 进化建议生成）
