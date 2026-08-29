@@ -90,7 +90,7 @@
 | 免费转付费 | free 500 次体验满 → fail-closed 提示 + 一键激活入口（降摩擦） |
 | 年度折扣 | 年付 8 折（¥950/年 个人版），现金流前置 |
 | 首包优惠 | 首个商业包（pkg-dev）首月 5 折 ¥49.5，验证付费意愿 |
-| 团队试用 | 团队版 14 天全功能试用密钥（TEAM-TRIAL-xxx，激活即计时） |
+| 团队试用 | 团队版 14 天全功能试用密钥（`/api/issue-key` 带 `trial_days:14`，激活即计时；临期自动提醒 + 到期 fail-closed）✅ 已落地 |
 | 本地优先降本 | 向用户证明 RFB/脚本本地执行省钱 → 提升续费意愿（token-save.mjs 出报告） |
 | 推荐奖励 | 老用户推荐新用户，各得 1000 次超额额度 |
 
@@ -112,6 +112,13 @@
 4. ✅ 密钥格式文案更新：`≥8 位，PRO-/TEAM-/ENT- 前缀`（三处）
 5. ✅ Rust 测试更新：新增 TEAM- 映射断言 + plans 索引断言 + 持久化计数断言（`cargo test -p gateway license` 通过）
 6. ✅ 团队多消费方：`usage` 已按 consumer 键控，天然支持多消费方隔离计量
+
+**已落地（试用到期提醒，2026-08-29 完成）**：
+1. ✅ 试用密钥签发：`/api/issue-key` 支持 `trial_days`（如团队版 14 天试用：`trial_days:14` → is_trial + trial_until 激活即计时）
+2. ✅ 临期提醒：`/api/validate`/`/api/activate` 返回 `trial.days_left`；剩余 ≤3 天自动附带购买提醒 notice（含 promo 链接）
+3. ✅ 过期 fail-closed：试用到期 → 校验失败（TRIAL_EXPIRED + 购买地址）；`/v1/reason` 返回 HTTP 402 `code=TRIAL_EXPIRED`
+4. ✅ 运营跟进：`GET/POST /api/trials?token=&within=` 列出 N 天内到期试用密钥（按剩余天数升序）；ops-stats.sh 每日快照含试用到期区块（到期/过期未转化清单 + 跟进链接）
+5. ✅ 端到端实测：签发 2 天试用 → validate 带 notice → /api/trials 命中 → 回拨模拟过期 → 校验 fail-closed + /v1/reason 402
 
 > 生效方式：内置插件改动需 DSH 重启后生效；工作区文件与 Rust 网关改动随对应构建部署生效。
 > 验证：重启后 `yihe_license op=plans` 应显示四档（免费/专业/团队/企业）；`TEAM-xxx` 密钥激活后
