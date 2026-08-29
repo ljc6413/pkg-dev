@@ -5,6 +5,12 @@
 
 ## 运行状态（2026-08-29）
 
+- **运营增长三件事（推广触达 / 埋点回传 / 试用提醒）**：
+  - **推广触达**：DeepSeek Harness 官方 Discussion #5018 发布使用数据与架构亮点（`https://github.com/deepseek-ai/deepseek-harness/discussions/5018#discussioncomment-18197918`）；向 awesome-deepseek-harness 提交收录 PR（Coding 章节，27 子包/认知内核/团队许可/商业站点亮点，`Dominic789654/awesome-deepseek-harness#334`）
+  - **安装埋点自动回传（三渠道）**：preset-zip（install.sh/install.ps1 装完即 POST）、npm（`postinstall` → tools/postinstall-report.mjs，channel=npm）、release-zip（bootstrap-install.mjs 运行即上报，channel=release-zip）——匿名（instance 盐化、不含内容）上报 `POST /api/telemetry`（schema yihe-telemetry-v1），失败静默不影响安装；**已实测**：三渠道均落盘（tel-*.json 含 schema/instance/event/channel）
+  - **发行包跨平台修复**：Windows Compress-Archive 生成的 zip 用反斜杠分隔符导致 Linux/macOS unzip 解出错误文件名 → 改为服务器端 `zip` 命令重建（正斜杠），preset/release 两个 zip 均验证 Linux 解压通过
+  - **试用到期提醒（服务器端落地）**：`/api/issue-key` 支持 `trial_days` 签发试用密钥（is_trial/trial_until）；`/api/validate`/`/api/activate` 返回 `trial.days_left`，剩余 ≤3 天附带购买提醒 notice，过期 fail-closed（TRIAL_EXPIRED + promo 链接）；`/v1/reason` 对过期试用密钥返回 402 `code=TRIAL_EXPIRED` + 购买地址；新增管理端点 `GET/POST /api/trials?token=&within=` 列出 N 天内到期试用（按剩余天数排序，运营跟进转化）；**已实测**：签发 2 天试用 → validate 带 notice → /api/trials 命中 → 回拨 trial_until 模拟过期 → validate 报 trial_expired、/v1/reason 402
+  - **运营统计升级**：ops-stats.sh 新增「试用到期提醒」区块（试用总数 / 7 天内到期 / 已过期未转化清单，含 buyer/剩余天数/promo 跟进链接）
 - **27 个编程包商业许可全部激活**（PRO_PACKS 28 三处同步后重启生效；26 包于首轮重启激活，pkg-dev-evolve 于 PRO_PACKS 28 重启后激活）
 - **团队版 team 档落地**：PLANS 增 `team`（¥299/月 / 50000 次 / 超额 ¥0.03/次），三处同步（内置插件/工作区 JS/Rust gateway），`activateLicense` 支持 `TEAM-` 密钥前缀，`tierOf` 升序链 enterprise > team > pro > free，Rust 测试补 TEAM- 断言通过
 - **本地优先·脚本预匹配短路落地**：`script_hit_threshold` 配置（默认 0=关闭，>0 开启）——开启后问题命中高分脚本（score≥阈值）→ 免 reason 直接返回脚本模板结论（gateway=script_hit，bump script 免费计量，0 token）；`matchScripts` 增关键词通道（问题含场景名/标签词提升分数，弥补中文语义鸿沟）；三处同步 + Rust 测试 `reason_script_hit_shortcircuit_via_rpc` 通过（34/34）；开启方式：`yihe_admin op=config action=set key=script_hit_threshold value=0.5`；**已实测**：重启后开启 0.5，「这个模块要不要重构」→ 直接返回重构决策脚本模板（dec-4716 入库，reason 不 +1，script 计量 +1）
