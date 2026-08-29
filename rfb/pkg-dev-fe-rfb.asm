@@ -1,0 +1,136 @@
+.IMAGE 前端开发
+.IMAGE React
+.IMAGE Vue
+.IMAGE Angular
+.IMAGE Hooks
+.IMAGE 响应式
+.IMAGE 虚拟DOM
+.IMAGE diff算法
+.IMAGE 组件
+.IMAGE props
+.IMAGE 状态管理
+.IMAGE 可预测性
+.IMAGE 服务端渲染
+.IMAGE 首屏性能
+.IMAGE 客户端渲染
+.IMAGE 静态站点生成
+.IMAGE 代码分割
+.IMAGE 懒加载
+.IMAGE Webpack
+.IMAGE 打包
+.IMAGE Vite
+.IMAGE 构建工具
+.IMAGE Monorepo
+.IMAGE 可维护性
+.IMAGE ESLint
+.IMAGE 代码规范
+.IMAGE Prettier
+.IMAGE Stylelint
+.IMAGE 单元测试
+.IMAGE 测试
+.IMAGE 组件测试
+.IMAGE 端到端测试
+.IMAGE 视觉回归
+.IMAGE 缺陷
+.IMAGE LCP
+.IMAGE FCP
+.IMAGE CLS
+.IMAGE 性能瓶颈
+.IMAGE 内存泄漏
+.IMAGE 防抖节流
+.IMAGE 虚拟列表
+.IMAGE Web性能指标
+.IMAGE CDN
+.IMAGE 静态资源
+.IMAGE 缓存策略
+.IMAGE 持续集成
+.IMAGE 微前端
+.IMAGE 模块联邦
+.IMAGE 可扩展性
+.IMAGE 路由
+.IMAGE XSS
+.IMAGE 安全
+.IMAGE CSRF
+.IMAGE 权限控制
+.IMAGE 埋点
+.IMAGE 可观测性
+.IMAGE 错误监控
+.IMAGE 可访问性
+.IMAGE 代码可读性
+.IMAGE 可靠性
+.IMAGE TypeScript
+.IMAGE Tailwind
+.IMAGE CSS
+.IMAGE CSSModules
+.IMAGE CSSinJS
+.FIELD FE
+.FIELD React
+.FIELD Vue
+.FIELD 渲染
+.FIELD 架构
+.FIELD 性能
+.FIELD 构建
+.FIELD 工程
+.FIELD 规范
+.FIELD 测试
+.FIELD 部署
+.FIELD 安全
+.FIELD 可观测
+.FIELD UI
+.FIELD 价值
+.FIELD 样式
+SUPPORT 前端开发 React .WEIGHT 0.700 .FIELD FE
+SUPPORT 前端开发 Vue .WEIGHT 0.700 .FIELD FE
+SUPPORT 前端开发 Angular .WEIGHT 0.600 .FIELD FE
+IF React Hooks .WEIGHT 0.800 .FIELD React
+ENTAIL Vue 响应式 .WEIGHT 0.900 .FIELD Vue
+ENTAIL React 虚拟DOM .WEIGHT 0.800 .FIELD 渲染
+IF 虚拟DOM diff算法 .WEIGHT 0.800 .FIELD 渲染
+IF 组件 props .WEIGHT 0.800 .FIELD 架构
+IF 组件 状态管理 .WEIGHT 0.700 .FIELD 架构
+SUPPORT 状态管理 可预测性 .WEIGHT 0.700 .FIELD 架构
+SUPPORT Hooks 状态管理 .WEIGHT 0.700 .FIELD 架构
+SUPPORT 服务端渲染 首屏性能 .WEIGHT 0.800 .FIELD 渲染
+UNDERMINE 客户端渲染 首屏性能 .WEIGHT 0.600 .FIELD 渲染
+LIKE 静态站点生成 服务端渲染 .WEIGHT 0.600 .FIELD 渲染
+SUPPORT 代码分割 懒加载 .WEIGHT 0.800 .FIELD 性能
+SUPPORT 懒加载 首屏性能 .WEIGHT 0.700 .FIELD 性能
+SUPPORT Webpack 打包 .WEIGHT 0.800 .FIELD 构建
+SUPPORT Vite 构建工具 .WEIGHT 0.800 .FIELD 构建
+SUPPORT 构建工具 打包 .WEIGHT 0.700 .FIELD 工程
+SUPPORT Monorepo 可维护性 .WEIGHT 0.700 .FIELD 工程
+SUPPORT ESLint 代码规范 .WEIGHT 0.800 .FIELD 规范
+SUPPORT Prettier 代码规范 .WEIGHT 0.800 .FIELD 规范
+SUPPORT Stylelint 代码规范 .WEIGHT 0.700 .FIELD 规范
+BELONG 单元测试 测试 .WEIGHT 0.800 .FIELD 测试
+BELONG 组件测试 测试 .WEIGHT 0.800 .FIELD 测试
+BELONG 端到端测试 测试 .WEIGHT 0.800 .FIELD 测试
+BELONG 视觉回归 测试 .WEIGHT 0.700 .FIELD 测试
+UNDERMINE 测试 缺陷 .WEIGHT 0.700 .FIELD 测试
+IF LCP 首屏性能 .WEIGHT 0.800 .FIELD 性能
+IF FCP 首屏性能 .WEIGHT 0.800 .FIELD 性能
+IF CLS 首屏性能 .WEIGHT 0.700 .FIELD 性能
+CAUSE 首屏性能 性能瓶颈 .WEIGHT 0.600 .FIELD 性能
+CAUSE 内存泄漏 性能瓶颈 .WEIGHT 0.700 .FIELD 性能
+UNDERMINE 防抖节流 性能瓶颈 .WEIGHT 0.600 .FIELD 性能
+UNDERMINE 虚拟列表 性能瓶颈 .WEIGHT 0.600 .FIELD 性能
+SUPPORT Web性能指标 Webpack .WEIGHT 0.500 .FIELD 性能
+IF CDN 静态资源 .WEIGHT 0.800 .FIELD 部署
+SUPPORT 缓存策略 静态资源 .WEIGHT 0.700 .FIELD 部署
+SUPPORT 持续集成 测试 .WEIGHT 0.700 .FIELD 工程
+SUPPORT 微前端 模块联邦 .WEIGHT 0.800 .FIELD 架构
+SUPPORT 模块联邦 可扩展性 .WEIGHT 0.700 .FIELD 架构
+IF 路由 代码分割 .WEIGHT 0.700 .FIELD 架构
+UNDERMINE XSS 安全 .WEIGHT 0.800 .FIELD 安全
+UNDERMINE CSRF 安全 .WEIGHT 0.800 .FIELD 安全
+SUPPORT 权限控制 安全 .WEIGHT 0.800 .FIELD 安全
+SUPPORT 埋点 可观测性 .WEIGHT 0.600 .FIELD 可观测
+SUPPORT 错误监控 可观测性 .WEIGHT 0.700 .FIELD 可观测
+SUPPORT 可访问性 可维护性 .WEIGHT 0.500 .FIELD UI
+SUPPORT 可维护性 代码可读性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可扩展性 可维护性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可靠性 可预测性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT TypeScript 代码可读性 .WEIGHT 0.600 .FIELD FE
+SUPPORT Tailwind CSS .WEIGHT 0.700 .FIELD 样式
+SUPPORT CSSModules CSS .WEIGHT 0.700 .FIELD 样式
+SUPPORT CSSinJS CSS .WEIGHT 0.600 .FIELD 样式

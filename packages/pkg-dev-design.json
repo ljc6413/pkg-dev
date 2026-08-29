@@ -1,0 +1,952 @@
+{
+  "id": "pkg-dev-design",
+  "name": "设计模式",
+  "industry": "软件开发",
+  "version": "1.0.0",
+  "namespace": "DESIGN开发",
+  "owner": "developer",
+  "tier": "pro",
+  "license_required": true,
+  "imagos": [
+    {
+      "content": "设计模式",
+      "modality": "text",
+      "tags": [
+        "领域"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "创建型模式",
+      "modality": "text",
+      "tags": [
+        "分类"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "结构型模式",
+      "modality": "text",
+      "tags": [
+        "分类"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "行为型模式",
+      "modality": "text",
+      "tags": [
+        "分类"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "单例",
+      "modality": "text",
+      "tags": [
+        "创建"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "工厂方法",
+      "modality": "text",
+      "tags": [
+        "创建"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "抽象工厂",
+      "modality": "text",
+      "tags": [
+        "创建"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "建造者",
+      "modality": "text",
+      "tags": [
+        "创建"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "原型",
+      "modality": "text",
+      "tags": [
+        "创建"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "适配器",
+      "modality": "text",
+      "tags": [
+        "结构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "装饰器",
+      "modality": "text",
+      "tags": [
+        "结构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "代理",
+      "modality": "text",
+      "tags": [
+        "结构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "外观",
+      "modality": "text",
+      "tags": [
+        "结构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "组合",
+      "modality": "text",
+      "tags": [
+        "结构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "桥接",
+      "modality": "text",
+      "tags": [
+        "结构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "享元",
+      "modality": "text",
+      "tags": [
+        "结构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "策略",
+      "modality": "text",
+      "tags": [
+        "行为"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "观察者",
+      "modality": "text",
+      "tags": [
+        "行为"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "命令",
+      "modality": "text",
+      "tags": [
+        "行为"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "状态",
+      "modality": "text",
+      "tags": [
+        "行为"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "模板方法",
+      "modality": "text",
+      "tags": [
+        "行为"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "迭代器",
+      "modality": "text",
+      "tags": [
+        "行为"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "责任链",
+      "modality": "text",
+      "tags": [
+        "行为"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "访问者",
+      "modality": "text",
+      "tags": [
+        "行为"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "中介者",
+      "modality": "text",
+      "tags": [
+        "行为"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "备忘录",
+      "modality": "text",
+      "tags": [
+        "行为"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "解释器",
+      "modality": "text",
+      "tags": [
+        "行为"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "反模式",
+      "modality": "text",
+      "tags": [
+        "反模式"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "dp"
+    },
+    {
+      "content": "上帝对象",
+      "modality": "text",
+      "tags": [
+        "反模式"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "dp"
+    },
+    {
+      "content": "面条代码",
+      "modality": "text",
+      "tags": [
+        "反模式"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "dp"
+    },
+    {
+      "content": "万能类",
+      "modality": "text",
+      "tags": [
+        "反模式"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "dp"
+    },
+    {
+      "content": "过度设计",
+      "modality": "text",
+      "tags": [
+        "反模式"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "dp"
+    },
+    {
+      "content": "SOLID",
+      "modality": "text",
+      "tags": [
+        "原则"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dp"
+    },
+    {
+      "content": "单一职责",
+      "modality": "text",
+      "tags": [
+        "原则"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dp"
+    },
+    {
+      "content": "开闭原则",
+      "modality": "text",
+      "tags": [
+        "原则"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dp"
+    },
+    {
+      "content": "接口隔离",
+      "modality": "text",
+      "tags": [
+        "原则"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dp"
+    },
+    {
+      "content": "依赖倒置",
+      "modality": "text",
+      "tags": [
+        "原则"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dp"
+    },
+    {
+      "content": "里氏替换",
+      "modality": "text",
+      "tags": [
+        "原则"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dp"
+    },
+    {
+      "content": "组合优于继承",
+      "modality": "text",
+      "tags": [
+        "原则"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dp"
+    },
+    {
+      "content": "编程到接口",
+      "modality": "text",
+      "tags": [
+        "原则"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dp"
+    },
+    {
+      "content": "封装变化",
+      "modality": "text",
+      "tags": [
+        "原则"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dp"
+    },
+    {
+      "content": "可扩展性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dp"
+    },
+    {
+      "content": "可维护性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dp"
+    },
+    {
+      "content": "代码可读性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dp"
+    },
+    {
+      "content": "可预测性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dp"
+    },
+    {
+      "content": "可靠性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dp"
+    },
+    {
+      "content": "缺陷",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "dp"
+    },
+    {
+      "content": "低耦合",
+      "kind": "entity",
+      "category": "shared",
+      "tags": [],
+      "modality": "text",
+      "confidence": 1
+    },
+    {
+      "content": "全局状态",
+      "kind": "entity",
+      "category": "shared",
+      "tags": [],
+      "modality": "text",
+      "confidence": 1
+    }
+  ],
+  "relations": [
+    {
+      "weight": 0.8,
+      "context_tag": "#DP",
+      "to": "创建型模式",
+      "from": "设计模式",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#DP",
+      "to": "结构型模式",
+      "from": "设计模式",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#DP",
+      "to": "行为型模式",
+      "from": "设计模式",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#创建",
+      "to": "创建型模式",
+      "from": "单例",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#创建",
+      "to": "创建型模式",
+      "from": "工厂方法",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#创建",
+      "to": "创建型模式",
+      "from": "抽象工厂",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#创建",
+      "to": "创建型模式",
+      "from": "建造者",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#创建",
+      "to": "创建型模式",
+      "from": "原型",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#结构",
+      "to": "结构型模式",
+      "from": "适配器",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#结构",
+      "to": "结构型模式",
+      "from": "装饰器",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#结构",
+      "to": "结构型模式",
+      "from": "代理",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#结构",
+      "to": "结构型模式",
+      "from": "外观",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#结构",
+      "to": "结构型模式",
+      "from": "组合",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#结构",
+      "to": "结构型模式",
+      "from": "桥接",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#结构",
+      "to": "结构型模式",
+      "from": "享元",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#行为",
+      "to": "行为型模式",
+      "from": "策略",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#行为",
+      "to": "行为型模式",
+      "from": "观察者",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#行为",
+      "to": "行为型模式",
+      "from": "命令",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#行为",
+      "to": "行为型模式",
+      "from": "状态",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#行为",
+      "to": "行为型模式",
+      "from": "模板方法",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#行为",
+      "to": "行为型模式",
+      "from": "迭代器",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#行为",
+      "to": "行为型模式",
+      "from": "责任链",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#行为",
+      "to": "行为型模式",
+      "from": "访问者",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#行为",
+      "to": "行为型模式",
+      "from": "中介者",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#行为",
+      "to": "行为型模式",
+      "from": "备忘录",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#行为",
+      "to": "行为型模式",
+      "from": "解释器",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#行为",
+      "to": "开闭原则",
+      "from": "策略",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#行为",
+      "to": "低耦合",
+      "from": "观察者",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#结构",
+      "to": "组合优于继承",
+      "from": "装饰器",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#创建",
+      "to": "封装变化",
+      "from": "工厂方法",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.5,
+      "context_tag": "#创建",
+      "to": "全局状态",
+      "from": "单例",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#反模式",
+      "to": "反模式",
+      "from": "上帝对象",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#反模式",
+      "to": "反模式",
+      "from": "面条代码",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#反模式",
+      "to": "反模式",
+      "from": "万能类",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#反模式",
+      "to": "反模式",
+      "from": "过度设计",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#反模式",
+      "to": "可维护性",
+      "from": "反模式",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.4,
+      "context_tag": "#DP",
+      "to": "过度设计",
+      "from": "设计模式",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#原则",
+      "to": "单一职责",
+      "from": "SOLID",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#原则",
+      "to": "开闭原则",
+      "from": "SOLID",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#原则",
+      "to": "可扩展性",
+      "from": "编程到接口",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#原则",
+      "to": "可维护性",
+      "from": "组合优于继承",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "可维护性",
+      "from": "可扩展性",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "代码可读性",
+      "from": "可维护性",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "可预测性",
+      "from": "可靠性",
+      "type": "support",
+      "directed": true
+    }
+  ],
+  "scripts": [
+    {
+      "scenario": "模式选型",
+      "tags": [
+        "策略",
+        "工厂方法",
+        "用什么模式",
+        "设计模式",
+        "模式怎么选"
+      ],
+      "template": "按变化点选模式；策略替代条件分支；工厂封装创建；避免为模式而模式"
+    },
+    {
+      "scenario": "创建型设计",
+      "tags": [
+        "单例",
+        "建造者",
+        "单例",
+        "工厂",
+        "建造者",
+        "怎么创建对象"
+      ],
+      "template": "单例慎用（全局状态）；建造者复杂对象；工厂分层抽象；原型克隆评估"
+    },
+    {
+      "scenario": "结构型设计",
+      "tags": [
+        "适配器",
+        "装饰器",
+        "适配器",
+        "装饰器",
+        "代理",
+        "结构模式"
+      ],
+      "template": "适配器衔接不兼容接口；装饰器动态扩展；代理控制访问；外观简化门面"
+    },
+    {
+      "scenario": "行为型设计",
+      "tags": [
+        "观察者",
+        "状态",
+        "策略模式",
+        "观察者",
+        "状态模式",
+        "行为模式"
+      ],
+      "template": "观察者解耦事件；状态机管理流转；命令支持撤销；策略替换算法"
+    },
+    {
+      "scenario": "反模式识别",
+      "tags": [
+        "上帝对象",
+        "面条代码",
+        "反模式",
+        "坏味道",
+        "上帝对象"
+      ],
+      "template": "识别坏味道；拆解大对象；重构控制流；消除重复"
+    },
+    {
+      "scenario": "SOLID 实践",
+      "tags": [
+        "单一职责",
+        "开闭原则"
+      ],
+      "template": "职责单一；开闭扩展；接口隔离；依赖倒置；组合优先"
+    },
+    {
+      "scenario": "设计评审",
+      "tags": [
+        "设计模式",
+        "过度设计"
+      ],
+      "template": "模式必要性评估；复杂度权衡；团队认知成本；简化优先"
+    },
+    {
+      "scenario": "遗留重构",
+      "tags": [
+        "反模式",
+        "可维护性"
+      ],
+      "template": "先补测试；模式引入渐进；行为保持；评审验证"
+    },
+    {
+      "scenario": "领域模型设计",
+      "tags": [
+        "策略",
+        "状态"
+      ],
+      "template": "领域变化点识别；策略封装规则；状态管理生命周期"
+    },
+    {
+      "scenario": "框架应用",
+      "tags": [
+        "观察者",
+        "命令"
+      ],
+      "template": "框架内模式识别；事件机制；命令队列；扩展点利用"
+    }
+  ]
+}

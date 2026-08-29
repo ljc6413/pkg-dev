@@ -1,0 +1,2636 @@
+﻿{
+    "id":  "pkg-dev",
+    "name":  "编程开发辅助",
+    "industry":  "软件开发",
+    "version":  "3.0.0",
+    "namespace":  "开发",
+    "owner":  "developer",
+    "imagos":  [
+                   {
+                       "content":  "需求",
+                       "kind":  "entity",
+                       "category":  "requirements",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "需求变更",
+                       "kind":  "event",
+                       "category":  "requirements",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "需求不明确",
+                       "kind":  "state",
+                       "category":  "requirements",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "优先级",
+                       "kind":  "value",
+                       "category":  "requirements",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "验收标准",
+                       "kind":  "entity",
+                       "category":  "requirements",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "架构设计",
+                       "kind":  "intent",
+                       "category":  "architecture",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "技术选型",
+                       "kind":  "intent",
+                       "category":  "architecture",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "模块化",
+                       "kind":  "entity",
+                       "category":  "architecture",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "耦合",
+                       "kind":  "state",
+                       "category":  "architecture",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "可扩展性",
+                       "kind":  "value",
+                       "category":  "architecture",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "设计模式",
+                       "kind":  "entity",
+                       "category":  "architecture",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "编码",
+                       "kind":  "event",
+                       "category":  "development",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "重构",
+                       "kind":  "event",
+                       "category":  "development",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "代码可读性",
+                       "kind":  "value",
+                       "category":  "development",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "注释",
+                       "kind":  "entity",
+                       "category":  "development",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "命名",
+                       "kind":  "entity",
+                       "category":  "development",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "重复代码",
+                       "kind":  "state",
+                       "category":  "development",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "技术债",
+                       "kind":  "state",
+                       "category":  "development",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "测试",
+                       "kind":  "event",
+                       "category":  "testing",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "单元测试",
+                       "kind":  "entity",
+                       "category":  "testing",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "集成测试",
+                       "kind":  "entity",
+                       "category":  "testing",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "测试覆盖率",
+                       "kind":  "value",
+                       "category":  "testing",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "回归",
+                       "kind":  "event",
+                       "category":  "testing",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "调试",
+                       "kind":  "intent",
+                       "category":  "debugging",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "缺陷",
+                       "kind":  "state",
+                       "category":  "debugging",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "性能瓶颈",
+                       "kind":  "state",
+                       "category":  "debugging",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "日志",
+                       "kind":  "entity",
+                       "category":  "debugging",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "代码评审",
+                       "kind":  "event",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "静态分析",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "代码规范",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "持续集成",
+                       "kind":  "entity",
+                       "category":  "engineering",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "持续部署",
+                       "kind":  "entity",
+                       "category":  "engineering",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "监控",
+                       "kind":  "entity",
+                       "category":  "engineering",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "回滚",
+                       "kind":  "event",
+                       "category":  "engineering",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "上线",
+                       "kind":  "event",
+                       "category":  "engineering",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "文档",
+                       "kind":  "entity",
+                       "category":  "engineering",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "安全",
+                       "kind":  "value",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "可维护性",
+                       "kind":  "value",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "可靠性",
+                       "kind":  "value",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "质量",
+                       "kind":  "value",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "交付速度",
+                       "kind":  "value",
+                       "category":  "process",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "认证",
+                       "kind":  "entity",
+                       "category":  "security",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "授权",
+                       "kind":  "entity",
+                       "category":  "security",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "数据加密",
+                       "kind":  "entity",
+                       "category":  "security",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "密钥管理",
+                       "kind":  "entity",
+                       "category":  "security",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "漏洞",
+                       "kind":  "state",
+                       "category":  "security",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "数据泄露",
+                       "kind":  "state",
+                       "category":  "security",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "安全测试",
+                       "kind":  "entity",
+                       "category":  "security",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "隐私合规",
+                       "kind":  "constraint",
+                       "category":  "security",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "缓存",
+                       "kind":  "entity",
+                       "category":  "performance",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "数据库",
+                       "kind":  "entity",
+                       "category":  "performance",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "索引",
+                       "kind":  "entity",
+                       "category":  "performance",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "并发",
+                       "kind":  "entity",
+                       "category":  "performance",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "异步",
+                       "kind":  "entity",
+                       "category":  "performance",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "消息队列",
+                       "kind":  "entity",
+                       "category":  "performance",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "限流",
+                       "kind":  "entity",
+                       "category":  "performance",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "延迟",
+                       "kind":  "value",
+                       "category":  "performance",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "吞吐量",
+                       "kind":  "value",
+                       "category":  "performance",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "压测",
+                       "kind":  "event",
+                       "category":  "performance",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "数据一致性",
+                       "kind":  "value",
+                       "category":  "data",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "事务",
+                       "kind":  "entity",
+                       "category":  "data",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "数据迁移",
+                       "kind":  "event",
+                       "category":  "data",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "备份",
+                       "kind":  "entity",
+                       "category":  "data",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "数据模型",
+                       "kind":  "entity",
+                       "category":  "data",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "接口设计",
+                       "kind":  "intent",
+                       "category":  "api",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "版本管理",
+                       "kind":  "entity",
+                       "category":  "api",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "幂等性",
+                       "kind":  "value",
+                       "category":  "api",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "接口兼容性",
+                       "kind":  "value",
+                       "category":  "api",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "错误处理",
+                       "kind":  "entity",
+                       "category":  "development",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "环境隔离",
+                       "kind":  "entity",
+                       "category":  "engineering",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "配置管理",
+                       "kind":  "entity",
+                       "category":  "engineering",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "灰度发布",
+                       "kind":  "event",
+                       "category":  "engineering",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "特性开关",
+                       "kind":  "entity",
+                       "category":  "engineering",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "告警",
+                       "kind":  "entity",
+                       "category":  "engineering",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "服务可用性",
+                       "kind":  "value",
+                       "category":  "engineering",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "容灾",
+                       "kind":  "entity",
+                       "category":  "engineering",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "需求评审",
+                       "kind":  "event",
+                       "category":  "requirements",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "结对编程",
+                       "kind":  "entity",
+                       "category":  "process",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "任务拆分",
+                       "kind":  "entity",
+                       "category":  "process",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "估算",
+                       "kind":  "entity",
+                       "category":  "process",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "边界条件",
+                       "kind":  "entity",
+                       "category":  "development",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "空指针",
+                       "kind":  "state",
+                       "category":  "development",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "资源泄漏",
+                       "kind":  "state",
+                       "category":  "development",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "死代码",
+                       "kind":  "state",
+                       "category":  "development",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "硬编码",
+                       "kind":  "state",
+                       "category":  "development",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "复杂度",
+                       "kind":  "state",
+                       "category":  "development",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "意合",
+                       "modality":  "text",
+                       "tags":  [
+                                    "哲学"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "关系编织",
+                       "modality":  "text",
+                       "tags":  [
+                                    "认知"
+                                ],
+                       "confidence":  1,
+                       "kind":  "intent",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "激活扩散",
+                       "modality":  "text",
+                       "tags":  [
+                                    "认知"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "语境场",
+                       "modality":  "text",
+                       "tags":  [
+                                    "认知"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "势态推演",
+                       "modality":  "text",
+                       "tags":  [
+                                    "决策"
+                                ],
+                       "confidence":  1,
+                       "kind":  "intent",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "辩证推演",
+                       "modality":  "text",
+                       "tags":  [
+                                    "决策"
+                                ],
+                       "confidence":  1,
+                       "kind":  "intent",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "意象",
+                       "modality":  "text",
+                       "tags":  [
+                                    "认知"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "关系网",
+                       "modality":  "text",
+                       "tags":  [
+                                    "认知"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "脚本池",
+                       "modality":  "text",
+                       "tags":  [
+                                    "认知"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "留白",
+                       "modality":  "text",
+                       "tags":  [
+                                    "决策"
+                                ],
+                       "confidence":  1,
+                       "kind":  "intent",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "确认网关",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "学习闭环",
+                       "modality":  "text",
+                       "tags":  [
+                                    "进化"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "反馈回报",
+                       "modality":  "text",
+                       "tags":  [
+                                    "学习"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "记忆分层",
+                       "modality":  "text",
+                       "tags":  [
+                                    "记忆"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "经验库",
+                       "modality":  "text",
+                       "tags":  [
+                                    "记忆"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "三态逻辑",
+                       "modality":  "text",
+                       "tags":  [
+                                    "执行"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "势调节",
+                       "modality":  "text",
+                       "tags":  [
+                                    "执行"
+                                ],
+                       "confidence":  1,
+                       "kind":  "intent",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "滚动规划",
+                       "modality":  "text",
+                       "tags":  [
+                                    "执行"
+                                ],
+                       "confidence":  1,
+                       "kind":  "intent",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "意合虚拟机",
+                       "modality":  "text",
+                       "tags":  [
+                                    "执行"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "语境修剪",
+                       "modality":  "text",
+                       "tags":  [
+                                    "认知"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "类比推理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "决策"
+                                ],
+                       "confidence":  1,
+                       "kind":  "intent",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "正反合",
+                       "modality":  "text",
+                       "tags":  [
+                                    "决策"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "随境赋义",
+                       "modality":  "text",
+                       "tags":  [
+                                    "哲学"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "激活度",
+                       "modality":  "text",
+                       "tags":  [
+                                    "认知"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "路径推演",
+                       "modality":  "text",
+                       "tags":  [
+                                    "决策"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "候选集",
+                       "modality":  "text",
+                       "tags":  [
+                                    "决策"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "投影",
+                       "modality":  "text",
+                       "tags":  [
+                                    "决策"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "回退机制",
+                       "modality":  "text",
+                       "tags":  [
+                                    "执行"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "暂停确认执行",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "矛盾即动力",
+                       "modality":  "text",
+                       "tags":  [
+                                    "哲学"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "关系束",
+                       "modality":  "text",
+                       "tags":  [
+                                    "认知"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "yihe"
+                   },
+                   {
+                       "content":  "语义指纹",
+                       "modality":  "text",
+                       "tags":  [
+                                    "执行"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "yihe"
+                   }
+               ],
+    "relations":  [
+                      {
+                          "from":  "需求不明确",
+                          "to":  "需求变更",
+                          "type":  "causal",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#需求"
+                      },
+                      {
+                          "from":  "需求变更",
+                          "to":  "技术债",
+                          "type":  "causal",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#需求"
+                      },
+                      {
+                          "from":  "需求",
+                          "to":  "架构设计",
+                          "type":  "entail",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#需求"
+                      },
+                      {
+                          "from":  "架构设计",
+                          "to":  "技术选型",
+                          "type":  "condition",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#架构"
+                      },
+                      {
+                          "from":  "模块化",
+                          "to":  "耦合",
+                          "type":  "undermine",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#架构"
+                      },
+                      {
+                          "from":  "耦合",
+                          "to":  "可维护性",
+                          "type":  "undermine",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#架构"
+                      },
+                      {
+                          "from":  "模块化",
+                          "to":  "可扩展性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#架构"
+                      },
+                      {
+                          "from":  "可扩展性",
+                          "to":  "可维护性",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#架构"
+                      },
+                      {
+                          "from":  "设计模式",
+                          "to":  "代码可读性",
+                          "type":  "support",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "重复代码",
+                          "to":  "可维护性",
+                          "type":  "undermine",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "注释",
+                          "to":  "代码可读性",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "命名",
+                          "to":  "代码可读性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "重构",
+                          "to":  "技术债",
+                          "type":  "undermine",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "重构",
+                          "to":  "代码可读性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "技术债",
+                          "to":  "交付速度",
+                          "type":  "undermine",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "技术债",
+                          "to":  "可靠性",
+                          "type":  "undermine",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "测试",
+                          "to":  "缺陷",
+                          "type":  "undermine",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#测试"
+                      },
+                      {
+                          "from":  "单元测试",
+                          "to":  "测试",
+                          "type":  "belong",
+                          "weight":  0.9,
+                          "directed":  true,
+                          "context_tag":  "#测试"
+                      },
+                      {
+                          "from":  "集成测试",
+                          "to":  "测试",
+                          "type":  "belong",
+                          "weight":  0.9,
+                          "directed":  true,
+                          "context_tag":  "#测试"
+                      },
+                      {
+                          "from":  "测试覆盖率",
+                          "to":  "测试",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#测试"
+                      },
+                      {
+                          "from":  "测试",
+                          "to":  "回归",
+                          "type":  "undermine",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#测试"
+                      },
+                      {
+                          "from":  "测试",
+                          "to":  "质量",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#测试"
+                      },
+                      {
+                          "from":  "缺陷",
+                          "to":  "调试",
+                          "type":  "condition",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#调试"
+                      },
+                      {
+                          "from":  "调试",
+                          "to":  "缺陷",
+                          "type":  "undermine",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#调试"
+                      },
+                      {
+                          "from":  "日志",
+                          "to":  "调试",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#调试"
+                      },
+                      {
+                          "from":  "性能瓶颈",
+                          "to":  "缺陷",
+                          "type":  "similar",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#调试"
+                      },
+                      {
+                          "from":  "代码评审",
+                          "to":  "缺陷",
+                          "type":  "undermine",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#质量"
+                      },
+                      {
+                          "from":  "静态分析",
+                          "to":  "缺陷",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#质量"
+                      },
+                      {
+                          "from":  "代码规范",
+                          "to":  "代码可读性",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#质量"
+                      },
+                      {
+                          "from":  "代码规范",
+                          "to":  "缺陷",
+                          "type":  "undermine",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#质量"
+                      },
+                      {
+                          "from":  "持续集成",
+                          "to":  "测试",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "持续集成",
+                          "to":  "回归",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "持续部署",
+                          "to":  "上线",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "上线",
+                          "to":  "回滚",
+                          "type":  "condition",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "监控",
+                          "to":  "缺陷",
+                          "type":  "condition",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "文档",
+                          "to":  "可维护性",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "安全",
+                          "to":  "可靠性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#质量"
+                      },
+                      {
+                          "from":  "质量",
+                          "to":  "可靠性",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#质量"
+                      },
+                      {
+                          "from":  "质量",
+                          "to":  "可维护性",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#质量"
+                      },
+                      {
+                          "from":  "可维护性",
+                          "to":  "交付速度",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#价值"
+                      },
+                      {
+                          "from":  "认证",
+                          "to":  "安全",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#安全"
+                      },
+                      {
+                          "from":  "授权",
+                          "to":  "安全",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#安全"
+                      },
+                      {
+                          "from":  "密钥管理",
+                          "to":  "安全",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#安全"
+                      },
+                      {
+                          "from":  "密钥管理",
+                          "to":  "数据加密",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#安全"
+                      },
+                      {
+                          "from":  "数据加密",
+                          "to":  "数据泄露",
+                          "type":  "undermine",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#安全"
+                      },
+                      {
+                          "from":  "漏洞",
+                          "to":  "安全",
+                          "type":  "undermine",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#安全"
+                      },
+                      {
+                          "from":  "漏洞",
+                          "to":  "数据泄露",
+                          "type":  "causal",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#安全"
+                      },
+                      {
+                          "from":  "安全测试",
+                          "to":  "漏洞",
+                          "type":  "undermine",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#安全"
+                      },
+                      {
+                          "from":  "安全测试",
+                          "to":  "测试",
+                          "type":  "belong",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#安全"
+                      },
+                      {
+                          "from":  "隐私合规",
+                          "to":  "安全",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#安全"
+                      },
+                      {
+                          "from":  "数据泄露",
+                          "to":  "可靠性",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#安全"
+                      },
+                      {
+                          "from":  "缓存",
+                          "to":  "延迟",
+                          "type":  "undermine",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#性能"
+                      },
+                      {
+                          "from":  "索引",
+                          "to":  "延迟",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#性能"
+                      },
+                      {
+                          "from":  "索引",
+                          "to":  "数据库",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#性能"
+                      },
+                      {
+                          "from":  "并发",
+                          "to":  "吞吐量",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#性能"
+                      },
+                      {
+                          "from":  "并发",
+                          "to":  "缺陷",
+                          "type":  "causal",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#性能"
+                      },
+                      {
+                          "from":  "异步",
+                          "to":  "吞吐量",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#性能"
+                      },
+                      {
+                          "from":  "消息队列",
+                          "to":  "异步",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#性能"
+                      },
+                      {
+                          "from":  "消息队列",
+                          "to":  "耦合",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#性能"
+                      },
+                      {
+                          "from":  "限流",
+                          "to":  "服务可用性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#性能"
+                      },
+                      {
+                          "from":  "延迟",
+                          "to":  "性能瓶颈",
+                          "type":  "similar",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#性能"
+                      },
+                      {
+                          "from":  "压测",
+                          "to":  "性能瓶颈",
+                          "type":  "condition",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#性能"
+                      },
+                      {
+                          "from":  "压测",
+                          "to":  "测试",
+                          "type":  "belong",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#性能"
+                      },
+                      {
+                          "from":  "数据一致性",
+                          "to":  "可靠性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#数据"
+                      },
+                      {
+                          "from":  "事务",
+                          "to":  "数据一致性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#数据"
+                      },
+                      {
+                          "from":  "数据迁移",
+                          "to":  "缺陷",
+                          "type":  "causal",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#数据"
+                      },
+                      {
+                          "from":  "备份",
+                          "to":  "数据迁移",
+                          "type":  "support",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#数据"
+                      },
+                      {
+                          "from":  "备份",
+                          "to":  "容灾",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#数据"
+                      },
+                      {
+                          "from":  "数据模型",
+                          "to":  "架构设计",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#数据"
+                      },
+                      {
+                          "from":  "数据模型",
+                          "to":  "可扩展性",
+                          "type":  "support",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#数据"
+                      },
+                      {
+                          "from":  "接口设计",
+                          "to":  "接口兼容性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#API"
+                      },
+                      {
+                          "from":  "版本管理",
+                          "to":  "接口兼容性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#API"
+                      },
+                      {
+                          "from":  "版本管理",
+                          "to":  "需求变更",
+                          "type":  "support",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#API"
+                      },
+                      {
+                          "from":  "幂等性",
+                          "to":  "可靠性",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#API"
+                      },
+                      {
+                          "from":  "错误处理",
+                          "to":  "缺陷",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "错误处理",
+                          "to":  "可靠性",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "接口兼容性",
+                          "to":  "可维护性",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#API"
+                      },
+                      {
+                          "from":  "环境隔离",
+                          "to":  "缺陷",
+                          "type":  "undermine",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "配置管理",
+                          "to":  "环境隔离",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "配置管理",
+                          "to":  "硬编码",
+                          "type":  "undermine",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "配置管理",
+                          "to":  "可维护性",
+                          "type":  "support",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "灰度发布",
+                          "to":  "上线",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "灰度发布",
+                          "to":  "回滚",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "特性开关",
+                          "to":  "灰度发布",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "告警",
+                          "to":  "监控",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "服务可用性",
+                          "to":  "可靠性",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "容灾",
+                          "to":  "服务可用性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "需求评审",
+                          "to":  "需求不明确",
+                          "type":  "undermine",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#需求"
+                      },
+                      {
+                          "from":  "结对编程",
+                          "to":  "代码评审",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#流程"
+                      },
+                      {
+                          "from":  "任务拆分",
+                          "to":  "交付速度",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#流程"
+                      },
+                      {
+                          "from":  "估算",
+                          "to":  "优先级",
+                          "type":  "support",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#流程"
+                      },
+                      {
+                          "from":  "边界条件",
+                          "to":  "缺陷",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "空指针",
+                          "to":  "缺陷",
+                          "type":  "similar",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "资源泄漏",
+                          "to":  "性能瓶颈",
+                          "type":  "causal",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "资源泄漏",
+                          "to":  "缺陷",
+                          "type":  "similar",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "死代码",
+                          "to":  "可维护性",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "硬编码",
+                          "to":  "可维护性",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "复杂度",
+                          "to":  "代码可读性",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "复杂度",
+                          "to":  "缺陷",
+                          "type":  "causal",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "from":  "边界条件",
+                          "to":  "测试",
+                          "type":  "support",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#编码"
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#理论",
+                          "to":  "关系编织",
+                          "from":  "意合",
+                          "type":  "entail",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#理论",
+                          "to":  "激活扩散",
+                          "from":  "关系编织",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#理论",
+                          "to":  "激活度",
+                          "from":  "激活扩散",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#理论",
+                          "to":  "路径推演",
+                          "from":  "激活扩散",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#理论",
+                          "to":  "候选集",
+                          "from":  "路径推演",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#理论",
+                          "to":  "势态推演",
+                          "from":  "候选集",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#理论",
+                          "to":  "辩证推演",
+                          "from":  "势态推演",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#理论",
+                          "to":  "正反合",
+                          "from":  "辩证推演",
+                          "type":  "entail",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#理论",
+                          "to":  "矛盾即动力",
+                          "from":  "正反合",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#理论",
+                          "to":  "随境赋义",
+                          "from":  "语境场",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#理论",
+                          "to":  "语境场",
+                          "from":  "语境修剪",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#理论",
+                          "to":  "语义指纹",
+                          "from":  "随境赋义",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#理论",
+                          "to":  "关系网",
+                          "from":  "意象",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#理论",
+                          "to":  "关系束",
+                          "from":  "关系网",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#理论",
+                          "to":  "语境场",
+                          "from":  "关系束",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#理论",
+                          "to":  "投影",
+                          "from":  "势态推演",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#理论",
+                          "to":  "回退机制",
+                          "from":  "投影",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#理论",
+                          "to":  "确认网关",
+                          "from":  "留白",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#理论",
+                          "to":  "暂停确认执行",
+                          "from":  "确认网关",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#理论",
+                          "to":  "反馈回报",
+                          "from":  "学习闭环",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#理论",
+                          "to":  "经验库",
+                          "from":  "反馈回报",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#理论",
+                          "to":  "记忆分层",
+                          "from":  "经验库",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#理论",
+                          "to":  "脚本池",
+                          "from":  "记忆分层",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#理论",
+                          "to":  "三态逻辑",
+                          "from":  "意合虚拟机",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#理论",
+                          "to":  "辩证推演",
+                          "from":  "三态逻辑",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#理论",
+                          "to":  "滚动规划",
+                          "from":  "势调节",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#理论",
+                          "to":  "留白",
+                          "from":  "滚动规划",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#理论",
+                          "to":  "经验库",
+                          "from":  "类比推理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#理论",
+                          "to":  "脚本池",
+                          "from":  "类比推理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#双链",
+                          "to":  "辩证推演",
+                          "from":  "技术选型",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#双链",
+                          "to":  "关系编织",
+                          "from":  "架构设计",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#双链",
+                          "to":  "留白",
+                          "from":  "需求不明确",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#双链",
+                          "to":  "学习闭环",
+                          "from":  "代码评审",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#双链",
+                          "to":  "反馈回报",
+                          "from":  "重构",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#双链",
+                          "to":  "激活扩散",
+                          "from":  "调试",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#双链",
+                          "to":  "三态逻辑",
+                          "from":  "测试",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#双链",
+                          "to":  "确认网关",
+                          "from":  "灰度发布",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#双链",
+                          "to":  "回退机制",
+                          "from":  "容灾",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#双链",
+                          "to":  "暂停确认执行",
+                          "from":  "上线",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#双链",
+                          "to":  "语境场",
+                          "from":  "需求评审",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#双链",
+                          "to":  "关系编织",
+                          "from":  "复杂度",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#双链",
+                          "to":  "滚动规划",
+                          "from":  "技术债",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#双链",
+                          "to":  "回退机制",
+                          "from":  "数据迁移",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#双链",
+                          "to":  "三态逻辑",
+                          "from":  "错误处理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#双链",
+                          "to":  "路径推演",
+                          "from":  "性能瓶颈",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#双链",
+                          "to":  "类比推理",
+                          "from":  "接口设计",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#双链",
+                          "to":  "滚动规划",
+                          "from":  "任务拆分",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#双链",
+                          "to":  "投影",
+                          "from":  "估算",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#双链",
+                          "to":  "反馈回报",
+                          "from":  "监控",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#双链",
+                          "to":  "候选集",
+                          "from":  "压测",
+                          "type":  "support",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "需求不明确时如何推进",
+                        "tags":  [
+                                     "需求",
+                                     "需求不明确"
+                                 ],
+                        "template":  "先澄清并书面化验收标准；拆分为最小可交付切片逐轮确认；每轮按优先级排序；范围未定部分显式留白并注明假设"
+                    },
+                    {
+                        "scenario":  "架构与技术选型",
+                        "tags":  [
+                                     "架构设计",
+                                     "技术选型"
+                                 ],
+                        "template":  "先列硬约束（团队技能/运维能力/成本/时间）；对比 2-3 个候选各写权衡表；小步试点验证后再铺开；预留演进路径避免锁定"
+                    },
+                    {
+                        "scenario":  "重构决策",
+                        "tags":  [
+                                     "重构",
+                                     "技术债"
+                                 ],
+                        "template":  "先补测试再动代码（红-绿-重构）；一次只改一个关注点；每步保持可运行；重构后跑全量回归并请评审确认"
+                    },
+                    {
+                        "scenario":  "代码评审",
+                        "tags":  [
+                                     "代码评审"
+                                 ],
+                        "template":  "先看正确性与边界处理；再看可读性与命名；确认关键路径有测试覆盖；安全与性能隐患专项留白"
+                    },
+                    {
+                        "scenario":  "调试疑难缺陷",
+                        "tags":  [
+                                     "调试",
+                                     "缺陷"
+                                 ],
+                        "template":  "稳定复现优先；二分定位可疑区间；加日志或断点验证假设；修复后补回归测试防复发"
+                    },
+                    {
+                        "scenario":  "性能优化",
+                        "tags":  [
+                                     "性能瓶颈"
+                                 ],
+                        "template":  "先测量建立基线；用剖析定位真实瓶颈而非猜测；单次改动单指标对比；避免过早优化；优化后复测并防回退"
+                    },
+                    {
+                        "scenario":  "上线前检查",
+                        "tags":  [
+                                     "上线",
+                                     "持续部署"
+                                 ],
+                        "template":  "全量测试与代码评审通过；准备回滚方案与灰度策略；监控告警就绪；依赖与迁移脚本核对；放量节奏留白"
+                    },
+                    {
+                        "scenario":  "技术债治理",
+                        "tags":  [
+                                     "技术债"
+                                 ],
+                        "template":  "先盘点并量化债务分布；按风险×频率排序偿还顺序；每迭代偿还固定预算；新变更禁止新增债务；评审留白"
+                    },
+                    {
+                        "scenario":  "测试策略",
+                        "tags":  [
+                                     "测试",
+                                     "测试覆盖率"
+                                 ],
+                        "template":  "按金字塔分层（单测为主/集成适中/E2E 少量）；关键路径强制覆盖；覆盖率设下限；CI 门禁卡回归"
+                    },
+                    {
+                        "scenario":  "需求变更处理",
+                        "tags":  [
+                                     "需求变更"
+                                 ],
+                        "template":  "先评估影响面（设计/测试/文档/上线）；成本大于收益先拒绝或降级；接受则同步更新验收标准与测试；变更记录留痕"
+                    },
+                    {
+                        "scenario":  "线上紧急故障处理",
+                        "tags":  [
+                                     "上线",
+                                     "回滚",
+                                     "告警",
+                                     "服务可用性"
+                                 ],
+                        "template":  "先止血（回滚/降级/限流）恢复服务；再定位根因修复验证；最后复盘沉淀；止血优先于根因；影响面评估留白"
+                    },
+                    {
+                        "scenario":  "数据库性能优化",
+                        "tags":  [
+                                     "数据库",
+                                     "索引",
+                                     "性能瓶颈"
+                                 ],
+                        "template":  "先看慢查询与执行计划；补索引/改写查询/考虑分区；压测前后对比；避免全表扫描；上线窗口与锁影响留白"
+                    },
+                    {
+                        "scenario":  "接口设计",
+                        "tags":  [
+                                     "接口设计",
+                                     "版本管理"
+                                 ],
+                        "template":  "先定契约与错误码规范；版本策略采用兼容演进；幂等与分页内置；鉴权与限流默认开启；破坏性变更显式留白"
+                    },
+                    {
+                        "scenario":  "并发问题排查",
+                        "tags":  [
+                                     "并发",
+                                     "缺陷",
+                                     "调试"
+                                 ],
+                        "template":  "先稳定复现；用竞态检测或压测放大问题；锁定共享状态与锁顺序；修复后压力回归验证"
+                    },
+                    {
+                        "scenario":  "安全漏洞应急",
+                        "tags":  [
+                                     "漏洞",
+                                     "安全"
+                                 ],
+                        "template":  "先确认影响面与暴露路径；临时缓解（WAF/降级/禁用特性）；补丁修复并验证；补安全测试与复盘"
+                    },
+                    {
+                        "scenario":  "高可用设计",
+                        "tags":  [
+                                     "服务可用性",
+                                     "容灾"
+                                 ],
+                        "template":  "先定义 SLA 与故障域；冗余与故障转移设计；定期容灾演练；备份与恢复演练留白"
+                    },
+                    {
+                        "scenario":  "需求评审",
+                        "tags":  [
+                                     "需求评审",
+                                     "需求"
+                                 ],
+                        "template":  "先逐条对照验收标准；识别含糊处现场澄清；评估可行性与工作量；遗留问题显式记录并跟踪"
+                    },
+                    {
+                        "scenario":  "灰度发布执行",
+                        "tags":  [
+                                     "灰度发布",
+                                     "特性开关"
+                                 ],
+                        "template":  "先小流量放量；监控关键指标；异常快速回滚或关开关；逐步扩大放量；放量节奏与观察期留白"
+                    },
+                    {
+                        "scenario":  "技术栈升级",
+                        "tags":  [
+                                     "版本管理",
+                                     "技术选型"
+                                 ],
+                        "template":  "先评估兼容性与破坏性变更清单；小步分批升级；每批回归+压测；准备回滚预案；升级窗口与停机留白"
+                    },
+                    {
+                        "scenario":  "代码复杂度治理",
+                        "tags":  [
+                                     "复杂度",
+                                     "重构"
+                                 ],
+                        "template":  "先圈复杂度扫描定位热点；拆函数/提取模块；保持行为不变；测试护航；治理节奏与范围留白"
+                    },
+                    {
+                        "scenario":  "用辩证推演做技术选型",
+                        "tags":  [
+                                     "技术选型",
+                                     "辩证推演"
+                                 ],
+                        "template":  "正：列候选优势；反：列风险与反例；合：按语境场综合势态；输出正反合表而非单点结论；选型依据留白"
+                    },
+                    {
+                        "scenario":  "用关系编织梳理复杂模块",
+                        "tags":  [
+                                     "关系编织",
+                                     "复杂度"
+                                 ],
+                        "template":  "把实体/事件/状态编织成关系网；沿激活扩散找关键路径；3 度内定位核心意象；输出关系束图；边界留白"
+                    },
+                    {
+                        "scenario":  "用留白管理不确定性",
+                        "tags":  [
+                                     "留白",
+                                     "需求不明确"
+                                 ],
+                        "template":  "范围/依赖/验收未定处显式留白并注明假设；未确认项不猜测；触发确认网关逐项收敛；收敛节奏留白"
+                    },
+                    {
+                        "scenario":  "用学习闭环沉淀团队经验",
+                        "tags":  [
+                                     "学习闭环",
+                                     "代码评审"
+                                 ],
+                        "template":  "每个决策采纳/拒绝回报；有效案例存回脚本池与经验库；定期复盘形成团队记忆；反馈频率留白"
+                    },
+                    {
+                        "scenario":  "用势态推演评估方案",
+                        "tags":  [
+                                     "势态推演",
+                                     "技术选型"
+                                 ],
+                        "template":  "候选投影短期/中期/长期走向；辩证正反合比较；每方案保留回退路径；势态而非对错下结论；评估深度留白"
+                    },
+                    {
+                        "scenario":  "用确认网关管控高风险变更",
+                        "tags":  [
+                                     "确认网关",
+                                     "上线"
+                                 ],
+                        "template":  "高风险上线强制暂停-确认-执行；确认人/时间/依据留痕；低风险走快速通道；确认阈值留白"
+                    },
+                    {
+                        "scenario":  "用记忆分层组织项目知识",
+                        "tags":  [
+                                     "记忆分层",
+                                     "经验库"
+                                 ],
+                        "template":  "意象层沉淀概念；关系层沉淀因果；案例层沉淀成败；冷热分层检索；沉淀节奏留白"
+                    },
+                    {
+                        "scenario":  "用三态逻辑处理不确定结论",
+                        "tags":  [
+                                     "三态逻辑",
+                                     "测试"
+                                 ],
+                        "template":  "结论显式标成功/失败/待定三态；待定态设收敛时限；超时触发语境场重推演；收敛窗口留白"
+                    },
+                    {
+                        "scenario":  "用语境修剪优化决策",
+                        "tags":  [
+                                     "语境修剪",
+                                     "语境场"
+                                 ],
+                        "template":  "按当前语境裁剪无关路径；只保留相关关系束参与推演；噪声意象降权；修剪强度留白"
+                    },
+                    {
+                        "scenario":  "用类比推理复用经验",
+                        "tags":  [
+                                     "类比推理",
+                                     "接口设计"
+                                 ],
+                        "template":  "把当前问题类比到经验库相似案例；迁移可复用方案；差异处重推演；类比相似度阈值留白"
+                    }
+                ],
+    "tier":  "pro",
+    "license_required":  true
+}

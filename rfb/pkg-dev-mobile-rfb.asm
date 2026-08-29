@@ -1,0 +1,134 @@
+.IMAGE 移动开发
+.IMAGE iOS
+.IMAGE Android
+.IMAGE Swift
+.IMAGE SwiftUI
+.IMAGE UIKit
+.IMAGE Kotlin
+.IMAGE JetpackCompose
+.IMAGE 跨平台
+.IMAGE ReactNative
+.IMAGE Flutter
+.IMAGE UI适配
+.IMAGE 响应式布局
+.IMAGE 深色模式
+.IMAGE 无障碍
+.IMAGE 可维护性
+.IMAGE 状态管理
+.IMAGE MVI
+.IMAGE MVVM
+.IMAGE 可预测性
+.IMAGE 生命周期
+.IMAGE 内存泄漏
+.IMAGE 弱引用
+.IMAGE 循环引用
+.IMAGE 主线程
+.IMAGE 卡顿
+.IMAGE 后台任务
+.IMAGE 协程
+.IMAGE 异步任务
+.IMAGE 性能瓶颈
+.IMAGE 帧率
+.IMAGE 启动优化
+.IMAGE 包体积
+.IMAGE App瘦身
+.IMAGE 网络请求
+.IMAGE 弱网
+.IMAGE 离线缓存
+.IMAGE 重试机制
+.IMAGE 权限管理
+.IMAGE 安全
+.IMAGE 数据加密
+.IMAGE 安全存储
+.IMAGE 证书
+.IMAGE 签名
+.IMAGE 应用商店
+.IMAGE 审核
+.IMAGE 灰度发布
+.IMAGE 热更新
+.IMAGE 崩溃
+.IMAGE 缺陷
+.IMAGE 崩溃监控
+.IMAGE 日志上报
+.IMAGE 单元测试
+.IMAGE 测试
+.IMAGE UI测试
+.IMAGE 集成测试
+.IMAGE 模拟器
+.IMAGE 测试设备
+.IMAGE 真机测试
+.IMAGE 本地化
+.IMAGE 多语言
+.IMAGE 代码可读性
+.IMAGE 可扩展性
+.IMAGE 可靠性
+.FIELD 移动
+.FIELD iOS
+.FIELD Android
+.FIELD 跨端
+.FIELD UI
+.FIELD 架构
+.FIELD 内存
+.FIELD 并发
+.FIELD 性能
+.FIELD 网络
+.FIELD 安全
+.FIELD 发布
+.FIELD 质量
+.FIELD 测试
+.FIELD 国际化
+.FIELD 价值
+SUPPORT 移动开发 iOS .WEIGHT 0.700 .FIELD 移动
+SUPPORT 移动开发 Android .WEIGHT 0.700 .FIELD 移动
+ENTAIL iOS Swift .WEIGHT 0.900 .FIELD iOS
+SUPPORT Swift SwiftUI .WEIGHT 0.800 .FIELD iOS
+SUPPORT Swift UIKit .WEIGHT 0.700 .FIELD iOS
+ENTAIL Android Kotlin .WEIGHT 0.900 .FIELD Android
+SUPPORT Kotlin JetpackCompose .WEIGHT 0.800 .FIELD Android
+SUPPORT 跨平台 ReactNative .WEIGHT 0.700 .FIELD 跨端
+SUPPORT 跨平台 Flutter .WEIGHT 0.700 .FIELD 跨端
+SUPPORT ReactNative 跨平台 .WEIGHT 0.700 .FIELD 跨端
+SUPPORT Flutter 跨平台 .WEIGHT 0.700 .FIELD 跨端
+SUPPORT UI适配 响应式布局 .WEIGHT 0.800 .FIELD UI
+IF 深色模式 UI适配 .WEIGHT 0.600 .FIELD UI
+SUPPORT 无障碍 可维护性 .WEIGHT 0.500 .FIELD UI
+SUPPORT 状态管理 MVI .WEIGHT 0.700 .FIELD 架构
+SUPPORT 状态管理 MVVM .WEIGHT 0.700 .FIELD 架构
+SUPPORT MVI 可预测性 .WEIGHT 0.700 .FIELD 架构
+SUPPORT MVVM 可维护性 .WEIGHT 0.700 .FIELD 架构
+CAUSE 生命周期 内存泄漏 .WEIGHT 0.700 .FIELD 架构
+UNDERMINE 弱引用 内存泄漏 .WEIGHT 0.600 .FIELD 内存
+CAUSE 循环引用 内存泄漏 .WEIGHT 0.800 .FIELD 内存
+CAUSE 主线程 卡顿 .WEIGHT 0.800 .FIELD 并发
+SUPPORT 后台任务 主线程 .WEIGHT 0.700 .FIELD 并发
+SUPPORT 协程 后台任务 .WEIGHT 0.800 .FIELD 并发
+SUPPORT 异步任务 后台任务 .WEIGHT 0.700 .FIELD 并发
+CAUSE 卡顿 性能瓶颈 .WEIGHT 0.800 .FIELD 性能
+IF 帧率 卡顿 .WEIGHT 0.700 .FIELD 性能
+UNDERMINE 启动优化 卡顿 .WEIGHT 0.600 .FIELD 性能
+CAUSE 包体积 性能瓶颈 .WEIGHT 0.500 .FIELD 性能
+UNDERMINE App瘦身 包体积 .WEIGHT 0.700 .FIELD 性能
+IF 网络请求 弱网 .WEIGHT 0.600 .FIELD 网络
+UNDERMINE 离线缓存 弱网 .WEIGHT 0.700 .FIELD 网络
+UNDERMINE 重试机制 弱网 .WEIGHT 0.600 .FIELD 网络
+SUPPORT 权限管理 安全 .WEIGHT 0.800 .FIELD 安全
+SUPPORT 数据加密 安全 .WEIGHT 0.800 .FIELD 安全
+SUPPORT 安全存储 数据加密 .WEIGHT 0.700 .FIELD 安全
+IF 证书 签名 .WEIGHT 0.800 .FIELD 发布
+IF 签名 应用商店 .WEIGHT 0.800 .FIELD 发布
+IF 应用商店 审核 .WEIGHT 0.800 .FIELD 发布
+SUPPORT 灰度发布 应用商店 .WEIGHT 0.600 .FIELD 发布
+SUPPORT 热更新 灰度发布 .WEIGHT 0.600 .FIELD 发布
+LIKE 崩溃 缺陷 .WEIGHT 0.700 .FIELD 质量
+IF 崩溃监控 崩溃 .WEIGHT 0.700 .FIELD 质量
+SUPPORT 日志上报 崩溃监控 .WEIGHT 0.700 .FIELD 质量
+BELONG 单元测试 测试 .WEIGHT 0.800 .FIELD 测试
+BELONG UI测试 测试 .WEIGHT 0.800 .FIELD 测试
+BELONG 集成测试 测试 .WEIGHT 0.800 .FIELD 测试
+BELONG 模拟器 测试设备 .WEIGHT 0.700 .FIELD 测试
+BELONG 真机测试 测试设备 .WEIGHT 0.700 .FIELD 测试
+UNDERMINE 测试 缺陷 .WEIGHT 0.700 .FIELD 测试
+SUPPORT 本地化 多语言 .WEIGHT 0.800 .FIELD 国际化
+SUPPORT 可维护性 代码可读性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可扩展性 可维护性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可靠性 可预测性 .WEIGHT 0.600 .FIELD 价值

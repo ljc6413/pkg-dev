@@ -1,0 +1,129 @@
+.IMAGE 所有权
+.IMAGE 内存安全
+.IMAGE 借用
+.IMAGE 生命周期
+.IMAGE 借用检查器
+.IMAGE 编译错误
+.IMAGE unsafe
+.IMAGE 缺陷
+.IMAGE Option
+.IMAGE 空指针
+.IMAGE Result
+.IMAGE 错误处理
+.IMAGE 可靠性
+.IMAGE 模式匹配
+.IMAGE trait
+.IMAGE 泛型
+.IMAGE pub接口
+.IMAGE 特征对象
+.IMAGE 可扩展性
+.IMAGE 零成本抽象
+.IMAGE 性能瓶颈
+.IMAGE 迭代器
+.IMAGE 函数式风格
+.IMAGE 闭包
+.IMAGE 循环引用
+.IMAGE 内存泄漏
+.IMAGE 智能指针
+.IMAGE 数据竞争
+.IMAGE Mutex
+.IMAGE Arc
+.IMAGE 通道
+.IMAGE 并发
+.IMAGE 无锁编程
+.IMAGE 异步
+.IMAGE tokio
+.IMAGE 吞吐量
+.IMAGE cargo
+.IMAGE 依赖管理
+.IMAGE Cargo.lock
+.IMAGE 可预测性
+.IMAGE workspace
+.IMAGE 模块化
+.IMAGE 模块系统
+.IMAGE clippy
+.IMAGE 代码规范
+.IMAGE rustfmt
+.IMAGE cargotest
+.IMAGE 测试
+.IMAGE 单元测试
+.IMAGE 集成测试
+.IMAGE 基准测试
+.IMAGE 安全性
+.IMAGE FFI
+.IMAGE 跨语言调用
+.IMAGE extern
+.IMAGE 系统编程
+.IMAGE 嵌入式
+.IMAGE WebAssembly
+.IMAGE 编译优化
+.IMAGE 枚举
+.IMAGE 结构体
+.IMAGE 宏
+.IMAGE 代码可读性
+.IMAGE 方法链
+.IMAGE 可维护性
+.IMAGE 解引用
+.FIELD RS
+.FIELD 并发
+.FIELD 工程
+.FIELD 规范
+.FIELD 测试
+.FIELD 集成
+.FIELD 场景
+.FIELD 性能
+.FIELD 价值
+SUPPORT 所有权 内存安全 .WEIGHT 0.900 .FIELD RS
+SUPPORT 借用 所有权 .WEIGHT 0.800 .FIELD RS
+IF 生命周期 借用 .WEIGHT 0.800 .FIELD RS
+IF 借用检查器 借用 .WEIGHT 0.800 .FIELD RS
+CAUSE 借用检查器 编译错误 .WEIGHT 0.700 .FIELD RS
+UNDERMINE unsafe 内存安全 .WEIGHT 0.900 .FIELD RS
+CAUSE unsafe 缺陷 .WEIGHT 0.600 .FIELD RS
+UNDERMINE Option 空指针 .WEIGHT 0.800 .FIELD RS
+SUPPORT Result 错误处理 .WEIGHT 0.800 .FIELD RS
+SUPPORT 错误处理 可靠性 .WEIGHT 0.700 .FIELD RS
+SUPPORT 模式匹配 错误处理 .WEIGHT 0.700 .FIELD RS
+SUPPORT trait 泛型 .WEIGHT 0.700 .FIELD RS
+IF trait pub接口 .WEIGHT 0.700 .FIELD RS
+SUPPORT 特征对象 可扩展性 .WEIGHT 0.600 .FIELD RS
+UNDERMINE 零成本抽象 性能瓶颈 .WEIGHT 0.700 .FIELD RS
+SUPPORT 迭代器 函数式风格 .WEIGHT 0.700 .FIELD RS
+SUPPORT 闭包 函数式风格 .WEIGHT 0.600 .FIELD RS
+CAUSE 循环引用 内存泄漏 .WEIGHT 0.800 .FIELD RS
+UNDERMINE 智能指针 内存泄漏 .WEIGHT 0.600 .FIELD RS
+CAUSE 数据竞争 缺陷 .WEIGHT 0.800 .FIELD 并发
+UNDERMINE Mutex 数据竞争 .WEIGHT 0.800 .FIELD 并发
+SUPPORT Arc Mutex .WEIGHT 0.700 .FIELD 并发
+UNDERMINE 通道 数据竞争 .WEIGHT 0.700 .FIELD 并发
+SUPPORT 通道 并发 .WEIGHT 0.700 .FIELD 并发
+UNDERMINE 无锁编程 数据竞争 .WEIGHT 0.600 .FIELD 并发
+SUPPORT 异步 tokio .WEIGHT 0.800 .FIELD 并发
+SUPPORT tokio 吞吐量 .WEIGHT 0.700 .FIELD 并发
+SUPPORT cargo 依赖管理 .WEIGHT 0.800 .FIELD 工程
+SUPPORT Cargo.lock 可预测性 .WEIGHT 0.700 .FIELD 工程
+SUPPORT workspace 模块化 .WEIGHT 0.700 .FIELD 工程
+SUPPORT 模块系统 模块化 .WEIGHT 0.700 .FIELD 工程
+SUPPORT clippy 代码规范 .WEIGHT 0.700 .FIELD 规范
+SUPPORT rustfmt 代码规范 .WEIGHT 0.700 .FIELD 规范
+SUPPORT cargotest 测试 .WEIGHT 0.800 .FIELD 测试
+BELONG 单元测试 测试 .WEIGHT 0.800 .FIELD 测试
+BELONG 集成测试 测试 .WEIGHT 0.800 .FIELD 测试
+BELONG 基准测试 测试 .WEIGHT 0.700 .FIELD 测试
+UNDERMINE 测试 缺陷 .WEIGHT 0.700 .FIELD 测试
+SUPPORT 内存安全 可靠性 .WEIGHT 0.800 .FIELD RS
+SUPPORT 安全性 可靠性 .WEIGHT 0.700 .FIELD RS
+SUPPORT FFI 跨语言调用 .WEIGHT 0.800 .FIELD 集成
+IF extern FFI .WEIGHT 0.700 .FIELD 集成
+SUPPORT 系统编程 嵌入式 .WEIGHT 0.600 .FIELD 场景
+SUPPORT WebAssembly 可扩展性 .WEIGHT 0.500 .FIELD 场景
+UNDERMINE 编译优化 性能瓶颈 .WEIGHT 0.600 .FIELD 性能
+IF 枚举 模式匹配 .WEIGHT 0.700 .FIELD RS
+IF 结构体 pub接口 .WEIGHT 0.500 .FIELD RS
+UNDERMINE 宏 代码可读性 .WEIGHT 0.400 .FIELD RS
+SUPPORT 方法链 代码可读性 .WEIGHT 0.500 .FIELD RS
+CAUSE 内存泄漏 性能瓶颈 .WEIGHT 0.600 .FIELD 性能
+SUPPORT 可维护性 代码可读性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可扩展性 可维护性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可靠性 可预测性 .WEIGHT 0.600 .FIELD 价值
+CAUSE 解引用 空指针 .WEIGHT 0.500 .FIELD RS

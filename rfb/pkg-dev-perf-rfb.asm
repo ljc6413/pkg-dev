@@ -1,0 +1,100 @@
+.IMAGE 性能工程
+.IMAGE 性能基线
+.IMAGE 性能指标
+.IMAGE 吞吐量
+.IMAGE 延迟
+.IMAGE P99
+.IMAGE 百分位
+.IMAGE 剖析
+.IMAGE Profiler
+.IMAGE 火焰图
+.IMAGE 采样剖析
+.IMAGE 插桩剖析
+.IMAGE 基准测试
+.IMAGE 压测
+.IMAGE 负载测试
+.IMAGE 压力测试
+.IMAGE 容量测试
+.IMAGE CPU瓶颈
+.IMAGE 性能瓶颈
+.IMAGE 内存瓶颈
+.IMAGE 磁盘瓶颈
+.IMAGE 网络瓶颈
+.IMAGE 缓存
+.IMAGE 缓存命中率
+.IMAGE 缓存穿透
+.IMAGE 连接池
+.IMAGE 批量处理
+.IMAGE 异步化
+.IMAGE 预计算
+.IMAGE 索引
+.IMAGE SQL优化
+.IMAGE 垃圾回收
+.IMAGE 内存分配
+.IMAGE 锁竞争
+.IMAGE 无锁编程
+.IMAGE 并发度
+.IMAGE 容量规划
+.IMAGE 弹性伸缩
+.IMAGE 性能回归
+.IMAGE 性能预算
+.IMAGE 持续性能测试
+.IMAGE 监控
+.IMAGE 可观测性
+.IMAGE 告警
+.IMAGE 可靠性
+.IMAGE 可预测性
+.IMAGE 测试
+.IMAGE 缺陷
+.FIELD PERF
+.FIELD 指标
+.FIELD 工具
+.FIELD 测试
+.FIELD 分析
+.FIELD 优化
+.FIELD 并发
+.FIELD 规划
+.FIELD 流程
+.FIELD 可观测
+.FIELD 价值
+.FIELD 质量
+IF 性能工程 性能基线 .WEIGHT 0.900 .FIELD PERF
+IF 性能工程 性能指标 .WEIGHT 0.900 .FIELD PERF
+SUPPORT 性能指标 吞吐量 .WEIGHT 0.800 .FIELD 指标
+SUPPORT 性能指标 延迟 .WEIGHT 0.800 .FIELD 指标
+IF 延迟 P99 .WEIGHT 0.800 .FIELD 指标
+BELONG P99 百分位 .WEIGHT 0.800 .FIELD 指标
+SUPPORT 剖析 Profiler .WEIGHT 0.900 .FIELD 工具
+SUPPORT Profiler 火焰图 .WEIGHT 0.800 .FIELD 工具
+BELONG 采样剖析 剖析 .WEIGHT 0.800 .FIELD 工具
+BELONG 插桩剖析 剖析 .WEIGHT 0.800 .FIELD 工具
+SUPPORT 基准测试 性能基线 .WEIGHT 0.800 .FIELD 工具
+SUPPORT 压测 负载测试 .WEIGHT 0.900 .FIELD 测试
+SUPPORT 压力测试 负载测试 .WEIGHT 0.800 .FIELD 测试
+SUPPORT 容量测试 负载测试 .WEIGHT 0.800 .FIELD 测试
+BELONG CPU瓶颈 性能瓶颈 .WEIGHT 0.800 .FIELD 分析
+BELONG 内存瓶颈 性能瓶颈 .WEIGHT 0.800 .FIELD 分析
+BELONG 磁盘瓶颈 性能瓶颈 .WEIGHT 0.800 .FIELD 分析
+BELONG 网络瓶颈 性能瓶颈 .WEIGHT 0.800 .FIELD 分析
+UNDERMINE 缓存 延迟 .WEIGHT 0.700 .FIELD 优化
+UNDERMINE 缓存命中率 延迟 .WEIGHT 0.600 .FIELD 优化
+CAUSE 缓存穿透 性能瓶颈 .WEIGHT 0.700 .FIELD 优化
+UNDERMINE 连接池 延迟 .WEIGHT 0.600 .FIELD 优化
+SUPPORT 批量处理 吞吐量 .WEIGHT 0.700 .FIELD 优化
+SUPPORT 异步化 吞吐量 .WEIGHT 0.700 .FIELD 优化
+UNDERMINE 预计算 延迟 .WEIGHT 0.600 .FIELD 优化
+SUPPORT 索引 SQL优化 .WEIGHT 0.800 .FIELD 优化
+UNDERMINE SQL优化 延迟 .WEIGHT 0.700 .FIELD 优化
+CAUSE 垃圾回收 内存瓶颈 .WEIGHT 0.600 .FIELD 优化
+IF 内存分配 垃圾回收 .WEIGHT 0.700 .FIELD 优化
+CAUSE 锁竞争 性能瓶颈 .WEIGHT 0.700 .FIELD 并发
+UNDERMINE 无锁编程 锁竞争 .WEIGHT 0.600 .FIELD 并发
+SUPPORT 并发度 吞吐量 .WEIGHT 0.600 .FIELD 并发
+IF 容量规划 弹性伸缩 .WEIGHT 0.800 .FIELD 规划
+IF 性能回归 性能基线 .WEIGHT 0.800 .FIELD 流程
+IF 性能预算 性能回归 .WEIGHT 0.700 .FIELD 流程
+SUPPORT 持续性能测试 性能回归 .WEIGHT 0.800 .FIELD 流程
+SUPPORT 监控 可观测性 .WEIGHT 0.800 .FIELD 可观测
+SUPPORT 告警 可观测性 .WEIGHT 0.700 .FIELD 可观测
+SUPPORT 可靠性 可预测性 .WEIGHT 0.600 .FIELD 价值
+UNDERMINE 测试 缺陷 .WEIGHT 0.600 .FIELD 质量

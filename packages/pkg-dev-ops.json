@@ -1,0 +1,1234 @@
+﻿{
+    "id":  "pkg-dev-ops",
+    "name":  "DevOps 平台工程",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "OPS开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "DevOps",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "持续集成",
+                       "modality":  "text",
+                       "tags":  [
+                                    "CI/CD"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "持续交付",
+                       "modality":  "text",
+                       "tags":  [
+                                    "CI/CD"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "持续部署",
+                       "modality":  "text",
+                       "tags":  [
+                                    "CI/CD"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "流水线",
+                       "modality":  "text",
+                       "tags":  [
+                                    "CI/CD"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "容器",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运行时"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "Dockerfile",
+                       "modality":  "text",
+                       "tags":  [
+                                    "容器"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "镜像",
+                       "modality":  "text",
+                       "tags":  [
+                                    "容器"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "镜像仓库",
+                       "modality":  "text",
+                       "tags":  [
+                                    "容器"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "Kubernetes",
+                       "modality":  "text",
+                       "tags":  [
+                                    "编排"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "Pod",
+                       "modality":  "text",
+                       "tags":  [
+                                    "编排"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "Deployment",
+                       "modality":  "text",
+                       "tags":  [
+                                    "编排"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "Service",
+                       "modality":  "text",
+                       "tags":  [
+                                    "编排"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "Helm",
+                       "modality":  "text",
+                       "tags":  [
+                                    "编排"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "基础设施即代码",
+                       "modality":  "text",
+                       "tags":  [
+                                    "IaC"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "Terraform",
+                       "modality":  "text",
+                       "tags":  [
+                                    "IaC"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "Ansible",
+                       "modality":  "text",
+                       "tags":  [
+                                    "IaC"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "配置漂移",
+                       "modality":  "text",
+                       "tags":  [
+                                    "IaC"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "可观测性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "SRE"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "指标",
+                       "modality":  "text",
+                       "tags":  [
+                                    "可观测"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "日志",
+                       "modality":  "text",
+                       "tags":  [
+                                    "可观测"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "链路追踪",
+                       "modality":  "text",
+                       "tags":  [
+                                    "可观测"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "Prometheus",
+                       "modality":  "text",
+                       "tags":  [
+                                    "可观测"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "Grafana",
+                       "modality":  "text",
+                       "tags":  [
+                                    "可观测"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "告警",
+                       "modality":  "text",
+                       "tags":  [
+                                    "可观测"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "SLO",
+                       "modality":  "text",
+                       "tags":  [
+                                    "SRE"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "SLA",
+                       "modality":  "text",
+                       "tags":  [
+                                    "SRE"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "错误预算",
+                       "modality":  "text",
+                       "tags":  [
+                                    "SRE"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "容量规划",
+                       "modality":  "text",
+                       "tags":  [
+                                    "SRE"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "弹性伸缩",
+                       "modality":  "text",
+                       "tags":  [
+                                    "SRE"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "故障演练",
+                       "modality":  "text",
+                       "tags":  [
+                                    "SRE"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "混沌工程",
+                       "modality":  "text",
+                       "tags":  [
+                                    "SRE"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "事件响应",
+                       "modality":  "text",
+                       "tags":  [
+                                    "SRE"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "事后复盘",
+                       "modality":  "text",
+                       "tags":  [
+                                    "SRE"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "灰度发布",
+                       "modality":  "text",
+                       "tags":  [
+                                    "发布"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "金丝雀发布",
+                       "modality":  "text",
+                       "tags":  [
+                                    "发布"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "蓝绿部署",
+                       "modality":  "text",
+                       "tags":  [
+                                    "发布"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "回滚",
+                       "modality":  "text",
+                       "tags":  [
+                                    "发布"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "特性开关",
+                       "modality":  "text",
+                       "tags":  [
+                                    "发布"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "安全扫描",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "镜像签名",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "密钥管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "最小权限",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "多环境",
+                       "modality":  "text",
+                       "tags":  [
+                                    "环境"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "环境隔离",
+                       "modality":  "text",
+                       "tags":  [
+                                    "环境"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "配置管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "环境"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "GitOps",
+                       "modality":  "text",
+                       "tags":  [
+                                    "环境"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "服务网格",
+                       "modality":  "text",
+                       "tags":  [
+                                    "网络"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "服务发现",
+                       "modality":  "text",
+                       "tags":  [
+                                    "网络"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "负载均衡",
+                       "modality":  "text",
+                       "tags":  [
+                                    "网络"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "限流",
+                       "modality":  "text",
+                       "tags":  [
+                                    "网络"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "熔断",
+                       "modality":  "text",
+                       "tags":  [
+                                    "网络"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "高可用",
+                       "modality":  "text",
+                       "tags":  [
+                                    "SRE"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "服务可用性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "SRE"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "容灾",
+                       "modality":  "text",
+                       "tags":  [
+                                    "SRE"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "备份",
+                       "modality":  "text",
+                       "tags":  [
+                                    "SRE"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "恢复演练",
+                       "modality":  "text",
+                       "tags":  [
+                                    "SRE"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "部署策略",
+                       "modality":  "text",
+                       "tags":  [
+                                    "发布"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "发布节奏",
+                       "modality":  "text",
+                       "tags":  [
+                                    "发布"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "变更管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "流程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "自动化测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "可靠性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "可预测性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "可维护性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "缺陷",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "性能瓶颈",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "吞吐量",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "安全",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ops"
+                   },
+                   {
+                       "content":  "代码规范",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ops"
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#DevOps",
+                          "to":  "持续集成",
+                          "from":  "DevOps",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#DevOps",
+                          "to":  "持续交付",
+                          "from":  "DevOps",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#CI/CD",
+                          "to":  "自动化测试",
+                          "from":  "持续集成",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#CI/CD",
+                          "to":  "缺陷",
+                          "from":  "持续集成",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#CI/CD",
+                          "to":  "持续部署",
+                          "from":  "持续交付",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#CI/CD",
+                          "to":  "持续集成",
+                          "from":  "流水线",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#CI/CD",
+                          "to":  "部署策略",
+                          "from":  "持续部署",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#容器",
+                          "to":  "Dockerfile",
+                          "from":  "容器",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#容器",
+                          "to":  "镜像",
+                          "from":  "Dockerfile",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#容器",
+                          "to":  "镜像仓库",
+                          "from":  "镜像",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#编排",
+                          "to":  "Pod",
+                          "from":  "Kubernetes",
+                          "type":  "entail",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#编排",
+                          "to":  "Deployment",
+                          "from":  "Pod",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#编排",
+                          "to":  "Service",
+                          "from":  "Deployment",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#编排",
+                          "to":  "Kubernetes",
+                          "from":  "Helm",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#IaC",
+                          "to":  "配置漂移",
+                          "from":  "基础设施即代码",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#IaC",
+                          "to":  "基础设施即代码",
+                          "from":  "Terraform",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#IaC",
+                          "to":  "基础设施即代码",
+                          "from":  "Ansible",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#IaC",
+                          "to":  "基础设施即代码",
+                          "from":  "GitOps",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#IaC",
+                          "to":  "可预测性",
+                          "from":  "配置漂移",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#可观测",
+                          "to":  "指标",
+                          "from":  "可观测性",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#可观测",
+                          "to":  "日志",
+                          "from":  "可观测性",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#可观测",
+                          "to":  "链路追踪",
+                          "from":  "可观测性",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#可观测",
+                          "to":  "指标",
+                          "from":  "Prometheus",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#可观测",
+                          "to":  "指标",
+                          "from":  "Grafana",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#可观测",
+                          "to":  "事件响应",
+                          "from":  "告警",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#SRE",
+                          "to":  "错误预算",
+                          "from":  "SLO",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#SRE",
+                          "to":  "SLO",
+                          "from":  "SLA",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#SRE",
+                          "to":  "发布节奏",
+                          "from":  "错误预算",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#SRE",
+                          "to":  "弹性伸缩",
+                          "from":  "容量规划",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#SRE",
+                          "to":  "吞吐量",
+                          "from":  "弹性伸缩",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#SRE",
+                          "to":  "可靠性",
+                          "from":  "故障演练",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#SRE",
+                          "to":  "故障演练",
+                          "from":  "混沌工程",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#SRE",
+                          "to":  "事后复盘",
+                          "from":  "事件响应",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#SRE",
+                          "to":  "可靠性",
+                          "from":  "事后复盘",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#发布",
+                          "to":  "部署策略",
+                          "from":  "灰度发布",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#发布",
+                          "to":  "灰度发布",
+                          "from":  "金丝雀发布",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#发布",
+                          "to":  "部署策略",
+                          "from":  "蓝绿部署",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#发布",
+                          "to":  "部署策略",
+                          "from":  "回滚",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#发布",
+                          "to":  "灰度发布",
+                          "from":  "特性开关",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "安全扫描",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "镜像签名",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "密钥管理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "最小权限",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#环境",
+                          "to":  "环境隔离",
+                          "from":  "多环境",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#环境",
+                          "to":  "多环境",
+                          "from":  "配置管理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#网络",
+                          "to":  "可观测性",
+                          "from":  "服务网格",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#网络",
+                          "to":  "Kubernetes",
+                          "from":  "服务发现",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#网络",
+                          "to":  "吞吐量",
+                          "from":  "负载均衡",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#网络",
+                          "to":  "服务可用性",
+                          "from":  "限流",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#网络",
+                          "to":  "服务可用性",
+                          "from":  "熔断",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#SRE",
+                          "to":  "可靠性",
+                          "from":  "高可用",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#SRE",
+                          "to":  "高可用",
+                          "from":  "容灾",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#SRE",
+                          "to":  "容灾",
+                          "from":  "备份",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#SRE",
+                          "to":  "容灾",
+                          "from":  "恢复演练",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#流程",
+                          "to":  "事件响应",
+                          "from":  "变更管理",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#价值",
+                          "to":  "代码规范",
+                          "from":  "可维护性",
+                          "type":  "support",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "CI/CD 流水线设计",
+                        "tags":  [
+                                     "持续集成",
+                                     "流水线"
+                                 ],
+                        "template":  "代码提交即触发；单元测试+构建+镜像；产物不可变；门禁卡回归；缓存与并行优化"
+                    },
+                    {
+                        "scenario":  "容器镜像优化",
+                        "tags":  [
+                                     "Dockerfile",
+                                     "镜像"
+                                 ],
+                        "template":  "多阶段构建；基础镜像精简；层缓存复用；非 root 运行；安全扫描镜像签名"
+                    },
+                    {
+                        "scenario":  "Kubernetes 部署",
+                        "tags":  [
+                                     "Kubernetes",
+                                     "Deployment"
+                                 ],
+                        "template":  "声明式配置；资源限额；探针就绪；滚动更新策略；Helm 管理模板"
+                    },
+                    {
+                        "scenario":  "可观测性建设",
+                        "tags":  [
+                                     "可观测性",
+                                     "Prometheus"
+                                 ],
+                        "template":  "指标-日志-追踪三支柱；RED/USE 指标；告警规则收敛；SLO 对齐错误预算"
+                    },
+                    {
+                        "scenario":  "SRE 可靠性工程",
+                        "tags":  [
+                                     "SLO",
+                                     "错误预算"
+                                 ],
+                        "template":  "定义 SLO 与告警阈值；错误预算驱动发布节奏；故障演练常态化；容量规划留白"
+                    },
+                    {
+                        "scenario":  "发布策略选型",
+                        "tags":  [
+                                     "灰度发布",
+                                     "金丝雀发布"
+                                 ],
+                        "template":  "低风险先灰度；金丝雀小流量验证；蓝绿用于大版本；回滚预案就绪；放量节奏留白"
+                    },
+                    {
+                        "scenario":  "IaC 基础设施管理",
+                        "tags":  [
+                                     "Terraform",
+                                     "基础设施即代码"
+                                 ],
+                        "template":  "代码化声明基础设施；状态文件版本管理；Plan 审核后 Apply；配置漂移检测"
+                    },
+                    {
+                        "scenario":  "事件响应与复盘",
+                        "tags":  [
+                                     "事件响应",
+                                     "事后复盘"
+                                 ],
+                        "template":  "告警分级响应；止血优先；时间线还原；根因分析；改进项入迭代跟踪"
+                    },
+                    {
+                        "scenario":  "安全加固",
+                        "tags":  [
+                                     "安全扫描",
+                                     "密钥管理"
+                                 ],
+                        "template":  "供应链扫描；镜像签名验证；密钥集中管理；最小权限原则；合规基线"
+                    },
+                    {
+                        "scenario":  "多环境管理",
+                        "tags":  [
+                                     "多环境",
+                                     "配置管理"
+                                 ],
+                        "template":  "环境差异化配置；配置中心统一；环境间数据隔离；变更审计留痕"
+                    }
+                ]
+}

@@ -1,0 +1,131 @@
+.IMAGE .NET
+.IMAGE C#
+.IMAGE CLR
+.IMAGE 垃圾回收
+.IMAGE 托管堆
+.IMAGE 值类型
+.IMAGE 装箱
+.IMAGE 性能瓶颈
+.IMAGE 泛型
+.IMAGE 可扩展性
+.IMAGE 委托
+.IMAGE 事件
+.IMAGE LINQ
+.IMAGE 代码可读性
+.IMAGE async/await
+.IMAGE Task
+.IMAGE 异步编程
+.IMAGE 反射
+.IMAGE 可维护性
+.IMAGE 特性
+.IMAGE SourceGenerator
+.IMAGE ASP.NETCore
+.IMAGE 中间件
+.IMAGE 依赖注入
+.IMAGE EntityFramework
+.IMAGE ORM
+.IMAGE NuGet
+.IMAGE 依赖管理
+.IMAGE 解决方案
+.IMAGE 项目文件
+.IMAGE xUnit
+.IMAGE 单元测试
+.IMAGE 测试
+.IMAGE 集成测试
+.IMAGE 缺陷
+.IMAGE Roslyn
+.IMAGE 编译器
+.IMAGE JIT
+.IMAGE AOT
+.IMAGE 事件泄漏
+.IMAGE 内存泄漏
+.IMAGE 可靠性
+.IMAGE 死锁
+.IMAGE lock
+.IMAGE Channel
+.IMAGE 并发
+.IMAGE BenchmarkDotNet
+.IMAGE OpenTelemetry
+.IMAGE 可观测性
+.IMAGE 日志
+.IMAGE gRPC
+.IMAGE 微服务
+.IMAGE SignalR
+.IMAGE 实时通信
+.IMAGE Blazor
+.IMAGE Web
+.IMAGE MAUI
+.IMAGE 跨端
+.IMAGE nullable
+.IMAGE record
+.IMAGE 值语义
+.IMAGE 模式匹配
+.IMAGE StyleCop
+.IMAGE 代码规范
+.IMAGE 可预测性
+.FIELD NET
+.FIELD 运行时
+.FIELD 内存
+.FIELD 类型
+.FIELD 性能
+.FIELD 语言
+.FIELD 查询
+.FIELD 异步
+.FIELD 元编程
+.FIELD Web
+.FIELD 架构
+.FIELD 数据
+.FIELD 工程
+.FIELD 测试
+.FIELD 编译器
+.FIELD 反模式
+.FIELD 并发
+.FIELD 运维
+.FIELD 跨端
+.FIELD 质量
+.FIELD 价值
+ENTAIL .NET C# .WEIGHT 0.900 .FIELD NET
+IF C# CLR .WEIGHT 0.800 .FIELD NET
+IF CLR 垃圾回收 .WEIGHT 0.800 .FIELD 运行时
+SUPPORT 托管堆 垃圾回收 .WEIGHT 0.800 .FIELD 内存
+IF 值类型 装箱 .WEIGHT 0.600 .FIELD 类型
+CAUSE 装箱 性能瓶颈 .WEIGHT 0.600 .FIELD 性能
+SUPPORT 泛型 可扩展性 .WEIGHT 0.700 .FIELD 类型
+IF 委托 事件 .WEIGHT 0.800 .FIELD 语言
+SUPPORT LINQ 代码可读性 .WEIGHT 0.700 .FIELD 查询
+SUPPORT async/await Task .WEIGHT 0.800 .FIELD 异步
+SUPPORT Task 异步编程 .WEIGHT 0.800 .FIELD 异步
+SUPPORT async/await 异步编程 .WEIGHT 0.900 .FIELD 异步
+UNDERMINE 反射 可维护性 .WEIGHT 0.500 .FIELD 元编程
+SUPPORT 特性 反射 .WEIGHT 0.700 .FIELD 元编程
+BUT SourceGenerator 反射 .WEIGHT 0.500 .FIELD 元编程
+ENTAIL ASP.NETCore 中间件 .WEIGHT 0.800 .FIELD Web
+SUPPORT 依赖注入 可维护性 .WEIGHT 0.700 .FIELD 架构
+SUPPORT EntityFramework ORM .WEIGHT 0.800 .FIELD 数据
+SUPPORT NuGet 依赖管理 .WEIGHT 0.800 .FIELD 工程
+IF 解决方案 项目文件 .WEIGHT 0.800 .FIELD 工程
+SUPPORT xUnit 单元测试 .WEIGHT 0.800 .FIELD 测试
+BELONG 单元测试 测试 .WEIGHT 0.800 .FIELD 测试
+BELONG 集成测试 测试 .WEIGHT 0.800 .FIELD 测试
+UNDERMINE 测试 缺陷 .WEIGHT 0.700 .FIELD 测试
+SUPPORT Roslyn 编译器 .WEIGHT 0.800 .FIELD 编译器
+UNDERMINE JIT 性能瓶颈 .WEIGHT 0.500 .FIELD 性能
+BUT AOT JIT .WEIGHT 0.500 .FIELD 性能
+CAUSE 事件泄漏 内存泄漏 .WEIGHT 0.800 .FIELD 反模式
+UNDERMINE 内存泄漏 可靠性 .WEIGHT 0.700 .FIELD 反模式
+UNDERMINE 死锁 可靠性 .WEIGHT 0.700 .FIELD 反模式
+CAUSE lock 死锁 .WEIGHT 0.500 .FIELD 并发
+SUPPORT Channel 并发 .WEIGHT 0.700 .FIELD 并发
+IF BenchmarkDotNet 性能瓶颈 .WEIGHT 0.700 .FIELD 性能
+SUPPORT OpenTelemetry 可观测性 .WEIGHT 0.800 .FIELD 运维
+SUPPORT 日志 可观测性 .WEIGHT 0.700 .FIELD 运维
+SUPPORT gRPC 微服务 .WEIGHT 0.700 .FIELD Web
+SUPPORT SignalR 实时通信 .WEIGHT 0.700 .FIELD Web
+SUPPORT Blazor Web .WEIGHT 0.600 .FIELD Web
+SUPPORT MAUI 跨端 .WEIGHT 0.700 .FIELD 跨端
+UNDERMINE nullable 缺陷 .WEIGHT 0.600 .FIELD 类型
+SUPPORT record 值语义 .WEIGHT 0.600 .FIELD 类型
+SUPPORT 模式匹配 代码可读性 .WEIGHT 0.600 .FIELD 语言
+SUPPORT StyleCop 代码规范 .WEIGHT 0.700 .FIELD 质量
+SUPPORT 可维护性 代码可读性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可靠性 可预测性 .WEIGHT 0.600 .FIELD 价值

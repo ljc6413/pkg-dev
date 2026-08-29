@@ -1,0 +1,16 @@
+# Node
+node_modules/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# YiHe 运行时数据（不入库）
+*.telemetry.json
+*.telemetry-merged.json
+session-telemetry/
+
+# 临时
+*.tmp

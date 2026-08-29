@@ -1,0 +1,1176 @@
+﻿{
+    "id":  "pkg-dev-test",
+    "name":  "软件测试工程",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "TEST开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "软件测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试金字塔",
+                       "modality":  "text",
+                       "tags":  [
+                                    "策略"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "单元测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "层级"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "集成测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "层级"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "端到端测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "层级"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "契约测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "层级"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试自动化",
+                       "modality":  "text",
+                       "tags":  [
+                                    "自动化"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试框架",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "断言",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试替身",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "Mock",
+                       "modality":  "text",
+                       "tags":  [
+                                    "替身"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "Stub",
+                       "modality":  "text",
+                       "tags":  [
+                                    "替身"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "Fake",
+                       "modality":  "text",
+                       "tags":  [
+                                    "替身"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试覆盖率",
+                       "modality":  "text",
+                       "tags":  [
+                                    "度量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "分支覆盖",
+                       "modality":  "text",
+                       "tags":  [
+                                    "度量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "变异测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "度量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "回归测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "策略"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "冒烟测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "策略"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "探索性测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "策略"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试数据管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试环境",
+                       "modality":  "text",
+                       "tags":  [
+                                    "环境"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试隔离",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "并行测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试稳定性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "Flaky 测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "反模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试代码",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试分层",
+                       "modality":  "text",
+                       "tags":  [
+                                    "策略"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "行为驱动开发",
+                       "modality":  "text",
+                       "tags":  [
+                                    "方法论"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试驱动开发",
+                       "modality":  "text",
+                       "tags":  [
+                                    "方法论"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "红绿重构",
+                       "modality":  "text",
+                       "tags":  [
+                                    "方法论"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "验收测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "方法论"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "性能测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "专项"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "负载测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "压测",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "基准测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "并发测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "安全测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "专项"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "渗透测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "漏洞扫描",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "模糊测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "兼容性测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "专项"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "可用性测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "专项"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "可访问性测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "专项"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "缺陷",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "缺陷管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "流程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "缺陷密度",
+                       "modality":  "text",
+                       "tags":  [
+                                    "度量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试报告",
+                       "modality":  "text",
+                       "tags":  [
+                                    "流程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试计划",
+                       "modality":  "text",
+                       "tags":  [
+                                    "流程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试用例",
+                       "modality":  "text",
+                       "tags":  [
+                                    "流程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "用例设计",
+                       "modality":  "text",
+                       "tags":  [
+                                    "流程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "边界值分析",
+                       "modality":  "text",
+                       "tags":  [
+                                    "用例"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "等价类划分",
+                       "modality":  "text",
+                       "tags":  [
+                                    "用例"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "决策表",
+                       "modality":  "text",
+                       "tags":  [
+                                    "用例"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "状态转换测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "用例"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "持续集成",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "持续交付",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "质量门禁",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "可靠性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "可预测性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "可维护性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "代码可读性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "代码规范",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "性能瓶颈",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "test"
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "测试金字塔",
+                          "from":  "软件测试",
+                          "type":  "entail",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "单元测试",
+                          "from":  "测试金字塔",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "集成测试",
+                          "from":  "测试金字塔",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#测试",
+                          "to":  "端到端测试",
+                          "from":  "测试金字塔",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "单元测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "集成测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "端到端测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "集成测试",
+                          "from":  "契约测试",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#自动化",
+                          "to":  "回归测试",
+                          "from":  "测试自动化",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#自动化",
+                          "to":  "测试",
+                          "from":  "测试自动化",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#工具",
+                          "to":  "测试自动化",
+                          "from":  "测试框架",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工具",
+                          "to":  "测试框架",
+                          "from":  "断言",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#替身",
+                          "to":  "测试替身",
+                          "from":  "Mock",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#替身",
+                          "to":  "测试替身",
+                          "from":  "Stub",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#替身",
+                          "to":  "测试替身",
+                          "from":  "Fake",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#替身",
+                          "to":  "测试隔离",
+                          "from":  "测试替身",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#度量",
+                          "to":  "测试",
+                          "from":  "测试覆盖率",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#度量",
+                          "to":  "测试覆盖率",
+                          "from":  "分支覆盖",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#度量",
+                          "to":  "测试覆盖率",
+                          "from":  "变异测试",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#策略",
+                          "to":  "缺陷",
+                          "from":  "回归测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#策略",
+                          "to":  "回归测试",
+                          "from":  "冒烟测试",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#策略",
+                          "to":  "缺陷",
+                          "from":  "探索性测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#数据",
+                          "to":  "测试隔离",
+                          "from":  "测试数据管理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#环境",
+                          "to":  "测试隔离",
+                          "from":  "测试环境",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#性能",
+                          "to":  "测试稳定性",
+                          "from":  "并行测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#反模式",
+                          "to":  "测试稳定性",
+                          "from":  "Flaky 测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#反模式",
+                          "to":  "可预测性",
+                          "from":  "Flaky 测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#工程",
+                          "to":  "可维护性",
+                          "from":  "测试代码",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#方法论",
+                          "to":  "验收测试",
+                          "from":  "行为驱动开发",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#方法论",
+                          "to":  "红绿重构",
+                          "from":  "测试驱动开发",
+                          "type":  "entail",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#方法论",
+                          "to":  "测试",
+                          "from":  "红绿重构",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#方法论",
+                          "to":  "测试",
+                          "from":  "验收测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#专项",
+                          "to":  "负载测试",
+                          "from":  "性能测试",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#性能",
+                          "to":  "负载测试",
+                          "from":  "压测",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "基准测试",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#性能",
+                          "to":  "压测",
+                          "from":  "并发测试",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "渗透测试",
+                          "from":  "安全测试",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#安全",
+                          "to":  "漏洞扫描",
+                          "from":  "渗透测试",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#安全",
+                          "to":  "安全测试",
+                          "from":  "模糊测试",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#专项",
+                          "to":  "测试",
+                          "from":  "兼容性测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#专项",
+                          "to":  "测试",
+                          "from":  "可用性测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#专项",
+                          "to":  "测试",
+                          "from":  "可访问性测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "缺陷",
+                          "from":  "测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#流程",
+                          "to":  "缺陷密度",
+                          "from":  "缺陷管理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#流程",
+                          "to":  "质量门禁",
+                          "from":  "测试报告",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#流程",
+                          "to":  "测试用例",
+                          "from":  "测试计划",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#流程",
+                          "to":  "测试用例",
+                          "from":  "用例设计",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#用例",
+                          "to":  "用例设计",
+                          "from":  "边界值分析",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#用例",
+                          "to":  "用例设计",
+                          "from":  "等价类划分",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#用例",
+                          "to":  "用例设计",
+                          "from":  "决策表",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#用例",
+                          "to":  "用例设计",
+                          "from":  "状态转换测试",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#工程",
+                          "to":  "测试自动化",
+                          "from":  "持续集成",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "持续交付",
+                          "from":  "质量门禁",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "可预测性",
+                          "from":  "可靠性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "代码可读性",
+                          "from":  "可维护性",
+                          "type":  "support",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "测试金字塔落地",
+                        "tags":  [
+                                     "测试金字塔",
+                                     "单元测试"
+                                 ],
+                        "template":  "单测为主占七成；集成适中；E2E 少量覆盖关键流；契约测试保障服务间；分层清晰可维护"
+                    },
+                    {
+                        "scenario":  "测试自动化建设",
+                        "tags":  [
+                                     "测试自动化",
+                                     "测试框架"
+                                 ],
+                        "template":  "框架统一选型；用例分层组织；CI 触发与定时；失败重跑策略；报告可读"
+                    },
+                    {
+                        "scenario":  "Flaky 测试治理",
+                        "tags":  [
+                                     "Flaky 测试",
+                                     "测试稳定性"
+                                 ],
+                        "template":  "定位不稳定根因（时序/共享状态/网络）；测试隔离；重试仅临时；根因修复优先"
+                    },
+                    {
+                        "scenario":  "TDD 实践",
+                        "tags":  [
+                                     "测试驱动开发",
+                                     "红绿重构"
+                                 ],
+                        "template":  "先写失败测试；最小实现转绿；重构保持绿；循环小步推进；覆盖关键逻辑"
+                    },
+                    {
+                        "scenario":  "性能测试方案",
+                        "tags":  [
+                                     "性能测试",
+                                     "压测"
+                                 ],
+                        "template":  "定义性能指标与阈值；场景建模（峰值/持续/突发）；压测环境独立；瓶颈定位与优化"
+                    },
+                    {
+                        "scenario":  "安全测试流程",
+                        "tags":  [
+                                     "安全测试",
+                                     "渗透测试"
+                                 ],
+                        "template":  "威胁建模先行；漏洞扫描常态化；渗透测试按风险周期；模糊测试输入边界；修复验证闭环"
+                    },
+                    {
+                        "scenario":  "用例设计方法论",
+                        "tags":  [
+                                     "用例设计",
+                                     "边界值分析"
+                                 ],
+                        "template":  "等价类划分输入域；边界值覆盖临界；决策表处理组合；状态转换覆盖流转"
+                    },
+                    {
+                        "scenario":  "测试数据管理",
+                        "tags":  [
+                                     "测试数据管理",
+                                     "测试环境"
+                                 ],
+                        "template":  "数据构造工具化；环境隔离与复用；敏感数据脱敏；数据版本与清理策略"
+                    },
+                    {
+                        "scenario":  "质量门禁",
+                        "tags":  [
+                                     "质量门禁",
+                                     "测试覆盖率"
+                                 ],
+                        "template":  "覆盖率下限卡 CI；关键路径强制覆盖；变异测试抽查；门禁放行规则明确"
+                    },
+                    {
+                        "scenario":  "回归策略",
+                        "tags":  [
+                                     "回归测试",
+                                     "冒烟测试"
+                                 ],
+                        "template":  "冒烟快速过主流程；全量回归按发布频率；变更影响分析定向回归；回归结果门禁"
+                    }
+                ]
+}

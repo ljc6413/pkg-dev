@@ -1,0 +1,1528 @@
+﻿{
+    "id":  "pkg-dev-ts",
+    "name":  "TypeScript 全栈开发",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "TS开发",
+    "owner":  "developer",
+    "imagos":  [
+                   {
+                       "content":  "TypeScript",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "类型系统",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "类型推断",
+                       "kind":  "event",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "泛型",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "接口",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "类型别名",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "联合类型",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "字面量类型",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "类型收窄",
+                       "kind":  "event",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "unknown",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "类型"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "any",
+                       "kind":  "state",
+                       "category":  "ts",
+                       "tags":  [
+                                    "反模式"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "非空断言",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "类型"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "装饰器",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "模块系统",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "路径别名",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Node.js",
+                       "kind":  "entity",
+                       "category":  "runtime",
+                       "tags":  [
+                                    "运行"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "事件循环",
+                       "kind":  "entity",
+                       "category":  "runtime",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "异步",
+                       "kind":  "entity",
+                       "category":  "runtime",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Promise",
+                       "kind":  "entity",
+                       "category":  "runtime",
+                       "tags":  [
+                                    "异步"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "async/await",
+                       "kind":  "entity",
+                       "category":  "runtime",
+                       "tags":  [
+                                    "异步"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "回调地狱",
+                       "kind":  "state",
+                       "category":  "runtime",
+                       "tags":  [
+                                    "反模式"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Promise 链",
+                       "kind":  "entity",
+                       "category":  "runtime",
+                       "tags":  [
+                                    "异步"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "并发控制",
+                       "kind":  "entity",
+                       "category":  "runtime",
+                       "tags":  [
+                                    "异步"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "npm",
+                       "kind":  "entity",
+                       "category":  "tooling",
+                       "tags":  [
+                                    "依赖"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "依赖管理",
+                       "kind":  "entity",
+                       "category":  "tooling",
+                       "tags":  [
+                                    "依赖"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "lockfile",
+                       "kind":  "entity",
+                       "category":  "tooling",
+                       "tags":  [
+                                    "依赖"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "语义化版本",
+                       "kind":  "value",
+                       "category":  "tooling",
+                       "tags":  [
+                                    "版本"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "构建工具",
+                       "kind":  "entity",
+                       "category":  "tooling",
+                       "tags":  [
+                                    "构建"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "打包器",
+                       "kind":  "entity",
+                       "category":  "tooling",
+                       "tags":  [
+                                    "构建"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "tsconfig",
+                       "kind":  "entity",
+                       "category":  "tooling",
+                       "tags":  [
+                                    "配置"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "编译目标",
+                       "kind":  "entity",
+                       "category":  "tooling",
+                       "tags":  [
+                                    "配置"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "严格模式",
+                       "kind":  "value",
+                       "category":  "tooling",
+                       "tags":  [
+                                    "配置"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "React",
+                       "kind":  "entity",
+                       "category":  "frontend",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "组件",
+                       "kind":  "entity",
+                       "category":  "frontend",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "props",
+                       "kind":  "entity",
+                       "category":  "frontend",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "状态管理",
+                       "kind":  "entity",
+                       "category":  "frontend",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Hooks",
+                       "kind":  "entity",
+                       "category":  "frontend",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "副作用",
+                       "kind":  "state",
+                       "category":  "frontend",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "服务端渲染",
+                       "kind":  "entity",
+                       "category":  "frontend",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Express",
+                       "kind":  "entity",
+                       "category":  "backend",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "中间件",
+                       "kind":  "entity",
+                       "category":  "backend",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "路由",
+                       "kind":  "entity",
+                       "category":  "backend",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "请求校验",
+                       "kind":  "entity",
+                       "category":  "backend",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "接口层",
+                       "kind":  "entity",
+                       "category":  "backend",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Prisma",
+                       "kind":  "entity",
+                       "category":  "backend",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "ORM",
+                       "kind":  "entity",
+                       "category":  "backend",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "数据库迁移",
+                       "kind":  "event",
+                       "category":  "backend",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Vitest",
+                       "kind":  "entity",
+                       "category":  "testing",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Jest",
+                       "kind":  "entity",
+                       "category":  "testing",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "测试替身",
+                       "kind":  "entity",
+                       "category":  "testing",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "ESLint",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Prettier",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "tsc 类型检查",
+                       "kind":  "event",
+                       "category":  "quality",
+                       "tags":  [
+                                    "检查"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "编译错误",
+                       "kind":  "state",
+                       "category":  "ts",
+                       "tags":  [
+                                    "错误"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "类型体操",
+                       "kind":  "state",
+                       "category":  "ts",
+                       "tags":  [
+                                    "反模式"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "双重断言",
+                       "kind":  "state",
+                       "category":  "ts",
+                       "tags":  [
+                                    "反模式"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "冗余类型标注",
+                       "kind":  "state",
+                       "category":  "ts",
+                       "tags":  [
+                                    "反模式"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "可选链",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "空值合并",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "防抖节流",
+                       "kind":  "entity",
+                       "category":  "frontend",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "内存泄漏",
+                       "kind":  "state",
+                       "category":  "runtime",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "事件监听",
+                       "kind":  "entity",
+                       "category":  "runtime",
+                       "tags":  [
+                                    "内存"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "闭包",
+                       "kind":  "entity",
+                       "category":  "runtime",
+                       "tags":  [
+                                    "内存"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "枚举",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "常量联合",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "类型守卫",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "声明文件",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "兼容性",
+                       "kind":  "value",
+                       "category":  "tooling",
+                       "tags":  [
+                                    "版本"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "破坏性变更",
+                       "kind":  "event",
+                       "category":  "tooling",
+                       "tags":  [
+                                    "版本"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Node 版本",
+                       "kind":  "entity",
+                       "category":  "runtime",
+                       "tags":  [
+                                    "运行"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "包管理器",
+                       "kind":  "entity",
+                       "category":  "tooling",
+                       "tags":  [
+                                    "依赖"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Monorepo",
+                       "kind":  "entity",
+                       "category":  "tooling",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "工作区",
+                       "kind":  "entity",
+                       "category":  "tooling",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "类型安全",
+                       "kind":  "value",
+                       "category":  "ts",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "可预测性",
+                       "kind":  "value",
+                       "category":  "ts",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "类型复用",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "空指针",
+                       "kind":  "entity",
+                       "category":  "ts",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "代码可读性",
+                       "kind":  "value",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "并发",
+                       "kind":  "entity",
+                       "category":  "runtime",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "模块化",
+                       "kind":  "entity",
+                       "category":  "tooling",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "可扩展性",
+                       "kind":  "value",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "性能瓶颈",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "接口设计",
+                       "kind":  "entity",
+                       "category":  "backend",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "数据模型",
+                       "kind":  "entity",
+                       "category":  "backend",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "数据迁移",
+                       "kind":  "entity",
+                       "category":  "backend",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "测试",
+                       "kind":  "entity",
+                       "category":  "testing",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "单元测试",
+                       "kind":  "entity",
+                       "category":  "testing",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "代码规范",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   }
+               ],
+    "relations":  [
+                      {
+                          "from":  "TypeScript",
+                          "to":  "类型系统",
+                          "type":  "entail",
+                          "weight":  0.9,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "类型系统",
+                          "to":  "类型安全",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "类型安全",
+                          "to":  "可预测性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "any",
+                          "to":  "类型安全",
+                          "type":  "undermine",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "any",
+                          "to":  "可预测性",
+                          "type":  "undermine",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "unknown",
+                          "to":  "any",
+                          "type":  "oppose",
+                          "weight":  0.6,
+                          "directed":  false,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "类型收窄",
+                          "to":  "unknown",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "联合类型",
+                          "to":  "类型收窄",
+                          "type":  "condition",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "类型守卫",
+                          "to":  "类型收窄",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "泛型",
+                          "to":  "类型复用",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "泛型",
+                          "to":  "类型安全",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "接口",
+                          "to":  "类型安全",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "类型别名",
+                          "to":  "接口",
+                          "type":  "similar",
+                          "weight":  0.6,
+                          "directed":  false,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "字面量类型",
+                          "to":  "常量联合",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "枚举",
+                          "to":  "常量联合",
+                          "type":  "oppose",
+                          "weight":  0.5,
+                          "directed":  false,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "非空断言",
+                          "to":  "空指针",
+                          "type":  "causal",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "双重断言",
+                          "to":  "类型安全",
+                          "type":  "undermine",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "类型体操",
+                          "to":  "代码可读性",
+                          "type":  "undermine",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "冗余类型标注",
+                          "to":  "代码可读性",
+                          "type":  "undermine",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "tsc 类型检查",
+                          "to":  "编译错误",
+                          "type":  "undermine",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "tsc 类型检查",
+                          "to":  "类型安全",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "严格模式",
+                          "to":  "类型安全",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "严格模式",
+                          "to":  "any",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "tsconfig",
+                          "to":  "严格模式",
+                          "type":  "condition",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "编译目标",
+                          "to":  "兼容性",
+                          "type":  "condition",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "可选链",
+                          "to":  "空指针",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "空值合并",
+                          "to":  "空指针",
+                          "type":  "undermine",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "声明文件",
+                          "to":  "类型安全",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      },
+                      {
+                          "from":  "Node.js",
+                          "to":  "事件循环",
+                          "type":  "entail",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#运行时"
+                      },
+                      {
+                          "from":  "事件循环",
+                          "to":  "异步",
+                          "type":  "condition",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#运行时"
+                      },
+                      {
+                          "from":  "Promise",
+                          "to":  "异步",
+                          "type":  "belong",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#运行时"
+                      },
+                      {
+                          "from":  "async/await",
+                          "to":  "Promise",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#运行时"
+                      },
+                      {
+                          "from":  "回调地狱",
+                          "to":  "代码可读性",
+                          "type":  "undermine",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#运行时"
+                      },
+                      {
+                          "from":  "async/await",
+                          "to":  "回调地狱",
+                          "type":  "undermine",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#运行时"
+                      },
+                      {
+                          "from":  "并发控制",
+                          "to":  "并发",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#运行时"
+                      },
+                      {
+                          "from":  "事件监听",
+                          "to":  "内存泄漏",
+                          "type":  "causal",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#运行时"
+                      },
+                      {
+                          "from":  "闭包",
+                          "to":  "内存泄漏",
+                          "type":  "causal",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#运行时"
+                      },
+                      {
+                          "from":  "npm",
+                          "to":  "依赖管理",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "包管理器",
+                          "to":  "依赖管理",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "lockfile",
+                          "to":  "可预测性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "语义化版本",
+                          "to":  "兼容性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "破坏性变更",
+                          "to":  "兼容性",
+                          "type":  "undermine",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "Node 版本",
+                          "to":  "兼容性",
+                          "type":  "condition",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "Monorepo",
+                          "to":  "模块化",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "工作区",
+                          "to":  "Monorepo",
+                          "type":  "belong",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "模块系统",
+                          "to":  "模块化",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "路径别名",
+                          "to":  "代码可读性",
+                          "type":  "support",
+                          "weight":  0.4,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "构建工具",
+                          "to":  "打包器",
+                          "type":  "belong",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "React",
+                          "to":  "组件",
+                          "type":  "entail",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#前端"
+                      },
+                      {
+                          "from":  "组件",
+                          "to":  "props",
+                          "type":  "condition",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#前端"
+                      },
+                      {
+                          "from":  "组件",
+                          "to":  "Hooks",
+                          "type":  "condition",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#前端"
+                      },
+                      {
+                          "from":  "Hooks",
+                          "to":  "状态管理",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#前端"
+                      },
+                      {
+                          "from":  "副作用",
+                          "to":  "可预测性",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#前端"
+                      },
+                      {
+                          "from":  "服务端渲染",
+                          "to":  "可扩展性",
+                          "type":  "support",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#前端"
+                      },
+                      {
+                          "from":  "防抖节流",
+                          "to":  "性能瓶颈",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#前端"
+                      },
+                      {
+                          "from":  "Express",
+                          "to":  "中间件",
+                          "type":  "entail",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#后端"
+                      },
+                      {
+                          "from":  "中间件",
+                          "to":  "请求校验",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#后端"
+                      },
+                      {
+                          "from":  "Express",
+                          "to":  "路由",
+                          "type":  "entail",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#后端"
+                      },
+                      {
+                          "from":  "接口层",
+                          "to":  "接口设计",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#后端"
+                      },
+                      {
+                          "from":  "Prisma",
+                          "to":  "ORM",
+                          "type":  "belong",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#后端"
+                      },
+                      {
+                          "from":  "ORM",
+                          "to":  "数据模型",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#后端"
+                      },
+                      {
+                          "from":  "数据库迁移",
+                          "to":  "数据迁移",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#后端"
+                      },
+                      {
+                          "from":  "Vitest",
+                          "to":  "测试",
+                          "type":  "belong",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#测试"
+                      },
+                      {
+                          "from":  "Jest",
+                          "to":  "测试",
+                          "type":  "belong",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#测试"
+                      },
+                      {
+                          "from":  "测试替身",
+                          "to":  "单元测试",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#测试"
+                      },
+                      {
+                          "from":  "ESLint",
+                          "to":  "代码规范",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#规范"
+                      },
+                      {
+                          "from":  "Prettier",
+                          "to":  "代码规范",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#规范"
+                      },
+                      {
+                          "from":  "ESLint",
+                          "to":  "any",
+                          "type":  "undermine",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#规范"
+                      },
+                      {
+                          "from":  "装饰器",
+                          "to":  "代码可读性",
+                          "type":  "undermine",
+                          "weight":  0.4,
+                          "directed":  true,
+                          "context_tag":  "#TS"
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "TS 类型设计",
+                        "tags":  [
+                                     "TypeScript",
+                                     "类型系统"
+                                 ],
+                        "template":  "先用字面量联合建模领域状态；数据边界用 unknown 收窄而非 any；对外接口用 interface 声明；类型体操控制在可读范围内"
+                    },
+                    {
+                        "scenario":  "升级 TS 严格模式",
+                        "tags":  [
+                                     "严格模式",
+                                     "tsconfig"
+                                 ],
+                        "template":  "先开 noImplicitAny 逐步修复；再补 strictNullChecks；any 使用处显式 TODO 并加 lint 规则；编译错误清零后全开"
+                    },
+                    {
+                        "scenario":  "异步并发控制",
+                        "tags":  [
+                                     "async/await",
+                                     "并发控制"
+                                 ],
+                        "template":  "用 async/await 替代回调链；批量任务用并发限制器（如 p-limit）；错误用 try/catch 包裹并区分可恢复/致命；超时与取消留白"
+                    },
+                    {
+                        "scenario":  "npm 依赖升级",
+                        "tags":  [
+                                     "npm",
+                                     "依赖管理"
+                                 ],
+                        "template":  "先查破坏性变更与迁移指南；lockfile 提交入库；升级按语义化版本分步走；每步回归+类型检查；回滚预案留白"
+                    },
+                    {
+                        "scenario":  "React 状态管理选型",
+                        "tags":  [
+                                     "React",
+                                     "状态管理"
+                                 ],
+                        "template":  "局部状态用 Hooks；跨组件用 Context；复杂全局状态再引入外部库；副作用抽到 Effect 并清理监听防泄漏"
+                    },
+                    {
+                        "scenario":  "Node 服务分层",
+                        "tags":  [
+                                     "Express",
+                                     "接口层"
+                                 ],
+                        "template":  "路由层只做参数解析与响应；服务层放业务逻辑；数据访问层隔离 ORM；请求校验在中间件层统一处理"
+                    },
+                    {
+                        "scenario":  "TS 编译错误排查",
+                        "tags":  [
+                                     "tsc 类型检查",
+                                     "编译错误"
+                                 ],
+                        "template":  "先看错误位置类型推断链；缩小问题到最小复现；用类型收窄或显式类型修复而非断言；双重断言视为反模式"
+                    },
+                    {
+                        "scenario":  "前端内存泄漏排查",
+                        "tags":  [
+                                     "内存泄漏",
+                                     "事件监听"
+                                 ],
+                        "template":  "检查未清理的事件监听与定时器；Effect 清理函数补齐；用 Heap Snapshot 对比快照；闭包持有大对象留白专项"
+                    },
+                    {
+                        "scenario":  "Monorepo 拆分",
+                        "tags":  [
+                                     "Monorepo",
+                                     "工作区"
+                                 ],
+                        "template":  "先定包边界与依赖方向；用 workspace 管理共享代码；构建缓存与类型检查全仓统一；拆分节奏与发布策略留白"
+                    },
+                    {
+                        "scenario":  "ESLint 规则治理",
+                        "tags":  [
+                                     "ESLint",
+                                     "代码规范"
+                                 ],
+                        "template":  "先禁用 any 与显式 any 规则；再开未使用变量/一致导入；Prettier 格式化并入 CI；存量告警分批清零留白"
+                    }
+                ],
+    "tier":  "pro",
+    "license_required":  true
+}

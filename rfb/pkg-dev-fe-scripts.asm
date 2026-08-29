@@ -1,0 +1,49 @@
+.FIELD 场景
+.IMAGE 前端框架选型
+SUPPORT 前端框架选型 React .WEIGHT 0.7 .FIELD 场景
+SUPPORT 前端框架选型 Vue .WEIGHT 0.7 .FIELD 场景
+.IMAGE 状态管理选型
+SUPPORT 状态管理选型 状态管理 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 状态管理选型 Hooks .WEIGHT 0.7 .FIELD 场景
+SUPPORT 状态管理选型 Hooks .WEIGHT 0.5 .FIELD 场景
+SUPPORT 状态管理选型 组件 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 渲染策略
+SUPPORT 渲染策略 服务端渲染 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 渲染策略 首屏性能 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 渲染策略 客户端渲染 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 渲染策略 路由 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 性能优化
+SUPPORT 性能优化 首屏性能 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 性能优化 代码分割 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 性能优化 LCP .WEIGHT 0.5 .FIELD 场景
+SUPPORT 性能优化 代码分割 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 性能优化 CDN .WEIGHT 0.5 .FIELD 场景
+.IMAGE 微前端拆分
+SUPPORT 微前端拆分 微前端 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 微前端拆分 模块联邦 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 微前端拆分 模块联邦 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 前端安全
+SUPPORT 前端安全 XSS .WEIGHT 0.7 .FIELD 场景
+SUPPORT 前端安全 CSRF .WEIGHT 0.7 .FIELD 场景
+SUPPORT 前端安全 XSS .WEIGHT 0.5 .FIELD 场景
+SUPPORT 前端安全 CSRF .WEIGHT 0.5 .FIELD 场景
+.IMAGE 组件设计
+SUPPORT 组件设计 组件 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 组件设计 props .WEIGHT 0.7 .FIELD 场景
+SUPPORT 组件设计 组件 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 组件设计 props .WEIGHT 0.5 .FIELD 场景
+SUPPORT 组件设计 测试 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 构建优化
+SUPPORT 构建优化 构建工具 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 构建优化 打包 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 构建优化 缓存策略 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 前端测试策略
+SUPPORT 前端测试策略 单元测试 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 前端测试策略 端到端测试 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 前端测试策略 组件 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 前端测试策略 视觉回归 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 前端可观测
+SUPPORT 前端可观测 埋点 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 前端可观测 错误监控 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 前端可观测 埋点 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 前端可观测 Web性能指标 .WEIGHT 0.5 .FIELD 场景

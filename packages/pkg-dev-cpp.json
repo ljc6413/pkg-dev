@@ -1,0 +1,1141 @@
+{
+  "id": "pkg-dev-cpp",
+  "name": "C/C++ 系统开发",
+  "industry": "软件开发",
+  "version": "1.0.0",
+  "namespace": "CPP开发",
+  "owner": "developer",
+  "tier": "pro",
+  "license_required": true,
+  "imagos": [
+    {
+      "content": "C/C++",
+      "modality": "text",
+      "tags": [
+        "语言"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "指针",
+      "modality": "text",
+      "tags": [
+        "内存"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "引用",
+      "modality": "text",
+      "tags": [
+        "内存"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "内存管理",
+      "modality": "text",
+      "tags": [
+        "内存"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "RAII",
+      "modality": "text",
+      "tags": [
+        "内存"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "智能指针",
+      "modality": "text",
+      "tags": [
+        "内存"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "unique_ptr",
+      "modality": "text",
+      "tags": [
+        "内存"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "shared_ptr",
+      "modality": "text",
+      "tags": [
+        "内存"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "内存泄漏",
+      "modality": "text",
+      "tags": [
+        "反模式"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "cpp"
+    },
+    {
+      "content": "悬垂指针",
+      "modality": "text",
+      "tags": [
+        "反模式"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "cpp"
+    },
+    {
+      "content": "模板",
+      "modality": "text",
+      "tags": [
+        "泛型"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "泛型",
+      "modality": "text",
+      "tags": [
+        "泛型"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "模板元编程",
+      "modality": "text",
+      "tags": [
+        "泛型"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "虚函数",
+      "modality": "text",
+      "tags": [
+        "多态"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "多态",
+      "modality": "text",
+      "tags": [
+        "多态"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "运算符重载",
+      "modality": "text",
+      "tags": [
+        "语法"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "lambda",
+      "modality": "text",
+      "tags": [
+        "函数式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "STL",
+      "modality": "text",
+      "tags": [
+        "库"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "容器",
+      "modality": "text",
+      "tags": [
+        "库"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "迭代器",
+      "modality": "text",
+      "tags": [
+        "库"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "算法库",
+      "modality": "text",
+      "tags": [
+        "库"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "异常",
+      "modality": "text",
+      "tags": [
+        "错误"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "异常安全",
+      "modality": "text",
+      "tags": [
+        "错误"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "cpp"
+    },
+    {
+      "content": "头文件",
+      "modality": "text",
+      "tags": [
+        "工程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "编译单元",
+      "modality": "text",
+      "tags": [
+        "工程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "链接",
+      "modality": "text",
+      "tags": [
+        "工程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "CMake",
+      "modality": "text",
+      "tags": [
+        "构建"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "Make",
+      "modality": "text",
+      "tags": [
+        "构建"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "编译器",
+      "modality": "text",
+      "tags": [
+        "工具"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "GCC",
+      "modality": "text",
+      "tags": [
+        "工具"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "Clang",
+      "modality": "text",
+      "tags": [
+        "工具"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "调试器",
+      "modality": "text",
+      "tags": [
+        "工具"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "GDB",
+      "modality": "text",
+      "tags": [
+        "调试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "静态分析",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "Sanitizer",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "Valgrind",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "线程",
+      "modality": "text",
+      "tags": [
+        "并发"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "互斥锁",
+      "modality": "text",
+      "tags": [
+        "并发"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "条件变量",
+      "modality": "text",
+      "tags": [
+        "并发"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "原子操作",
+      "modality": "text",
+      "tags": [
+        "并发"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "数据竞争",
+      "modality": "text",
+      "tags": [
+        "反模式"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "cpp"
+    },
+    {
+      "content": "性能",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "cpp"
+    },
+    {
+      "content": "零成本抽象",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "cpp"
+    },
+    {
+      "content": "内联",
+      "modality": "text",
+      "tags": [
+        "优化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "移动语义",
+      "modality": "text",
+      "tags": [
+        "优化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "右值引用",
+      "modality": "text",
+      "tags": [
+        "优化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "拷贝",
+      "modality": "text",
+      "tags": [
+        "优化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "单元测试",
+      "modality": "text",
+      "tags": [
+        "测试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "测试",
+      "modality": "text",
+      "tags": [
+        "测试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "Catch2",
+      "modality": "text",
+      "tags": [
+        "测试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "代码可读性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "cpp"
+    },
+    {
+      "content": "可维护性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "cpp"
+    },
+    {
+      "content": "可预测性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "cpp"
+    },
+    {
+      "content": "可靠性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "cpp"
+    },
+    {
+      "content": "缺陷",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "cpp"
+    },
+    {
+      "content": "性能瓶颈",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "cpp"
+    },
+    {
+      "content": "嵌入式",
+      "modality": "text",
+      "tags": [
+        "场景"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "游戏开发",
+      "modality": "text",
+      "tags": [
+        "场景"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "系统编程",
+      "modality": "text",
+      "tags": [
+        "场景"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "实时系统",
+      "modality": "text",
+      "tags": [
+        "场景"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "C 语言",
+      "modality": "text",
+      "tags": [
+        "语言"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "结构体",
+      "modality": "text",
+      "tags": [
+        "语法"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "联合体",
+      "modality": "text",
+      "tags": [
+        "语法"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "位操作",
+      "modality": "text",
+      "tags": [
+        "语法"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "命名空间",
+      "modality": "text",
+      "tags": [
+        "工程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "cpp"
+    },
+    {
+      "content": "并发",
+      "kind": "entity",
+      "category": "shared",
+      "tags": [],
+      "modality": "text",
+      "confidence": 1
+    },
+    {
+      "content": "可扩展性",
+      "kind": "entity",
+      "category": "shared",
+      "tags": [],
+      "modality": "text",
+      "confidence": 1
+    }
+  ],
+  "relations": [
+    {
+      "weight": 0.9,
+      "context_tag": "#CPP",
+      "to": "指针",
+      "from": "C/C++",
+      "type": "entail",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#CPP",
+      "to": "内存管理",
+      "from": "指针",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#CPP",
+      "to": "指针",
+      "from": "引用",
+      "type": "similar",
+      "directed": false
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#内存",
+      "to": "内存泄漏",
+      "from": "RAII",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#内存",
+      "to": "内存泄漏",
+      "from": "智能指针",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#内存",
+      "to": "智能指针",
+      "from": "unique_ptr",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#内存",
+      "to": "智能指针",
+      "from": "shared_ptr",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#内存",
+      "to": "可靠性",
+      "from": "内存泄漏",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#反模式",
+      "to": "缺陷",
+      "from": "悬垂指针",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#泛型",
+      "to": "泛型",
+      "from": "模板",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#泛型",
+      "to": "模板",
+      "from": "模板元编程",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#多态",
+      "to": "多态",
+      "from": "虚函数",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#多态",
+      "to": "可扩展性",
+      "from": "多态",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#库",
+      "to": "容器",
+      "from": "STL",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#库",
+      "to": "算法库",
+      "from": "STL",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#库",
+      "to": "容器",
+      "from": "迭代器",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#错误",
+      "to": "异常安全",
+      "from": "异常",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#错误",
+      "to": "可靠性",
+      "from": "异常安全",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#构建",
+      "to": "链接",
+      "from": "CMake",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#工具",
+      "to": "编译单元",
+      "from": "编译器",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#工具",
+      "to": "编译器",
+      "from": "GCC",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#工具",
+      "to": "编译器",
+      "from": "Clang",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#调试",
+      "to": "调试器",
+      "from": "GDB",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#质量",
+      "to": "内存泄漏",
+      "from": "Sanitizer",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#质量",
+      "to": "内存泄漏",
+      "from": "Valgrind",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#质量",
+      "to": "缺陷",
+      "from": "静态分析",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#并发",
+      "to": "并发",
+      "from": "线程",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#并发",
+      "to": "数据竞争",
+      "from": "互斥锁",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#并发",
+      "to": "线程",
+      "from": "条件变量",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#并发",
+      "to": "数据竞争",
+      "from": "原子操作",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#反模式",
+      "to": "缺陷",
+      "from": "数据竞争",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#优化",
+      "to": "性能",
+      "from": "移动语义",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#优化",
+      "to": "移动语义",
+      "from": "右值引用",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#优化",
+      "to": "拷贝",
+      "from": "移动语义",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.5,
+      "context_tag": "#优化",
+      "to": "性能",
+      "from": "内联",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#价值",
+      "to": "性能",
+      "from": "零成本抽象",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#测试",
+      "to": "单元测试",
+      "from": "Catch2",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#测试",
+      "to": "测试",
+      "from": "单元测试",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#测试",
+      "to": "缺陷",
+      "from": "测试",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#场景",
+      "to": "实时系统",
+      "from": "嵌入式",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#场景",
+      "to": "性能",
+      "from": "游戏开发",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#场景",
+      "to": "内存管理",
+      "from": "系统编程",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#语言",
+      "to": "结构体",
+      "from": "C 语言",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.5,
+      "context_tag": "#语法",
+      "to": "性能",
+      "from": "位操作",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "代码可读性",
+      "from": "可维护性",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "可预测性",
+      "from": "可靠性",
+      "type": "support",
+      "directed": true
+    }
+  ],
+  "scripts": [
+    {
+      "scenario": "内存安全",
+      "tags": [
+        "RAII",
+        "智能指针",
+        "内存泄漏",
+        "悬垂指针",
+        "智能指针",
+        "RAII",
+        "怎么防泄漏"
+      ],
+      "template": "RAII 管理资源生命周期；优先 unique_ptr 独占；shared_ptr 仅在确需共享；悬垂与循环引用防范"
+    },
+    {
+      "scenario": "构建系统",
+      "tags": [
+        "CMake",
+        "链接"
+      ],
+      "template": "CMake 声明式目标；头文件与编译单元清晰；静态/动态链接选择；增量编译优化"
+    },
+    {
+      "scenario": "性能优化",
+      "tags": [
+        "移动语义",
+        "内联",
+        "C++优化",
+        "性能调优",
+        "零成本抽象"
+      ],
+      "template": "先剖析定位热点；移动语义减少拷贝；缓存友好布局；编译器优化等级配置"
+    },
+    {
+      "scenario": "并发编程",
+      "tags": [
+        "线程",
+        "互斥锁",
+        "多线程",
+        "并发怎么写",
+        "线程安全"
+      ],
+      "template": "任务并行化评估；锁最小化；条件变量唤醒；原子操作替代锁；数据竞争检测"
+    },
+    {
+      "scenario": "异常处理",
+      "tags": [
+        "异常",
+        "异常安全"
+      ],
+      "template": "异常规格明确；RAII 保证异常安全；析构函数不抛异常；异常边界设计"
+    },
+    {
+      "scenario": "模板设计",
+      "tags": [
+        "模板",
+        "泛型"
+      ],
+      "template": "泛型约束合理；模板元编程适度；特化与重载清晰；编译期 vs 运行期权衡"
+    },
+    {
+      "scenario": "内存排查",
+      "tags": [
+        "Sanitizer",
+        "Valgrind"
+      ],
+      "template": "ASan/UBSan 启动检测；Valgrind 深度分析；泄漏快照对比；修复后回归"
+    },
+    {
+      "scenario": "测试策略",
+      "tags": [
+        "单元测试",
+        "Catch2"
+      ],
+      "template": "模块级单测；mock 外部依赖；边界与异常用例；CI 集成"
+    },
+    {
+      "scenario": "嵌入式开发",
+      "tags": [
+        "嵌入式",
+        "实时系统"
+      ],
+      "template": "内存受限设计；中断安全；实时性预算；交叉编译工具链"
+    },
+    {
+      "scenario": "遗留代码改造",
+      "tags": [
+        "可维护性",
+        "重构"
+      ],
+      "template": "先补测试再重构；指针改智能指针；模块化拆分；逐步迁移"
+    }
+  ]
+}

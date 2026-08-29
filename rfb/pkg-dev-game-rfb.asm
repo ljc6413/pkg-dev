@@ -1,0 +1,100 @@
+.IMAGE 游戏开发
+.IMAGE 游戏引擎
+.IMAGE Unity
+.IMAGE Unreal
+.IMAGE Godot
+.IMAGE 游戏循环
+.IMAGE DeltaTime
+.IMAGE 帧率
+.IMAGE 渲染管线
+.IMAGE 着色器
+.IMAGE 场景图
+.IMAGE LOD
+.IMAGE 碰撞检测
+.IMAGE 物理引擎
+.IMAGE 刚体
+.IMAGE 实体组件系统
+.IMAGE 组件模式
+.IMAGE 游戏对象
+.IMAGE 可维护性
+.IMAGE 状态机
+.IMAGE 有限状态机
+.IMAGE 行为树
+.IMAGE 游戏AI
+.IMAGE 寻路
+.IMAGE A*算法
+.IMAGE 骨骼动画
+.IMAGE 动画系统
+.IMAGE 网络同步
+.IMAGE 权威服务器
+.IMAGE 预测回滚
+.IMAGE 延迟补偿
+.IMAGE 对象池
+.IMAGE GC压力
+.IMAGE 资源加载
+.IMAGE 性能瓶颈
+.IMAGE 内存管理
+.IMAGE Profiler
+.IMAGE 单元测试
+.IMAGE 测试
+.IMAGE 可玩性测试
+.IMAGE 缺陷
+.IMAGE 跨平台
+.IMAGE 发布渠道
+.IMAGE 热更新
+.IMAGE 可扩展性
+.IMAGE 可靠性
+.IMAGE 可预测性
+.IMAGE 代码可读性
+.FIELD GAME
+.FIELD 引擎
+.FIELD 核心
+.FIELD 渲染
+.FIELD 物理
+.FIELD 架构
+.FIELD AI
+.FIELD 表现
+.FIELD 网络
+.FIELD 性能
+.FIELD 调试
+.FIELD 测试
+.FIELD 发布
+.FIELD 价值
+IF 游戏开发 游戏引擎 .WEIGHT 0.900 .FIELD GAME
+BELONG Unity 游戏引擎 .WEIGHT 0.900 .FIELD 引擎
+BELONG Unreal 游戏引擎 .WEIGHT 0.900 .FIELD 引擎
+BELONG Godot 游戏引擎 .WEIGHT 0.900 .FIELD 引擎
+ENTAIL 游戏引擎 游戏循环 .WEIGHT 0.900 .FIELD 核心
+IF 游戏循环 DeltaTime .WEIGHT 0.900 .FIELD 核心
+SUPPORT DeltaTime 帧率 .WEIGHT 0.800 .FIELD 核心
+IF 渲染管线 帧率 .WEIGHT 0.800 .FIELD 渲染
+SUPPORT 着色器 渲染管线 .WEIGHT 0.800 .FIELD 渲染
+SUPPORT 场景图 渲染管线 .WEIGHT 0.700 .FIELD 渲染
+SUPPORT LOD 帧率 .WEIGHT 0.700 .FIELD 渲染
+SUPPORT 碰撞检测 物理引擎 .WEIGHT 0.800 .FIELD 物理
+IF 刚体 物理引擎 .WEIGHT 0.800 .FIELD 物理
+SUPPORT 实体组件系统 组件模式 .WEIGHT 0.800 .FIELD 架构
+IF 游戏对象 组件模式 .WEIGHT 0.800 .FIELD 架构
+SUPPORT 组件模式 可维护性 .WEIGHT 0.700 .FIELD 架构
+SUPPORT 状态机 有限状态机 .WEIGHT 0.800 .FIELD 架构
+SUPPORT 行为树 游戏AI .WEIGHT 0.800 .FIELD AI
+SUPPORT 有限状态机 游戏AI .WEIGHT 0.700 .FIELD AI
+IF 寻路 A*算法 .WEIGHT 0.900 .FIELD AI
+SUPPORT A*算法 游戏AI .WEIGHT 0.700 .FIELD AI
+BELONG 骨骼动画 动画系统 .WEIGHT 0.800 .FIELD 表现
+IF 网络同步 权威服务器 .WEIGHT 0.800 .FIELD 网络
+SUPPORT 预测回滚 网络同步 .WEIGHT 0.800 .FIELD 网络
+SUPPORT 延迟补偿 网络同步 .WEIGHT 0.800 .FIELD 网络
+UNDERMINE 对象池 GC压力 .WEIGHT 0.800 .FIELD 性能
+CAUSE 资源加载 性能瓶颈 .WEIGHT 0.600 .FIELD 性能
+UNDERMINE 内存管理 GC压力 .WEIGHT 0.700 .FIELD 性能
+CAUSE GC压力 性能瓶颈 .WEIGHT 0.700 .FIELD 性能
+IF Profiler 性能瓶颈 .WEIGHT 0.800 .FIELD 调试
+BELONG 单元测试 测试 .WEIGHT 0.800 .FIELD 测试
+BELONG 可玩性测试 测试 .WEIGHT 0.700 .FIELD 测试
+UNDERMINE 测试 缺陷 .WEIGHT 0.600 .FIELD 测试
+SUPPORT 跨平台 发布渠道 .WEIGHT 0.700 .FIELD 发布
+SUPPORT 热更新 发布渠道 .WEIGHT 0.600 .FIELD 发布
+SUPPORT 可扩展性 可维护性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可靠性 可预测性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可维护性 代码可读性 .WEIGHT 0.600 .FIELD 价值

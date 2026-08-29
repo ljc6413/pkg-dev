@@ -1,0 +1,1132 @@
+﻿{
+    "id":  "pkg-dev-go",
+    "name":  "Go 云原生开发",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "GO开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "Go",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "goroutine",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "channel",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "select",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "互斥锁",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "WaitGroup",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "并发安全",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "数据竞争",
+                       "modality":  "text",
+                       "tags":  [
+                                    "反模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "goroutine 泄漏",
+                       "modality":  "text",
+                       "tags":  [
+                                    "反模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "context",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "接口",
+                       "modality":  "text",
+                       "tags":  [
+                                    "抽象"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "结构体",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "方法",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "指针",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "错误处理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "健壮"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "panic",
+                       "modality":  "text",
+                       "tags":  [
+                                    "反模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "defer",
+                       "modality":  "text",
+                       "tags":  [
+                                    "资源"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "垃圾回收",
+                       "modality":  "text",
+                       "tags":  [
+                                    "内存"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "切片",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "map",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "空接口",
+                       "modality":  "text",
+                       "tags":  [
+                                    "反模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "反射",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "go mod",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "模块",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "go.sum",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "依赖管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "多返回值",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "类型断言",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "泛型",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "embed",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "标准库",
+                       "modality":  "text",
+                       "tags":  [
+                                    "生态"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "net/http",
+                       "modality":  "text",
+                       "tags":  [
+                                    "Web"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "中间件",
+                       "modality":  "text",
+                       "tags":  [
+                                    "Web"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "路由",
+                       "modality":  "text",
+                       "tags":  [
+                                    "Web"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "gRPC",
+                       "modality":  "text",
+                       "tags":  [
+                                    "Web"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "protobuf",
+                       "modality":  "text",
+                       "tags":  [
+                                    "Web"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "go test",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "表驱动测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "基准测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "mock",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "go vet",
+                       "modality":  "text",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "gofmt",
+                       "modality":  "text",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "golangci-lint",
+                       "modality":  "text",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "代码规范",
+                       "modality":  "text",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "内存泄漏",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "性能瓶颈",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "pprof",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "逃逸分析",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "微服务",
+                       "modality":  "text",
+                       "tags":  [
+                                    "场景"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "云原生",
+                       "modality":  "text",
+                       "tags":  [
+                                    "场景"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "Kubernetes",
+                       "modality":  "text",
+                       "tags":  [
+                                    "场景"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "CLI 工具",
+                       "modality":  "text",
+                       "tags":  [
+                                    "场景"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "可维护性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "可靠性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "可预测性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "代码可读性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "可扩展性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "缺陷",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "空指针",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "并发",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "吞吐量",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "模块化",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "调试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "可观测"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "go"
+                   },
+                   {
+                       "content":  "类型安全",
+                       "kind":  "value",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "资源泄漏",
+                       "kind":  "value",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#GO",
+                          "to":  "goroutine",
+                          "from":  "Go",
+                          "type":  "entail",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#GO",
+                          "to":  "并发",
+                          "from":  "goroutine",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#GO",
+                          "to":  "并发安全",
+                          "from":  "channel",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#GO",
+                          "to":  "channel",
+                          "from":  "select",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#GO",
+                          "to":  "数据竞争",
+                          "from":  "互斥锁",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#GO",
+                          "to":  "goroutine",
+                          "from":  "WaitGroup",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#GO",
+                          "to":  "goroutine 泄漏",
+                          "from":  "context",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#GO",
+                          "to":  "内存泄漏",
+                          "from":  "goroutine 泄漏",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#GO",
+                          "to":  "缺陷",
+                          "from":  "数据竞争",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#GO",
+                          "to":  "可扩展性",
+                          "from":  "接口",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#GO",
+                          "to":  "测试",
+                          "from":  "接口",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#GO",
+                          "to":  "可靠性",
+                          "from":  "错误处理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#GO",
+                          "to":  "错误处理",
+                          "from":  "多返回值",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#GO",
+                          "to":  "错误处理",
+                          "from":  "panic",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#GO",
+                          "to":  "资源泄漏",
+                          "from":  "defer",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#GO",
+                          "to":  "内存泄漏",
+                          "from":  "垃圾回收",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#GO",
+                          "to":  "类型安全",
+                          "from":  "空接口",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#GO",
+                          "to":  "可维护性",
+                          "from":  "反射",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#工程",
+                          "to":  "依赖管理",
+                          "from":  "go mod",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "可预测性",
+                          "from":  "go.sum",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "模块化",
+                          "from":  "模块",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#GO",
+                          "to":  "可靠性",
+                          "from":  "标准库",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#Web",
+                          "to":  "路由",
+                          "from":  "net/http",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#Web",
+                          "to":  "net/http",
+                          "from":  "中间件",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#Web",
+                          "to":  "微服务",
+                          "from":  "gRPC",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#Web",
+                          "to":  "gRPC",
+                          "from":  "protobuf",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "go test",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "表驱动测试",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#测试",
+                          "to":  "性能瓶颈",
+                          "from":  "基准测试",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "mock",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "缺陷",
+                          "from":  "测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#规范",
+                          "to":  "代码规范",
+                          "from":  "go vet",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#规范",
+                          "to":  "代码规范",
+                          "from":  "gofmt",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#规范",
+                          "to":  "代码规范",
+                          "from":  "golangci-lint",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "pprof",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "逃逸分析",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#场景",
+                          "to":  "云原生",
+                          "from":  "Kubernetes",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#场景",
+                          "to":  "微服务",
+                          "from":  "云原生",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#场景",
+                          "to":  "标准库",
+                          "from":  "CLI 工具",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "代码可读性",
+                          "from":  "可维护性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "可维护性",
+                          "from":  "可扩展性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "可预测性",
+                          "from":  "可靠性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#质量",
+                          "to":  "缺陷",
+                          "from":  "空指针",
+                          "type":  "similar",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#GO",
+                          "to":  "空指针",
+                          "from":  "指针",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#GO",
+                          "to":  "空接口",
+                          "from":  "类型断言",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#GO",
+                          "to":  "吞吐量",
+                          "from":  "goroutine",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#可观测",
+                          "to":  "缺陷",
+                          "from":  "调试",
+                          "type":  "undermine",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "并发模型设计",
+                        "tags":  [
+                                     "goroutine",
+                                     "channel"
+                                 ],
+                        "template":  "优先 channel 消息传递；共享状态用互斥锁最小化；select 处理多路等待；context 传递取消信号防泄漏"
+                    },
+                    {
+                        "scenario":  "错误处理规范",
+                        "tags":  [
+                                     "错误处理",
+                                     "panic"
+                                 ],
+                        "template":  "错误作为值返回并包装上下文；panic 仅限不可恢复；defer 确保资源释放；错误链用 errors.Is/As 判断"
+                    },
+                    {
+                        "scenario":  "接口设计",
+                        "tags":  [
+                                     "接口",
+                                     "可扩展性"
+                                 ],
+                        "template":  "小接口优于大接口；消费者定义接口；依赖注入便于 mock；空接口仅在跨类型边界用"
+                    },
+                    {
+                        "scenario":  "goroutine 泄漏排查",
+                        "tags":  [
+                                     "goroutine 泄漏",
+                                     "context"
+                                 ],
+                        "template":  "检查未关闭 channel 与无限循环；context.WithCancel 显式取消；WaitGroup 计数正确；pprof goroutine 快照对比"
+                    },
+                    {
+                        "scenario":  "依赖管理",
+                        "tags":  [
+                                     "go mod",
+                                     "go.sum"
+                                 ],
+                        "template":  "go mod tidy 保持整洁；go.sum 提交入库；升级按小步回归；vendor 策略按团队约定"
+                    },
+                    {
+                        "scenario":  "Web 服务分层",
+                        "tags":  [
+                                     "net/http",
+                                     "中间件"
+                                 ],
+                        "template":  "handler 只做解析与响应；业务逻辑入 service 层；中间件链统一日志/鉴权/恢复；路由分组清晰"
+                    },
+                    {
+                        "scenario":  "gRPC 服务设计",
+                        "tags":  [
+                                     "gRPC",
+                                     "protobuf"
+                                 ],
+                        "template":  "proto 先行定义契约；版本兼容演进；错误码映射规范；流式与拦截器按需"
+                    },
+                    {
+                        "scenario":  "测试策略",
+                        "tags":  [
+                                     "go test",
+                                     "表驱动测试"
+                                 ],
+                        "template":  "表驱动覆盖边界；接口 mock 隔离依赖；基准测试留基线；go vet+lint 入 CI"
+                    },
+                    {
+                        "scenario":  "性能剖析",
+                        "tags":  [
+                                     "pprof",
+                                     "性能瓶颈"
+                                 ],
+                        "template":  "先 pprof 定位热点；区分 CPU/内存/阻塞；减少分配与逃逸；优化后复测对比"
+                    },
+                    {
+                        "scenario":  "微服务拆分",
+                        "tags":  [
+                                     "微服务",
+                                     "云原生"
+                                 ],
+                        "template":  "按业务域切分服务边界；服务间用 gRPC/消息解耦；可观测性三件套就绪；拆分节奏与回滚留白"
+                    }
+                ]
+}

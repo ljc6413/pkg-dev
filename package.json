@@ -1,0 +1,50 @@
+{
+  "name": "@yihe/pkg-dev",
+  "version": "1.0.0",
+  "description": "YiHe 编程开发辅助 · 会进化的编程认知内核（27 领域包 + RFB 经验库 + 工程工具链）",
+  "license": "Apache-2.0",
+  "type": "module",
+  "files": [
+    "packages",
+    "rfb",
+    "tools",
+    "docs",
+    "bootstrap-install.mjs",
+    "RELEASE.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "yihe-pkg-build": "tools/build-pack-rfb.mjs",
+    "yihe-pkg-smoke": "tools/smoke-test.mjs",
+    "yihe-pkg-graph": "tools/graph-viz.mjs",
+    "yihe-pkg-expand": "tools/auto-expand.mjs",
+    "yihe-pkg-secure": "tools/auto-secure.mjs",
+    "yihe-pkg-learn": "tools/self-learn.mjs",
+    "yihe-pkg-token": "tools/token-save.mjs",
+    "yihe-pkg-share": "tools/evolve-share.mjs",
+    "yihe-pkg-telemetry": "tools/telemetry-export.mjs",
+    "yihe-pkg-telemetry-merge": "tools/telemetry-merge.mjs",
+    "yihe-pkg-key": "tools/key-issue.mjs",
+    "yihe-pkg-install": "bootstrap-install.mjs"
+  },
+  "scripts": {
+    "smoke": "node tools/smoke-test.mjs --selfcheck",
+    "rfb": "node tools/smoke-test.mjs --rfb"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "yihe",
+    "cognitive",
+    "programming",
+    "agent",
+    "knowledge-graph",
+    "rfb",
+    "ai-assistant"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

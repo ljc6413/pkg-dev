@@ -1,0 +1,1236 @@
+﻿{
+    "id":  "pkg-dev-fe",
+    "name":  "前端工程",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "FE开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "前端开发",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "React",
+                       "modality":  "text",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "Vue",
+                       "modality":  "text",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "Angular",
+                       "modality":  "text",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "组件",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "props",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "状态管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "Hooks",
+                       "modality":  "text",
+                       "tags":  [
+                                    "React"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "响应式",
+                       "modality":  "text",
+                       "tags":  [
+                                    "Vue"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "虚拟 DOM",
+                       "modality":  "text",
+                       "tags":  [
+                                    "渲染"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "diff 算法",
+                       "modality":  "text",
+                       "tags":  [
+                                    "渲染"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "服务端渲染",
+                       "modality":  "text",
+                       "tags":  [
+                                    "渲染"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "客户端渲染",
+                       "modality":  "text",
+                       "tags":  [
+                                    "渲染"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "静态站点生成",
+                       "modality":  "text",
+                       "tags":  [
+                                    "渲染"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "TypeScript",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "CSS",
+                       "modality":  "text",
+                       "tags":  [
+                                    "样式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "CSS Modules",
+                       "modality":  "text",
+                       "tags":  [
+                                    "样式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "Tailwind",
+                       "modality":  "text",
+                       "tags":  [
+                                    "样式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "CSS in JS",
+                       "modality":  "text",
+                       "tags":  [
+                                    "样式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "响应式布局",
+                       "modality":  "text",
+                       "tags":  [
+                                    "UI"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "可访问性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "UI"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "微前端",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "模块联邦",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "路由",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "代码分割",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "懒加载",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "构建工具",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "Webpack",
+                       "modality":  "text",
+                       "tags":  [
+                                    "构建"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "Vite",
+                       "modality":  "text",
+                       "tags":  [
+                                    "构建"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "打包",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "依赖管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "Monorepo",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "ESLint",
+                       "modality":  "text",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "Prettier",
+                       "modality":  "text",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "Stylelint",
+                       "modality":  "text",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "单元测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "组件测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "端到端测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "视觉回归",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "首屏性能",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "LCP",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "CLS",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "FCP",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "性能瓶颈",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "内存泄漏",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "防抖节流",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "虚拟列表",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "Web 性能指标",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "CDN",
+                       "modality":  "text",
+                       "tags":  [
+                                    "部署"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "静态资源",
+                       "modality":  "text",
+                       "tags":  [
+                                    "部署"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "缓存策略",
+                       "modality":  "text",
+                       "tags":  [
+                                    "部署"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "持续集成",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "浏览器兼容",
+                       "modality":  "text",
+                       "tags":  [
+                                    "兼容"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "跨端",
+                       "modality":  "text",
+                       "tags":  [
+                                    "兼容"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "国际化",
+                       "modality":  "text",
+                       "tags":  [
+                                    "本地化"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "埋点",
+                       "modality":  "text",
+                       "tags":  [
+                                    "可观测"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "错误监控",
+                       "modality":  "text",
+                       "tags":  [
+                                    "可观测"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "权限控制",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "XSS",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "CSRF",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "安全",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "可维护性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "可扩展性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "可靠性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "可预测性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "代码可读性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "缺陷",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "fe"
+                   },
+                   {
+                       "content":  "代码规范",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "可观测性",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#FE",
+                          "to":  "React",
+                          "from":  "前端开发",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#FE",
+                          "to":  "Vue",
+                          "from":  "前端开发",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#FE",
+                          "to":  "Angular",
+                          "from":  "前端开发",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#React",
+                          "to":  "Hooks",
+                          "from":  "React",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#Vue",
+                          "to":  "响应式",
+                          "from":  "Vue",
+                          "type":  "entail",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#渲染",
+                          "to":  "虚拟 DOM",
+                          "from":  "React",
+                          "type":  "entail",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#渲染",
+                          "to":  "diff 算法",
+                          "from":  "虚拟 DOM",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#架构",
+                          "to":  "props",
+                          "from":  "组件",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#架构",
+                          "to":  "状态管理",
+                          "from":  "组件",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#架构",
+                          "to":  "可预测性",
+                          "from":  "状态管理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#架构",
+                          "to":  "状态管理",
+                          "from":  "Hooks",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#渲染",
+                          "to":  "首屏性能",
+                          "from":  "服务端渲染",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#渲染",
+                          "to":  "首屏性能",
+                          "from":  "客户端渲染",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#渲染",
+                          "to":  "服务端渲染",
+                          "from":  "静态站点生成",
+                          "type":  "similar",
+                          "directed":  false
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#性能",
+                          "to":  "懒加载",
+                          "from":  "代码分割",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#性能",
+                          "to":  "首屏性能",
+                          "from":  "懒加载",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#构建",
+                          "to":  "打包",
+                          "from":  "Webpack",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#构建",
+                          "to":  "构建工具",
+                          "from":  "Vite",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "打包",
+                          "from":  "构建工具",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "可维护性",
+                          "from":  "Monorepo",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#规范",
+                          "to":  "代码规范",
+                          "from":  "ESLint",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#规范",
+                          "to":  "代码规范",
+                          "from":  "Prettier",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#规范",
+                          "to":  "代码规范",
+                          "from":  "Stylelint",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "单元测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "组件测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "端到端测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "视觉回归",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "缺陷",
+                          "from":  "测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#性能",
+                          "to":  "首屏性能",
+                          "from":  "LCP",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#性能",
+                          "to":  "首屏性能",
+                          "from":  "FCP",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#性能",
+                          "to":  "首屏性能",
+                          "from":  "CLS",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "首屏性能",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "内存泄漏",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "防抖节流",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "虚拟列表",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#性能",
+                          "to":  "Webpack",
+                          "from":  "Web 性能指标",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#部署",
+                          "to":  "静态资源",
+                          "from":  "CDN",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#部署",
+                          "to":  "静态资源",
+                          "from":  "缓存策略",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "测试",
+                          "from":  "持续集成",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#架构",
+                          "to":  "模块联邦",
+                          "from":  "微前端",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#架构",
+                          "to":  "可扩展性",
+                          "from":  "模块联邦",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#架构",
+                          "to":  "代码分割",
+                          "from":  "路由",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "XSS",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "CSRF",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "权限控制",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#可观测",
+                          "to":  "可观测性",
+                          "from":  "埋点",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#可观测",
+                          "to":  "可观测性",
+                          "from":  "错误监控",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#UI",
+                          "to":  "可维护性",
+                          "from":  "可访问性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "代码可读性",
+                          "from":  "可维护性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "可维护性",
+                          "from":  "可扩展性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "可预测性",
+                          "from":  "可靠性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#FE",
+                          "to":  "代码可读性",
+                          "from":  "TypeScript",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#样式",
+                          "to":  "CSS",
+                          "from":  "Tailwind",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#样式",
+                          "to":  "CSS",
+                          "from":  "CSS Modules",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#样式",
+                          "to":  "CSS",
+                          "from":  "CSS in JS",
+                          "type":  "support",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "前端框架选型",
+                        "tags":  [
+                                     "React",
+                                     "Vue"
+                                 ],
+                        "template":  "团队技能与生态评估；交互复杂度评估；SSR/SEO 需求；包体积与性能基线；长期维护性留白"
+                    },
+                    {
+                        "scenario":  "状态管理选型",
+                        "tags":  [
+                                     "状态管理",
+                                     "Hooks"
+                                 ],
+                        "template":  "局部状态用 Hooks/Composable；跨组件 Context/Provide；复杂全局用外部库；副作用与异步隔离"
+                    },
+                    {
+                        "scenario":  "渲染策略",
+                        "tags":  [
+                                     "服务端渲染",
+                                     "首屏性能"
+                                 ],
+                        "template":  "首屏关键内容 SSR；动态区域客户端渲染；静态页 SSG；混合渲染按路由"
+                    },
+                    {
+                        "scenario":  "性能优化",
+                        "tags":  [
+                                     "首屏性能",
+                                     "代码分割"
+                                 ],
+                        "template":  "Web 指标基线（LCP/FCP/CLS）；代码分割+懒加载；资源压缩与 CDN；长任务拆分"
+                    },
+                    {
+                        "scenario":  "微前端拆分",
+                        "tags":  [
+                                     "微前端",
+                                     "模块联邦"
+                                 ],
+                        "template":  "应用边界按业务域；模块联邦共享依赖；独立部署互不阻塞；样式与全局状态隔离"
+                    },
+                    {
+                        "scenario":  "前端安全",
+                        "tags":  [
+                                     "XSS",
+                                     "CSRF"
+                                 ],
+                        "template":  "输出编码防 XSS；CSP 策略；CSRF Token；敏感数据不落前端；依赖漏洞扫描"
+                    },
+                    {
+                        "scenario":  "组件设计",
+                        "tags":  [
+                                     "组件",
+                                     "props"
+                                 ],
+                        "template":  "单一职责组件；props 接口稳定；状态提升与受控；组合优于继承；可测试性"
+                    },
+                    {
+                        "scenario":  "构建优化",
+                        "tags":  [
+                                     "构建工具",
+                                     "打包"
+                                 ],
+                        "template":  "开发/生产构建分离；Tree-shaking；缓存策略；构建产物分析；增量构建"
+                    },
+                    {
+                        "scenario":  "前端测试策略",
+                        "tags":  [
+                                     "单元测试",
+                                     "端到端测试"
+                                 ],
+                        "template":  "组件单测聚焦逻辑；交互用组件测试；关键路径 E2E；视觉回归防样式漂移"
+                    },
+                    {
+                        "scenario":  "前端可观测",
+                        "tags":  [
+                                     "埋点",
+                                     "错误监控"
+                                 ],
+                        "template":  "埋点规范统一；错误上报含堆栈；性能指标采集；告警阈值与看板"
+                    }
+                ]
+}

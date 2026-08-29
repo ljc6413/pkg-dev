@@ -1,0 +1,1136 @@
+{
+  "id": "pkg-dev-dotnet",
+  "name": ".NET C# 企业开发",
+  "industry": "软件开发",
+  "version": "1.0.0",
+  "namespace": "DOTNET开发",
+  "owner": "developer",
+  "tier": "pro",
+  "license_required": true,
+  "imagos": [
+    {
+      "content": ".NET",
+      "modality": "text",
+      "tags": [
+        "平台"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "C#",
+      "modality": "text",
+      "tags": [
+        "语言"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "CLR",
+      "modality": "text",
+      "tags": [
+        "运行时"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "托管堆",
+      "modality": "text",
+      "tags": [
+        "内存"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "垃圾回收",
+      "modality": "text",
+      "tags": [
+        "内存"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "值类型",
+      "modality": "text",
+      "tags": [
+        "类型"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "引用类型",
+      "modality": "text",
+      "tags": [
+        "类型"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "装箱",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "泛型",
+      "modality": "text",
+      "tags": [
+        "类型"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "委托",
+      "modality": "text",
+      "tags": [
+        "语言"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "事件",
+      "modality": "text",
+      "tags": [
+        "语言"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "LINQ",
+      "modality": "text",
+      "tags": [
+        "查询"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "async/await",
+      "modality": "text",
+      "tags": [
+        "异步"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "Task",
+      "modality": "text",
+      "tags": [
+        "异步"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "异步编程",
+      "modality": "text",
+      "tags": [
+        "异步"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "反射",
+      "modality": "text",
+      "tags": [
+        "元编程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "特性",
+      "modality": "text",
+      "tags": [
+        "元编程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "ASP.NET Core",
+      "modality": "text",
+      "tags": [
+        "Web"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "中间件",
+      "modality": "text",
+      "tags": [
+        "Web"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "依赖注入",
+      "modality": "text",
+      "tags": [
+        "架构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "Entity Framework",
+      "modality": "text",
+      "tags": [
+        "数据"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "ORM",
+      "modality": "text",
+      "tags": [
+        "数据"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "NuGet",
+      "modality": "text",
+      "tags": [
+        "工程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "SDK",
+      "modality": "text",
+      "tags": [
+        "工程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "解决方案",
+      "modality": "text",
+      "tags": [
+        "工程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "项目文件",
+      "modality": "text",
+      "tags": [
+        "工程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "xUnit",
+      "modality": "text",
+      "tags": [
+        "测试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "单元测试",
+      "modality": "text",
+      "tags": [
+        "测试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "集成测试",
+      "modality": "text",
+      "tags": [
+        "测试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "测试",
+      "modality": "text",
+      "tags": [
+        "测试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "Roslyn",
+      "modality": "text",
+      "tags": [
+        "编译器"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "编译器",
+      "modality": "text",
+      "tags": [
+        "编译器"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "Source Generator",
+      "modality": "text",
+      "tags": [
+        "元编程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "AOT",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "JIT",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "内存泄漏",
+      "modality": "text",
+      "tags": [
+        "反模式"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "dotnet"
+    },
+    {
+      "content": "事件泄漏",
+      "modality": "text",
+      "tags": [
+        "反模式"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "dotnet"
+    },
+    {
+      "content": "死锁",
+      "modality": "text",
+      "tags": [
+        "反模式"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "dotnet"
+    },
+    {
+      "content": "lock",
+      "modality": "text",
+      "tags": [
+        "并发"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "并发",
+      "modality": "text",
+      "tags": [
+        "并发"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "Channel",
+      "modality": "text",
+      "tags": [
+        "并发"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "性能瓶颈",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "dotnet"
+    },
+    {
+      "content": "BenchmarkDotNet",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "可观测性",
+      "modality": "text",
+      "tags": [
+        "运维"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dotnet"
+    },
+    {
+      "content": "日志",
+      "modality": "text",
+      "tags": [
+        "运维"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "OpenTelemetry",
+      "modality": "text",
+      "tags": [
+        "运维"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "微服务",
+      "modality": "text",
+      "tags": [
+        "架构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "gRPC",
+      "modality": "text",
+      "tags": [
+        "Web"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "SignalR",
+      "modality": "text",
+      "tags": [
+        "Web"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "Blazor",
+      "modality": "text",
+      "tags": [
+        "Web"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "MAUI",
+      "modality": "text",
+      "tags": [
+        "跨端"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "WPF",
+      "modality": "text",
+      "tags": [
+        "桌面"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "WinForms",
+      "modality": "text",
+      "tags": [
+        "桌面"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "可维护性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dotnet"
+    },
+    {
+      "content": "可预测性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dotnet"
+    },
+    {
+      "content": "可靠性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dotnet"
+    },
+    {
+      "content": "代码可读性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dotnet"
+    },
+    {
+      "content": "可扩展性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "dotnet"
+    },
+    {
+      "content": "缺陷",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "dotnet"
+    },
+    {
+      "content": "代码规范",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "StyleCop",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "nullable",
+      "modality": "text",
+      "tags": [
+        "类型"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "record",
+      "modality": "text",
+      "tags": [
+        "类型"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "模式匹配",
+      "modality": "text",
+      "tags": [
+        "语言"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "dotnet"
+    },
+    {
+      "content": "Web",
+      "kind": "entity",
+      "category": "shared",
+      "tags": [],
+      "modality": "text",
+      "confidence": 1
+    },
+    {
+      "content": "跨端",
+      "kind": "entity",
+      "category": "shared",
+      "tags": [],
+      "modality": "text",
+      "confidence": 1
+    },
+    {
+      "content": "实时通信",
+      "kind": "entity",
+      "category": "shared",
+      "tags": [],
+      "modality": "text",
+      "confidence": 1
+    },
+    {
+      "content": "依赖管理",
+      "kind": "entity",
+      "category": "shared",
+      "tags": [],
+      "modality": "text",
+      "confidence": 1
+    },
+    {
+      "content": "值语义",
+      "kind": "entity",
+      "category": "shared",
+      "tags": [],
+      "modality": "text",
+      "confidence": 1
+    }
+  ],
+  "relations": [
+    {
+      "weight": 0.9,
+      "context_tag": "#NET",
+      "to": "C#",
+      "from": ".NET",
+      "type": "entail",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#NET",
+      "to": "CLR",
+      "from": "C#",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#运行时",
+      "to": "垃圾回收",
+      "from": "CLR",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#内存",
+      "to": "垃圾回收",
+      "from": "托管堆",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#类型",
+      "to": "装箱",
+      "from": "值类型",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#性能",
+      "to": "性能瓶颈",
+      "from": "装箱",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#类型",
+      "to": "可扩展性",
+      "from": "泛型",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#语言",
+      "to": "事件",
+      "from": "委托",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#查询",
+      "to": "代码可读性",
+      "from": "LINQ",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#异步",
+      "to": "Task",
+      "from": "async/await",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#异步",
+      "to": "异步编程",
+      "from": "Task",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#异步",
+      "to": "异步编程",
+      "from": "async/await",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.5,
+      "context_tag": "#元编程",
+      "to": "可维护性",
+      "from": "反射",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#元编程",
+      "to": "反射",
+      "from": "特性",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.5,
+      "context_tag": "#元编程",
+      "to": "反射",
+      "from": "Source Generator",
+      "type": "oppose",
+      "directed": false
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#Web",
+      "to": "中间件",
+      "from": "ASP.NET Core",
+      "type": "entail",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#架构",
+      "to": "可维护性",
+      "from": "依赖注入",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#数据",
+      "to": "ORM",
+      "from": "Entity Framework",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#工程",
+      "to": "依赖管理",
+      "from": "NuGet",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#工程",
+      "to": "项目文件",
+      "from": "解决方案",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#测试",
+      "to": "单元测试",
+      "from": "xUnit",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#测试",
+      "to": "测试",
+      "from": "单元测试",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#测试",
+      "to": "测试",
+      "from": "集成测试",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#测试",
+      "to": "缺陷",
+      "from": "测试",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#编译器",
+      "to": "编译器",
+      "from": "Roslyn",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.5,
+      "context_tag": "#性能",
+      "to": "性能瓶颈",
+      "from": "JIT",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.5,
+      "context_tag": "#性能",
+      "to": "JIT",
+      "from": "AOT",
+      "type": "oppose",
+      "directed": false
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#反模式",
+      "to": "内存泄漏",
+      "from": "事件泄漏",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#反模式",
+      "to": "可靠性",
+      "from": "内存泄漏",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#反模式",
+      "to": "可靠性",
+      "from": "死锁",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.5,
+      "context_tag": "#并发",
+      "to": "死锁",
+      "from": "lock",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#并发",
+      "to": "并发",
+      "from": "Channel",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#性能",
+      "to": "性能瓶颈",
+      "from": "BenchmarkDotNet",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#运维",
+      "to": "可观测性",
+      "from": "OpenTelemetry",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#运维",
+      "to": "可观测性",
+      "from": "日志",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#Web",
+      "to": "微服务",
+      "from": "gRPC",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#Web",
+      "to": "实时通信",
+      "from": "SignalR",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#Web",
+      "to": "Web",
+      "from": "Blazor",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#跨端",
+      "to": "跨端",
+      "from": "MAUI",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#类型",
+      "to": "缺陷",
+      "from": "nullable",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#类型",
+      "to": "值语义",
+      "from": "record",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#语言",
+      "to": "代码可读性",
+      "from": "模式匹配",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#质量",
+      "to": "代码规范",
+      "from": "StyleCop",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "代码可读性",
+      "from": "可维护性",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "可预测性",
+      "from": "可靠性",
+      "type": "support",
+      "directed": true
+    }
+  ],
+  "scripts": [
+    {
+      "scenario": "异步编程设计",
+      "tags": [
+        "async/await",
+        "Task"
+      ],
+      "template": "async 全链路贯穿；避免 sync-over-async；Task 组合与取消；ConfigureAwait 合理使用"
+    },
+    {
+      "scenario": "内存管理",
+      "tags": [
+        "垃圾回收",
+        "内存泄漏"
+      ],
+      "template": "事件订阅及时退订防泄漏；IDisposable 规范；大型对象注意 LOH；GC 压力监控"
+    },
+    {
+      "scenario": "ASP.NET Core 分层",
+      "tags": [
+        "ASP.NET Core",
+        "中间件"
+      ],
+      "template": "中间件管道顺序设计；依赖注入生命周期选择；控制器瘦身；配置外部化"
+    },
+    {
+      "scenario": "性能优化",
+      "tags": [
+        "BenchmarkDotNet",
+        "装箱"
+      ],
+      "template": "BenchmarkDotNet 基准；避免装箱与 LINQ 热点；Span 高性能路径；分配分析"
+    },
+    {
+      "scenario": "数据访问",
+      "tags": [
+        "Entity Framework",
+        "ORM"
+      ],
+      "template": "DbContext 生命周期；N+1 查询防范；异步查询；迁移管理"
+    },
+    {
+      "scenario": "并发设计",
+      "tags": [
+        "lock",
+        "Channel"
+      ],
+      "template": "锁粒度最小化；Channel 生产者消费者；并发集合选型；死锁预防"
+    },
+    {
+      "scenario": "可观测性",
+      "tags": [
+        "OpenTelemetry",
+        "日志"
+      ],
+      "template": "结构化日志；指标与追踪接入；请求关联 ID；告警阈值"
+    },
+    {
+      "scenario": "微服务架构",
+      "tags": [
+        "微服务",
+        "gRPC"
+      ],
+      "template": "服务边界划分；gRPC 通信；弹性设计；API 网关统一入口"
+    },
+    {
+      "scenario": "测试策略",
+      "tags": [
+        "xUnit",
+        "单元测试"
+      ],
+      "template": "单元测试聚焦逻辑；Mock 外部依赖；集成测试 Testcontainers；覆盖率门禁"
+    },
+    {
+      "scenario": "C# 现代特性",
+      "tags": [
+        "record",
+        "模式匹配"
+      ],
+      "template": "record 值语义；模式匹配替代 if-else；nullable 严格模式；Source Generator 评估"
+    }
+  ]
+}

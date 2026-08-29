@@ -1,0 +1,938 @@
+{
+  "id": "pkg-dev-perf",
+  "name": "性能工程",
+  "industry": "软件开发",
+  "version": "1.0.0",
+  "namespace": "PERF开发",
+  "owner": "developer",
+  "tier": "pro",
+  "license_required": true,
+  "imagos": [
+    {
+      "content": "性能工程",
+      "modality": "text",
+      "tags": [
+        "领域"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "性能基线",
+      "modality": "text",
+      "tags": [
+        "度量"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "性能指标",
+      "modality": "text",
+      "tags": [
+        "度量"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "吞吐量",
+      "modality": "text",
+      "tags": [
+        "指标"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "perf"
+    },
+    {
+      "content": "延迟",
+      "modality": "text",
+      "tags": [
+        "指标"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "perf"
+    },
+    {
+      "content": "P99",
+      "modality": "text",
+      "tags": [
+        "指标"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "百分位",
+      "modality": "text",
+      "tags": [
+        "指标"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "剖析",
+      "modality": "text",
+      "tags": [
+        "工具"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "Profiler",
+      "modality": "text",
+      "tags": [
+        "工具"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "火焰图",
+      "modality": "text",
+      "tags": [
+        "工具"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "采样剖析",
+      "modality": "text",
+      "tags": [
+        "工具"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "插桩剖析",
+      "modality": "text",
+      "tags": [
+        "工具"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "基准测试",
+      "modality": "text",
+      "tags": [
+        "工具"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "压测",
+      "modality": "text",
+      "tags": [
+        "工具"
+      ],
+      "confidence": 1,
+      "kind": "event",
+      "category": "perf"
+    },
+    {
+      "content": "负载测试",
+      "modality": "text",
+      "tags": [
+        "测试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "压力测试",
+      "modality": "text",
+      "tags": [
+        "测试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "容量测试",
+      "modality": "text",
+      "tags": [
+        "测试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "性能瓶颈",
+      "modality": "text",
+      "tags": [
+        "分析"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "perf"
+    },
+    {
+      "content": "CPU 瓶颈",
+      "modality": "text",
+      "tags": [
+        "分析"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "perf"
+    },
+    {
+      "content": "内存瓶颈",
+      "modality": "text",
+      "tags": [
+        "分析"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "perf"
+    },
+    {
+      "content": "磁盘瓶颈",
+      "modality": "text",
+      "tags": [
+        "分析"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "perf"
+    },
+    {
+      "content": "网络瓶颈",
+      "modality": "text",
+      "tags": [
+        "分析"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "perf"
+    },
+    {
+      "content": "缓存",
+      "modality": "text",
+      "tags": [
+        "优化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "缓存命中率",
+      "modality": "text",
+      "tags": [
+        "优化"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "perf"
+    },
+    {
+      "content": "缓存穿透",
+      "modality": "text",
+      "tags": [
+        "优化"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "perf"
+    },
+    {
+      "content": "连接池",
+      "modality": "text",
+      "tags": [
+        "优化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "批量处理",
+      "modality": "text",
+      "tags": [
+        "优化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "异步化",
+      "modality": "text",
+      "tags": [
+        "优化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "预计算",
+      "modality": "text",
+      "tags": [
+        "优化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "索引",
+      "modality": "text",
+      "tags": [
+        "优化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "SQL 优化",
+      "modality": "text",
+      "tags": [
+        "优化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "垃圾回收",
+      "modality": "text",
+      "tags": [
+        "优化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "内存分配",
+      "modality": "text",
+      "tags": [
+        "优化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "锁竞争",
+      "modality": "text",
+      "tags": [
+        "并发"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "perf"
+    },
+    {
+      "content": "无锁编程",
+      "modality": "text",
+      "tags": [
+        "并发"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "并发度",
+      "modality": "text",
+      "tags": [
+        "并发"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "perf"
+    },
+    {
+      "content": "容量规划",
+      "modality": "text",
+      "tags": [
+        "规划"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "弹性伸缩",
+      "modality": "text",
+      "tags": [
+        "规划"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "性能回归",
+      "modality": "text",
+      "tags": [
+        "流程"
+      ],
+      "confidence": 1,
+      "kind": "event",
+      "category": "perf"
+    },
+    {
+      "content": "性能预算",
+      "modality": "text",
+      "tags": [
+        "流程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "持续性能测试",
+      "modality": "text",
+      "tags": [
+        "流程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "监控",
+      "modality": "text",
+      "tags": [
+        "可观测"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "告警",
+      "modality": "text",
+      "tags": [
+        "可观测"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    },
+    {
+      "content": "可观测性",
+      "modality": "text",
+      "tags": [
+        "可观测"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "perf"
+    },
+    {
+      "content": "可靠性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "perf"
+    },
+    {
+      "content": "可预测性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "perf"
+    },
+    {
+      "content": "可维护性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "perf"
+    },
+    {
+      "content": "缺陷",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "perf"
+    },
+    {
+      "content": "测试",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "perf"
+    }
+  ],
+  "relations": [
+    {
+      "weight": 0.9,
+      "context_tag": "#PERF",
+      "to": "性能基线",
+      "from": "性能工程",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#PERF",
+      "to": "性能指标",
+      "from": "性能工程",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#指标",
+      "to": "吞吐量",
+      "from": "性能指标",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#指标",
+      "to": "延迟",
+      "from": "性能指标",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#指标",
+      "to": "P99",
+      "from": "延迟",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#指标",
+      "to": "百分位",
+      "from": "P99",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#工具",
+      "to": "Profiler",
+      "from": "剖析",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#工具",
+      "to": "火焰图",
+      "from": "Profiler",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#工具",
+      "to": "剖析",
+      "from": "采样剖析",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#工具",
+      "to": "剖析",
+      "from": "插桩剖析",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#工具",
+      "to": "性能基线",
+      "from": "基准测试",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#测试",
+      "to": "负载测试",
+      "from": "压测",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#测试",
+      "to": "负载测试",
+      "from": "压力测试",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#测试",
+      "to": "负载测试",
+      "from": "容量测试",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#分析",
+      "to": "性能瓶颈",
+      "from": "CPU 瓶颈",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#分析",
+      "to": "性能瓶颈",
+      "from": "内存瓶颈",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#分析",
+      "to": "性能瓶颈",
+      "from": "磁盘瓶颈",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#分析",
+      "to": "性能瓶颈",
+      "from": "网络瓶颈",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#优化",
+      "to": "延迟",
+      "from": "缓存",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#优化",
+      "to": "延迟",
+      "from": "缓存命中率",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#优化",
+      "to": "性能瓶颈",
+      "from": "缓存穿透",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#优化",
+      "to": "延迟",
+      "from": "连接池",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#优化",
+      "to": "吞吐量",
+      "from": "批量处理",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#优化",
+      "to": "吞吐量",
+      "from": "异步化",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#优化",
+      "to": "延迟",
+      "from": "预计算",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#优化",
+      "to": "SQL 优化",
+      "from": "索引",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#优化",
+      "to": "延迟",
+      "from": "SQL 优化",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#优化",
+      "to": "内存瓶颈",
+      "from": "垃圾回收",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#优化",
+      "to": "垃圾回收",
+      "from": "内存分配",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#并发",
+      "to": "性能瓶颈",
+      "from": "锁竞争",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#并发",
+      "to": "锁竞争",
+      "from": "无锁编程",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#并发",
+      "to": "吞吐量",
+      "from": "并发度",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#规划",
+      "to": "弹性伸缩",
+      "from": "容量规划",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#流程",
+      "to": "性能基线",
+      "from": "性能回归",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#流程",
+      "to": "性能回归",
+      "from": "性能预算",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#流程",
+      "to": "性能回归",
+      "from": "持续性能测试",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#可观测",
+      "to": "可观测性",
+      "from": "监控",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#可观测",
+      "to": "可观测性",
+      "from": "告警",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "可预测性",
+      "from": "可靠性",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#质量",
+      "to": "缺陷",
+      "from": "测试",
+      "type": "undermine",
+      "directed": true
+    }
+  ],
+  "scripts": [
+    {
+      "scenario": "性能指标定义",
+      "tags": [
+        "性能指标",
+        "P99",
+        "接口慢",
+        "响应慢",
+        "延迟高",
+        "先查什么指标",
+        "性能指标怎么定"
+      ],
+      "template": "定义吞吐/延迟/可用性指标；P99 尾部延迟关注；指标可观测；基线确定"
+    },
+    {
+      "scenario": "性能剖析",
+      "tags": [
+        "剖析",
+        "火焰图",
+        "CPU瓶颈",
+        "Profiler怎么用",
+        "火焰图",
+        "怎么剖析",
+        "定位瓶颈"
+      ],
+      "template": "先采样剖析；火焰图定位热点；CPU/内存/IO 分类；插桩深挖"
+    },
+    {
+      "scenario": "压测方案",
+      "tags": [
+        "压测",
+        "负载测试",
+        "压测",
+        "负载测试怎么做",
+        "性能测试方案"
+      ],
+      "template": "场景建模（峰值/持续/突发）；压测环境隔离；指标采集；瓶颈定位"
+    },
+    {
+      "scenario": "瓶颈分析",
+      "tags": [
+        "性能瓶颈",
+        "CPU 瓶颈",
+        "瓶颈在哪",
+        "哪里慢",
+        "性能问题怎么查",
+        "CPU瓶颈怎么定位"
+      ],
+      "template": "资源四分类（CPU/内存/IO/网络）；逐类排查；工具矩阵"
+    },
+    {
+      "scenario": "缓存优化",
+      "tags": [
+        "缓存",
+        "缓存命中率",
+        "缓存怎么优化",
+        "缓存命中",
+        "加缓存"
+      ],
+      "template": "缓存层级设计；命中率监控；穿透/击穿/雪崩防护；一致性策略"
+    },
+    {
+      "scenario": "并发优化",
+      "tags": [
+        "锁竞争",
+        "并发度",
+        "并发太低",
+        "锁竞争",
+        "怎么提升并发"
+      ],
+      "template": "锁粒度分析；无锁结构评估；并发度调优；性能压测验证"
+    },
+    {
+      "scenario": "数据库优化",
+      "tags": [
+        "SQL 优化",
+        "索引",
+        "SQL慢",
+        "慢查询",
+        "索引优化"
+      ],
+      "template": "慢查询定位；执行计划分析；索引设计；查询改写；分库分表评估"
+    },
+    {
+      "scenario": "容量规划",
+      "tags": [
+        "容量规划",
+        "弹性伸缩",
+        "容量规划",
+        "要多少机器",
+        "扩容"
+      ],
+      "template": "增长预测；峰值容量计算；弹性策略；成本与性能权衡"
+    },
+    {
+      "scenario": "性能回归防护",
+      "tags": [
+        "性能回归",
+        "持续性能测试",
+        "性能回退",
+        "防止变慢",
+        "性能回归"
+      ],
+      "template": "基准集固定；CI 性能门禁；阈值告警；回归对比"
+    },
+    {
+      "scenario": "性能预算",
+      "tags": [
+        "性能预算",
+        "性能基线"
+      ],
+      "template": "关键路径预算分配；超支告警；budget 驱动开发；复盘调整"
+    }
+  ]
+}

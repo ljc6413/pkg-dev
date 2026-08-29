@@ -1,0 +1,1240 @@
+﻿{
+    "id":  "pkg-dev-db",
+    "name":  "数据库工程",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "DB开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "数据库",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "关系型数据库",
+                       "modality":  "text",
+                       "tags":  [
+                                    "类型"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "NoSQL",
+                       "modality":  "text",
+                       "tags":  [
+                                    "类型"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "文档数据库",
+                       "modality":  "text",
+                       "tags":  [
+                                    "NoSQL"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "键值存储",
+                       "modality":  "text",
+                       "tags":  [
+                                    "NoSQL"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "列式存储",
+                       "modality":  "text",
+                       "tags":  [
+                                    "NoSQL"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "图数据库",
+                       "modality":  "text",
+                       "tags":  [
+                                    "NoSQL"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "SQL",
+                       "modality":  "text",
+                       "tags":  [
+                                    "查询"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "索引",
+                       "modality":  "text",
+                       "tags":  [
+                                    "查询"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "执行计划",
+                       "modality":  "text",
+                       "tags":  [
+                                    "查询"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "慢查询",
+                       "modality":  "text",
+                       "tags":  [
+                                    "查询"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "事务",
+                       "modality":  "text",
+                       "tags":  [
+                                    "一致性"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "ACID",
+                       "modality":  "text",
+                       "tags":  [
+                                    "一致性"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "隔离级别",
+                       "modality":  "text",
+                       "tags":  [
+                                    "一致性"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "锁",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "死锁",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "乐观锁",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "悲观锁",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "主从复制",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "读写分离",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "分库分表",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "分区表",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "数据分片",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "数据一致性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "一致性"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "最终一致性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "一致性"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "分布式事务",
+                       "modality":  "text",
+                       "tags":  [
+                                    "一致性"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "两阶段提交",
+                       "modality":  "text",
+                       "tags":  [
+                                    "一致性"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "CAP 定理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "理论"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "数据建模",
+                       "modality":  "text",
+                       "tags":  [
+                                    "设计"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "范式",
+                       "modality":  "text",
+                       "tags":  [
+                                    "设计"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "反范式",
+                       "modality":  "text",
+                       "tags":  [
+                                    "设计"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "外键",
+                       "modality":  "text",
+                       "tags":  [
+                                    "设计"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "数据迁移",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运维"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "Schema 变更",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运维"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "备份",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运维"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "恢复",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运维"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "闪回",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运维"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "连接池",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "缓存",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "缓存穿透",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "缓存击穿",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "缓存雪崩",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "Redis",
+                       "modality":  "text",
+                       "tags":  [
+                                    "缓存"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "消息队列",
+                       "modality":  "text",
+                       "tags":  [
+                                    "集成"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "数据同步",
+                       "modality":  "text",
+                       "tags":  [
+                                    "集成"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "变更数据捕获",
+                       "modality":  "text",
+                       "tags":  [
+                                    "集成"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "数据仓库",
+                       "modality":  "text",
+                       "tags":  [
+                                    "分析"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "ETL",
+                       "modality":  "text",
+                       "tags":  [
+                                    "分析"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "数据湖",
+                       "modality":  "text",
+                       "tags":  [
+                                    "分析"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "查询优化",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "数据完整性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "数据质量",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "数据脱敏",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "数据加密",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "访问控制",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "审计",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "性能瓶颈",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "延迟",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "吞吐量",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "高可用",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "容灾",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "故障切换",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "可靠性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "可预测性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "可扩展性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "缺陷",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "db"
+                   },
+                   {
+                       "content":  "安全",
+                       "kind":  "value",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#DB",
+                          "to":  "关系型数据库",
+                          "from":  "数据库",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#DB",
+                          "to":  "NoSQL",
+                          "from":  "数据库",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#DB",
+                          "to":  "SQL",
+                          "from":  "关系型数据库",
+                          "type":  "entail",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#DB",
+                          "to":  "ACID",
+                          "from":  "关系型数据库",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#DB",
+                          "to":  "CAP 定理",
+                          "from":  "NoSQL",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#DB",
+                          "to":  "NoSQL",
+                          "from":  "文档数据库",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#DB",
+                          "to":  "NoSQL",
+                          "from":  "键值存储",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#DB",
+                          "to":  "NoSQL",
+                          "from":  "列式存储",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#DB",
+                          "to":  "NoSQL",
+                          "from":  "图数据库",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#查询",
+                          "to":  "慢查询",
+                          "from":  "索引",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#查询",
+                          "to":  "慢查询",
+                          "from":  "执行计划",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#查询",
+                          "to":  "执行计划",
+                          "from":  "查询优化",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#查询",
+                          "to":  "性能瓶颈",
+                          "from":  "慢查询",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#一致性",
+                          "to":  "ACID",
+                          "from":  "事务",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#一致性",
+                          "to":  "数据一致性",
+                          "from":  "隔离级别",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#并发",
+                          "to":  "死锁",
+                          "from":  "锁",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#并发",
+                          "to":  "锁",
+                          "from":  "乐观锁",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#并发",
+                          "to":  "锁",
+                          "from":  "悲观锁",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#并发",
+                          "to":  "性能瓶颈",
+                          "from":  "死锁",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#架构",
+                          "to":  "读写分离",
+                          "from":  "主从复制",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#架构",
+                          "to":  "吞吐量",
+                          "from":  "读写分离",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#架构",
+                          "to":  "数据分片",
+                          "from":  "分库分表",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#架构",
+                          "to":  "数据分片",
+                          "from":  "分区表",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#架构",
+                          "to":  "可扩展性",
+                          "from":  "数据分片",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#架构",
+                          "to":  "分布式事务",
+                          "from":  "数据分片",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#一致性",
+                          "to":  "数据一致性",
+                          "from":  "分布式事务",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#一致性",
+                          "to":  "分布式事务",
+                          "from":  "两阶段提交",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#一致性",
+                          "to":  "数据一致性",
+                          "from":  "最终一致性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#理论",
+                          "to":  "最终一致性",
+                          "from":  "CAP 定理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#设计",
+                          "to":  "范式",
+                          "from":  "数据建模",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#设计",
+                          "to":  "范式",
+                          "from":  "反范式",
+                          "type":  "oppose",
+                          "directed":  false
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#设计",
+                          "to":  "数据完整性",
+                          "from":  "外键",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#运维",
+                          "to":  "Schema 变更",
+                          "from":  "数据迁移",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#运维",
+                          "to":  "缺陷",
+                          "from":  "Schema 变更",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#运维",
+                          "to":  "恢复",
+                          "from":  "备份",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#运维",
+                          "to":  "容灾",
+                          "from":  "备份",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#运维",
+                          "to":  "高可用",
+                          "from":  "恢复",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#运维",
+                          "to":  "恢复",
+                          "from":  "闪回",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#性能",
+                          "to":  "延迟",
+                          "from":  "连接池",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#性能",
+                          "to":  "延迟",
+                          "from":  "缓存",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "缓存穿透",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "缓存击穿",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "缓存雪崩",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#缓存",
+                          "to":  "缓存",
+                          "from":  "Redis",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#集成",
+                          "to":  "数据同步",
+                          "from":  "消息队列",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#集成",
+                          "to":  "数据同步",
+                          "from":  "变更数据捕获",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#分析",
+                          "to":  "ETL",
+                          "from":  "数据仓库",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#分析",
+                          "to":  "数据质量",
+                          "from":  "ETL",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#分析",
+                          "to":  "数据仓库",
+                          "from":  "数据湖",
+                          "type":  "similar",
+                          "directed":  false
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#安全",
+                          "to":  "数据质量",
+                          "from":  "数据脱敏",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "数据加密",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "访问控制",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "审计",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#架构",
+                          "to":  "高可用",
+                          "from":  "故障切换",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#架构",
+                          "to":  "高可用",
+                          "from":  "容灾",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#架构",
+                          "to":  "可靠性",
+                          "from":  "高可用",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#质量",
+                          "to":  "可靠性",
+                          "from":  "数据完整性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#质量",
+                          "to":  "缺陷",
+                          "from":  "测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "SQL 性能优化",
+                        "tags":  [
+                                     "SQL",
+                                     "慢查询"
+                                 ],
+                        "template":  "先看慢查询日志；explain 分析执行计划；索引覆盖查询；避免全表扫描；优化前后对比"
+                    },
+                    {
+                        "scenario":  "数据库选型",
+                        "tags":  [
+                                     "关系型数据库",
+                                     "NoSQL"
+                                 ],
+                        "template":  "事务强一致用关系型；高并发读用缓存+读写分离；灵活 Schema 用文档库；图关系用图库"
+                    },
+                    {
+                        "scenario":  "事务与隔离",
+                        "tags":  [
+                                     "事务",
+                                     "隔离级别"
+                                 ],
+                        "template":  "业务边界定事务；隔离级别按需（读已提交为主）；长事务拆分；死锁检测与重试"
+                    },
+                    {
+                        "scenario":  "分库分表设计",
+                        "tags":  [
+                                     "分库分表",
+                                     "数据分片"
+                                 ],
+                        "template":  "按业务维度选分片键；容量预估与扩容策略；分布式事务降级最终一致性；迁移演练"
+                    },
+                    {
+                        "scenario":  "缓存设计",
+                        "tags":  [
+                                     "缓存",
+                                     "Redis"
+                                 ],
+                        "template":  "穿透用空值缓存/布隆过滤；击穿用互斥锁；雪崩用随机过期/降级；一致性先更新后删除"
+                    },
+                    {
+                        "scenario":  "数据迁移",
+                        "tags":  [
+                                     "数据迁移",
+                                     "Schema 变更"
+                                 ],
+                        "template":  "备份先行；双写对账；小批次灰度；回滚预案；停机窗口留白"
+                    },
+                    {
+                        "scenario":  "高可用架构",
+                        "tags":  [
+                                     "主从复制",
+                                     "故障切换"
+                                 ],
+                        "template":  "主从复制+读写分离；故障自动切换；跨机房容灾；恢复演练定期"
+                    },
+                    {
+                        "scenario":  "数据安全",
+                        "tags":  [
+                                     "数据脱敏",
+                                     "数据加密"
+                                 ],
+                        "template":  "敏感字段加密存储；脱敏展示；访问控制最小化；审计留痕"
+                    },
+                    {
+                        "scenario":  "ETL 管道",
+                        "tags":  [
+                                     "ETL",
+                                     "数据仓库"
+                                 ],
+                        "template":  "抽取-清洗-转换-加载；数据质量校验；增量同步；血缘追踪"
+                    },
+                    {
+                        "scenario":  "连接池调优",
+                        "tags":  [
+                                     "连接池",
+                                     "性能瓶颈"
+                                 ],
+                        "template":  "池大小按峰值计算；超时与重试策略；监控池利用率；慢查询排查"
+                    }
+                ]
+}

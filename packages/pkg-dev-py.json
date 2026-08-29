@@ -1,0 +1,1372 @@
+﻿{
+    "id":  "pkg-dev-py",
+    "name":  "Python 全栈开发",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "PY开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "Python",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "类型提示",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "mypy",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "检查"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "鸭子类型",
+                       "kind":  "value",
+                       "category":  "py",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Pythonic",
+                       "kind":  "value",
+                       "category":  "py",
+                       "tags":  [
+                                    "风格"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "列表推导",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "生成器",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "装饰器",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "上下文管理器",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "资源"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "GIL",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "协程",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "asyncio",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "多线程",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "多进程",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "虚拟环境",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "pip",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "依赖"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "poetry",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "依赖"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "requirements",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "依赖"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "包结构",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Flask",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "FastAPI",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Django",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Pydantic",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "校验"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Pandas",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "NumPy",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "数据框",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "SQLAlchemy",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Alembic",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "pytest",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "fixture",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "monkeypatch",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "覆盖率",
+                       "kind":  "value",
+                       "category":  "py",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Black",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "ruff",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "isort",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "全局变量",
+                       "kind":  "state",
+                       "category":  "py",
+                       "tags":  [
+                                    "反模式"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "可变默认参数",
+                       "kind":  "state",
+                       "category":  "py",
+                       "tags":  [
+                                    "反模式"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "深拷贝",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "陷阱"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "内存视图",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "慢循环",
+                       "kind":  "state",
+                       "category":  "py",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "向量化",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "字符串拼接",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "异常处理",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "健壮"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "裸 except",
+                       "kind":  "state",
+                       "category":  "py",
+                       "tags":  [
+                                    "反模式"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "日志",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "可观测"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "环境变量",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "配置"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "依赖锁定",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "Python 版本",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "GIL 受限",
+                       "kind":  "state",
+                       "category":  "py",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "异步爬虫",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "场景"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "数据清洗",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "场景"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "脚本化",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "场景"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "科学计算",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "场景"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "机器学习",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+                                    "场景"
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "代码可读性",
+                       "kind":  "value",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "可维护性",
+                       "kind":  "value",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "性能瓶颈",
+                       "kind":  "state",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "测试",
+                       "kind":  "entity",
+                       "category":  "testing",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "单元测试",
+                       "kind":  "entity",
+                       "category":  "testing",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "类型安全",
+                       "kind":  "value",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "可预测性",
+                       "kind":  "value",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "接口设计",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "数据模型",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "数据迁移",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "模块化",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "可扩展性",
+                       "kind":  "value",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "空指针",
+                       "kind":  "state",
+                       "category":  "py",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "内存泄漏",
+                       "kind":  "state",
+                       "category":  "py",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "并发",
+                       "kind":  "entity",
+                       "category":  "py",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "兼容性",
+                       "kind":  "value",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "资源泄漏",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "吞吐量",
+                       "kind":  "value",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "环境隔离",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "代码规范",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "缺陷",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "可靠性",
+                       "kind":  "value",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "调试",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "硬编码",
+                       "kind":  "entity",
+                       "category":  "quality",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   }
+               ],
+    "relations":  [
+                      {
+                          "from":  "Python",
+                          "to":  "类型提示",
+                          "type":  "condition",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#PY"
+                      },
+                      {
+                          "from":  "类型提示",
+                          "to":  "mypy",
+                          "type":  "condition",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#PY"
+                      },
+                      {
+                          "from":  "mypy",
+                          "to":  "类型安全",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#PY"
+                      },
+                      {
+                          "from":  "类型提示",
+                          "to":  "类型安全",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#PY"
+                      },
+                      {
+                          "from":  "类型安全",
+                          "to":  "可预测性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#PY"
+                      },
+                      {
+                          "from":  "鸭子类型",
+                          "to":  "接口设计",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#PY"
+                      },
+                      {
+                          "from":  "Pythonic",
+                          "to":  "代码可读性",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#PY"
+                      },
+                      {
+                          "from":  "列表推导",
+                          "to":  "Pythonic",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#PY"
+                      },
+                      {
+                          "from":  "生成器",
+                          "to":  "性能瓶颈",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#PY"
+                      },
+                      {
+                          "from":  "生成器",
+                          "to":  "内存泄漏",
+                          "type":  "undermine",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#PY"
+                      },
+                      {
+                          "from":  "装饰器",
+                          "to":  "代码可读性",
+                          "type":  "undermine",
+                          "weight":  0.4,
+                          "directed":  true,
+                          "context_tag":  "#PY"
+                      },
+                      {
+                          "from":  "上下文管理器",
+                          "to":  "资源泄漏",
+                          "type":  "undermine",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#PY"
+                      },
+                      {
+                          "from":  "GIL",
+                          "to":  "GIL 受限",
+                          "type":  "causal",
+                          "weight":  0.9,
+                          "directed":  true,
+                          "context_tag":  "#并发"
+                      },
+                      {
+                          "from":  "GIL 受限",
+                          "to":  "多线程",
+                          "type":  "undermine",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#并发"
+                      },
+                      {
+                          "from":  "GIL 受限",
+                          "to":  "多进程",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#并发"
+                      },
+                      {
+                          "from":  "协程",
+                          "to":  "asyncio",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#并发"
+                      },
+                      {
+                          "from":  "asyncio",
+                          "to":  "吞吐量",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#并发"
+                      },
+                      {
+                          "from":  "多进程",
+                          "to":  "并发",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#并发"
+                      },
+                      {
+                          "from":  "协程",
+                          "to":  "并发",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#并发"
+                      },
+                      {
+                          "from":  "虚拟环境",
+                          "to":  "环境隔离",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "pip",
+                          "to":  "依赖锁定",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "poetry",
+                          "to":  "依赖锁定",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "requirements",
+                          "to":  "依赖锁定",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "依赖锁定",
+                          "to":  "可预测性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "包结构",
+                          "to":  "模块化",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "Python 版本",
+                          "to":  "兼容性",
+                          "type":  "condition",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#工程"
+                      },
+                      {
+                          "from":  "FastAPI",
+                          "to":  "Pydantic",
+                          "type":  "condition",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#Web"
+                      },
+                      {
+                          "from":  "Pydantic",
+                          "to":  "类型安全",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#Web"
+                      },
+                      {
+                          "from":  "FastAPI",
+                          "to":  "接口设计",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#Web"
+                      },
+                      {
+                          "from":  "Django",
+                          "to":  "数据模型",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#Web"
+                      },
+                      {
+                          "from":  "Flask",
+                          "to":  "模块化",
+                          "type":  "support",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#Web"
+                      },
+                      {
+                          "from":  "Pandas",
+                          "to":  "数据框",
+                          "type":  "entail",
+                          "weight":  0.9,
+                          "directed":  true,
+                          "context_tag":  "#数据"
+                      },
+                      {
+                          "from":  "NumPy",
+                          "to":  "向量化",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#数据"
+                      },
+                      {
+                          "from":  "向量化",
+                          "to":  "慢循环",
+                          "type":  "undermine",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#数据"
+                      },
+                      {
+                          "from":  "数据框",
+                          "to":  "数据清洗",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#数据"
+                      },
+                      {
+                          "from":  "SQLAlchemy",
+                          "to":  "数据模型",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#数据"
+                      },
+                      {
+                          "from":  "Alembic",
+                          "to":  "数据迁移",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#数据"
+                      },
+                      {
+                          "from":  "pytest",
+                          "to":  "测试",
+                          "type":  "belong",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#测试"
+                      },
+                      {
+                          "from":  "fixture",
+                          "to":  "pytest",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#测试"
+                      },
+                      {
+                          "from":  "monkeypatch",
+                          "to":  "pytest",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#测试"
+                      },
+                      {
+                          "from":  "测试",
+                          "to":  "单元测试",
+                          "type":  "entail",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#测试"
+                      },
+                      {
+                          "from":  "覆盖率",
+                          "to":  "测试",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#测试"
+                      },
+                      {
+                          "from":  "Black",
+                          "to":  "代码规范",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#规范"
+                      },
+                      {
+                          "from":  "ruff",
+                          "to":  "代码规范",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#规范"
+                      },
+                      {
+                          "from":  "isort",
+                          "to":  "代码规范",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#规范"
+                      },
+                      {
+                          "from":  "全局变量",
+                          "to":  "可预测性",
+                          "type":  "undermine",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#反模式"
+                      },
+                      {
+                          "from":  "可变默认参数",
+                          "to":  "缺陷",
+                          "type":  "causal",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#反模式"
+                      },
+                      {
+                          "from":  "深拷贝",
+                          "to":  "可变默认参数",
+                          "type":  "undermine",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#反模式"
+                      },
+                      {
+                          "from":  "裸 except",
+                          "to":  "异常处理",
+                          "type":  "undermine",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#健壮"
+                      },
+                      {
+                          "from":  "异常处理",
+                          "to":  "可靠性",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#健壮"
+                      },
+                      {
+                          "from":  "日志",
+                          "to":  "调试",
+                          "type":  "support",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#可观测"
+                      },
+                      {
+                          "from":  "环境变量",
+                          "to":  "硬编码",
+                          "type":  "undermine",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#配置"
+                      },
+                      {
+                          "from":  "字符串拼接",
+                          "to":  "性能瓶颈",
+                          "type":  "causal",
+                          "weight":  0.5,
+                          "directed":  true,
+                          "context_tag":  "#性能"
+                      },
+                      {
+                          "from":  "慢循环",
+                          "to":  "性能瓶颈",
+                          "type":  "causal",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#性能"
+                      },
+                      {
+                          "from":  "机器学习",
+                          "to":  "科学计算",
+                          "type":  "support",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#场景"
+                      },
+                      {
+                          "from":  "科学计算",
+                          "to":  "NumPy",
+                          "type":  "condition",
+                          "weight":  0.8,
+                          "directed":  true,
+                          "context_tag":  "#场景"
+                      },
+                      {
+                          "from":  "数据清洗",
+                          "to":  "Pandas",
+                          "type":  "condition",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#场景"
+                      },
+                      {
+                          "from":  "异步爬虫",
+                          "to":  "asyncio",
+                          "type":  "condition",
+                          "weight":  0.7,
+                          "directed":  true,
+                          "context_tag":  "#场景"
+                      },
+                      {
+                          "from":  "可维护性",
+                          "to":  "代码可读性",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#质量"
+                      },
+                      {
+                          "from":  "可扩展性",
+                          "to":  "可维护性",
+                          "type":  "support",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#质量"
+                      },
+                      {
+                          "from":  "空指针",
+                          "to":  "缺陷",
+                          "type":  "similar",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#质量"
+                      },
+                      {
+                          "from":  "内存泄漏",
+                          "to":  "性能瓶颈",
+                          "type":  "causal",
+                          "weight":  0.6,
+                          "directed":  true,
+                          "context_tag":  "#质量"
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "Python 类型提示落地",
+                        "tags":  [
+                                     "类型提示",
+                                     "mypy"
+                                 ],
+                        "template":  "先给公共接口加类型提示；数据边界用 TypedDict/Pydantic；mypy 增量开启并逐步清零；复杂泛型控制在可读范围"
+                    },
+                    {
+                        "scenario":  "Python 并发选型",
+                        "tags":  [
+                                     "GIL",
+                                     "并发"
+                                 ],
+                        "template":  "IO 密集用 asyncio/协程；CPU 密集用多进程绕开 GIL；多线程仅限 IO 且注意锁；并发度压测验证；GIL 边界留白"
+                    },
+                    {
+                        "scenario":  "依赖与环境管理",
+                        "tags":  [
+                                     "虚拟环境",
+                                     "poetry"
+                                 ],
+                        "template":  "每项目独立虚拟环境；用 poetry 管理依赖并锁定版本；requirements 导出留痕；升级按小步回归；环境漂移留白"
+                    },
+                    {
+                        "scenario":  "Web 框架选型",
+                        "tags":  [
+                                     "FastAPI",
+                                     "Django"
+                                 ],
+                        "template":  "API 优先用 FastAPI+Pydantic 自动校验；管理后台/ORM 完备用 Django；轻量内部服务用 Flask；团队熟悉度与生态留白"
+                    },
+                    {
+                        "scenario":  "Pandas 性能优化",
+                        "tags":  [
+                                     "Pandas",
+                                     "向量化"
+                                 ],
+                        "template":  "避免逐行 apply/iterrows；用向量化操作替代循环；大数据分块或下推 SQL；内存占用监控；优化前后基准对比"
+                    },
+                    {
+                        "scenario":  "pytest 测试策略",
+                        "tags":  [
+                                     "pytest",
+                                     "fixture"
+                                 ],
+                        "template":  "fixture 管理测试资源；monkeypatch 隔离外部依赖；参数化覆盖边界；覆盖率设下限；CI 接入回归门禁"
+                    },
+                    {
+                        "scenario":  "Python 反模式清理",
+                        "tags":  [
+                                     "可变默认参数",
+                                     "全局变量"
+                                 ],
+                        "template":  "可变默认参数改 None+守卫；全局变量收进配置类；裸 except 改精确异常；深拷贝仅在必要时用；逐项清理留白"
+                    },
+                    {
+                        "scenario":  "异常与日志规范",
+                        "tags":  [
+                                     "异常处理",
+                                     "日志"
+                                 ],
+                        "template":  "业务异常自定义层次；裸 except 禁用；关键路径打结构化日志；敏感信息脱敏；日志级别策略留白"
+                    },
+                    {
+                        "scenario":  "Python 性能剖析",
+                        "tags":  [
+                                     "性能瓶颈",
+                                     "慢循环"
+                                 ],
+                        "template":  "先 profiling 定位热点（cProfile）；区分 IO 与 CPU 瓶颈；循环改向量化/缓存/生成器；单次改动单指标对比"
+                    },
+                    {
+                        "scenario":  "Python 版本升级",
+                        "tags":  [
+                                     "Python 版本",
+                                     "兼容性"
+                                 ],
+                        "template":  "先查破坏性变更与弃用列表；小步分批升级依赖；类型检查+测试回归；ABI 与第三方兼容核对；回滚预案留白"
+                    }
+                ]
+}

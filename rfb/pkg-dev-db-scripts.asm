@@ -1,0 +1,49 @@
+.FIELD 场景
+.IMAGE SQL性能优化
+SUPPORT SQL性能优化 SQL .WEIGHT 0.7 .FIELD 场景
+SUPPORT SQL性能优化 慢查询 .WEIGHT 0.7 .FIELD 场景
+SUPPORT SQL性能优化 慢查询 .WEIGHT 0.5 .FIELD 场景
+SUPPORT SQL性能优化 执行计划 .WEIGHT 0.5 .FIELD 场景
+SUPPORT SQL性能优化 索引 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 数据库选型
+SUPPORT 数据库选型 关系型数据库 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 数据库选型 NoSQL .WEIGHT 0.7 .FIELD 场景
+SUPPORT 数据库选型 事务 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 数据库选型 读写分离 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 事务与隔离
+SUPPORT 事务与隔离 事务 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 事务与隔离 隔离级别 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 事务与隔离 事务 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 事务与隔离 隔离级别 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 事务与隔离 锁 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 分库分表设计
+SUPPORT 分库分表设计 分库分表 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 分库分表设计 数据分片 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 分库分表设计 事务 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 缓存设计
+SUPPORT 缓存设计 缓存 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 缓存设计 Redis .WEIGHT 0.7 .FIELD 场景
+SUPPORT 缓存设计 缓存 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 缓存设计 锁 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 数据迁移
+SUPPORT 数据迁移 Schema变更 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 数据迁移 备份 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 高可用架构
+SUPPORT 高可用架构 主从复制 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 高可用架构 故障切换 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 高可用架构 主从复制 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 高可用架构 容灾 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 高可用架构 恢复 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 数据安全
+SUPPORT 数据安全 数据脱敏 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 数据安全 数据加密 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 数据安全 访问控制 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 数据安全 审计 .WEIGHT 0.5 .FIELD 场景
+.IMAGE ETL管道
+SUPPORT ETL管道 ETL .WEIGHT 0.7 .FIELD 场景
+SUPPORT ETL管道 数据仓库 .WEIGHT 0.7 .FIELD 场景
+SUPPORT ETL管道 数据质量 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 连接池调优
+SUPPORT 连接池调优 连接池 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 连接池调优 性能瓶颈 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 连接池调优 慢查询 .WEIGHT 0.5 .FIELD 场景

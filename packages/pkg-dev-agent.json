@@ -1,0 +1,1330 @@
+﻿{
+    "id":  "pkg-dev-agent",
+    "name":  "Agent 智能体工程",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "AGENT开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "智能体",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "Agent",
+                       "modality":  "text",
+                       "tags":  [
+                                    "核心"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "多智能体系统",
+                       "modality":  "text",
+                       "tags":  [
+                                    "协作"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "智能体编排",
+                       "modality":  "text",
+                       "tags":  [
+                                    "协作"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "主管-从属模式",
+                       "modality":  "text",
+                       "tags":  [
+                                    "编排"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "黑板模式",
+                       "modality":  "text",
+                       "tags":  [
+                                    "编排"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "议长模式",
+                       "modality":  "text",
+                       "tags":  [
+                                    "编排"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "工具调用",
+                       "modality":  "text",
+                       "tags":  [
+                                    "能力"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "函数调用",
+                       "modality":  "text",
+                       "tags":  [
+                                    "能力"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "工具集",
+                       "modality":  "text",
+                       "tags":  [
+                                    "能力"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "自主循环",
+                       "modality":  "text",
+                       "tags":  [
+                                    "循环"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "ReAct 模式",
+                       "modality":  "text",
+                       "tags":  [
+                                    "循环"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "规划-执行",
+                       "modality":  "text",
+                       "tags":  [
+                                    "循环"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "反思",
+                       "modality":  "text",
+                       "tags":  [
+                                    "循环"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "自省",
+                       "modality":  "text",
+                       "tags":  [
+                                    "循环"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "记忆",
+                       "modality":  "text",
+                       "tags":  [
+                                    "记忆"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "短期记忆",
+                       "modality":  "text",
+                       "tags":  [
+                                    "记忆"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "长期记忆",
+                       "modality":  "text",
+                       "tags":  [
+                                    "记忆"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "情景记忆",
+                       "modality":  "text",
+                       "tags":  [
+                                    "记忆"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "语义记忆",
+                       "modality":  "text",
+                       "tags":  [
+                                    "记忆"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "向量记忆",
+                       "modality":  "text",
+                       "tags":  [
+                                    "记忆"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "记忆检索",
+                       "modality":  "text",
+                       "tags":  [
+                                    "记忆"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "记忆写入",
+                       "modality":  "text",
+                       "tags":  [
+                                    "记忆"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "记忆遗忘",
+                       "modality":  "text",
+                       "tags":  [
+                                    "记忆"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "提示工程",
+                       "modality":  "text",
+                       "tags":  [
+                                    "LLM"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "上下文管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "LLM"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "上下文压缩",
+                       "modality":  "text",
+                       "tags":  [
+                                    "LLM"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "Token 预算",
+                       "modality":  "text",
+                       "tags":  [
+                                    "LLM"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "工具注册",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "工具发现",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "工具选择",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "工具执行",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "工具结果",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "错误重试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "鲁棒"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "超时处理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "鲁棒"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "循环检测",
+                       "modality":  "text",
+                       "tags":  [
+                                    "鲁棒"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "最大步数",
+                       "modality":  "text",
+                       "tags":  [
+                                    "鲁棒"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "智能体崩溃",
+                       "modality":  "text",
+                       "tags":  [
+                                    "鲁棒"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "人机协作",
+                       "modality":  "text",
+                       "tags":  [
+                                    "治理"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "人工审批",
+                       "modality":  "text",
+                       "tags":  [
+                                    "治理"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "安全护栏",
+                       "modality":  "text",
+                       "tags":  [
+                                    "治理"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "权限边界",
+                       "modality":  "text",
+                       "tags":  [
+                                    "治理"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "工具白名单",
+                       "modality":  "text",
+                       "tags":  [
+                                    "治理"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "提示注入",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "越狱",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "数据泄露",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "可观测性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运营"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "轨迹追踪",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运营"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "成本核算",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运营"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "绩效评估",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运营"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "智能体评测",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运营"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "评估基准",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运营"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "智能体框架",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "LangGraph",
+                       "modality":  "text",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "图状态机",
+                       "modality":  "text",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "状态转移",
+                       "modality":  "text",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "工作流",
+                       "modality":  "text",
+                       "tags":  [
+                                    "模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "顺序工作流",
+                       "modality":  "text",
+                       "tags":  [
+                                    "模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "并行工作流",
+                       "modality":  "text",
+                       "tags":  [
+                                    "模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "路由",
+                       "modality":  "text",
+                       "tags":  [
+                                    "模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "子任务分解",
+                       "modality":  "text",
+                       "tags":  [
+                                    "规划"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "任务优先级",
+                       "modality":  "text",
+                       "tags":  [
+                                    "规划"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "动态重规划",
+                       "modality":  "text",
+                       "tags":  [
+                                    "规划"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "意图识别",
+                       "modality":  "text",
+                       "tags":  [
+                                    "理解"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "目标管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "理解"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "可解释性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "可靠性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "可预测性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "可维护性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "安全",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "缺陷",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "agent"
+                   },
+                   {
+                       "content":  "代码可读性",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#AGENT",
+                          "to":  "Agent",
+                          "from":  "智能体",
+                          "type":  "entail",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#AGENT",
+                          "to":  "多智能体系统",
+                          "from":  "智能体",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#协作",
+                          "to":  "智能体编排",
+                          "from":  "多智能体系统",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#编排",
+                          "to":  "主管-从属模式",
+                          "from":  "智能体编排",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#编排",
+                          "to":  "黑板模式",
+                          "from":  "智能体编排",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#编排",
+                          "to":  "议长模式",
+                          "from":  "智能体编排",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#能力",
+                          "to":  "工具调用",
+                          "from":  "Agent",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#能力",
+                          "to":  "函数调用",
+                          "from":  "工具调用",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#能力",
+                          "to":  "工具调用",
+                          "from":  "工具集",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#循环",
+                          "to":  "自主循环",
+                          "from":  "Agent",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#循环",
+                          "to":  "ReAct 模式",
+                          "from":  "自主循环",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#循环",
+                          "to":  "规划-执行",
+                          "from":  "自主循环",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#循环",
+                          "to":  "反思",
+                          "from":  "自主循环",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#循环",
+                          "to":  "自省",
+                          "from":  "反思",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#记忆",
+                          "to":  "记忆",
+                          "from":  "Agent",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#记忆",
+                          "to":  "记忆",
+                          "from":  "短期记忆",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#记忆",
+                          "to":  "记忆",
+                          "from":  "长期记忆",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#记忆",
+                          "to":  "长期记忆",
+                          "from":  "情景记忆",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#记忆",
+                          "to":  "长期记忆",
+                          "from":  "语义记忆",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#记忆",
+                          "to":  "长期记忆",
+                          "from":  "向量记忆",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#记忆",
+                          "to":  "记忆",
+                          "from":  "记忆检索",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#记忆",
+                          "to":  "记忆",
+                          "from":  "记忆写入",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#记忆",
+                          "to":  "记忆",
+                          "from":  "记忆遗忘",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#LLM",
+                          "to":  "Token 预算",
+                          "from":  "上下文管理",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#LLM",
+                          "to":  "上下文管理",
+                          "from":  "上下文压缩",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#LLM",
+                          "to":  "上下文管理",
+                          "from":  "提示工程",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#工具",
+                          "to":  "工具发现",
+                          "from":  "工具注册",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#工具",
+                          "to":  "工具选择",
+                          "from":  "工具发现",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#工具",
+                          "to":  "工具执行",
+                          "from":  "工具选择",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#工具",
+                          "to":  "工具结果",
+                          "from":  "工具执行",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#鲁棒",
+                          "to":  "工具执行",
+                          "from":  "错误重试",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#鲁棒",
+                          "to":  "工具执行",
+                          "from":  "超时处理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#鲁棒",
+                          "to":  "自主循环",
+                          "from":  "循环检测",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#鲁棒",
+                          "to":  "自主循环",
+                          "from":  "最大步数",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#鲁棒",
+                          "to":  "自主循环",
+                          "from":  "智能体崩溃",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#治理",
+                          "to":  "人工审批",
+                          "from":  "人机协作",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#治理",
+                          "to":  "人工审批",
+                          "from":  "安全护栏",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#治理",
+                          "to":  "安全护栏",
+                          "from":  "权限边界",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#治理",
+                          "to":  "权限边界",
+                          "from":  "工具白名单",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "提示注入",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "越狱",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "数据泄露",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#运营",
+                          "to":  "轨迹追踪",
+                          "from":  "可观测性",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#运营",
+                          "to":  "可解释性",
+                          "from":  "轨迹追踪",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#运营",
+                          "to":  "可观测性",
+                          "from":  "成本核算",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#运营",
+                          "to":  "智能体评测",
+                          "from":  "绩效评估",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#运营",
+                          "to":  "智能体评测",
+                          "from":  "评估基准",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#框架",
+                          "to":  "智能体框架",
+                          "from":  "LangGraph",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#框架",
+                          "to":  "LangGraph",
+                          "from":  "图状态机",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#框架",
+                          "to":  "图状态机",
+                          "from":  "状态转移",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#模式",
+                          "to":  "顺序工作流",
+                          "from":  "工作流",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#模式",
+                          "to":  "并行工作流",
+                          "from":  "工作流",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#模式",
+                          "to":  "工作流",
+                          "from":  "路由",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#规划",
+                          "to":  "规划-执行",
+                          "from":  "子任务分解",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#规划",
+                          "to":  "子任务分解",
+                          "from":  "任务优先级",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#规划",
+                          "to":  "规划-执行",
+                          "from":  "动态重规划",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#理解",
+                          "to":  "目标管理",
+                          "from":  "意图识别",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#理解",
+                          "to":  "规划-执行",
+                          "from":  "目标管理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#价值",
+                          "to":  "可靠性",
+                          "from":  "可解释性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#价值",
+                          "to":  "可靠性",
+                          "from":  "安全",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "可预测性",
+                          "from":  "可靠性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "代码可读性",
+                          "from":  "可维护性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#质量",
+                          "to":  "缺陷",
+                          "from":  "测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "Agent 架构设计",
+                        "tags":  [
+                                     "Agent",
+                                     "自主循环"
+                                 ],
+                        "template":  "意图识别→规划→工具调用→反思四段循环；状态机显式建模；循环上限与超时；人机回环接管高风险"
+                    },
+                    {
+                        "scenario":  "多智能体编排",
+                        "tags":  [
+                                     "多智能体系统",
+                                     "智能体编排"
+                                 ],
+                        "template":  "按角色拆分智能体；主管-从属分派任务；黑板共享中间结果；议长协调冲突；观察者统一监控"
+                    },
+                    {
+                        "scenario":  "工具系统设计",
+                        "tags":  [
+                                     "工具调用",
+                                     "工具集"
+                                 ],
+                        "template":  "工具契约清晰（名称/参数/副作用）；注册-发现-选择-执行四环节；白名单与权限；结果校验"
+                    },
+                    {
+                        "scenario":  "记忆架构",
+                        "tags":  [
+                                     "记忆",
+                                     "向量记忆"
+                                 ],
+                        "template":  "短期对话记忆+长期向量记忆；情景/语义分层；写入提取策略；遗忘与压缩机制"
+                    },
+                    {
+                        "scenario":  "上下文管理",
+                        "tags":  [
+                                     "上下文管理",
+                                     "Token 预算"
+                                 ],
+                        "template":  "Token 预算分配；关键上下文保留；历史摘要压缩；工具结果裁剪"
+                    },
+                    {
+                        "scenario":  "Agent 安全",
+                        "tags":  [
+                                     "安全护栏",
+                                     "提示注入"
+                                 ],
+                        "template":  "输入输出双向过滤；工具白名单；权限最小化；敏感操作人工审批；注入样本集扩充"
+                    },
+                    {
+                        "scenario":  "Agent 可观测",
+                        "tags":  [
+                                     "轨迹追踪",
+                                     "可观测性"
+                                 ],
+                        "template":  "每步轨迹记录（思考/工具/结果）；成本核算；耗时与失败率指标；回放调试"
+                    },
+                    {
+                        "scenario":  "Agent 评测",
+                        "tags":  [
+                                     "智能体评测",
+                                     "评估基准"
+                                 ],
+                        "template":  "任务完成率；工具调用正确率；轨迹质量评分；成本效率；回归基准集"
+                    },
+                    {
+                        "scenario":  "Agent 鲁棒性",
+                        "tags":  [
+                                     "错误重试",
+                                     "循环检测"
+                                 ],
+                        "template":  "工具失败重试退避；超时降级；循环检测与中断；最大步数限制；崩溃恢复"
+                    },
+                    {
+                        "scenario":  "Agent 协作工作流",
+                        "tags":  [
+                                     "工作流",
+                                     "路由"
+                                 ],
+                        "template":  "顺序/并行/路由三模式；子任务分解与合并；动态重规划；协作产物版本化"
+                    }
+                ]
+}

@@ -1,0 +1,1284 @@
+﻿{
+    "id":  "pkg-dev-sec",
+    "name":  "网络安全工程",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "SEC开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "网络安全",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "威胁建模",
+                       "modality":  "text",
+                       "tags":  [
+                                    "方法论"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "攻击面",
+                       "modality":  "text",
+                       "tags":  [
+                                    "威胁"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "漏洞",
+                       "modality":  "text",
+                       "tags":  [
+                                    "威胁"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "漏洞扫描",
+                       "modality":  "text",
+                       "tags":  [
+                                    "检测"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "渗透测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "检测"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "红队",
+                       "modality":  "text",
+                       "tags":  [
+                                    "检测"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "蓝队",
+                       "modality":  "text",
+                       "tags":  [
+                                    "防御"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "SQL 注入",
+                       "modality":  "text",
+                       "tags":  [
+                                    "攻击"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "XSS",
+                       "modality":  "text",
+                       "tags":  [
+                                    "攻击"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "CSRF",
+                       "modality":  "text",
+                       "tags":  [
+                                    "攻击"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "SSRF",
+                       "modality":  "text",
+                       "tags":  [
+                                    "攻击"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "命令注入",
+                       "modality":  "text",
+                       "tags":  [
+                                    "攻击"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "越权",
+                       "modality":  "text",
+                       "tags":  [
+                                    "攻击"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "认证",
+                       "modality":  "text",
+                       "tags":  [
+                                    "身份"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "授权",
+                       "modality":  "text",
+                       "tags":  [
+                                    "身份"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "OAuth",
+                       "modality":  "text",
+                       "tags":  [
+                                    "身份"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "JWT",
+                       "modality":  "text",
+                       "tags":  [
+                                    "身份"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "多因素认证",
+                       "modality":  "text",
+                       "tags":  [
+                                    "身份"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "最小权限",
+                       "modality":  "text",
+                       "tags":  [
+                                    "身份"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "RBAC",
+                       "modality":  "text",
+                       "tags":  [
+                                    "授权"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "ABAC",
+                       "modality":  "text",
+                       "tags":  [
+                                    "授权"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "加密",
+                       "modality":  "text",
+                       "tags":  [
+                                    "密码学"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "对称加密",
+                       "modality":  "text",
+                       "tags":  [
+                                    "密码学"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "非对称加密",
+                       "modality":  "text",
+                       "tags":  [
+                                    "密码学"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "哈希",
+                       "modality":  "text",
+                       "tags":  [
+                                    "密码学"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "数字签名",
+                       "modality":  "text",
+                       "tags":  [
+                                    "密码学"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "密钥管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "密码学"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "TLS",
+                       "modality":  "text",
+                       "tags":  [
+                                    "传输"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "证书",
+                       "modality":  "text",
+                       "tags":  [
+                                    "传输"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "传输加密",
+                       "modality":  "text",
+                       "tags":  [
+                                    "传输"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "Web 防火墙",
+                       "modality":  "text",
+                       "tags":  [
+                                    "防御"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "入侵检测",
+                       "modality":  "text",
+                       "tags":  [
+                                    "防御"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "入侵防御",
+                       "modality":  "text",
+                       "tags":  [
+                                    "防御"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "沙箱",
+                       "modality":  "text",
+                       "tags":  [
+                                    "防御"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "安全日志",
+                       "modality":  "text",
+                       "tags":  [
+                                    "检测"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "安全事件",
+                       "modality":  "text",
+                       "tags":  [
+                                    "响应"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "事件响应",
+                       "modality":  "text",
+                       "tags":  [
+                                    "响应"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "应急响应",
+                       "modality":  "text",
+                       "tags":  [
+                                    "响应"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "数字取证",
+                       "modality":  "text",
+                       "tags":  [
+                                    "响应"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "数据泄露",
+                       "modality":  "text",
+                       "tags":  [
+                                    "风险"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "数据脱敏",
+                       "modality":  "text",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "数据分类",
+                       "modality":  "text",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "隐私合规",
+                       "modality":  "text",
+                       "tags":  [
+                                    "合规"
+                                ],
+                       "confidence":  1,
+                       "kind":  "constraint",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "GDPR",
+                       "modality":  "text",
+                       "tags":  [
+                                    "合规"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "安全审计",
+                       "modality":  "text",
+                       "tags":  [
+                                    "合规"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "安全测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "模糊测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "供应链安全",
+                       "modality":  "text",
+                       "tags":  [
+                                    "供应链"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "软件成分分析",
+                       "modality":  "text",
+                       "tags":  [
+                                    "供应链"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "零信任",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "纵深防御",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "安全基线",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "威胁情报",
+                       "modality":  "text",
+                       "tags":  [
+                                    "情报"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "安全编码",
+                       "modality":  "text",
+                       "tags":  [
+                                    "开发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "安全测试自动化",
+                       "modality":  "text",
+                       "tags":  [
+                                    "开发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "DevSecOps",
+                       "modality":  "text",
+                       "tags":  [
+                                    "开发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "安全",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "可靠性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "可预测性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "可维护性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "代码可读性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "缺陷",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "性能瓶颈",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "代码规范",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "安全运营中心",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运营"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "蜜罐",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运营"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "端点检测",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运营"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sec"
+                   },
+                   {
+                       "content":  "合规",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#SEC",
+                          "to":  "威胁建模",
+                          "from":  "网络安全",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#方法论",
+                          "to":  "攻击面",
+                          "from":  "威胁建模",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#威胁",
+                          "to":  "漏洞",
+                          "from":  "攻击面",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#威胁",
+                          "to":  "安全",
+                          "from":  "漏洞",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#检测",
+                          "to":  "漏洞",
+                          "from":  "漏洞扫描",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#检测",
+                          "to":  "漏洞",
+                          "from":  "渗透测试",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#检测",
+                          "to":  "渗透测试",
+                          "from":  "红队",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#防御",
+                          "to":  "事件响应",
+                          "from":  "蓝队",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#攻击",
+                          "to":  "漏洞",
+                          "from":  "SQL 注入",
+                          "type":  "similar",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#攻击",
+                          "to":  "漏洞",
+                          "from":  "XSS",
+                          "type":  "similar",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#攻击",
+                          "to":  "漏洞",
+                          "from":  "CSRF",
+                          "type":  "similar",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#攻击",
+                          "to":  "漏洞",
+                          "from":  "SSRF",
+                          "type":  "similar",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#攻击",
+                          "to":  "漏洞",
+                          "from":  "命令注入",
+                          "type":  "similar",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#攻击",
+                          "to":  "漏洞",
+                          "from":  "越权",
+                          "type":  "similar",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#身份",
+                          "to":  "安全",
+                          "from":  "认证",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#身份",
+                          "to":  "安全",
+                          "from":  "授权",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#身份",
+                          "to":  "认证",
+                          "from":  "OAuth",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#身份",
+                          "to":  "认证",
+                          "from":  "JWT",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#身份",
+                          "to":  "认证",
+                          "from":  "多因素认证",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#身份",
+                          "to":  "安全",
+                          "from":  "最小权限",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#授权",
+                          "to":  "授权",
+                          "from":  "RBAC",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#授权",
+                          "to":  "授权",
+                          "from":  "ABAC",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#密码学",
+                          "to":  "加密",
+                          "from":  "对称加密",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#密码学",
+                          "to":  "加密",
+                          "from":  "非对称加密",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#密码学",
+                          "to":  "加密",
+                          "from":  "哈希",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#密码学",
+                          "to":  "非对称加密",
+                          "from":  "数字签名",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#密码学",
+                          "to":  "加密",
+                          "from":  "密钥管理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#传输",
+                          "to":  "传输加密",
+                          "from":  "TLS",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#传输",
+                          "to":  "TLS",
+                          "from":  "证书",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#防御",
+                          "to":  "SQL 注入",
+                          "from":  "Web 防火墙",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#防御",
+                          "to":  "XSS",
+                          "from":  "Web 防火墙",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#防御",
+                          "to":  "安全事件",
+                          "from":  "入侵检测",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#防御",
+                          "to":  "入侵检测",
+                          "from":  "入侵防御",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#防御",
+                          "to":  "安全",
+                          "from":  "沙箱",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#检测",
+                          "to":  "入侵检测",
+                          "from":  "安全日志",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#响应",
+                          "to":  "事件响应",
+                          "from":  "安全事件",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#响应",
+                          "to":  "事件响应",
+                          "from":  "应急响应",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#响应",
+                          "to":  "事件响应",
+                          "from":  "数字取证",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#风险",
+                          "to":  "安全",
+                          "from":  "数据泄露",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#数据",
+                          "to":  "数据泄露",
+                          "from":  "数据脱敏",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#数据",
+                          "to":  "数据脱敏",
+                          "from":  "数据分类",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#合规",
+                          "to":  "数据脱敏",
+                          "from":  "隐私合规",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#合规",
+                          "to":  "隐私合规",
+                          "from":  "GDPR",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#合规",
+                          "to":  "合规",
+                          "from":  "安全审计",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "漏洞",
+                          "from":  "安全测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "安全测试",
+                          "from":  "模糊测试",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#供应链",
+                          "to":  "软件成分分析",
+                          "from":  "供应链安全",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#供应链",
+                          "to":  "漏洞",
+                          "from":  "软件成分分析",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#架构",
+                          "to":  "安全",
+                          "from":  "零信任",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#架构",
+                          "to":  "安全",
+                          "from":  "纵深防御",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#架构",
+                          "to":  "纵深防御",
+                          "from":  "安全基线",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#情报",
+                          "to":  "漏洞",
+                          "from":  "威胁情报",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#开发",
+                          "to":  "漏洞",
+                          "from":  "安全编码",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#开发",
+                          "to":  "安全测试",
+                          "from":  "安全测试自动化",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#开发",
+                          "to":  "安全测试自动化",
+                          "from":  "DevSecOps",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#价值",
+                          "to":  "可靠性",
+                          "from":  "安全",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#运营",
+                          "to":  "安全事件",
+                          "from":  "安全运营中心",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#运营",
+                          "to":  "威胁情报",
+                          "from":  "蜜罐",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#运营",
+                          "to":  "入侵检测",
+                          "from":  "端点检测",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#质量",
+                          "to":  "缺陷",
+                          "from":  "测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "代码可读性",
+                          "from":  "可维护性",
+                          "type":  "support",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "威胁建模",
+                        "tags":  [
+                                     "威胁建模",
+                                     "攻击面"
+                                 ],
+                        "template":  "STRIDE 逐类分析；数据流图绘制；攻击面枚举；风险分级；缓解措施留白"
+                    },
+                    {
+                        "scenario":  "Web 应用安全加固",
+                        "tags":  [
+                                     "SQL 注入",
+                                     "XSS"
+                                 ],
+                        "template":  "参数化查询防注入；输出编码防 XSS；CSP 与 CSRF Token；输入校验白名单"
+                    },
+                    {
+                        "scenario":  "认证授权设计",
+                        "tags":  [
+                                     "认证",
+                                     "授权"
+                                 ],
+                        "template":  "认证与会话安全；多因素认证评估；RBAC/ABAC 按需；最小权限原则；OAuth/JWT 规范"
+                    },
+                    {
+                        "scenario":  "数据安全",
+                        "tags":  [
+                                     "数据加密",
+                                     "数据脱敏"
+                                 ],
+                        "template":  "静态加密与传输加密；密钥集中管理；数据分类分级；脱敏展示；备份加密"
+                    },
+                    {
+                        "scenario":  "事件响应",
+                        "tags":  [
+                                     "事件响应",
+                                     "应急响应"
+                                 ],
+                        "template":  "发现-遏制-根除-恢复四阶段；隔离受影响系统；取证留证；复盘改进"
+                    },
+                    {
+                        "scenario":  "安全测试体系",
+                        "tags":  [
+                                     "安全测试",
+                                     "渗透测试"
+                                 ],
+                        "template":  "威胁建模先行；SAST/DAST 自动化；渗透测试按风险周期；模糊测试边界；修复闭环"
+                    },
+                    {
+                        "scenario":  "DevSecOps",
+                        "tags":  [
+                                     "DevSecOps",
+                                     "供应链安全"
+                                 ],
+                        "template":  "左移安全；流水线嵌安全门禁；依赖成分分析；镜像与密钥扫描；合规基线"
+                    },
+                    {
+                        "scenario":  "零信任架构",
+                        "tags":  [
+                                     "零信任",
+                                     "最小权限"
+                                 ],
+                        "template":  "永不信任持续验证；微隔离；动态授权；全链路加密；身份与设备双因子"
+                    },
+                    {
+                        "scenario":  "隐私合规",
+                        "tags":  [
+                                     "隐私合规",
+                                     "GDPR"
+                                 ],
+                        "template":  "数据最小化收集；用户权利响应流程；数据主体访问；留存期限；违规上报流程"
+                    },
+                    {
+                        "scenario":  "安全运营",
+                        "tags":  [
+                                     "安全运营中心",
+                                     "威胁情报"
+                                 ],
+                        "template":  "告警分级与处置；威胁情报订阅；蜜罐诱捕；红蓝对抗演练；度量指标"
+                    }
+                ]
+}

@@ -1,0 +1,162 @@
+.IMAGE TypeScript
+.IMAGE 类型系统
+.IMAGE 类型安全
+.IMAGE 可预测性
+.IMAGE any
+.IMAGE unknown
+.IMAGE 类型收窄
+.IMAGE 联合类型
+.IMAGE 类型守卫
+.IMAGE 泛型
+.IMAGE 类型复用
+.IMAGE 接口
+.IMAGE 类型别名
+.IMAGE 字面量类型
+.IMAGE 常量联合
+.IMAGE 枚举
+.IMAGE 非空断言
+.IMAGE 空指针
+.IMAGE 双重断言
+.IMAGE 类型体操
+.IMAGE 代码可读性
+.IMAGE 冗余类型标注
+.IMAGE tsc类型检查
+.IMAGE 编译错误
+.IMAGE 严格模式
+.IMAGE tsconfig
+.IMAGE 编译目标
+.IMAGE 兼容性
+.IMAGE 可选链
+.IMAGE 空值合并
+.IMAGE 声明文件
+.IMAGE Node.js
+.IMAGE 事件循环
+.IMAGE 异步
+.IMAGE Promise
+.IMAGE async/await
+.IMAGE 回调地狱
+.IMAGE 并发控制
+.IMAGE 并发
+.IMAGE 事件监听
+.IMAGE 内存泄漏
+.IMAGE 闭包
+.IMAGE npm
+.IMAGE 依赖管理
+.IMAGE 包管理器
+.IMAGE lockfile
+.IMAGE 语义化版本
+.IMAGE 破坏性变更
+.IMAGE Node版本
+.IMAGE Monorepo
+.IMAGE 模块化
+.IMAGE 工作区
+.IMAGE 模块系统
+.IMAGE 路径别名
+.IMAGE 构建工具
+.IMAGE 打包器
+.IMAGE React
+.IMAGE 组件
+.IMAGE props
+.IMAGE Hooks
+.IMAGE 状态管理
+.IMAGE 副作用
+.IMAGE 服务端渲染
+.IMAGE 可扩展性
+.IMAGE 防抖节流
+.IMAGE 性能瓶颈
+.IMAGE Express
+.IMAGE 中间件
+.IMAGE 请求校验
+.IMAGE 路由
+.IMAGE 接口层
+.IMAGE 接口设计
+.IMAGE Prisma
+.IMAGE ORM
+.IMAGE 数据模型
+.IMAGE 数据库迁移
+.IMAGE 数据迁移
+.IMAGE Vitest
+.IMAGE 测试
+.IMAGE Jest
+.IMAGE 测试替身
+.IMAGE 单元测试
+.IMAGE ESLint
+.IMAGE 代码规范
+.IMAGE Prettier
+.IMAGE 装饰器
+.FIELD TS
+.FIELD 运行时
+.FIELD 工程
+.FIELD 前端
+.FIELD 后端
+.FIELD 测试
+.FIELD 规范
+ENTAIL TypeScript 类型系统 .WEIGHT 0.900 .FIELD TS
+SUPPORT 类型系统 类型安全 .WEIGHT 0.800 .FIELD TS
+SUPPORT 类型安全 可预测性 .WEIGHT 0.700 .FIELD TS
+UNDERMINE any 类型安全 .WEIGHT 0.800 .FIELD TS
+UNDERMINE any 可预测性 .WEIGHT 0.700 .FIELD TS
+BUT unknown any .WEIGHT 0.600 .FIELD TS
+SUPPORT 类型收窄 unknown .WEIGHT 0.700 .FIELD TS
+IF 联合类型 类型收窄 .WEIGHT 0.700 .FIELD TS
+SUPPORT 类型守卫 类型收窄 .WEIGHT 0.700 .FIELD TS
+SUPPORT 泛型 类型复用 .WEIGHT 0.800 .FIELD TS
+SUPPORT 泛型 类型安全 .WEIGHT 0.700 .FIELD TS
+SUPPORT 接口 类型安全 .WEIGHT 0.600 .FIELD TS
+LIKE 类型别名 接口 .WEIGHT 0.600 .FIELD TS
+SUPPORT 字面量类型 常量联合 .WEIGHT 0.700 .FIELD TS
+BUT 枚举 常量联合 .WEIGHT 0.500 .FIELD TS
+CAUSE 非空断言 空指针 .WEIGHT 0.700 .FIELD TS
+UNDERMINE 双重断言 类型安全 .WEIGHT 0.800 .FIELD TS
+UNDERMINE 类型体操 代码可读性 .WEIGHT 0.700 .FIELD TS
+UNDERMINE 冗余类型标注 代码可读性 .WEIGHT 0.500 .FIELD TS
+UNDERMINE tsc类型检查 编译错误 .WEIGHT 0.800 .FIELD TS
+SUPPORT tsc类型检查 类型安全 .WEIGHT 0.700 .FIELD TS
+SUPPORT 严格模式 类型安全 .WEIGHT 0.800 .FIELD TS
+UNDERMINE 严格模式 any .WEIGHT 0.600 .FIELD TS
+IF tsconfig 严格模式 .WEIGHT 0.800 .FIELD TS
+IF 编译目标 兼容性 .WEIGHT 0.700 .FIELD TS
+UNDERMINE 可选链 空指针 .WEIGHT 0.600 .FIELD TS
+UNDERMINE 空值合并 空指针 .WEIGHT 0.500 .FIELD TS
+SUPPORT 声明文件 类型安全 .WEIGHT 0.600 .FIELD TS
+ENTAIL Node.js 事件循环 .WEIGHT 0.800 .FIELD 运行时
+IF 事件循环 异步 .WEIGHT 0.800 .FIELD 运行时
+BELONG Promise 异步 .WEIGHT 0.700 .FIELD 运行时
+SUPPORT async/await Promise .WEIGHT 0.700 .FIELD 运行时
+UNDERMINE 回调地狱 代码可读性 .WEIGHT 0.800 .FIELD 运行时
+UNDERMINE async/await 回调地狱 .WEIGHT 0.800 .FIELD 运行时
+SUPPORT 并发控制 并发 .WEIGHT 0.600 .FIELD 运行时
+CAUSE 事件监听 内存泄漏 .WEIGHT 0.700 .FIELD 运行时
+CAUSE 闭包 内存泄漏 .WEIGHT 0.500 .FIELD 运行时
+SUPPORT npm 依赖管理 .WEIGHT 0.800 .FIELD 工程
+SUPPORT 包管理器 依赖管理 .WEIGHT 0.800 .FIELD 工程
+SUPPORT lockfile 可预测性 .WEIGHT 0.700 .FIELD 工程
+SUPPORT 语义化版本 兼容性 .WEIGHT 0.700 .FIELD 工程
+UNDERMINE 破坏性变更 兼容性 .WEIGHT 0.800 .FIELD 工程
+IF Node版本 兼容性 .WEIGHT 0.600 .FIELD 工程
+SUPPORT Monorepo 模块化 .WEIGHT 0.700 .FIELD 工程
+BELONG 工作区 Monorepo .WEIGHT 0.700 .FIELD 工程
+SUPPORT 模块系统 模块化 .WEIGHT 0.700 .FIELD 工程
+SUPPORT 路径别名 代码可读性 .WEIGHT 0.400 .FIELD 工程
+BELONG 构建工具 打包器 .WEIGHT 0.700 .FIELD 工程
+ENTAIL React 组件 .WEIGHT 0.800 .FIELD 前端
+IF 组件 props .WEIGHT 0.700 .FIELD 前端
+IF 组件 Hooks .WEIGHT 0.600 .FIELD 前端
+SUPPORT Hooks 状态管理 .WEIGHT 0.700 .FIELD 前端
+UNDERMINE 副作用 可预测性 .WEIGHT 0.600 .FIELD 前端
+SUPPORT 服务端渲染 可扩展性 .WEIGHT 0.500 .FIELD 前端
+UNDERMINE 防抖节流 性能瓶颈 .WEIGHT 0.600 .FIELD 前端
+ENTAIL Express 中间件 .WEIGHT 0.800 .FIELD 后端
+SUPPORT 中间件 请求校验 .WEIGHT 0.600 .FIELD 后端
+ENTAIL Express 路由 .WEIGHT 0.700 .FIELD 后端
+SUPPORT 接口层 接口设计 .WEIGHT 0.700 .FIELD 后端
+BELONG Prisma ORM .WEIGHT 0.700 .FIELD 后端
+SUPPORT ORM 数据模型 .WEIGHT 0.600 .FIELD 后端
+SUPPORT 数据库迁移 数据迁移 .WEIGHT 0.700 .FIELD 后端
+BELONG Vitest 测试 .WEIGHT 0.700 .FIELD 测试
+BELONG Jest 测试 .WEIGHT 0.700 .FIELD 测试
+SUPPORT 测试替身 单元测试 .WEIGHT 0.600 .FIELD 测试
+SUPPORT ESLint 代码规范 .WEIGHT 0.700 .FIELD 规范
+SUPPORT Prettier 代码规范 .WEIGHT 0.700 .FIELD 规范
+UNDERMINE ESLint any .WEIGHT 0.500 .FIELD 规范
+UNDERMINE 装饰器 代码可读性 .WEIGHT 0.400 .FIELD TS

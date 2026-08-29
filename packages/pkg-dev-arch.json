@@ -1,0 +1,853 @@
+{
+  "id": "pkg-dev-arch",
+  "name": "软件架构模式",
+  "industry": "软件开发",
+  "version": "1.0.0",
+  "namespace": "ARCH开发",
+  "owner": "developer",
+  "tier": "pro",
+  "license_required": true,
+  "imagos": [
+    {
+      "content": "软件架构",
+      "modality": "text",
+      "tags": [
+        "领域"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "分层架构",
+      "modality": "text",
+      "tags": [
+        "模式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "微服务",
+      "modality": "text",
+      "tags": [
+        "模式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "单体架构",
+      "modality": "text",
+      "tags": [
+        "模式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "事件驱动架构",
+      "modality": "text",
+      "tags": [
+        "模式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "事件溯源",
+      "modality": "text",
+      "tags": [
+        "事件"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "CQRS",
+      "modality": "text",
+      "tags": [
+        "事件"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "Saga",
+      "modality": "text",
+      "tags": [
+        "分布式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "DDD",
+      "modality": "text",
+      "tags": [
+        "方法"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "限界上下文",
+      "modality": "text",
+      "tags": [
+        "DDD"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "聚合",
+      "modality": "text",
+      "tags": [
+        "DDD"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "领域事件",
+      "modality": "text",
+      "tags": [
+        "DDD"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "仓储模式",
+      "modality": "text",
+      "tags": [
+        "模式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "工厂模式",
+      "modality": "text",
+      "tags": [
+        "模式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "依赖倒置",
+      "modality": "text",
+      "tags": [
+        "原则"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "依赖注入",
+      "modality": "text",
+      "tags": [
+        "原则"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "适配器模式",
+      "modality": "text",
+      "tags": [
+        "模式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "门面模式",
+      "modality": "text",
+      "tags": [
+        "模式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "代理模式",
+      "modality": "text",
+      "tags": [
+        "模式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "管道模式",
+      "modality": "text",
+      "tags": [
+        "模式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "侧车模式",
+      "modality": "text",
+      "tags": [
+        "云模式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "断路器",
+      "modality": "text",
+      "tags": [
+        "云模式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "网关",
+      "modality": "text",
+      "tags": [
+        "云模式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "服务发现",
+      "modality": "text",
+      "tags": [
+        "云模式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "配置中心",
+      "modality": "text",
+      "tags": [
+        "云模式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "幂等",
+      "modality": "text",
+      "tags": [
+        "分布式"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "arch"
+    },
+    {
+      "content": "最终一致性",
+      "modality": "text",
+      "tags": [
+        "分布式"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "arch"
+    },
+    {
+      "content": "分布式事务",
+      "modality": "text",
+      "tags": [
+        "分布式"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "arch"
+    },
+    {
+      "content": "消息队列",
+      "modality": "text",
+      "tags": [
+        "集成"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "事件总线",
+      "modality": "text",
+      "tags": [
+        "事件"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "充血模型",
+      "modality": "text",
+      "tags": [
+        "DDD"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "贫血模型",
+      "modality": "text",
+      "tags": [
+        "DDD"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "arch"
+    },
+    {
+      "content": "防腐层",
+      "modality": "text",
+      "tags": [
+        "DDD"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "模块化",
+      "modality": "text",
+      "tags": [
+        "原则"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "低耦合",
+      "modality": "text",
+      "tags": [
+        "原则"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "arch"
+    },
+    {
+      "content": "高内聚",
+      "modality": "text",
+      "tags": [
+        "原则"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "arch"
+    },
+    {
+      "content": "单一职责",
+      "modality": "text",
+      "tags": [
+        "SOLID"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "arch"
+    },
+    {
+      "content": "开闭原则",
+      "modality": "text",
+      "tags": [
+        "SOLID"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "arch"
+    },
+    {
+      "content": "接口隔离",
+      "modality": "text",
+      "tags": [
+        "SOLID"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "arch"
+    },
+    {
+      "content": "里氏替换",
+      "modality": "text",
+      "tags": [
+        "SOLID"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "arch"
+    },
+    {
+      "content": "架构演进",
+      "modality": "text",
+      "tags": [
+        "方法"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "技术债",
+      "modality": "text",
+      "tags": [
+        "方法"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "arch"
+    },
+    {
+      "content": "架构评审",
+      "modality": "text",
+      "tags": [
+        "方法"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "arch"
+    },
+    {
+      "content": "可扩展性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "arch"
+    },
+    {
+      "content": "可维护性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "arch"
+    },
+    {
+      "content": "可靠性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "arch"
+    },
+    {
+      "content": "可预测性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "arch"
+    },
+    {
+      "content": "缺陷",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "arch"
+    }
+  ],
+  "relations": [
+    {
+      "weight": 0.8,
+      "context_tag": "#ARCH",
+      "to": "分层架构",
+      "from": "软件架构",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#ARCH",
+      "to": "微服务",
+      "from": "软件架构",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#模式",
+      "to": "单体架构",
+      "from": "微服务",
+      "type": "oppose",
+      "directed": false
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#事件",
+      "to": "事件总线",
+      "from": "事件驱动架构",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#事件",
+      "to": "事件驱动架构",
+      "from": "事件溯源",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#事件",
+      "to": "事件驱动架构",
+      "from": "CQRS",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#分布式",
+      "to": "分布式事务",
+      "from": "Saga",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#分布式",
+      "to": "最终一致性",
+      "from": "Saga",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#DDD",
+      "to": "限界上下文",
+      "from": "DDD",
+      "type": "entail",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#DDD",
+      "to": "聚合",
+      "from": "限界上下文",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#DDD",
+      "to": "领域事件",
+      "from": "聚合",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#DDD",
+      "to": "事件驱动架构",
+      "from": "领域事件",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#DDD",
+      "to": "DDD",
+      "from": "充血模型",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#DDD",
+      "to": "充血模型",
+      "from": "贫血模型",
+      "type": "oppose",
+      "directed": false
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#DDD",
+      "to": "限界上下文",
+      "from": "防腐层",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#原则",
+      "to": "依赖注入",
+      "from": "依赖倒置",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#原则",
+      "to": "低耦合",
+      "from": "依赖注入",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#原则",
+      "to": "低耦合",
+      "from": "模块化",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#原则",
+      "to": "高内聚",
+      "from": "模块化",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#云模式",
+      "to": "可靠性",
+      "from": "断路器",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#云模式",
+      "to": "微服务",
+      "from": "网关",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#云模式",
+      "to": "微服务",
+      "from": "服务发现",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#云模式",
+      "to": "微服务",
+      "from": "配置中心",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#分布式",
+      "to": "可靠性",
+      "from": "幂等",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#集成",
+      "to": "低耦合",
+      "from": "消息队列",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#SOLID",
+      "to": "高内聚",
+      "from": "单一职责",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#SOLID",
+      "to": "可扩展性",
+      "from": "开闭原则",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#SOLID",
+      "to": "低耦合",
+      "from": "接口隔离",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#方法",
+      "to": "技术债",
+      "from": "架构演进",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#方法",
+      "to": "技术债",
+      "from": "架构评审",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#方法",
+      "to": "可维护性",
+      "from": "技术债",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "可维护性",
+      "from": "可扩展性",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "可预测性",
+      "from": "可靠性",
+      "type": "support",
+      "directed": true
+    }
+  ],
+  "scripts": [
+    {
+      "scenario": "架构风格选型",
+      "tags": [
+        "微服务",
+        "单体架构",
+        "微服务还是",
+        "单体还是",
+        "架构怎么选",
+        "要不要拆"
+      ],
+      "template": "业务复杂度与团队规模；微服务适合独立扩展；单体先模块化边界；演进路径预留"
+    },
+    {
+      "scenario": "DDD 战略设计",
+      "tags": [
+        "DDD",
+        "限界上下文"
+      ],
+      "template": "领域划分限界上下文；上下文映射；防腐层隔离；核心域识别"
+    },
+    {
+      "scenario": "事件驱动设计",
+      "tags": [
+        "事件驱动架构",
+        "事件溯源",
+        "事件驱动",
+        "事件溯源",
+        "CQRS"
+      ],
+      "template": "事件建模；事件总线选型；溯源与重放；CQRS 读写分离评估"
+    },
+    {
+      "scenario": "分布式事务",
+      "tags": [
+        "Saga",
+        "最终一致性",
+        "分布式事务",
+        "Saga",
+        "最终一致性"
+      ],
+      "template": "两阶段 vs Saga；Saga 补偿设计；幂等保障；最终一致性窗口评估"
+    },
+    {
+      "scenario": "模块化设计",
+      "tags": [
+        "模块化",
+        "低耦合",
+        "模块化",
+        "低耦合",
+        "高内聚"
+      ],
+      "template": "模块边界清晰；依赖方向单向；接口稳定；演进能力"
+    },
+    {
+      "scenario": "架构评审",
+      "tags": [
+        "架构评审",
+        "技术债"
+      ],
+      "template": "对照质量属性；权衡记录；风险清单；演进路线"
+    },
+    {
+      "scenario": "SOLID 应用",
+      "tags": [
+        "单一职责",
+        "开闭原则"
+      ],
+      "template": "职责单一拆分；开闭扩展；接口隔离；依赖倒置"
+    },
+    {
+      "scenario": "云原生模式",
+      "tags": [
+        "断路器",
+        "网关"
+      ],
+      "template": "弹性设计；熔断降级；统一网关；服务发现与配置中心"
+    },
+    {
+      "scenario": "遗留系统改造",
+      "tags": [
+        "单体架构",
+        "架构演进"
+      ],
+      "template": "绞杀者模式；防腐层过渡；增量迁移；并行运行"
+    },
+    {
+      "scenario": "架构决策记录",
+      "tags": [
+        "架构演进",
+        "架构评审"
+      ],
+      "template": "ADR 记录决策；背景与权衡；备选方案；修订历史"
+    }
+  ]
+}

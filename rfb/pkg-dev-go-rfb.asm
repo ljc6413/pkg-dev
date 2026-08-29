@@ -1,0 +1,117 @@
+.IMAGE Go
+.IMAGE goroutine
+.IMAGE 并发
+.IMAGE channel
+.IMAGE 并发安全
+.IMAGE select
+.IMAGE 互斥锁
+.IMAGE 数据竞争
+.IMAGE WaitGroup
+.IMAGE context
+.IMAGE goroutine泄漏
+.IMAGE 内存泄漏
+.IMAGE 缺陷
+.IMAGE 接口
+.IMAGE 可扩展性
+.IMAGE 测试
+.IMAGE 错误处理
+.IMAGE 可靠性
+.IMAGE 多返回值
+.IMAGE panic
+.IMAGE defer
+.IMAGE 资源泄漏
+.IMAGE 垃圾回收
+.IMAGE 空接口
+.IMAGE 类型安全
+.IMAGE 反射
+.IMAGE 可维护性
+.IMAGE gomod
+.IMAGE 依赖管理
+.IMAGE go.sum
+.IMAGE 可预测性
+.IMAGE 模块
+.IMAGE 模块化
+.IMAGE 标准库
+.IMAGE net/http
+.IMAGE 路由
+.IMAGE 中间件
+.IMAGE gRPC
+.IMAGE 微服务
+.IMAGE protobuf
+.IMAGE gotest
+.IMAGE 表驱动测试
+.IMAGE 基准测试
+.IMAGE 性能瓶颈
+.IMAGE mock
+.IMAGE govet
+.IMAGE 代码规范
+.IMAGE gofmt
+.IMAGE golangci-lint
+.IMAGE pprof
+.IMAGE 逃逸分析
+.IMAGE Kubernetes
+.IMAGE 云原生
+.IMAGE CLI工具
+.IMAGE 代码可读性
+.IMAGE 空指针
+.IMAGE 指针
+.IMAGE 类型断言
+.IMAGE 吞吐量
+.IMAGE 调试
+.FIELD GO
+.FIELD 工程
+.FIELD Web
+.FIELD 测试
+.FIELD 规范
+.FIELD 性能
+.FIELD 场景
+.FIELD 价值
+.FIELD 质量
+.FIELD 可观测
+ENTAIL Go goroutine .WEIGHT 0.900 .FIELD GO
+SUPPORT goroutine 并发 .WEIGHT 0.800 .FIELD GO
+SUPPORT channel 并发安全 .WEIGHT 0.800 .FIELD GO
+SUPPORT select channel .WEIGHT 0.700 .FIELD GO
+UNDERMINE 互斥锁 数据竞争 .WEIGHT 0.800 .FIELD GO
+SUPPORT WaitGroup goroutine .WEIGHT 0.700 .FIELD GO
+UNDERMINE context goroutine泄漏 .WEIGHT 0.700 .FIELD GO
+CAUSE goroutine泄漏 内存泄漏 .WEIGHT 0.800 .FIELD GO
+CAUSE 数据竞争 缺陷 .WEIGHT 0.800 .FIELD GO
+SUPPORT 接口 可扩展性 .WEIGHT 0.700 .FIELD GO
+SUPPORT 接口 测试 .WEIGHT 0.600 .FIELD GO
+SUPPORT 错误处理 可靠性 .WEIGHT 0.700 .FIELD GO
+SUPPORT 多返回值 错误处理 .WEIGHT 0.700 .FIELD GO
+UNDERMINE panic 错误处理 .WEIGHT 0.800 .FIELD GO
+UNDERMINE defer 资源泄漏 .WEIGHT 0.700 .FIELD GO
+UNDERMINE 垃圾回收 内存泄漏 .WEIGHT 0.700 .FIELD GO
+UNDERMINE 空接口 类型安全 .WEIGHT 0.700 .FIELD GO
+UNDERMINE 反射 可维护性 .WEIGHT 0.500 .FIELD GO
+SUPPORT gomod 依赖管理 .WEIGHT 0.800 .FIELD 工程
+SUPPORT go.sum 可预测性 .WEIGHT 0.700 .FIELD 工程
+SUPPORT 模块 模块化 .WEIGHT 0.700 .FIELD 工程
+SUPPORT 标准库 可靠性 .WEIGHT 0.600 .FIELD GO
+IF net/http 路由 .WEIGHT 0.700 .FIELD Web
+SUPPORT 中间件 net/http .WEIGHT 0.600 .FIELD Web
+SUPPORT gRPC 微服务 .WEIGHT 0.700 .FIELD Web
+IF protobuf gRPC .WEIGHT 0.800 .FIELD Web
+SUPPORT gotest 测试 .WEIGHT 0.800 .FIELD 测试
+SUPPORT 表驱动测试 测试 .WEIGHT 0.700 .FIELD 测试
+IF 基准测试 性能瓶颈 .WEIGHT 0.600 .FIELD 测试
+SUPPORT mock 测试 .WEIGHT 0.600 .FIELD 测试
+UNDERMINE 测试 缺陷 .WEIGHT 0.700 .FIELD 测试
+SUPPORT govet 代码规范 .WEIGHT 0.700 .FIELD 规范
+SUPPORT gofmt 代码规范 .WEIGHT 0.800 .FIELD 规范
+SUPPORT golangci-lint 代码规范 .WEIGHT 0.800 .FIELD 规范
+IF pprof 性能瓶颈 .WEIGHT 0.700 .FIELD 性能
+UNDERMINE 逃逸分析 性能瓶颈 .WEIGHT 0.500 .FIELD 性能
+SUPPORT Kubernetes 云原生 .WEIGHT 0.800 .FIELD 场景
+SUPPORT 云原生 微服务 .WEIGHT 0.700 .FIELD 场景
+SUPPORT CLI工具 标准库 .WEIGHT 0.600 .FIELD 场景
+SUPPORT 可维护性 代码可读性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可扩展性 可维护性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可靠性 可预测性 .WEIGHT 0.600 .FIELD 价值
+LIKE 空指针 缺陷 .WEIGHT 0.600 .FIELD 质量
+CAUSE 指针 空指针 .WEIGHT 0.600 .FIELD GO
+IF 类型断言 空接口 .WEIGHT 0.500 .FIELD GO
+SUPPORT goroutine 吞吐量 .WEIGHT 0.700 .FIELD GO
+UNDERMINE 调试 缺陷 .WEIGHT 0.600 .FIELD 可观测

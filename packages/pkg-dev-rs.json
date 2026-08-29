@@ -1,0 +1,1208 @@
+﻿{
+    "id":  "pkg-dev-rs",
+    "name":  "Rust 系统编程",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "RS开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "Rust",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "所有权",
+                       "modality":  "text",
+                       "tags":  [
+                                    "内存"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "借用",
+                       "modality":  "text",
+                       "tags":  [
+                                    "内存"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "生命周期",
+                       "modality":  "text",
+                       "tags":  [
+                                    "内存"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "内存安全",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "unsafe",
+                       "modality":  "text",
+                       "tags":  [
+                                    "反模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "trait",
+                       "modality":  "text",
+                       "tags":  [
+                                    "抽象"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "泛型",
+                       "modality":  "text",
+                       "tags":  [
+                                    "抽象"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "模式匹配",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "Result",
+                       "modality":  "text",
+                       "tags":  [
+                                    "错误"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "Option",
+                       "modality":  "text",
+                       "tags":  [
+                                    "错误"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "错误处理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "健壮"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "宏",
+                       "modality":  "text",
+                       "tags":  [
+                                    "元编程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "迭代器",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "闭包",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "智能指针",
+                       "modality":  "text",
+                       "tags":  [
+                                    "内存"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "Arc",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "Mutex",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "通道",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "异步",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "tokio",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "cargo",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "依赖管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "workspace",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "Cargo.lock",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "特征对象",
+                       "modality":  "text",
+                       "tags":  [
+                                    "抽象"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "枚举",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "结构体",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "模块系统",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "pub 接口",
+                       "modality":  "text",
+                       "tags":  [
+                                    "抽象"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "clippy",
+                       "modality":  "text",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "rustfmt",
+                       "modality":  "text",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "cargo test",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "单元测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "集成测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "基准测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "零成本抽象",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "内存泄漏",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "循环引用",
+                       "modality":  "text",
+                       "tags":  [
+                                    "反模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "数据竞争",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "无锁编程",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "编译错误",
+                       "modality":  "text",
+                       "tags":  [
+                                    "错误"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "借用检查器",
+                       "modality":  "text",
+                       "tags":  [
+                                    "内存"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "解引用",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "方法链",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "函数式风格",
+                       "modality":  "text",
+                       "tags":  [
+                                    "风格"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "命令式风格",
+                       "modality":  "text",
+                       "tags":  [
+                                    "风格"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "性能瓶颈",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "安全性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "可靠性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "可预测性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "代码可读性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "可维护性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "可扩展性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "缺陷",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "空指针",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "并发",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "吞吐量",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "FFI",
+                       "modality":  "text",
+                       "tags":  [
+                                    "集成"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "extern",
+                       "modality":  "text",
+                       "tags":  [
+                                    "集成"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "跨语言调用",
+                       "modality":  "text",
+                       "tags":  [
+                                    "集成"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "嵌入式",
+                       "modality":  "text",
+                       "tags":  [
+                                    "场景"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "系统编程",
+                       "modality":  "text",
+                       "tags":  [
+                                    "场景"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "WebAssembly",
+                       "modality":  "text",
+                       "tags":  [
+                                    "场景"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "编译优化",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "rs"
+                   },
+                   {
+                       "content":  "测试",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "代码规范",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "模块化",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#RS",
+                          "to":  "内存安全",
+                          "from":  "所有权",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#RS",
+                          "to":  "所有权",
+                          "from":  "借用",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#RS",
+                          "to":  "借用",
+                          "from":  "生命周期",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#RS",
+                          "to":  "借用",
+                          "from":  "借用检查器",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#RS",
+                          "to":  "编译错误",
+                          "from":  "借用检查器",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#RS",
+                          "to":  "内存安全",
+                          "from":  "unsafe",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#RS",
+                          "to":  "缺陷",
+                          "from":  "unsafe",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#RS",
+                          "to":  "空指针",
+                          "from":  "Option",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#RS",
+                          "to":  "错误处理",
+                          "from":  "Result",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#RS",
+                          "to":  "可靠性",
+                          "from":  "错误处理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#RS",
+                          "to":  "错误处理",
+                          "from":  "模式匹配",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#RS",
+                          "to":  "泛型",
+                          "from":  "trait",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#RS",
+                          "to":  "pub 接口",
+                          "from":  "trait",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#RS",
+                          "to":  "可扩展性",
+                          "from":  "特征对象",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#RS",
+                          "to":  "性能瓶颈",
+                          "from":  "零成本抽象",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#RS",
+                          "to":  "函数式风格",
+                          "from":  "迭代器",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#RS",
+                          "to":  "函数式风格",
+                          "from":  "闭包",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#RS",
+                          "to":  "内存泄漏",
+                          "from":  "循环引用",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#RS",
+                          "to":  "内存泄漏",
+                          "from":  "智能指针",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#并发",
+                          "to":  "缺陷",
+                          "from":  "数据竞争",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#并发",
+                          "to":  "数据竞争",
+                          "from":  "Mutex",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#并发",
+                          "to":  "Mutex",
+                          "from":  "Arc",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#并发",
+                          "to":  "数据竞争",
+                          "from":  "通道",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#并发",
+                          "to":  "并发",
+                          "from":  "通道",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#并发",
+                          "to":  "数据竞争",
+                          "from":  "无锁编程",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#并发",
+                          "to":  "tokio",
+                          "from":  "异步",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#并发",
+                          "to":  "吞吐量",
+                          "from":  "tokio",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#工程",
+                          "to":  "依赖管理",
+                          "from":  "cargo",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "可预测性",
+                          "from":  "Cargo.lock",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "模块化",
+                          "from":  "workspace",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "模块化",
+                          "from":  "模块系统",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#规范",
+                          "to":  "代码规范",
+                          "from":  "clippy",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#规范",
+                          "to":  "代码规范",
+                          "from":  "rustfmt",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "cargo test",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "单元测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "集成测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "基准测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "缺陷",
+                          "from":  "测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#RS",
+                          "to":  "可靠性",
+                          "from":  "内存安全",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#RS",
+                          "to":  "可靠性",
+                          "from":  "安全性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#集成",
+                          "to":  "跨语言调用",
+                          "from":  "FFI",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#集成",
+                          "to":  "FFI",
+                          "from":  "extern",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#场景",
+                          "to":  "嵌入式",
+                          "from":  "系统编程",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#场景",
+                          "to":  "可扩展性",
+                          "from":  "WebAssembly",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "编译优化",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#RS",
+                          "to":  "模式匹配",
+                          "from":  "枚举",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#RS",
+                          "to":  "pub 接口",
+                          "from":  "结构体",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.4,
+                          "context_tag":  "#RS",
+                          "to":  "代码可读性",
+                          "from":  "宏",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#RS",
+                          "to":  "代码可读性",
+                          "from":  "方法链",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "内存泄漏",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "代码可读性",
+                          "from":  "可维护性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "可维护性",
+                          "from":  "可扩展性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "可预测性",
+                          "from":  "可靠性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#RS",
+                          "to":  "空指针",
+                          "from":  "解引用",
+                          "type":  "causal",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "所有权重构",
+                        "tags":  [
+                                     "所有权",
+                                     "借用"
+                                 ],
+                        "template":  "先用所有权模型梳理资源归属；借用代替克隆避免深拷贝；生命周期标注最小化；借用检查器报错按语义修复而非绕行"
+                    },
+                    {
+                        "scenario":  "错误处理策略",
+                        "tags":  [
+                                     "Result",
+                                     "错误处理"
+                                 ],
+                        "template":  "函数返回 Result/Option 而非 panic；? 运算符传播错误；错误类型自定义层次；边界场景用模式匹配穷尽"
+                    },
+                    {
+                        "scenario":  "并发选型",
+                        "tags":  [
+                                     "并发",
+                                     "数据竞争"
+                                 ],
+                        "template":  "共享状态用 Arc+Mutex；消息传递优先用通道；无锁仅在高频热点且经证明；数据竞争编译期拦截；压测验证"
+                    },
+                    {
+                        "scenario":  "unsafe 审计",
+                        "tags":  [
+                                     "unsafe",
+                                     "内存安全"
+                                 ],
+                        "template":  "unsafe 块最小化并逐处注释理由；封装成安全抽象接口；每处 unsafe 配安全文档；用 miri/sanitizer 验证"
+                    },
+                    {
+                        "scenario":  "trait 设计",
+                        "tags":  [
+                                     "trait",
+                                     "泛型"
+                                 ],
+                        "template":  "先定义行为契约再实现；泛型约束适度；特征对象用于运行时多态；pub 接口稳定演进"
+                    },
+                    {
+                        "scenario":  "cargo workspace 组织",
+                        "tags":  [
+                                     "cargo",
+                                     "workspace"
+                                 ],
+                        "template":  "按 crate 边界拆分；共享代码提为内部 crate；Cargo.lock 提交入库；workspace 依赖统一版本"
+                    },
+                    {
+                        "scenario":  "宏设计",
+                        "tags":  [
+                                     "宏",
+                                     "代码可读性"
+                                 ],
+                        "template":  "声明宏用于语法糖；过程宏仅复杂场景；宏内文档与示例完备；滥用检测留白"
+                    },
+                    {
+                        "scenario":  "性能剖析",
+                        "tags":  [
+                                     "性能瓶颈",
+                                     "编译优化"
+                                 ],
+                        "template":  "先 profiling 定位热点；区分分配/拷贝/系统调用；迭代器链优于手动循环；release 优化与 LTO 配置"
+                    },
+                    {
+                        "scenario":  "测试策略",
+                        "tags":  [
+                                     "cargo test",
+                                     "单元测试"
+                                 ],
+                        "template":  "单元测试就近放模块内；集成测试放 tests/；基准测试留基准线；clippy+rustfmt 入 CI 门禁"
+                    },
+                    {
+                        "scenario":  "FFI 集成",
+                        "tags":  [
+                                     "FFI",
+                                     "跨语言调用"
+                                 ],
+                        "template":  "extern 块声明谨慎；边界类型显式转换；unsafe 封装隔离；跨语言错误码映射规范"
+                    }
+                ]
+}

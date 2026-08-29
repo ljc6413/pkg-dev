@@ -1,0 +1,51 @@
+.FIELD 场景
+.IMAGE 跨平台选型
+SUPPORT 跨平台选型 跨平台 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 跨平台选型 Flutter .WEIGHT 0.7 .FIELD 场景
+SUPPORT 跨平台选型 Flutter .WEIGHT 0.5 .FIELD 场景
+SUPPORT 跨平台选型 热更新 .WEIGHT 0.5 .FIELD 场景
+.IMAGE UI架构设计
+SUPPORT UI架构设计 状态管理 .WEIGHT 0.7 .FIELD 场景
+SUPPORT UI架构设计 MVVM .WEIGHT 0.7 .FIELD 场景
+SUPPORT UI架构设计 MVVM .WEIGHT 0.5 .FIELD 场景
+SUPPORT UI架构设计 生命周期 .WEIGHT 0.5 .FIELD 场景
+SUPPORT UI架构设计 测试 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 内存泄漏排查
+SUPPORT 内存泄漏排查 内存泄漏 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 内存泄漏排查 循环引用 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 内存泄漏排查 循环引用 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 内存泄漏排查 弱引用 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 启动优化
+SUPPORT 启动优化 卡顿 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 启动优化 主线程 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 弱网优化
+SUPPORT 弱网优化 弱网 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 弱网优化 离线缓存 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 弱网优化 离线缓存 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 弱网优化 弱网 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 应用发布
+SUPPORT 应用发布 签名 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 应用发布 应用商店 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 应用发布 证书 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 应用发布 审核 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 应用发布 崩溃 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 崩溃治理
+SUPPORT 崩溃治理 崩溃 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 崩溃治理 崩溃监控 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 崩溃治理 崩溃 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 移动测试策略
+SUPPORT 移动测试策略 单元测试 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 移动测试策略 UI测试 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 移动测试策略 UI测试 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 移动测试策略 模拟器 .WEIGHT 0.5 .FIELD 场景
+.IMAGE App安全加固
+SUPPORT App安全加固 权限管理 .WEIGHT 0.7 .FIELD 场景
+SUPPORT App安全加固 数据加密 .WEIGHT 0.7 .FIELD 场景
+SUPPORT App安全加固 安全存储 .WEIGHT 0.5 .FIELD 场景
+SUPPORT App安全加固 证书 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 性能监控
+SUPPORT 性能监控 卡顿 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 性能监控 帧率 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 性能监控 帧率 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 性能监控 卡顿 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 性能监控 主线程 .WEIGHT 0.5 .FIELD 场景

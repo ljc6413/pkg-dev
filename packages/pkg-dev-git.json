@@ -1,0 +1,867 @@
+{
+  "id": "pkg-dev-git",
+  "name": "Git 版本控制与协作",
+  "industry": "软件开发",
+  "version": "1.0.0",
+  "namespace": "GIT开发",
+  "owner": "developer",
+  "tier": "pro",
+  "license_required": true,
+  "imagos": [
+    {
+      "content": "Git",
+      "modality": "text",
+      "tags": [
+        "工具"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "版本控制",
+      "modality": "text",
+      "tags": [
+        "核心"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "提交",
+      "modality": "text",
+      "tags": [
+        "操作"
+      ],
+      "confidence": 1,
+      "kind": "event",
+      "category": "git"
+    },
+    {
+      "content": "分支",
+      "modality": "text",
+      "tags": [
+        "操作"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "合并",
+      "modality": "text",
+      "tags": [
+        "操作"
+      ],
+      "confidence": 1,
+      "kind": "event",
+      "category": "git"
+    },
+    {
+      "content": "变基",
+      "modality": "text",
+      "tags": [
+        "操作"
+      ],
+      "confidence": 1,
+      "kind": "event",
+      "category": "git"
+    },
+    {
+      "content": "Cherry-pick",
+      "modality": "text",
+      "tags": [
+        "操作"
+      ],
+      "confidence": 1,
+      "kind": "event",
+      "category": "git"
+    },
+    {
+      "content": "重置",
+      "modality": "text",
+      "tags": [
+        "操作"
+      ],
+      "confidence": 1,
+      "kind": "event",
+      "category": "git"
+    },
+    {
+      "content": "回滚",
+      "modality": "text",
+      "tags": [
+        "操作"
+      ],
+      "confidence": 1,
+      "kind": "event",
+      "category": "git"
+    },
+    {
+      "content": "冲突",
+      "modality": "text",
+      "tags": [
+        "问题"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "git"
+    },
+    {
+      "content": "工作区",
+      "modality": "text",
+      "tags": [
+        "概念"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "暂存区",
+      "modality": "text",
+      "tags": [
+        "概念"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "本地仓库",
+      "modality": "text",
+      "tags": [
+        "概念"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "远程仓库",
+      "modality": "text",
+      "tags": [
+        "概念"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "标签",
+      "modality": "text",
+      "tags": [
+        "概念"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "Submodule",
+      "modality": "text",
+      "tags": [
+        "概念"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "分支策略",
+      "modality": "text",
+      "tags": [
+        "工作流"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "GitFlow",
+      "modality": "text",
+      "tags": [
+        "工作流"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "Trunk-based",
+      "modality": "text",
+      "tags": [
+        "工作流"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "GitHub Flow",
+      "modality": "text",
+      "tags": [
+        "工作流"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "Pull Request",
+      "modality": "text",
+      "tags": [
+        "协作"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "Code Review",
+      "modality": "text",
+      "tags": [
+        "协作"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "Issue",
+      "modality": "text",
+      "tags": [
+        "协作"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "里程碑",
+      "modality": "text",
+      "tags": [
+        "协作"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "CI/CD",
+      "modality": "text",
+      "tags": [
+        "自动化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "自动化测试",
+      "modality": "text",
+      "tags": [
+        "自动化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "Git Hooks",
+      "modality": "text",
+      "tags": [
+        "自动化"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "提交信息",
+      "modality": "text",
+      "tags": [
+        "规范"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "Conventional Commits",
+      "modality": "text",
+      "tags": [
+        "规范"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "语义化版本",
+      "modality": "text",
+      "tags": [
+        "发布"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "git"
+    },
+    {
+      "content": "发布",
+      "modality": "text",
+      "tags": [
+        "发布"
+      ],
+      "confidence": 1,
+      "kind": "event",
+      "category": "git"
+    },
+    {
+      "content": "变更日志",
+      "modality": "text",
+      "tags": [
+        "发布"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "开源协作",
+      "modality": "text",
+      "tags": [
+        "生态"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "贡献指南",
+      "modality": "text",
+      "tags": [
+        "生态"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "许可证",
+      "modality": "text",
+      "tags": [
+        "生态"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "Fork",
+      "modality": "text",
+      "tags": [
+        "生态"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "保护分支",
+      "modality": "text",
+      "tags": [
+        "治理"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "强制推送",
+      "modality": "text",
+      "tags": [
+        "治理"
+      ],
+      "confidence": 1,
+      "kind": "event",
+      "category": "git"
+    },
+    {
+      "content": "回退策略",
+      "modality": "text",
+      "tags": [
+        "治理"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "多人协作",
+      "modality": "text",
+      "tags": [
+        "协作"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "代码所有权",
+      "modality": "text",
+      "tags": [
+        "治理"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "可追溯性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "git"
+    },
+    {
+      "content": "可预测性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "git"
+    },
+    {
+      "content": "可维护性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "git"
+    },
+    {
+      "content": "可靠性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "git"
+    },
+    {
+      "content": "缺陷",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "git"
+    },
+    {
+      "content": "测试",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    },
+    {
+      "content": "代码规范",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "git"
+    }
+  ],
+  "relations": [
+    {
+      "weight": 0.9,
+      "context_tag": "#GIT",
+      "to": "版本控制",
+      "from": "Git",
+      "type": "entail",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#GIT",
+      "to": "提交",
+      "from": "版本控制",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#GIT",
+      "to": "分支",
+      "from": "提交",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#GIT",
+      "to": "合并",
+      "from": "分支",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#GIT",
+      "to": "分支",
+      "from": "变基",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#GIT",
+      "to": "冲突",
+      "from": "合并",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.5,
+      "context_tag": "#GIT",
+      "to": "分支",
+      "from": "Cherry-pick",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#GIT",
+      "to": "回滚",
+      "from": "重置",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#概念",
+      "to": "暂存区",
+      "from": "工作区",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#概念",
+      "to": "本地仓库",
+      "from": "暂存区",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#概念",
+      "to": "远程仓库",
+      "from": "本地仓库",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#工作流",
+      "to": "GitFlow",
+      "from": "分支策略",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#工作流",
+      "to": "Trunk-based",
+      "from": "分支策略",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#工作流",
+      "to": "GitHub Flow",
+      "from": "分支策略",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#协作",
+      "to": "Code Review",
+      "from": "Pull Request",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#协作",
+      "to": "缺陷",
+      "from": "Code Review",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#协作",
+      "to": "Pull Request",
+      "from": "多人协作",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#自动化",
+      "to": "自动化测试",
+      "from": "CI/CD",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#自动化",
+      "to": "缺陷",
+      "from": "自动化测试",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#自动化",
+      "to": "自动化测试",
+      "from": "Git Hooks",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#规范",
+      "to": "提交信息",
+      "from": "Conventional Commits",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#规范",
+      "to": "可追溯性",
+      "from": "提交信息",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#发布",
+      "to": "发布",
+      "from": "语义化版本",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#发布",
+      "to": "变更日志",
+      "from": "发布",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#生态",
+      "to": "Fork",
+      "from": "开源协作",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#生态",
+      "to": "贡献指南",
+      "from": "开源协作",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#生态",
+      "to": "开源协作",
+      "from": "许可证",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#治理",
+      "to": "强制推送",
+      "from": "保护分支",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#治理",
+      "to": "可靠性",
+      "from": "保护分支",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#治理",
+      "to": "可靠性",
+      "from": "回退策略",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#治理",
+      "to": "可维护性",
+      "from": "代码所有权",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "可预测性",
+      "from": "可追溯性",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#质量",
+      "to": "缺陷",
+      "from": "测试",
+      "type": "undermine",
+      "directed": true
+    }
+  ],
+  "scripts": [
+    {
+      "scenario": "分支策略选型",
+      "tags": [
+        "分支策略",
+        "GitFlow",
+        "分支策略怎么选",
+        "Git分支",
+        "分支怎么选",
+        "用哪种分支"
+      ],
+      "template": "团队规模与发布频率评估；GitFlow 适复杂发布；Trunk-based 适持续交付；GitHub Flow 适小团队"
+    },
+    {
+      "scenario": "冲突解决",
+      "tags": [
+        "合并",
+        "冲突",
+        "代码冲突",
+        "合并冲突",
+        "冲突怎么解决",
+        "解决冲突"
+      ],
+      "template": "冲突定位上下文；手动合并 vs 工具辅助；重写历史谨慎；解决后完整验证"
+    },
+    {
+      "scenario": "提交规范",
+      "tags": [
+        "Conventional Commits",
+        "提交信息",
+        "提交信息",
+        "commit规范",
+        "怎么提交"
+      ],
+      "template": "类型前缀统一（feat/fix/docs）；正文说明动机；关联 Issue；提交粒度小而完整"
+    },
+    {
+      "scenario": "Code Review 流程",
+      "tags": [
+        "Pull Request",
+        "Code Review",
+        "代码评审",
+        "CodeReview",
+        "review流程",
+        "代码审查"
+      ],
+      "template": "PR 小而聚焦；评审清单（正确性/风格/测试）；异步评审；合并条件明确"
+    },
+    {
+      "scenario": "发布管理",
+      "tags": [
+        "语义化版本",
+        "发布",
+        "怎么发布",
+        "版本发布",
+        "发布流程",
+        "语义化版本"
+      ],
+      "template": "版本号语义化；变更日志自动生成；标签管理；发布分支策略"
+    },
+    {
+      "scenario": "历史重写",
+      "tags": [
+        "变基",
+        "重置"
+      ],
+      "template": "本地历史可重写；已推送历史禁改；rebase 交互式整理；force-push 危险"
+    },
+    {
+      "scenario": "回滚恢复",
+      "tags": [
+        "回滚",
+        "回退策略",
+        "回滚",
+        "怎么回滚",
+        "恢复版本",
+        "撤销提交"
+      ],
+      "template": "区分 revert 与 reset；发布回滚用 revert；本地误操作用 reflog 恢复；回滚验证"
+    },
+    {
+      "scenario": "开源协作",
+      "tags": [
+        "开源协作",
+        "贡献指南"
+      ],
+      "template": "Fork 工作流；Issue 先行讨论；PR 合规（测试/文档）；维护者响应节奏"
+    },
+    {
+      "scenario": "CI 集成",
+      "tags": [
+        "CI/CD",
+        "Git Hooks",
+        "CI",
+        "持续集成",
+        "自动化构建",
+        "流水线"
+      ],
+      "template": "PR 触发检查；提交前 hook 快速校验；流水线含测试与构建；门禁规则"
+    },
+    {
+      "scenario": "多仓库管理",
+      "tags": [
+        "Submodule",
+        "远程仓库"
+      ],
+      "template": "Submodule 慎用；Monorepo vs 多仓库权衡；子模块同步策略；依赖方向清晰"
+    }
+  ]
+}
