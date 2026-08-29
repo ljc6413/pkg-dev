@@ -25,12 +25,14 @@
     "yihe-pkg-share": "tools/evolve-share.mjs",
     "yihe-pkg-telemetry": "tools/telemetry-export.mjs",
     "yihe-pkg-telemetry-merge": "tools/telemetry-merge.mjs",
+    "yihe-pkg-remind": "tools/trial-remind.mjs",
     "yihe-pkg-key": "tools/key-issue.mjs",
     "yihe-pkg-install": "bootstrap-install.mjs"
   },
   "scripts": {
     "smoke": "node tools/smoke-test.mjs --selfcheck",
-    "rfb": "node tools/smoke-test.mjs --rfb"
+    "rfb": "node tools/smoke-test.mjs --rfb",
+    "postinstall": "node tools/postinstall-report.mjs"
   },
   "engines": {
     "node": ">=18"
