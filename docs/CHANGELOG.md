@@ -12,6 +12,12 @@
   - **试用到期提醒（服务器端落地）**：`/api/issue-key` 支持 `trial_days` 签发试用密钥（is_trial/trial_until）；`/api/validate`/`/api/activate` 返回 `trial.days_left`，剩余 ≤3 天附带购买提醒 notice，过期 fail-closed（TRIAL_EXPIRED + promo 链接）；`/v1/reason` 对过期试用密钥返回 402 `code=TRIAL_EXPIRED` + 购买地址；新增管理端点 `GET/POST /api/trials?token=&within=` 列出 N 天内到期试用（按剩余天数排序，运营跟进转化）；**已实测**：签发 2 天试用 → validate 带 notice → /api/trials 命中 → 回拨 trial_until 模拟过期 → validate 报 trial_expired、/v1/reason 402
   - **运营统计升级**：ops-stats.sh 新增「试用到期提醒」区块（试用总数 / 7 天内到期 / 已过期未转化清单，含 buyer/剩余天数/promo 跟进链接）
   - **本地试用/配额提醒工具**：`tools/trial-remind.mjs`（bin `yihe-pkg-remind`）——读 `$DSH_HOME/yihe-host.json` 计算套餐配额余量（free 500/pro 10000/team 50000/enterprise 不限，与内核 PLANS 一致），配额临尽（≤10% 或 ≤50 次）提示购买、用尽 fail-locked；`--key <密钥>` 可选查询服务器端试用剩余天数（临期 ≤3 天提醒、过期锁定）；退出码 0/2/3 供脚本判断；**已实测**：near-quota→exit2、exhausted→exit3、healthy→exit0、试用临期/过期 --key 查询均正确
+- **运营增长仪表盘（/ops Web 仪表盘）**：
+  - **页面**：`https://www.zhiyiwei.cn/ops`（公开页面，数据接口需 admin token）——KPI 卡片（今日访问/30 天访问/总下载/安装回传/激活密钥/付费订单/营收/试用临期）+ 转化漏斗（访问→下载→回传→激活→付费）+ 访问 30 天趋势柱状图 + 安装回传 7 天趋势 + GitHub 增长卡（仓库星标/PR #334 状态/Discussion 5018 评论数/Release 下载）+ 试用临期清单 + 最近回传/渠道分布 + 运营快照明细；零第三方依赖（内联 CSS/JS），60s 自动刷新
+  - **数据链路**：`scripts/ops-snapshot.mjs`（cron 每 10 分钟）→ `data/ops-snapshot.json`（schema yihe-ops-snapshot-v1）→ `GET /api/ops?token=`；聚合源：nginx access.log（sudo 读，解析访问/下载/API + 30 天趋势）、keys/orders/usage 台账、telemetry 回传目录、GitHub REST+GraphQL（PR #334 状态、Discussion 5018 评论数）
+  - **首页入口**：index.html 页脚加「运营后台 ↗」链接
+  - **实测**：快照生成正常（visits 395 / downloads 39 / telemetry 3 / gh=ok）；`/ops` HTTP 200；`/api/ops` 带 token 返回快照、未授权 403；cron 已配置
+  - **部署文档**：DEPLOY-TENCENT.md 增「运营增长仪表盘」与「试用到期提醒」运营章节
 - **27 个编程包商业许可全部激活**（PRO_PACKS 28 三处同步后重启生效；26 包于首轮重启激活，pkg-dev-evolve 于 PRO_PACKS 28 重启后激活）
 - **团队版 team 档落地**：PLANS 增 `team`（¥299/月 / 50000 次 / 超额 ¥0.03/次），三处同步（内置插件/工作区 JS/Rust gateway），`activateLicense` 支持 `TEAM-` 密钥前缀，`tierOf` 升序链 enterprise > team > pro > free，Rust 测试补 TEAM- 断言通过
 - **本地优先·脚本预匹配短路落地**：`script_hit_threshold` 配置（默认 0=关闭，>0 开启）——开启后问题命中高分脚本（score≥阈值）→ 免 reason 直接返回脚本模板结论（gateway=script_hit，bump script 免费计量，0 token）；`matchScripts` 增关键词通道（问题含场景名/标签词提升分数，弥补中文语义鸿沟）；三处同步 + Rust 测试 `reason_script_hit_shortcircuit_via_rpc` 通过（34/34）；开启方式：`yihe_admin op=config action=set key=script_hit_threshold value=0.5`；**已实测**：重启后开启 0.5，「这个模块要不要重构」→ 直接返回重构决策脚本模板（dec-4716 入库，reason 不 +1，script 计量 +1）
