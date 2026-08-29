@@ -1,0 +1,44 @@
+.FIELD 场景
+.IMAGE 威胁建模
+SUPPORT 威胁建模 攻击面 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 威胁建模 攻击面 .WEIGHT 0.5 .FIELD 场景
+.IMAGE Web应用安全加固
+SUPPORT Web应用安全加固 SQL注入 .WEIGHT 0.7 .FIELD 场景
+SUPPORT Web应用安全加固 XSS .WEIGHT 0.7 .FIELD 场景
+SUPPORT Web应用安全加固 XSS .WEIGHT 0.5 .FIELD 场景
+SUPPORT Web应用安全加固 CSRF .WEIGHT 0.5 .FIELD 场景
+.IMAGE 认证授权设计
+SUPPORT 认证授权设计 认证 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 认证授权设计 授权 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 认证授权设计 认证 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 认证授权设计 RBAC .WEIGHT 0.5 .FIELD 场景
+SUPPORT 认证授权设计 最小权限 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 认证授权设计 OAuth .WEIGHT 0.5 .FIELD 场景
+.IMAGE 数据安全
+SUPPORT 数据安全 数据脱敏 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 数据安全 加密 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 数据安全 数据分类 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 事件响应
+SUPPORT 事件响应 应急响应 .WEIGHT 0.7 .FIELD 场景
+.IMAGE 安全测试体系
+SUPPORT 安全测试体系 安全测试 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 安全测试体系 渗透测试 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 安全测试体系 威胁建模 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 安全测试体系 渗透测试 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 安全测试体系 模糊测试 .WEIGHT 0.5 .FIELD 场景
+.IMAGE DevSecOps
+SUPPORT DevSecOps 供应链安全 .WEIGHT 0.7 .FIELD 场景
+SUPPORT DevSecOps 安全 .WEIGHT 0.5 .FIELD 场景
+SUPPORT DevSecOps 合规 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 零信任架构
+SUPPORT 零信任架构 零信任 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 零信任架构 最小权限 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 零信任架构 授权 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 零信任架构 加密 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 隐私合规
+SUPPORT 隐私合规 GDPR .WEIGHT 0.7 .FIELD 场景
+.IMAGE 安全运营
+SUPPORT 安全运营 安全运营中心 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 安全运营 威胁情报 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 安全运营 威胁情报 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 安全运营 蜜罐 .WEIGHT 0.5 .FIELD 场景

@@ -1,0 +1,115 @@
+.IMAGE 算法
+.IMAGE 时间复杂度
+.IMAGE 空间复杂度
+.IMAGE 大O表示
+.IMAGE 数组
+.IMAGE 链表
+.IMAGE 栈
+.IMAGE 队列
+.IMAGE 哈希表
+.IMAGE 二分查找
+.IMAGE 树
+.IMAGE 二叉树
+.IMAGE 二叉搜索树
+.IMAGE 平衡树
+.IMAGE 堆
+.IMAGE Trie
+.IMAGE 字符串匹配
+.IMAGE 图
+.IMAGE 有向图
+.IMAGE 无向图
+.IMAGE 深度优先搜索
+.IMAGE 广度优先搜索
+.IMAGE 拓扑排序
+.IMAGE 最短路径
+.IMAGE 最小生成树
+.IMAGE 排序算法
+.IMAGE 快速排序
+.IMAGE 归并排序
+.IMAGE 堆排序
+.IMAGE 分治法
+.IMAGE 有序数组
+.IMAGE 动态规划
+.IMAGE 状态转移
+.IMAGE 最优子结构
+.IMAGE 重叠子问题
+.IMAGE 记忆化
+.IMAGE 递归
+.IMAGE 贪心算法
+.IMAGE 回溯
+.IMAGE 滑动窗口
+.IMAGE 双指针
+.IMAGE 前缀和
+.IMAGE 暴力解法
+.IMAGE 性能瓶颈
+.IMAGE 边界条件
+.IMAGE 缺陷
+.IMAGE 空指针
+.IMAGE 溢出
+.IMAGE KMP
+.IMAGE 并查集
+.IMAGE 线段树
+.IMAGE 区间查询
+.IMAGE LRU缓存
+.IMAGE 测试
+.FIELD ALGO
+.FIELD 复杂度
+.FIELD 基础
+.FIELD 树
+.FIELD 图
+.FIELD 排序
+.FIELD 查找
+.FIELD DP
+.FIELD 范式
+.FIELD 技巧
+.FIELD 反模式
+.FIELD 陷阱
+.FIELD 字符串
+.FIELD 高级
+.FIELD 应用
+.FIELD 质量
+IF 算法 时间复杂度 .WEIGHT 0.900 .FIELD ALGO
+IF 算法 空间复杂度 .WEIGHT 0.900 .FIELD ALGO
+IF 时间复杂度 大O表示 .WEIGHT 0.900 .FIELD 复杂度
+IF 空间复杂度 大O表示 .WEIGHT 0.900 .FIELD 复杂度
+BUT 数组 链表 .WEIGHT 0.600 .FIELD 基础
+LIKE 栈 队列 .WEIGHT 0.600 .FIELD 基础
+BUT 哈希表 二分查找 .WEIGHT 0.500 .FIELD 基础
+BELONG 树 二叉树 .WEIGHT 0.800 .FIELD 树
+BELONG 二叉树 二叉搜索树 .WEIGHT 0.800 .FIELD 树
+SUPPORT 二叉搜索树 平衡树 .WEIGHT 0.700 .FIELD 树
+BELONG 堆 二叉树 .WEIGHT 0.700 .FIELD 树
+SUPPORT Trie 字符串匹配 .WEIGHT 0.700 .FIELD 树
+BELONG 图 有向图 .WEIGHT 0.800 .FIELD 图
+BELONG 图 无向图 .WEIGHT 0.800 .FIELD 图
+SUPPORT 深度优先搜索 图 .WEIGHT 0.800 .FIELD 图
+SUPPORT 广度优先搜索 图 .WEIGHT 0.800 .FIELD 图
+IF 拓扑排序 有向图 .WEIGHT 0.800 .FIELD 图
+SUPPORT 最短路径 图 .WEIGHT 0.700 .FIELD 图
+IF 最小生成树 无向图 .WEIGHT 0.800 .FIELD 图
+BELONG 排序算法 快速排序 .WEIGHT 0.800 .FIELD 排序
+BELONG 排序算法 归并排序 .WEIGHT 0.800 .FIELD 排序
+BELONG 排序算法 堆排序 .WEIGHT 0.800 .FIELD 排序
+IF 快速排序 分治法 .WEIGHT 0.800 .FIELD 排序
+IF 归并排序 分治法 .WEIGHT 0.800 .FIELD 排序
+IF 二分查找 有序数组 .WEIGHT 0.800 .FIELD 查找
+IF 动态规划 状态转移 .WEIGHT 0.900 .FIELD DP
+IF 动态规划 最优子结构 .WEIGHT 0.800 .FIELD DP
+IF 动态规划 重叠子问题 .WEIGHT 0.800 .FIELD DP
+UNDERMINE 记忆化 重叠子问题 .WEIGHT 0.700 .FIELD DP
+SUPPORT 递归 动态规划 .WEIGHT 0.700 .FIELD 范式
+IF 贪心算法 最优子结构 .WEIGHT 0.700 .FIELD 范式
+SUPPORT 回溯 递归 .WEIGHT 0.800 .FIELD 范式
+SUPPORT 分治法 递归 .WEIGHT 0.800 .FIELD 范式
+SUPPORT 滑动窗口 数组 .WEIGHT 0.700 .FIELD 技巧
+SUPPORT 双指针 数组 .WEIGHT 0.700 .FIELD 技巧
+SUPPORT 前缀和 数组 .WEIGHT 0.700 .FIELD 技巧
+CAUSE 暴力解法 性能瓶颈 .WEIGHT 0.800 .FIELD 反模式
+UNDERMINE 边界条件 缺陷 .WEIGHT 0.700 .FIELD 陷阱
+CAUSE 空指针 缺陷 .WEIGHT 0.800 .FIELD 陷阱
+CAUSE 溢出 缺陷 .WEIGHT 0.700 .FIELD 陷阱
+SUPPORT KMP 字符串匹配 .WEIGHT 0.800 .FIELD 字符串
+SUPPORT 并查集 图 .WEIGHT 0.700 .FIELD 高级
+SUPPORT 线段树 区间查询 .WEIGHT 0.800 .FIELD 高级
+SUPPORT LRU缓存 哈希表 .WEIGHT 0.700 .FIELD 应用
+UNDERMINE 测试 缺陷 .WEIGHT 0.600 .FIELD 质量

@@ -1,0 +1,961 @@
+{
+  "id": "pkg-dev-net",
+  "name": "网络编程",
+  "industry": "软件开发",
+  "version": "1.0.0",
+  "namespace": "NET开发",
+  "owner": "developer",
+  "tier": "pro",
+  "license_required": true,
+  "imagos": [
+    {
+      "content": "网络编程",
+      "modality": "text",
+      "tags": [
+        "领域"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "TCP/IP",
+      "modality": "text",
+      "tags": [
+        "协议"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "HTTP",
+      "modality": "text",
+      "tags": [
+        "协议"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "HTTPS",
+      "modality": "text",
+      "tags": [
+        "协议"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "WebSocket",
+      "modality": "text",
+      "tags": [
+        "协议"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "gRPC",
+      "modality": "text",
+      "tags": [
+        "协议"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "UDP",
+      "modality": "text",
+      "tags": [
+        "协议"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "QUIC",
+      "modality": "text",
+      "tags": [
+        "协议"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "Socket",
+      "modality": "text",
+      "tags": [
+        "基础"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "TCP 三次握手",
+      "modality": "text",
+      "tags": [
+        "TCP"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "四次挥手",
+      "modality": "text",
+      "tags": [
+        "TCP"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "粘包拆包",
+      "modality": "text",
+      "tags": [
+        "TCP"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "net"
+    },
+    {
+      "content": "流量控制",
+      "modality": "text",
+      "tags": [
+        "TCP"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "拥塞控制",
+      "modality": "text",
+      "tags": [
+        "TCP"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "HTTP 缓存",
+      "modality": "text",
+      "tags": [
+        "HTTP"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "连接池",
+      "modality": "text",
+      "tags": [
+        "工程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "长连接",
+      "modality": "text",
+      "tags": [
+        "工程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "短连接",
+      "modality": "text",
+      "tags": [
+        "工程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "超时控制",
+      "modality": "text",
+      "tags": [
+        "工程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "重试机制",
+      "modality": "text",
+      "tags": [
+        "工程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "背压",
+      "modality": "text",
+      "tags": [
+        "工程"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "序列化",
+      "modality": "text",
+      "tags": [
+        "数据"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "Protobuf",
+      "modality": "text",
+      "tags": [
+        "数据"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "JSON",
+      "modality": "text",
+      "tags": [
+        "数据"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "消息编解码",
+      "modality": "text",
+      "tags": [
+        "数据"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "负载均衡",
+      "modality": "text",
+      "tags": [
+        "架构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "DNS",
+      "modality": "text",
+      "tags": [
+        "架构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "CDN",
+      "modality": "text",
+      "tags": [
+        "架构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "反向代理",
+      "modality": "text",
+      "tags": [
+        "架构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "API 网关",
+      "modality": "text",
+      "tags": [
+        "架构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "限流",
+      "modality": "text",
+      "tags": [
+        "架构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "网络延迟",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "net"
+    },
+    {
+      "content": "吞吐量",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "net"
+    },
+    {
+      "content": "带宽",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "丢包",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "net"
+    },
+    {
+      "content": "性能瓶颈",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "net"
+    },
+    {
+      "content": "抓包",
+      "modality": "text",
+      "tags": [
+        "调试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "Wireshark",
+      "modality": "text",
+      "tags": [
+        "调试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "tcpdump",
+      "modality": "text",
+      "tags": [
+        "调试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "网络安全",
+      "modality": "text",
+      "tags": [
+        "安全"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "TLS",
+      "modality": "text",
+      "tags": [
+        "安全"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "中间人攻击",
+      "modality": "text",
+      "tags": [
+        "安全"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "net"
+    },
+    {
+      "content": "证书",
+      "modality": "text",
+      "tags": [
+        "安全"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "同步模型",
+      "modality": "text",
+      "tags": [
+        "模型"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "异步模型",
+      "modality": "text",
+      "tags": [
+        "模型"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "事件驱动",
+      "modality": "text",
+      "tags": [
+        "模型"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "协程",
+      "modality": "text",
+      "tags": [
+        "模型"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "可靠性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "net"
+    },
+    {
+      "content": "可预测性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "net"
+    },
+    {
+      "content": "可维护性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "net"
+    },
+    {
+      "content": "缺陷",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "net"
+    },
+    {
+      "content": "测试",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "net"
+    },
+    {
+      "content": "代码可读性",
+      "kind": "entity",
+      "category": "shared",
+      "tags": [],
+      "modality": "text",
+      "confidence": 1
+    }
+  ],
+  "relations": [
+    {
+      "weight": 0.9,
+      "context_tag": "#NET",
+      "to": "TCP/IP",
+      "from": "网络编程",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#NET",
+      "to": "HTTP",
+      "from": "网络编程",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#基础",
+      "to": "TCP/IP",
+      "from": "Socket",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#TCP",
+      "to": "TCP/IP",
+      "from": "TCP 三次握手",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#TCP",
+      "to": "TCP/IP",
+      "from": "四次挥手",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#TCP",
+      "to": "缺陷",
+      "from": "粘包拆包",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#TCP",
+      "to": "可靠性",
+      "from": "流量控制",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#TCP",
+      "to": "可靠性",
+      "from": "拥塞控制",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#HTTP",
+      "to": "网络延迟",
+      "from": "HTTP 缓存",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#协议",
+      "to": "长连接",
+      "from": "WebSocket",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#协议",
+      "to": "Protobuf",
+      "from": "gRPC",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#协议",
+      "to": "丢包",
+      "from": "UDP",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#协议",
+      "to": "UDP",
+      "from": "QUIC",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#工程",
+      "to": "网络延迟",
+      "from": "连接池",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#工程",
+      "to": "连接池",
+      "from": "长连接",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#工程",
+      "to": "可靠性",
+      "from": "超时控制",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#工程",
+      "to": "可靠性",
+      "from": "重试机制",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#工程",
+      "to": "可靠性",
+      "from": "背压",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#数据",
+      "to": "序列化",
+      "from": "消息编解码",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#数据",
+      "to": "序列化",
+      "from": "Protobuf",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#数据",
+      "to": "序列化",
+      "from": "JSON",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#架构",
+      "to": "吞吐量",
+      "from": "负载均衡",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#架构",
+      "to": "负载均衡",
+      "from": "反向代理",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#架构",
+      "to": "反向代理",
+      "from": "API 网关",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#架构",
+      "to": "可靠性",
+      "from": "限流",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#架构",
+      "to": "网络延迟",
+      "from": "CDN",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.5,
+      "context_tag": "#架构",
+      "to": "网络延迟",
+      "from": "DNS",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#性能",
+      "to": "网络延迟",
+      "from": "丢包",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#性能",
+      "to": "性能瓶颈",
+      "from": "网络延迟",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#调试",
+      "to": "缺陷",
+      "from": "抓包",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#调试",
+      "to": "抓包",
+      "from": "Wireshark",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#调试",
+      "to": "抓包",
+      "from": "tcpdump",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#安全",
+      "to": "网络安全",
+      "from": "TLS",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#安全",
+      "to": "TLS",
+      "from": "证书",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#安全",
+      "to": "网络安全",
+      "from": "中间人攻击",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#模型",
+      "to": "事件驱动",
+      "from": "异步模型",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#模型",
+      "to": "异步模型",
+      "from": "协程",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.5,
+      "context_tag": "#模型",
+      "to": "异步模型",
+      "from": "同步模型",
+      "type": "oppose",
+      "directed": false
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "代码可读性",
+      "from": "可维护性",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#质量",
+      "to": "缺陷",
+      "from": "测试",
+      "type": "undermine",
+      "directed": true
+    }
+  ],
+  "scripts": [
+    {
+      "scenario": "协议选型",
+      "tags": [
+        "HTTP",
+        "gRPC",
+        "HTTP还是",
+        "gRPC还是",
+        "WebSocket还是",
+        "协议怎么选"
+      ],
+      "template": "请求响应用 HTTP；流式/强类型用 gRPC；实时双向用 WebSocket；低延迟场景评估 QUIC"
+    },
+    {
+      "scenario": "连接管理",
+      "tags": [
+        "连接池",
+        "长连接",
+        "连接池",
+        "长连接",
+        "连接管理"
+      ],
+      "template": "池大小按并发估算；长连接保活与超时；断线重连策略；连接泄漏防护"
+    },
+    {
+      "scenario": "可靠传输",
+      "tags": [
+        "超时控制",
+        "重试机制",
+        "超时",
+        "重试",
+        "可靠传输"
+      ],
+      "template": "超时分级；重试指数退避；幂等保障；熔断防雪崩"
+    },
+    {
+      "scenario": "消息协议设计",
+      "tags": [
+        "消息编解码",
+        "粘包拆包",
+        "粘包",
+        "拆包",
+        "序列化",
+        "消息协议"
+      ],
+      "template": "帧协议定长头；粘包拆包处理；序列化选型；版本兼容"
+    },
+    {
+      "scenario": "性能优化",
+      "tags": [
+        "网络延迟",
+        "吞吐量",
+        "网络慢",
+        "吞吐量",
+        "延迟高"
+      ],
+      "template": "连接复用；压缩传输；并发模型选型；网络瓶颈定位"
+    },
+    {
+      "scenario": "网络调试",
+      "tags": [
+        "抓包",
+        "Wireshark"
+      ],
+      "template": "抓包定位问题；TCP 状态分析；延迟分段定位；重传分析"
+    },
+    {
+      "scenario": "架构设计",
+      "tags": [
+        "负载均衡",
+        "API 网关"
+      ],
+      "template": "网关统一入口；负载均衡策略；限流熔断；服务发现"
+    },
+    {
+      "scenario": "安全传输",
+      "tags": [
+        "TLS",
+        "证书"
+      ],
+      "template": "TLS 全链路；证书管理；证书固定；中间人防护"
+    },
+    {
+      "scenario": "异步编程",
+      "tags": [
+        "异步模型",
+        "协程"
+      ],
+      "template": "IO 密集用异步；协程简化回调；背压控制；超时取消"
+    },
+    {
+      "scenario": "网络测试",
+      "tags": [
+        "测试",
+        "缺陷"
+      ],
+      "template": "协议一致性测试；故障注入；弱网模拟；性能基准"
+    }
+  ]
+}

@@ -1,0 +1,1081 @@
+{
+  "id": "pkg-dev-algo",
+  "name": "算法与数据结构",
+  "industry": "软件开发",
+  "version": "1.0.0",
+  "namespace": "ALGO开发",
+  "owner": "developer",
+  "tier": "pro",
+  "license_required": true,
+  "imagos": [
+    {
+      "content": "算法",
+      "modality": "text",
+      "tags": [
+        "领域"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "数据结构",
+      "modality": "text",
+      "tags": [
+        "领域"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "时间复杂度",
+      "modality": "text",
+      "tags": [
+        "复杂度"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "algo"
+    },
+    {
+      "content": "空间复杂度",
+      "modality": "text",
+      "tags": [
+        "复杂度"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "algo"
+    },
+    {
+      "content": "大 O 表示",
+      "modality": "text",
+      "tags": [
+        "复杂度"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "数组",
+      "modality": "text",
+      "tags": [
+        "基础"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "链表",
+      "modality": "text",
+      "tags": [
+        "基础"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "栈",
+      "modality": "text",
+      "tags": [
+        "基础"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "队列",
+      "modality": "text",
+      "tags": [
+        "基础"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "哈希表",
+      "modality": "text",
+      "tags": [
+        "基础"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "树",
+      "modality": "text",
+      "tags": [
+        "树"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "二叉树",
+      "modality": "text",
+      "tags": [
+        "树"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "二叉搜索树",
+      "modality": "text",
+      "tags": [
+        "树"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "平衡树",
+      "modality": "text",
+      "tags": [
+        "树"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "堆",
+      "modality": "text",
+      "tags": [
+        "树"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "Trie",
+      "modality": "text",
+      "tags": [
+        "树"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "图",
+      "modality": "text",
+      "tags": [
+        "图"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "有向图",
+      "modality": "text",
+      "tags": [
+        "图"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "无向图",
+      "modality": "text",
+      "tags": [
+        "图"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "深度优先搜索",
+      "modality": "text",
+      "tags": [
+        "图"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "广度优先搜索",
+      "modality": "text",
+      "tags": [
+        "图"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "拓扑排序",
+      "modality": "text",
+      "tags": [
+        "图"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "最短路径",
+      "modality": "text",
+      "tags": [
+        "图"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "最小生成树",
+      "modality": "text",
+      "tags": [
+        "图"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "排序算法",
+      "modality": "text",
+      "tags": [
+        "算法"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "快速排序",
+      "modality": "text",
+      "tags": [
+        "排序"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "归并排序",
+      "modality": "text",
+      "tags": [
+        "排序"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "堆排序",
+      "modality": "text",
+      "tags": [
+        "排序"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "二分查找",
+      "modality": "text",
+      "tags": [
+        "查找"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "动态规划",
+      "modality": "text",
+      "tags": [
+        "范式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "贪心算法",
+      "modality": "text",
+      "tags": [
+        "范式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "分治法",
+      "modality": "text",
+      "tags": [
+        "范式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "回溯",
+      "modality": "text",
+      "tags": [
+        "范式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "递归",
+      "modality": "text",
+      "tags": [
+        "范式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "滑动窗口",
+      "modality": "text",
+      "tags": [
+        "技巧"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "双指针",
+      "modality": "text",
+      "tags": [
+        "技巧"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "前缀和",
+      "modality": "text",
+      "tags": [
+        "技巧"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "状态转移",
+      "modality": "text",
+      "tags": [
+        "DP"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "记忆化",
+      "modality": "text",
+      "tags": [
+        "DP"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "重叠子问题",
+      "modality": "text",
+      "tags": [
+        "DP"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "algo"
+    },
+    {
+      "content": "最优子结构",
+      "modality": "text",
+      "tags": [
+        "DP"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "暴力解法",
+      "modality": "text",
+      "tags": [
+        "反模式"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "algo"
+    },
+    {
+      "content": "溢出",
+      "modality": "text",
+      "tags": [
+        "陷阱"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "algo"
+    },
+    {
+      "content": "边界条件",
+      "modality": "text",
+      "tags": [
+        "陷阱"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "空指针",
+      "modality": "text",
+      "tags": [
+        "陷阱"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "algo"
+    },
+    {
+      "content": "位运算",
+      "modality": "text",
+      "tags": [
+        "技巧"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "字符串匹配",
+      "modality": "text",
+      "tags": [
+        "字符串"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "KMP",
+      "modality": "text",
+      "tags": [
+        "字符串"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "并查集",
+      "modality": "text",
+      "tags": [
+        "高级"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "线段树",
+      "modality": "text",
+      "tags": [
+        "高级"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "树状数组",
+      "modality": "text",
+      "tags": [
+        "高级"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "LRU 缓存",
+      "modality": "text",
+      "tags": [
+        "应用"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "性能瓶颈",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "algo"
+    },
+    {
+      "content": "可读性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "algo"
+    },
+    {
+      "content": "正确性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "algo"
+    },
+    {
+      "content": "可靠性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "algo"
+    },
+    {
+      "content": "缺陷",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "algo"
+    },
+    {
+      "content": "测试",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "algo"
+    },
+    {
+      "content": "区间查询",
+      "kind": "entity",
+      "category": "shared",
+      "tags": [],
+      "modality": "text",
+      "confidence": 1
+    },
+    {
+      "content": "有序数组",
+      "kind": "entity",
+      "category": "shared",
+      "tags": [],
+      "modality": "text",
+      "confidence": 1
+    }
+  ],
+  "relations": [
+    {
+      "weight": 0.9,
+      "context_tag": "#ALGO",
+      "to": "时间复杂度",
+      "from": "算法",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#ALGO",
+      "to": "空间复杂度",
+      "from": "算法",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#复杂度",
+      "to": "大 O 表示",
+      "from": "时间复杂度",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#复杂度",
+      "to": "大 O 表示",
+      "from": "空间复杂度",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#基础",
+      "to": "链表",
+      "from": "数组",
+      "type": "oppose",
+      "directed": false
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#基础",
+      "to": "队列",
+      "from": "栈",
+      "type": "similar",
+      "directed": false
+    },
+    {
+      "weight": 0.5,
+      "context_tag": "#基础",
+      "to": "二分查找",
+      "from": "哈希表",
+      "type": "oppose",
+      "directed": false
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#树",
+      "to": "二叉树",
+      "from": "树",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#树",
+      "to": "二叉搜索树",
+      "from": "二叉树",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#树",
+      "to": "平衡树",
+      "from": "二叉搜索树",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#树",
+      "to": "二叉树",
+      "from": "堆",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#树",
+      "to": "字符串匹配",
+      "from": "Trie",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#图",
+      "to": "有向图",
+      "from": "图",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#图",
+      "to": "无向图",
+      "from": "图",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#图",
+      "to": "图",
+      "from": "深度优先搜索",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#图",
+      "to": "图",
+      "from": "广度优先搜索",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#图",
+      "to": "有向图",
+      "from": "拓扑排序",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#图",
+      "to": "图",
+      "from": "最短路径",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#图",
+      "to": "无向图",
+      "from": "最小生成树",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#排序",
+      "to": "快速排序",
+      "from": "排序算法",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#排序",
+      "to": "归并排序",
+      "from": "排序算法",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#排序",
+      "to": "堆排序",
+      "from": "排序算法",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#排序",
+      "to": "分治法",
+      "from": "快速排序",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#排序",
+      "to": "分治法",
+      "from": "归并排序",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#查找",
+      "to": "有序数组",
+      "from": "二分查找",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#DP",
+      "to": "状态转移",
+      "from": "动态规划",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#DP",
+      "to": "最优子结构",
+      "from": "动态规划",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#DP",
+      "to": "重叠子问题",
+      "from": "动态规划",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#DP",
+      "to": "重叠子问题",
+      "from": "记忆化",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#范式",
+      "to": "动态规划",
+      "from": "递归",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#范式",
+      "to": "最优子结构",
+      "from": "贪心算法",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#范式",
+      "to": "递归",
+      "from": "回溯",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#范式",
+      "to": "递归",
+      "from": "分治法",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#技巧",
+      "to": "数组",
+      "from": "滑动窗口",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#技巧",
+      "to": "数组",
+      "from": "双指针",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#技巧",
+      "to": "数组",
+      "from": "前缀和",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#反模式",
+      "to": "性能瓶颈",
+      "from": "暴力解法",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#陷阱",
+      "to": "缺陷",
+      "from": "边界条件",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#陷阱",
+      "to": "缺陷",
+      "from": "空指针",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#陷阱",
+      "to": "缺陷",
+      "from": "溢出",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#字符串",
+      "to": "字符串匹配",
+      "from": "KMP",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#高级",
+      "to": "图",
+      "from": "并查集",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#高级",
+      "to": "区间查询",
+      "from": "线段树",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#应用",
+      "to": "哈希表",
+      "from": "LRU 缓存",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#质量",
+      "to": "缺陷",
+      "from": "测试",
+      "type": "undermine",
+      "directed": true
+    }
+  ],
+  "scripts": [
+    {
+      "scenario": "复杂度分析",
+      "tags": [
+        "时间复杂度",
+        "大 O 表示",
+        "时间复杂度",
+        "大O",
+        "算法复杂度",
+        "复杂度怎么算"
+      ],
+      "template": "先定上界；均摊分析；空间换时间权衡；常数因子关注"
+    },
+    {
+      "scenario": "数据结构选型",
+      "tags": [
+        "哈希表",
+        "数组",
+        "用什么数据结构",
+        "哈希还是",
+        "怎么选数据结构",
+        "数组还是"
+      ],
+      "template": "查找频繁用哈希；有序遍历用树；FIFO 用队列；LIFO 用栈"
+    },
+    {
+      "scenario": "动态规划",
+      "tags": [
+        "动态规划",
+        "状态转移",
+        "动态规划",
+        "DP怎么做",
+        "状态转移"
+      ],
+      "template": "定义状态与转移；边界初始化；滚动数组优化；空间优化评估"
+    },
+    {
+      "scenario": "图算法应用",
+      "tags": [
+        "图",
+        "最短路径",
+        "图算法",
+        "最短路径",
+        "遍历图"
+      ],
+      "template": "连通性用 DFS/BFS；依赖关系用拓扑；最短路按图特征选算法"
+    },
+    {
+      "scenario": "排序选型",
+      "tags": [
+        "排序算法",
+        "快速排序",
+        "排序用哪个",
+        "快排还是",
+        "排序算法"
+      ],
+      "template": "通用排序用内建；稳定性要求归并；TopK 用堆；数据特征评估"
+    },
+    {
+      "scenario": "算法优化",
+      "tags": [
+        "暴力解法",
+        "滑动窗口",
+        "算法太慢",
+        "怎么优化算法",
+        "暴力解法"
+      ],
+      "template": "暴力先正确再优化；滑动窗口减维度；双指针收敛；前缀和降复杂度"
+    },
+    {
+      "scenario": "边界处理",
+      "tags": [
+        "边界条件",
+        "空指针",
+        "边界条件",
+        "空指针",
+        "越界"
+      ],
+      "template": "空输入/单元素/极端值用例；索引越界防护；溢出检测；测试覆盖边界"
+    },
+    {
+      "scenario": "递归与回溯",
+      "tags": [
+        "回溯",
+        "递归"
+      ],
+      "template": "剪枝优化；状态恢复；递归深度限制；迭代替代评估"
+    },
+    {
+      "scenario": "字符串算法",
+      "tags": [
+        "字符串匹配",
+        "KMP",
+        "字符串匹配",
+        "KMP",
+        "子串查找"
+      ],
+      "template": "简单匹配退化分析；KMP 前缀函数；多模式匹配评估"
+    },
+    {
+      "scenario": "面试与解题",
+      "tags": [
+        "算法",
+        "数据结构",
+        "刷题",
+        "LeetCode",
+        "算法题"
+      ],
+      "template": "先澄清约束；暴力方案再优化；时空权衡说明；测试用例验证"
+    }
+  ]
+}

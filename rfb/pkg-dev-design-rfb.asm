@@ -1,0 +1,96 @@
+.IMAGE 设计模式
+.IMAGE 创建型模式
+.IMAGE 结构型模式
+.IMAGE 行为型模式
+.IMAGE 单例
+.IMAGE 工厂方法
+.IMAGE 抽象工厂
+.IMAGE 建造者
+.IMAGE 原型
+.IMAGE 适配器
+.IMAGE 装饰器
+.IMAGE 代理
+.IMAGE 外观
+.IMAGE 组合
+.IMAGE 桥接
+.IMAGE 享元
+.IMAGE 策略
+.IMAGE 观察者
+.IMAGE 命令
+.IMAGE 状态
+.IMAGE 模板方法
+.IMAGE 迭代器
+.IMAGE 责任链
+.IMAGE 访问者
+.IMAGE 中介者
+.IMAGE 备忘录
+.IMAGE 解释器
+.IMAGE 开闭原则
+.IMAGE 低耦合
+.IMAGE 组合优于继承
+.IMAGE 封装变化
+.IMAGE 全局状态
+.IMAGE 上帝对象
+.IMAGE 反模式
+.IMAGE 面条代码
+.IMAGE 万能类
+.IMAGE 过度设计
+.IMAGE 可维护性
+.IMAGE SOLID
+.IMAGE 单一职责
+.IMAGE 编程到接口
+.IMAGE 可扩展性
+.IMAGE 代码可读性
+.IMAGE 可靠性
+.IMAGE 可预测性
+.FIELD DP
+.FIELD 创建
+.FIELD 结构
+.FIELD 行为
+.FIELD 反模式
+.FIELD 原则
+.FIELD 价值
+SUPPORT 设计模式 创建型模式 .WEIGHT 0.800 .FIELD DP
+SUPPORT 设计模式 结构型模式 .WEIGHT 0.800 .FIELD DP
+SUPPORT 设计模式 行为型模式 .WEIGHT 0.800 .FIELD DP
+BELONG 单例 创建型模式 .WEIGHT 0.800 .FIELD 创建
+BELONG 工厂方法 创建型模式 .WEIGHT 0.800 .FIELD 创建
+BELONG 抽象工厂 创建型模式 .WEIGHT 0.800 .FIELD 创建
+BELONG 建造者 创建型模式 .WEIGHT 0.800 .FIELD 创建
+BELONG 原型 创建型模式 .WEIGHT 0.700 .FIELD 创建
+BELONG 适配器 结构型模式 .WEIGHT 0.800 .FIELD 结构
+BELONG 装饰器 结构型模式 .WEIGHT 0.800 .FIELD 结构
+BELONG 代理 结构型模式 .WEIGHT 0.800 .FIELD 结构
+BELONG 外观 结构型模式 .WEIGHT 0.800 .FIELD 结构
+BELONG 组合 结构型模式 .WEIGHT 0.700 .FIELD 结构
+BELONG 桥接 结构型模式 .WEIGHT 0.700 .FIELD 结构
+BELONG 享元 结构型模式 .WEIGHT 0.700 .FIELD 结构
+BELONG 策略 行为型模式 .WEIGHT 0.800 .FIELD 行为
+BELONG 观察者 行为型模式 .WEIGHT 0.800 .FIELD 行为
+BELONG 命令 行为型模式 .WEIGHT 0.800 .FIELD 行为
+BELONG 状态 行为型模式 .WEIGHT 0.800 .FIELD 行为
+BELONG 模板方法 行为型模式 .WEIGHT 0.800 .FIELD 行为
+BELONG 迭代器 行为型模式 .WEIGHT 0.700 .FIELD 行为
+BELONG 责任链 行为型模式 .WEIGHT 0.700 .FIELD 行为
+BELONG 访问者 行为型模式 .WEIGHT 0.700 .FIELD 行为
+BELONG 中介者 行为型模式 .WEIGHT 0.700 .FIELD 行为
+BELONG 备忘录 行为型模式 .WEIGHT 0.700 .FIELD 行为
+BELONG 解释器 行为型模式 .WEIGHT 0.600 .FIELD 行为
+SUPPORT 策略 开闭原则 .WEIGHT 0.700 .FIELD 行为
+SUPPORT 观察者 低耦合 .WEIGHT 0.700 .FIELD 行为
+SUPPORT 装饰器 组合优于继承 .WEIGHT 0.800 .FIELD 结构
+SUPPORT 工厂方法 封装变化 .WEIGHT 0.700 .FIELD 创建
+CAUSE 单例 全局状态 .WEIGHT 0.500 .FIELD 创建
+BELONG 上帝对象 反模式 .WEIGHT 0.800 .FIELD 反模式
+BELONG 面条代码 反模式 .WEIGHT 0.800 .FIELD 反模式
+BELONG 万能类 反模式 .WEIGHT 0.700 .FIELD 反模式
+BELONG 过度设计 反模式 .WEIGHT 0.700 .FIELD 反模式
+UNDERMINE 反模式 可维护性 .WEIGHT 0.800 .FIELD 反模式
+CAUSE 设计模式 过度设计 .WEIGHT 0.400 .FIELD DP
+SUPPORT SOLID 单一职责 .WEIGHT 0.800 .FIELD 原则
+SUPPORT SOLID 开闭原则 .WEIGHT 0.800 .FIELD 原则
+SUPPORT 编程到接口 可扩展性 .WEIGHT 0.800 .FIELD 原则
+SUPPORT 组合优于继承 可维护性 .WEIGHT 0.700 .FIELD 原则
+SUPPORT 可扩展性 可维护性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可维护性 代码可读性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可靠性 可预测性 .WEIGHT 0.600 .FIELD 价值

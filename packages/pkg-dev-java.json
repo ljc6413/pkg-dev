@@ -1,0 +1,1368 @@
+﻿{
+    "id":  "pkg-dev-java",
+    "name":  "Java Spring 企业开发",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "JAVA开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "Java",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "JVM",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运行时"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "垃圾回收",
+                       "modality":  "text",
+                       "tags":  [
+                                    "内存"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "内存模型",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "泛型",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "接口",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "抽象类",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "注解",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "反射",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "Stream",
+                       "modality":  "text",
+                       "tags":  [
+                                    "函数式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "Optional",
+                       "modality":  "text",
+                       "tags":  [
+                                    "空安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "异常处理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "健壮"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "受检异常",
+                       "modality":  "text",
+                       "tags":  [
+                                    "错误"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "lambda",
+                       "modality":  "text",
+                       "tags":  [
+                                    "函数式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "线程",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "线程池",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "锁",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "synchronized",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "CompletableFuture",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "虚拟线程",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "Spring",
+                       "modality":  "text",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "spring"
+                   },
+                   {
+                       "content":  "依赖注入",
+                       "modality":  "text",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "spring"
+                   },
+                   {
+                       "content":  "Spring Boot",
+                       "modality":  "text",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "spring"
+                   },
+                   {
+                       "content":  "自动配置",
+                       "modality":  "text",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "spring"
+                   },
+                   {
+                       "content":  "AOP",
+                       "modality":  "text",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "spring"
+                   },
+                   {
+                       "content":  "事务管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "spring"
+                   },
+                   {
+                       "content":  "Spring Data JPA",
+                       "modality":  "text",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "spring"
+                   },
+                   {
+                       "content":  "MyBatis",
+                       "modality":  "text",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "spring"
+                   },
+                   {
+                       "content":  "REST 控制器",
+                       "modality":  "text",
+                       "tags":  [
+                                    "Web"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "spring"
+                   },
+                   {
+                       "content":  "Spring Security",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "spring"
+                   },
+                   {
+                       "content":  "Maven",
+                       "modality":  "text",
+                       "tags":  [
+                                    "构建"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "build"
+                   },
+                   {
+                       "content":  "Gradle",
+                       "modality":  "text",
+                       "tags":  [
+                                    "构建"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "build"
+                   },
+                   {
+                       "content":  "依赖管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "构建"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "build"
+                   },
+                   {
+                       "content":  "多模块",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "build"
+                   },
+                   {
+                       "content":  "配置文件",
+                       "modality":  "text",
+                       "tags":  [
+                                    "配置"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "build"
+                   },
+                   {
+                       "content":  "Profile",
+                       "modality":  "text",
+                       "tags":  [
+                                    "配置"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "build"
+                   },
+                   {
+                       "content":  "JUnit",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "Mockito",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "单元测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "集成测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试容器",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "测试覆盖率",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "test"
+                   },
+                   {
+                       "content":  "Checkstyle",
+                       "modality":  "text",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quality"
+                   },
+                   {
+                       "content":  "SonarQube",
+                       "modality":  "text",
+                       "tags":  [
+                                    "规范"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quality"
+                   },
+                   {
+                       "content":  "内存泄漏",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "quality"
+                   },
+                   {
+                       "content":  "OOM",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "quality"
+                   },
+                   {
+                       "content":  "性能剖析",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quality"
+                   },
+                   {
+                       "content":  "JFR",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quality"
+                   },
+                   {
+                       "content":  "Spring Cloud",
+                       "modality":  "text",
+                       "tags":  [
+                                    "微服务"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "micro"
+                   },
+                   {
+                       "content":  "服务注册发现",
+                       "modality":  "text",
+                       "tags":  [
+                                    "微服务"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "micro"
+                   },
+                   {
+                       "content":  "配置中心",
+                       "modality":  "text",
+                       "tags":  [
+                                    "微服务"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "micro"
+                   },
+                   {
+                       "content":  "网关",
+                       "modality":  "text",
+                       "tags":  [
+                                    "微服务"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "micro"
+                   },
+                   {
+                       "content":  "熔断",
+                       "modality":  "text",
+                       "tags":  [
+                                    "微服务"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "micro"
+                   },
+                   {
+                       "content":  "分布式事务",
+                       "modality":  "text",
+                       "tags":  [
+                                    "微服务"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "micro"
+                   },
+                   {
+                       "content":  "消息队列",
+                       "modality":  "text",
+                       "tags":  [
+                                    "集成"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "micro"
+                   },
+                   {
+                       "content":  "Redis",
+                       "modality":  "text",
+                       "tags":  [
+                                    "缓存"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "micro"
+                   },
+                   {
+                       "content":  "定时任务",
+                       "modality":  "text",
+                       "tags":  [
+                                    "场景"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "micro"
+                   },
+                   {
+                       "content":  "批处理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "场景"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "micro"
+                   },
+                   {
+                       "content":  "可维护性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "可靠性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "可预测性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "代码可读性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "可扩展性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "性能瓶颈",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "缺陷",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "空指针",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "并发",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "吞吐量",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "java"
+                   },
+                   {
+                       "content":  "安全",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "并发安全",
+                       "kind":  "value",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "测试",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "代码规范",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "服务可用性",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "环境隔离",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "缓存",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "接口设计",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "类型安全",
+                       "kind":  "value",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "模块化",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "数据一致性",
+                       "kind":  "value",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   },
+                   {
+                       "content":  "微服务",
+                       "kind":  "entity",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#JAVA",
+                          "to":  "JVM",
+                          "from":  "Java",
+                          "type":  "entail",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#JAVA",
+                          "to":  "垃圾回收",
+                          "from":  "JVM",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#JAVA",
+                          "to":  "内存泄漏",
+                          "from":  "垃圾回收",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#JAVA",
+                          "to":  "OOM",
+                          "from":  "垃圾回收",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#JAVA",
+                          "to":  "空指针",
+                          "from":  "Optional",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#JAVA",
+                          "to":  "异常处理",
+                          "from":  "受检异常",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#JAVA",
+                          "to":  "可靠性",
+                          "from":  "异常处理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#JAVA",
+                          "to":  "可扩展性",
+                          "from":  "接口",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#JAVA",
+                          "to":  "接口",
+                          "from":  "抽象类",
+                          "type":  "similar",
+                          "directed":  false
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#JAVA",
+                          "to":  "类型安全",
+                          "from":  "泛型",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#JAVA",
+                          "to":  "可维护性",
+                          "from":  "反射",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#JAVA",
+                          "to":  "代码可读性",
+                          "from":  "Stream",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#JAVA",
+                          "to":  "Stream",
+                          "from":  "lambda",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#并发",
+                          "to":  "并发",
+                          "from":  "线程",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#并发",
+                          "to":  "线程",
+                          "from":  "线程池",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#并发",
+                          "to":  "并发安全",
+                          "from":  "锁",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#并发",
+                          "to":  "锁",
+                          "from":  "synchronized",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#并发",
+                          "to":  "并发",
+                          "from":  "CompletableFuture",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#并发",
+                          "to":  "吞吐量",
+                          "from":  "虚拟线程",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#Spring",
+                          "to":  "依赖注入",
+                          "from":  "Spring",
+                          "type":  "entail",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#Spring",
+                          "to":  "可维护性",
+                          "from":  "依赖注入",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#Spring",
+                          "to":  "Spring",
+                          "from":  "Spring Boot",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#Spring",
+                          "to":  "Spring Boot",
+                          "from":  "自动配置",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#Spring",
+                          "to":  "事务管理",
+                          "from":  "AOP",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#数据",
+                          "to":  "数据一致性",
+                          "from":  "事务管理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#数据",
+                          "to":  "事务管理",
+                          "from":  "Spring Data JPA",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#数据",
+                          "to":  "Spring Data JPA",
+                          "from":  "MyBatis",
+                          "type":  "oppose",
+                          "directed":  false
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#Web",
+                          "to":  "接口设计",
+                          "from":  "REST 控制器",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "Spring Security",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#构建",
+                          "to":  "依赖管理",
+                          "from":  "Maven",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#构建",
+                          "to":  "依赖管理",
+                          "from":  "Gradle",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#构建",
+                          "to":  "模块化",
+                          "from":  "多模块",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#配置",
+                          "to":  "环境隔离",
+                          "from":  "配置文件",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#配置",
+                          "to":  "环境隔离",
+                          "from":  "Profile",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "单元测试",
+                          "from":  "JUnit",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "单元测试",
+                          "from":  "Mockito",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "单元测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "集成测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "集成测试",
+                          "from":  "测试容器",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "测试覆盖率",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "缺陷",
+                          "from":  "测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#规范",
+                          "to":  "代码规范",
+                          "from":  "Checkstyle",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#规范",
+                          "to":  "代码规范",
+                          "from":  "SonarQube",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "内存泄漏",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "OOM",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "性能剖析",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#性能",
+                          "to":  "性能剖析",
+                          "from":  "JFR",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#微服务",
+                          "to":  "微服务",
+                          "from":  "Spring Cloud",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#微服务",
+                          "to":  "Spring Cloud",
+                          "from":  "服务注册发现",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#微服务",
+                          "to":  "Spring Cloud",
+                          "from":  "配置中心",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#微服务",
+                          "to":  "Spring Cloud",
+                          "from":  "网关",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#微服务",
+                          "to":  "服务可用性",
+                          "from":  "熔断",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#微服务",
+                          "to":  "数据一致性",
+                          "from":  "分布式事务",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#集成",
+                          "to":  "微服务",
+                          "from":  "消息队列",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#缓存",
+                          "to":  "缓存",
+                          "from":  "Redis",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "代码可读性",
+                          "from":  "可维护性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "可维护性",
+                          "from":  "可扩展性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "可预测性",
+                          "from":  "可靠性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#质量",
+                          "to":  "缺陷",
+                          "from":  "空指针",
+                          "type":  "similar",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "Spring Boot 项目结构",
+                        "tags":  [
+                                     "Spring Boot",
+                                     "依赖注入"
+                                 ],
+                        "template":  "分层清晰（controller/service/repository）；依赖注入构造器优先；配置外部化；自动配置按需排除"
+                    },
+                    {
+                        "scenario":  "JVM 内存调优",
+                        "tags":  [
+                                     "JVM",
+                                     "垃圾回收"
+                                 ],
+                        "template":  "先 JFR/GC 日志定位；区分堆/非堆/直接内存；GC 收集器按场景选；OOM 前 dump 分析"
+                    },
+                    {
+                        "scenario":  "并发设计",
+                        "tags":  [
+                                     "线程池",
+                                     "CompletableFuture"
+                                 ],
+                        "template":  "线程池显式命名与参数；任务分解用 CompletableFuture；锁最小化；虚拟线程评估"
+                    },
+                    {
+                        "scenario":  "事务边界设计",
+                        "tags":  [
+                                     "事务管理",
+                                     "AOP"
+                                 ],
+                        "template":  "事务边界在服务层；传播行为明确；长事务拆分；分布式事务评估最终一致性"
+                    },
+                    {
+                        "scenario":  "数据访问选型",
+                        "tags":  [
+                                     "Spring Data JPA",
+                                     "MyBatis"
+                                 ],
+                        "template":  "CRUD 密集用 JPA；复杂 SQL 用 MyBatis；N+1 查询防范；索引与查询优化"
+                    },
+                    {
+                        "scenario":  "微服务拆分",
+                        "tags":  [
+                                     "Spring Cloud",
+                                     "服务注册发现"
+                                 ],
+                        "template":  "按业务域切分；服务注册与发现就绪；配置中心统一；熔断与网关兜底"
+                    },
+                    {
+                        "scenario":  "安全加固",
+                        "tags":  [
+                                     "Spring Security",
+                                     "注解"
+                                 ],
+                        "template":  "认证授权分离；方法级鉴权；密码加密存储；CSRF/注入防护"
+                    },
+                    {
+                        "scenario":  "测试策略",
+                        "tags":  [
+                                     "JUnit",
+                                     "Mockito"
+                                 ],
+                        "template":  "单元测试 Mockito 隔离；集成测试 Testcontainers；覆盖率设下限；CI 门禁"
+                    },
+                    {
+                        "scenario":  "构建与依赖管理",
+                        "tags":  [
+                                     "Maven",
+                                     "Gradle"
+                                 ],
+                        "template":  "依赖版本统一管理；多模块边界清晰；构建可复现；升级按小步回归"
+                    },
+                    {
+                        "scenario":  "缓存与性能",
+                        "tags":  [
+                                     "Redis",
+                                     "性能剖析"
+                                 ],
+                        "template":  "缓存击穿/穿透/雪崩防护；热点数据预热；性能剖析定位瓶颈；缓存一致性留白"
+                    }
+                ]
+}

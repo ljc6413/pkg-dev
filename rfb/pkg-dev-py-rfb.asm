@@ -1,0 +1,152 @@
+.IMAGE Python
+.IMAGE 类型提示
+.IMAGE mypy
+.IMAGE 类型安全
+.IMAGE 可预测性
+.IMAGE 鸭子类型
+.IMAGE 接口设计
+.IMAGE Pythonic
+.IMAGE 代码可读性
+.IMAGE 列表推导
+.IMAGE 生成器
+.IMAGE 性能瓶颈
+.IMAGE 内存泄漏
+.IMAGE 装饰器
+.IMAGE 上下文管理器
+.IMAGE 资源泄漏
+.IMAGE GIL
+.IMAGE GIL受限
+.IMAGE 多线程
+.IMAGE 多进程
+.IMAGE 协程
+.IMAGE asyncio
+.IMAGE 吞吐量
+.IMAGE 并发
+.IMAGE 虚拟环境
+.IMAGE 环境隔离
+.IMAGE pip
+.IMAGE 依赖锁定
+.IMAGE poetry
+.IMAGE requirements
+.IMAGE 包结构
+.IMAGE 模块化
+.IMAGE Python版本
+.IMAGE 兼容性
+.IMAGE FastAPI
+.IMAGE Pydantic
+.IMAGE Django
+.IMAGE 数据模型
+.IMAGE Flask
+.IMAGE Pandas
+.IMAGE 数据框
+.IMAGE NumPy
+.IMAGE 向量化
+.IMAGE 慢循环
+.IMAGE 数据清洗
+.IMAGE SQLAlchemy
+.IMAGE Alembic
+.IMAGE 数据迁移
+.IMAGE pytest
+.IMAGE 测试
+.IMAGE fixture
+.IMAGE monkeypatch
+.IMAGE 单元测试
+.IMAGE 覆盖率
+.IMAGE Black
+.IMAGE 代码规范
+.IMAGE ruff
+.IMAGE isort
+.IMAGE 全局变量
+.IMAGE 可变默认参数
+.IMAGE 缺陷
+.IMAGE 深拷贝
+.IMAGE 裸except
+.IMAGE 异常处理
+.IMAGE 可靠性
+.IMAGE 日志
+.IMAGE 调试
+.IMAGE 环境变量
+.IMAGE 硬编码
+.IMAGE 字符串拼接
+.IMAGE 机器学习
+.IMAGE 科学计算
+.IMAGE 异步爬虫
+.IMAGE 可维护性
+.IMAGE 可扩展性
+.IMAGE 空指针
+.FIELD PY
+.FIELD 并发
+.FIELD 工程
+.FIELD Web
+.FIELD 数据
+.FIELD 测试
+.FIELD 规范
+.FIELD 反模式
+.FIELD 健壮
+.FIELD 可观测
+.FIELD 配置
+.FIELD 性能
+.FIELD 场景
+.FIELD 质量
+IF Python 类型提示 .WEIGHT 0.600 .FIELD PY
+IF 类型提示 mypy .WEIGHT 0.800 .FIELD PY
+SUPPORT mypy 类型安全 .WEIGHT 0.700 .FIELD PY
+SUPPORT 类型提示 类型安全 .WEIGHT 0.700 .FIELD PY
+SUPPORT 类型安全 可预测性 .WEIGHT 0.700 .FIELD PY
+SUPPORT 鸭子类型 接口设计 .WEIGHT 0.600 .FIELD PY
+SUPPORT Pythonic 代码可读性 .WEIGHT 0.800 .FIELD PY
+SUPPORT 列表推导 Pythonic .WEIGHT 0.700 .FIELD PY
+UNDERMINE 生成器 性能瓶颈 .WEIGHT 0.600 .FIELD PY
+UNDERMINE 生成器 内存泄漏 .WEIGHT 0.500 .FIELD PY
+UNDERMINE 装饰器 代码可读性 .WEIGHT 0.400 .FIELD PY
+UNDERMINE 上下文管理器 资源泄漏 .WEIGHT 0.700 .FIELD PY
+CAUSE GIL GIL受限 .WEIGHT 0.900 .FIELD 并发
+UNDERMINE GIL受限 多线程 .WEIGHT 0.700 .FIELD 并发
+SUPPORT GIL受限 多进程 .WEIGHT 0.600 .FIELD 并发
+SUPPORT 协程 asyncio .WEIGHT 0.800 .FIELD 并发
+SUPPORT asyncio 吞吐量 .WEIGHT 0.600 .FIELD 并发
+SUPPORT 多进程 并发 .WEIGHT 0.700 .FIELD 并发
+SUPPORT 协程 并发 .WEIGHT 0.600 .FIELD 并发
+SUPPORT 虚拟环境 环境隔离 .WEIGHT 0.800 .FIELD 工程
+SUPPORT pip 依赖锁定 .WEIGHT 0.600 .FIELD 工程
+SUPPORT poetry 依赖锁定 .WEIGHT 0.800 .FIELD 工程
+SUPPORT requirements 依赖锁定 .WEIGHT 0.600 .FIELD 工程
+SUPPORT 依赖锁定 可预测性 .WEIGHT 0.700 .FIELD 工程
+SUPPORT 包结构 模块化 .WEIGHT 0.700 .FIELD 工程
+IF Python版本 兼容性 .WEIGHT 0.600 .FIELD 工程
+IF FastAPI Pydantic .WEIGHT 0.700 .FIELD Web
+SUPPORT Pydantic 类型安全 .WEIGHT 0.700 .FIELD Web
+SUPPORT FastAPI 接口设计 .WEIGHT 0.700 .FIELD Web
+SUPPORT Django 数据模型 .WEIGHT 0.700 .FIELD Web
+SUPPORT Flask 模块化 .WEIGHT 0.500 .FIELD Web
+ENTAIL Pandas 数据框 .WEIGHT 0.900 .FIELD 数据
+SUPPORT NumPy 向量化 .WEIGHT 0.800 .FIELD 数据
+UNDERMINE 向量化 慢循环 .WEIGHT 0.800 .FIELD 数据
+SUPPORT 数据框 数据清洗 .WEIGHT 0.700 .FIELD 数据
+SUPPORT SQLAlchemy 数据模型 .WEIGHT 0.600 .FIELD 数据
+SUPPORT Alembic 数据迁移 .WEIGHT 0.700 .FIELD 数据
+BELONG pytest 测试 .WEIGHT 0.800 .FIELD 测试
+SUPPORT fixture pytest .WEIGHT 0.800 .FIELD 测试
+SUPPORT monkeypatch pytest .WEIGHT 0.700 .FIELD 测试
+ENTAIL 测试 单元测试 .WEIGHT 0.700 .FIELD 测试
+SUPPORT 覆盖率 测试 .WEIGHT 0.600 .FIELD 测试
+SUPPORT Black 代码规范 .WEIGHT 0.800 .FIELD 规范
+SUPPORT ruff 代码规范 .WEIGHT 0.800 .FIELD 规范
+SUPPORT isort 代码规范 .WEIGHT 0.700 .FIELD 规范
+UNDERMINE 全局变量 可预测性 .WEIGHT 0.700 .FIELD 反模式
+CAUSE 可变默认参数 缺陷 .WEIGHT 0.800 .FIELD 反模式
+UNDERMINE 深拷贝 可变默认参数 .WEIGHT 0.500 .FIELD 反模式
+UNDERMINE 裸except 异常处理 .WEIGHT 0.700 .FIELD 健壮
+SUPPORT 异常处理 可靠性 .WEIGHT 0.700 .FIELD 健壮
+SUPPORT 日志 调试 .WEIGHT 0.700 .FIELD 可观测
+UNDERMINE 环境变量 硬编码 .WEIGHT 0.600 .FIELD 配置
+CAUSE 字符串拼接 性能瓶颈 .WEIGHT 0.500 .FIELD 性能
+CAUSE 慢循环 性能瓶颈 .WEIGHT 0.700 .FIELD 性能
+SUPPORT 机器学习 科学计算 .WEIGHT 0.800 .FIELD 场景
+IF 科学计算 NumPy .WEIGHT 0.800 .FIELD 场景
+IF 数据清洗 Pandas .WEIGHT 0.700 .FIELD 场景
+IF 异步爬虫 asyncio .WEIGHT 0.700 .FIELD 场景
+SUPPORT 可维护性 代码可读性 .WEIGHT 0.600 .FIELD 质量
+SUPPORT 可扩展性 可维护性 .WEIGHT 0.600 .FIELD 质量
+LIKE 空指针 缺陷 .WEIGHT 0.600 .FIELD 质量
+CAUSE 内存泄漏 性能瓶颈 .WEIGHT 0.600 .FIELD 质量

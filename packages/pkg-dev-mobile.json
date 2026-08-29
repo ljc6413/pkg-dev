@@ -1,0 +1,1188 @@
+﻿{
+    "id":  "pkg-dev-mobile",
+    "name":  "移动跨端开发",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "MOBILE开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "移动开发",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "iOS",
+                       "modality":  "text",
+                       "tags":  [
+                                    "平台"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "Swift",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "SwiftUI",
+                       "modality":  "text",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "UIKit",
+                       "modality":  "text",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "Android",
+                       "modality":  "text",
+                       "tags":  [
+                                    "平台"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "Kotlin",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "Jetpack Compose",
+                       "modality":  "text",
+                       "tags":  [
+                                    "框架"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "跨平台",
+                       "modality":  "text",
+                       "tags":  [
+                                    "策略"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "React Native",
+                       "modality":  "text",
+                       "tags":  [
+                                    "跨端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "Flutter",
+                       "modality":  "text",
+                       "tags":  [
+                                    "跨端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "UI 适配",
+                       "modality":  "text",
+                       "tags":  [
+                                    "UI"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "响应式布局",
+                       "modality":  "text",
+                       "tags":  [
+                                    "UI"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "深色模式",
+                       "modality":  "text",
+                       "tags":  [
+                                    "UI"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "无障碍",
+                       "modality":  "text",
+                       "tags":  [
+                                    "UI"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "状态管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "MVI",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "MVVM",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "生命周期",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "内存泄漏",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "弱引用",
+                       "modality":  "text",
+                       "tags":  [
+                                    "内存"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "循环引用",
+                       "modality":  "text",
+                       "tags":  [
+                                    "内存"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "主线程",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "后台任务",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "协程",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "异步任务",
+                       "modality":  "text",
+                       "tags":  [
+                                    "并发"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "卡顿",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "帧率",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "启动优化",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "包体积",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "网络请求",
+                       "modality":  "text",
+                       "tags":  [
+                                    "网络"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "离线缓存",
+                       "modality":  "text",
+                       "tags":  [
+                                    "网络"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "弱网",
+                       "modality":  "text",
+                       "tags":  [
+                                    "网络"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "重试机制",
+                       "modality":  "text",
+                       "tags":  [
+                                    "网络"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "推送",
+                       "modality":  "text",
+                       "tags":  [
+                                    "集成"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "深链接",
+                       "modality":  "text",
+                       "tags":  [
+                                    "集成"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "权限管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "数据加密",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "安全存储",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "证书",
+                       "modality":  "text",
+                       "tags":  [
+                                    "发布"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "签名",
+                       "modality":  "text",
+                       "tags":  [
+                                    "发布"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "应用商店",
+                       "modality":  "text",
+                       "tags":  [
+                                    "发布"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "审核",
+                       "modality":  "text",
+                       "tags":  [
+                                    "发布"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "灰度发布",
+                       "modality":  "text",
+                       "tags":  [
+                                    "发布"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "热更新",
+                       "modality":  "text",
+                       "tags":  [
+                                    "发布"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "崩溃",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "崩溃监控",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "日志上报",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "单元测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "UI 测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "集成测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "测试设备",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "模拟器",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "真机测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "本地化",
+                       "modality":  "text",
+                       "tags":  [
+                                    "国际化"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "多语言",
+                       "modality":  "text",
+                       "tags":  [
+                                    "国际化"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "可维护性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "可扩展性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "可靠性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "可预测性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "代码可读性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "性能瓶颈",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "缺陷",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "测试"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "安全",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "mobile"
+                   },
+                   {
+                       "content":  "App 瘦身",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "mobile"
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#移动",
+                          "to":  "iOS",
+                          "from":  "移动开发",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#移动",
+                          "to":  "Android",
+                          "from":  "移动开发",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#iOS",
+                          "to":  "Swift",
+                          "from":  "iOS",
+                          "type":  "entail",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#iOS",
+                          "to":  "SwiftUI",
+                          "from":  "Swift",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#iOS",
+                          "to":  "UIKit",
+                          "from":  "Swift",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#Android",
+                          "to":  "Kotlin",
+                          "from":  "Android",
+                          "type":  "entail",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#Android",
+                          "to":  "Jetpack Compose",
+                          "from":  "Kotlin",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#跨端",
+                          "to":  "React Native",
+                          "from":  "跨平台",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#跨端",
+                          "to":  "Flutter",
+                          "from":  "跨平台",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#跨端",
+                          "to":  "跨平台",
+                          "from":  "React Native",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#跨端",
+                          "to":  "跨平台",
+                          "from":  "Flutter",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#UI",
+                          "to":  "响应式布局",
+                          "from":  "UI 适配",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#UI",
+                          "to":  "UI 适配",
+                          "from":  "深色模式",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#UI",
+                          "to":  "可维护性",
+                          "from":  "无障碍",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#架构",
+                          "to":  "MVI",
+                          "from":  "状态管理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#架构",
+                          "to":  "MVVM",
+                          "from":  "状态管理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#架构",
+                          "to":  "可预测性",
+                          "from":  "MVI",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#架构",
+                          "to":  "可维护性",
+                          "from":  "MVVM",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#架构",
+                          "to":  "内存泄漏",
+                          "from":  "生命周期",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#内存",
+                          "to":  "内存泄漏",
+                          "from":  "弱引用",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#内存",
+                          "to":  "内存泄漏",
+                          "from":  "循环引用",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#并发",
+                          "to":  "卡顿",
+                          "from":  "主线程",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#并发",
+                          "to":  "主线程",
+                          "from":  "后台任务",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#并发",
+                          "to":  "后台任务",
+                          "from":  "协程",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#并发",
+                          "to":  "后台任务",
+                          "from":  "异步任务",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "卡顿",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#性能",
+                          "to":  "卡顿",
+                          "from":  "帧率",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#性能",
+                          "to":  "卡顿",
+                          "from":  "启动优化",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#性能",
+                          "to":  "性能瓶颈",
+                          "from":  "包体积",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#性能",
+                          "to":  "包体积",
+                          "from":  "App 瘦身",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#网络",
+                          "to":  "弱网",
+                          "from":  "网络请求",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#网络",
+                          "to":  "弱网",
+                          "from":  "离线缓存",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#网络",
+                          "to":  "弱网",
+                          "from":  "重试机制",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "权限管理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "安全",
+                          "from":  "数据加密",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#安全",
+                          "to":  "数据加密",
+                          "from":  "安全存储",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#发布",
+                          "to":  "签名",
+                          "from":  "证书",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#发布",
+                          "to":  "应用商店",
+                          "from":  "签名",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#发布",
+                          "to":  "审核",
+                          "from":  "应用商店",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#发布",
+                          "to":  "应用商店",
+                          "from":  "灰度发布",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#发布",
+                          "to":  "灰度发布",
+                          "from":  "热更新",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#质量",
+                          "to":  "缺陷",
+                          "from":  "崩溃",
+                          "type":  "similar",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#质量",
+                          "to":  "崩溃",
+                          "from":  "崩溃监控",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#质量",
+                          "to":  "崩溃监控",
+                          "from":  "日志上报",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "单元测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "UI 测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#测试",
+                          "to":  "测试",
+                          "from":  "集成测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "测试设备",
+                          "from":  "模拟器",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "测试设备",
+                          "from":  "真机测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#测试",
+                          "to":  "缺陷",
+                          "from":  "测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#国际化",
+                          "to":  "多语言",
+                          "from":  "本地化",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "代码可读性",
+                          "from":  "可维护性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "可维护性",
+                          "from":  "可扩展性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "可预测性",
+                          "from":  "可靠性",
+                          "type":  "support",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "跨平台选型",
+                        "tags":  [
+                                     "跨平台",
+                                     "Flutter"
+                                 ],
+                        "template":  "团队技能与生态评估；性能敏感度评估；Flutter 统一渲染 vs RN 原生桥；热更新能力对比；发布策略留白"
+                    },
+                    {
+                        "scenario":  "UI 架构设计",
+                        "tags":  [
+                                     "状态管理",
+                                     "MVVM"
+                                 ],
+                        "template":  "MVVM 分层；状态单向流动；生命周期感知；组合优于继承；可测试性优先"
+                    },
+                    {
+                        "scenario":  "内存泄漏排查",
+                        "tags":  [
+                                     "内存泄漏",
+                                     "循环引用"
+                                 ],
+                        "template":  "检查循环引用与监听未注销；弱引用替代强引用；LeakCanary/Memory Graph 定位；销毁后快照对比"
+                    },
+                    {
+                        "scenario":  "启动优化",
+                        "tags":  [
+                                     "启动优化",
+                                     "卡顿"
+                                 ],
+                        "template":  "冷启动路径最小化；懒加载与异步初始化；启动阶段避免主线程 IO；多进程预加载评估"
+                    },
+                    {
+                        "scenario":  "弱网优化",
+                        "tags":  [
+                                     "弱网",
+                                     "离线缓存"
+                                 ],
+                        "template":  "请求合并与压缩；离线缓存兜底；重试指数退避；弱网降级策略；网络切换感知"
+                    },
+                    {
+                        "scenario":  "应用发布",
+                        "tags":  [
+                                     "签名",
+                                     "应用商店"
+                                 ],
+                        "template":  "证书与签名管理；审核材料齐备；灰度分批放量；崩溃监控上线前就绪；回滚预案"
+                    },
+                    {
+                        "scenario":  "崩溃治理",
+                        "tags":  [
+                                     "崩溃",
+                                     "崩溃监控"
+                                 ],
+                        "template":  "崩溃采集与符号化；按版本/机型聚类；修复验证后灰度；崩溃率阈值告警"
+                    },
+                    {
+                        "scenario":  "移动测试策略",
+                        "tags":  [
+                                     "单元测试",
+                                     "UI 测试"
+                                 ],
+                        "template":  "业务逻辑单测覆盖；UI 测试聚焦关键流；模拟器+真机矩阵；CI 接入回归门禁"
+                    },
+                    {
+                        "scenario":  "App 安全加固",
+                        "tags":  [
+                                     "权限管理",
+                                     "数据加密"
+                                 ],
+                        "template":  "权限最小化；敏感数据安全存储；传输加密；证书校验；防调试检测"
+                    },
+                    {
+                        "scenario":  "性能监控",
+                        "tags":  [
+                                     "卡顿",
+                                     "帧率"
+                                 ],
+                        "template":  "帧率与掉帧监控；ANR/卡顿采集；主线程耗时剖析；性能基准对比版本"
+                    }
+                ]
+}

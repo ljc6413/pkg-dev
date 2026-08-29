@@ -1,0 +1,20 @@
+Apache License 2.0
+
+Copyright 2026 YiHe Labs
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+== 商业包说明 ==
+本仓库的 pkg-dev 系列（27 个编程包）为商业包（tier: pro, license_required: true）。
+知识资产（JSON/asm）随 Apache-2.0 开源，商业使用需激活许可（见 docs/pkg-dev-pricing.md）。
+内置插件与网关代码（Rust/JS）为 YiHe 内核私有实现，不随本仓库分发。

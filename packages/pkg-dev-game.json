@@ -1,0 +1,937 @@
+{
+  "id": "pkg-dev-game",
+  "name": "游戏开发",
+  "industry": "软件开发",
+  "version": "1.0.0",
+  "namespace": "GAME开发",
+  "owner": "developer",
+  "tier": "pro",
+  "license_required": true,
+  "imagos": [
+    {
+      "content": "游戏开发",
+      "modality": "text",
+      "tags": [
+        "领域"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "游戏引擎",
+      "modality": "text",
+      "tags": [
+        "引擎"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "Unity",
+      "modality": "text",
+      "tags": [
+        "引擎"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "Unreal",
+      "modality": "text",
+      "tags": [
+        "引擎"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "Godot",
+      "modality": "text",
+      "tags": [
+        "引擎"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "游戏循环",
+      "modality": "text",
+      "tags": [
+        "核心"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "帧率",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "game"
+    },
+    {
+      "content": "Delta Time",
+      "modality": "text",
+      "tags": [
+        "核心"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "渲染管线",
+      "modality": "text",
+      "tags": [
+        "渲染"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "着色器",
+      "modality": "text",
+      "tags": [
+        "渲染"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "场景图",
+      "modality": "text",
+      "tags": [
+        "渲染"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "纹理",
+      "modality": "text",
+      "tags": [
+        "渲染"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "LOD",
+      "modality": "text",
+      "tags": [
+        "渲染"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "碰撞检测",
+      "modality": "text",
+      "tags": [
+        "物理"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "物理引擎",
+      "modality": "text",
+      "tags": [
+        "物理"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "刚体",
+      "modality": "text",
+      "tags": [
+        "物理"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "游戏对象",
+      "modality": "text",
+      "tags": [
+        "架构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "组件模式",
+      "modality": "text",
+      "tags": [
+        "架构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "实体组件系统",
+      "modality": "text",
+      "tags": [
+        "架构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "状态机",
+      "modality": "text",
+      "tags": [
+        "架构"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "有限状态机",
+      "modality": "text",
+      "tags": [
+        "AI"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "行为树",
+      "modality": "text",
+      "tags": [
+        "AI"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "寻路",
+      "modality": "text",
+      "tags": [
+        "AI"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "A* 算法",
+      "modality": "text",
+      "tags": [
+        "AI"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "游戏 AI",
+      "modality": "text",
+      "tags": [
+        "AI"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "动画系统",
+      "modality": "text",
+      "tags": [
+        "表现"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "骨骼动画",
+      "modality": "text",
+      "tags": [
+        "表现"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "音效",
+      "modality": "text",
+      "tags": [
+        "表现"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "UI 系统",
+      "modality": "text",
+      "tags": [
+        "表现"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "网络同步",
+      "modality": "text",
+      "tags": [
+        "网络"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "权威服务器",
+      "modality": "text",
+      "tags": [
+        "网络"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "预测回滚",
+      "modality": "text",
+      "tags": [
+        "网络"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "延迟补偿",
+      "modality": "text",
+      "tags": [
+        "网络"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "存档系统",
+      "modality": "text",
+      "tags": [
+        "系统"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "成就系统",
+      "modality": "text",
+      "tags": [
+        "系统"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "资源加载",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "对象池",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "内存管理",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "GC 压力",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "game"
+    },
+    {
+      "content": "性能瓶颈",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "game"
+    },
+    {
+      "content": "Profiler",
+      "modality": "text",
+      "tags": [
+        "调试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "单元测试",
+      "modality": "text",
+      "tags": [
+        "测试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "测试",
+      "modality": "text",
+      "tags": [
+        "测试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "可玩性测试",
+      "modality": "text",
+      "tags": [
+        "测试"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "跨平台",
+      "modality": "text",
+      "tags": [
+        "发布"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "发布渠道",
+      "modality": "text",
+      "tags": [
+        "发布"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "热更新",
+      "modality": "text",
+      "tags": [
+        "发布"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "game"
+    },
+    {
+      "content": "可维护性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "game"
+    },
+    {
+      "content": "可扩展性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "game"
+    },
+    {
+      "content": "可靠性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "game"
+    },
+    {
+      "content": "可预测性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "game"
+    },
+    {
+      "content": "代码可读性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "game"
+    },
+    {
+      "content": "缺陷",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "game"
+    }
+  ],
+  "relations": [
+    {
+      "weight": 0.9,
+      "context_tag": "#GAME",
+      "to": "游戏引擎",
+      "from": "游戏开发",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#引擎",
+      "to": "游戏引擎",
+      "from": "Unity",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#引擎",
+      "to": "游戏引擎",
+      "from": "Unreal",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#引擎",
+      "to": "游戏引擎",
+      "from": "Godot",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#核心",
+      "to": "游戏循环",
+      "from": "游戏引擎",
+      "type": "entail",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#核心",
+      "to": "Delta Time",
+      "from": "游戏循环",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#核心",
+      "to": "帧率",
+      "from": "Delta Time",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#渲染",
+      "to": "帧率",
+      "from": "渲染管线",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#渲染",
+      "to": "渲染管线",
+      "from": "着色器",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#渲染",
+      "to": "渲染管线",
+      "from": "场景图",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#渲染",
+      "to": "帧率",
+      "from": "LOD",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#物理",
+      "to": "物理引擎",
+      "from": "碰撞检测",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#物理",
+      "to": "物理引擎",
+      "from": "刚体",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#架构",
+      "to": "组件模式",
+      "from": "实体组件系统",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#架构",
+      "to": "组件模式",
+      "from": "游戏对象",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#架构",
+      "to": "可维护性",
+      "from": "组件模式",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#架构",
+      "to": "有限状态机",
+      "from": "状态机",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#AI",
+      "to": "游戏 AI",
+      "from": "行为树",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#AI",
+      "to": "游戏 AI",
+      "from": "有限状态机",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#AI",
+      "to": "A* 算法",
+      "from": "寻路",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#AI",
+      "to": "游戏 AI",
+      "from": "A* 算法",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#表现",
+      "to": "动画系统",
+      "from": "骨骼动画",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#网络",
+      "to": "权威服务器",
+      "from": "网络同步",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#网络",
+      "to": "网络同步",
+      "from": "预测回滚",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#网络",
+      "to": "网络同步",
+      "from": "延迟补偿",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#性能",
+      "to": "GC 压力",
+      "from": "对象池",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#性能",
+      "to": "性能瓶颈",
+      "from": "资源加载",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#性能",
+      "to": "GC 压力",
+      "from": "内存管理",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#性能",
+      "to": "性能瓶颈",
+      "from": "GC 压力",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#调试",
+      "to": "性能瓶颈",
+      "from": "Profiler",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#测试",
+      "to": "测试",
+      "from": "单元测试",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#测试",
+      "to": "测试",
+      "from": "可玩性测试",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#测试",
+      "to": "缺陷",
+      "from": "测试",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#发布",
+      "to": "发布渠道",
+      "from": "跨平台",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#发布",
+      "to": "发布渠道",
+      "from": "热更新",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "可维护性",
+      "from": "可扩展性",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "可预测性",
+      "from": "可靠性",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "代码可读性",
+      "from": "可维护性",
+      "type": "support",
+      "directed": true
+    }
+  ],
+  "scripts": [
+    {
+      "scenario": "引擎选型",
+      "tags": [
+        "Unity",
+        "Unreal",
+        "选什么引擎",
+        "Unity还是",
+        "Godot",
+        "游戏引擎"
+      ],
+      "template": "团队技能与 2D/3D 需求；Unity 生态 vs Unreal 画质；Godot 轻量评估；长期维护成本"
+    },
+    {
+      "scenario": "游戏循环设计",
+      "tags": [
+        "游戏循环",
+        "Delta Time"
+      ],
+      "template": "固定时间步 vs 可变时间步；逻辑与渲染分离；Delta Time 统一缩放；帧率独立"
+    },
+    {
+      "scenario": "渲染优化",
+      "tags": [
+        "渲染管线",
+        "LOD",
+        "渲染慢",
+        "画面卡",
+        "LOD"
+      ],
+      "template": "绘制调用合并；LOD 分级；遮挡剔除；纹理压缩；GPU 剖析"
+    },
+    {
+      "scenario": "实体组件架构",
+      "tags": [
+        "实体组件系统",
+        "组件模式"
+      ],
+      "template": "数据驱动设计；组件复用；系统遍历；缓存友好布局"
+    },
+    {
+      "scenario": "游戏 AI",
+      "tags": [
+        "行为树",
+        "有限状态机"
+      ],
+      "template": "FSM 简单状态；行为树复杂决策；寻路图构建；性能预算"
+    },
+    {
+      "scenario": "网络同步",
+      "tags": [
+        "网络同步",
+        "预测回滚"
+      ],
+      "template": "权威服务器模型；客户端预测；回滚重放；延迟补偿"
+    },
+    {
+      "scenario": "性能优化",
+      "tags": [
+        "对象池",
+        "GC 压力"
+      ],
+      "template": "对象池化高频实例；GC Alloc 监控；内存预算；Profiler 定位"
+    },
+    {
+      "scenario": "资源管理",
+      "tags": [
+        "资源加载",
+        "内存管理"
+      ],
+      "template": "异步加载；场景流式加载；资源引用计数；卸载策略"
+    },
+    {
+      "scenario": "测试与质量",
+      "tags": [
+        "单元测试",
+        "可玩性测试"
+      ],
+      "template": "核心逻辑单测；自动化冒烟；可玩性反馈闭环；性能回归基准"
+    },
+    {
+      "scenario": "发布管理",
+      "tags": [
+        "跨平台",
+        "热更新"
+      ],
+      "template": "平台差异适配；渠道包管理；热更新策略；审核合规"
+    }
+  ]
+}

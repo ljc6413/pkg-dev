@@ -1,0 +1,46 @@
+.FIELD 场景
+.IMAGE RAG系统设计
+SUPPORT RAG系统设计 RAG .WEIGHT 0.7 .FIELD 场景
+SUPPORT RAG系统设计 向量检索 .WEIGHT 0.7 .FIELD 场景
+SUPPORT RAG系统设计 知识库 .WEIGHT 0.5 .FIELD 场景
+SUPPORT RAG系统设计 Embedding .WEIGHT 0.5 .FIELD 场景
+SUPPORT RAG系统设计 重排序 .WEIGHT 0.5 .FIELD 场景
+.IMAGE Prompt工程
+SUPPORT Prompt工程 幻觉 .WEIGHT 0.7 .FIELD 场景
+SUPPORT Prompt工程 幻觉 .WEIGHT 0.5 .FIELD 场景
+.IMAGE Agent设计
+SUPPORT Agent设计 Agent .WEIGHT 0.7 .FIELD 场景
+SUPPORT Agent设计 工具调用 .WEIGHT 0.7 .FIELD 场景
+SUPPORT Agent设计 人机回环 .WEIGHT 0.5 .FIELD 场景
+.IMAGE LLM成本与延迟优化
+SUPPORT LLM成本与延迟优化 成本控制 .WEIGHT 0.7 .FIELD 场景
+SUPPORT LLM成本与延迟优化 Token管理 .WEIGHT 0.7 .FIELD 场景
+SUPPORT LLM成本与延迟优化 缓存 .WEIGHT 0.5 .FIELD 场景
+SUPPORT LLM成本与延迟优化 批处理 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 数据管道构建
+SUPPORT 数据管道构建 数据管道 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 数据管道构建 数据清洗 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 数据管道构建 数据质量 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 数据管道构建 血缘追踪 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 模型评估与防漂移
+SUPPORT 模型评估与防漂移 模型评估 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 模型评估与防漂移 数据漂移 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 模型评估与防漂移 基准集 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 模型评估与防漂移 数据漂移 .WEIGHT 0.5 .FIELD 场景
+.IMAGE LLM安全防护
+SUPPORT LLM安全防护 提示注入 .WEIGHT 0.7 .FIELD 场景
+SUPPORT LLM安全防护 隐私合规 .WEIGHT 0.7 .FIELD 场景
+SUPPORT LLM安全防护 数据脱敏 .WEIGHT 0.5 .FIELD 场景
+.IMAGE MLOps落地
+SUPPORT MLOps落地 MLOps .WEIGHT 0.7 .FIELD 场景
+SUPPORT MLOps落地 模型版本管理 .WEIGHT 0.7 .FIELD 场景
+SUPPORT MLOps落地 实验追踪 .WEIGHT 0.5 .FIELD 场景
+SUPPORT MLOps落地 模型注册表 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 特征工程
+SUPPORT 特征工程 特征存储 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 特征工程 特征存储 .WEIGHT 0.5 .FIELD 场景
+.IMAGE LLM应用测试
+SUPPORT LLM应用测试 测试 .WEIGHT 0.7 .FIELD 场景
+SUPPORT LLM应用测试 回归 .WEIGHT 0.7 .FIELD 场景
+SUPPORT LLM应用测试 回归 .WEIGHT 0.5 .FIELD 场景
+SUPPORT LLM应用测试 延迟 .WEIGHT 0.5 .FIELD 场景

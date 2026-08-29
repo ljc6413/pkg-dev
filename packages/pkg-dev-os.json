@@ -1,0 +1,904 @@
+{
+  "id": "pkg-dev-os",
+  "name": "操作系统原理",
+  "industry": "软件开发",
+  "version": "1.0.0",
+  "namespace": "OS开发",
+  "owner": "developer",
+  "tier": "pro",
+  "license_required": true,
+  "imagos": [
+    {
+      "content": "操作系统",
+      "modality": "text",
+      "tags": [
+        "领域"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "进程",
+      "modality": "text",
+      "tags": [
+        "并发"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "线程",
+      "modality": "text",
+      "tags": [
+        "并发"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "协程",
+      "modality": "text",
+      "tags": [
+        "并发"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "调度器",
+      "modality": "text",
+      "tags": [
+        "并发"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "上下文切换",
+      "modality": "text",
+      "tags": [
+        "并发"
+      ],
+      "confidence": 1,
+      "kind": "event",
+      "category": "os"
+    },
+    {
+      "content": "互斥",
+      "modality": "text",
+      "tags": [
+        "同步"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "信号量",
+      "modality": "text",
+      "tags": [
+        "同步"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "条件变量",
+      "modality": "text",
+      "tags": [
+        "同步"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "死锁",
+      "modality": "text",
+      "tags": [
+        "同步"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "os"
+    },
+    {
+      "content": "虚拟内存",
+      "modality": "text",
+      "tags": [
+        "内存"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "分页",
+      "modality": "text",
+      "tags": [
+        "内存"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "页面置换",
+      "modality": "text",
+      "tags": [
+        "内存"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "内存映射",
+      "modality": "text",
+      "tags": [
+        "内存"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "文件系统",
+      "modality": "text",
+      "tags": [
+        "存储"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "inode",
+      "modality": "text",
+      "tags": [
+        "存储"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "文件描述符",
+      "modality": "text",
+      "tags": [
+        "存储"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "I/O 模型",
+      "modality": "text",
+      "tags": [
+        "IO"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "阻塞 I/O",
+      "modality": "text",
+      "tags": [
+        "IO"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "非阻塞 I/O",
+      "modality": "text",
+      "tags": [
+        "IO"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "I/O 多路复用",
+      "modality": "text",
+      "tags": [
+        "IO"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "select",
+      "modality": "text",
+      "tags": [
+        "IO"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "epoll",
+      "modality": "text",
+      "tags": [
+        "IO"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "异步 I/O",
+      "modality": "text",
+      "tags": [
+        "IO"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "系统调用",
+      "modality": "text",
+      "tags": [
+        "接口"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "内核态",
+      "modality": "text",
+      "tags": [
+        "接口"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "用户态",
+      "modality": "text",
+      "tags": [
+        "接口"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "中断",
+      "modality": "text",
+      "tags": [
+        "底层"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "系统中断",
+      "modality": "text",
+      "tags": [
+        "底层"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "进程间通信",
+      "modality": "text",
+      "tags": [
+        "IPC"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "管道",
+      "modality": "text",
+      "tags": [
+        "IPC"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "共享内存",
+      "modality": "text",
+      "tags": [
+        "IPC"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "消息队列",
+      "modality": "text",
+      "tags": [
+        "IPC"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "套接字",
+      "modality": "text",
+      "tags": [
+        "IPC"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "文件锁",
+      "modality": "text",
+      "tags": [
+        "IPC"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "僵尸进程",
+      "modality": "text",
+      "tags": [
+        "问题"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "os"
+    },
+    {
+      "content": "孤儿进程",
+      "modality": "text",
+      "tags": [
+        "问题"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "os"
+    },
+    {
+      "content": "资源泄漏",
+      "modality": "text",
+      "tags": [
+        "问题"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "os"
+    },
+    {
+      "content": "OOM Killer",
+      "modality": "text",
+      "tags": [
+        "问题"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "性能瓶颈",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "os"
+    },
+    {
+      "content": "CPU 占用",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "os"
+    },
+    {
+      "content": "内存占用",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "os"
+    },
+    {
+      "content": "磁盘 I/O",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "上下文切换开销",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "os"
+    },
+    {
+      "content": "负载均衡",
+      "modality": "text",
+      "tags": [
+        "调度"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "NUMA",
+      "modality": "text",
+      "tags": [
+        "调度"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    },
+    {
+      "content": "可预测性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "os"
+    },
+    {
+      "content": "可靠性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "os"
+    },
+    {
+      "content": "可维护性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "os"
+    },
+    {
+      "content": "缺陷",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "os"
+    },
+    {
+      "content": "测试",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "os"
+    }
+  ],
+  "relations": [
+    {
+      "weight": 0.9,
+      "context_tag": "#OS",
+      "to": "进程",
+      "from": "操作系统",
+      "type": "entail",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#并发",
+      "to": "线程",
+      "from": "进程",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#并发",
+      "to": "协程",
+      "from": "线程",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#并发",
+      "to": "上下文切换",
+      "from": "调度器",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#并发",
+      "to": "上下文切换开销",
+      "from": "上下文切换",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#同步",
+      "to": "死锁",
+      "from": "互斥",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#同步",
+      "to": "互斥",
+      "from": "信号量",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#同步",
+      "to": "线程",
+      "from": "条件变量",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#同步",
+      "to": "可靠性",
+      "from": "死锁",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#内存",
+      "to": "分页",
+      "from": "虚拟内存",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#内存",
+      "to": "页面置换",
+      "from": "分页",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#内存",
+      "to": "虚拟内存",
+      "from": "内存映射",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#存储",
+      "to": "inode",
+      "from": "文件系统",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#存储",
+      "to": "文件系统",
+      "from": "文件描述符",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#IO",
+      "to": "select",
+      "from": "I/O 多路复用",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#IO",
+      "to": "epoll",
+      "from": "I/O 多路复用",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#IO",
+      "to": "I/O 多路复用",
+      "from": "epoll",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#IO",
+      "to": "I/O 模型",
+      "from": "阻塞 I/O",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#IO",
+      "to": "I/O 模型",
+      "from": "非阻塞 I/O",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#IO",
+      "to": "I/O 模型",
+      "from": "异步 I/O",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#接口",
+      "to": "内核态",
+      "from": "系统调用",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#接口",
+      "to": "内核态",
+      "from": "用户态",
+      "type": "oppose",
+      "directed": false
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#IPC",
+      "to": "进程间通信",
+      "from": "管道",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#IPC",
+      "to": "进程间通信",
+      "from": "共享内存",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#IPC",
+      "to": "进程间通信",
+      "from": "消息队列",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#IPC",
+      "to": "进程间通信",
+      "from": "套接字",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#问题",
+      "to": "缺陷",
+      "from": "僵尸进程",
+      "type": "similar",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#问题",
+      "to": "可靠性",
+      "from": "资源泄漏",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#问题",
+      "to": "可靠性",
+      "from": "OOM Killer",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#性能",
+      "to": "性能瓶颈",
+      "from": "CPU 占用",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#性能",
+      "to": "性能瓶颈",
+      "from": "内存占用",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#性能",
+      "to": "性能瓶颈",
+      "from": "磁盘 I/O",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#性能",
+      "to": "性能瓶颈",
+      "from": "上下文切换开销",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#调度",
+      "to": "负载均衡",
+      "from": "NUMA",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#质量",
+      "to": "缺陷",
+      "from": "测试",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "可预测性",
+      "from": "可靠性",
+      "type": "support",
+      "directed": true
+    }
+  ],
+  "scripts": [
+    {
+      "scenario": "进程线程模型",
+      "tags": [
+        "进程",
+        "线程",
+        "进程还是线程",
+        "线程模型",
+        "协程"
+      ],
+      "template": "进程隔离 vs 线程共享；协程轻量并发；模型按 IO/CPU 特征选"
+    },
+    {
+      "scenario": "并发同步",
+      "tags": [
+        "互斥",
+        "信号量",
+        "互斥锁",
+        "死锁",
+        "信号量",
+        "并发同步"
+      ],
+      "template": "锁粒度最小化；读写锁按需；条件变量配合；死锁预防"
+    },
+    {
+      "scenario": "I/O 模型选型",
+      "tags": [
+        "I/O 多路复用",
+        "epoll"
+      ],
+      "template": "高并发连接用 epoll；阻塞简单场景；异步 I/O 评估；背压控制"
+    },
+    {
+      "scenario": "内存管理",
+      "tags": [
+        "虚拟内存",
+        "内存映射",
+        "虚拟内存",
+        "内存映射",
+        "分页"
+      ],
+      "template": "分页与交换理解；内存映射大文件；内存占用监控；OOM 防护"
+    },
+    {
+      "scenario": "IPC 设计",
+      "tags": [
+        "管道",
+        "共享内存"
+      ],
+      "template": "管道简单流；共享内存高性能需同步；消息队列解耦；Socket 跨机"
+    },
+    {
+      "scenario": "性能诊断",
+      "tags": [
+        "CPU 占用",
+        "上下文切换开销"
+      ],
+      "template": "top/vmstat 定位；上下文切换分析；锁竞争排查；系统调用频率"
+    },
+    {
+      "scenario": "文件系统",
+      "tags": [
+        "文件系统",
+        "文件描述符"
+      ],
+      "template": "文件描述符泄漏防范；I/O 缓冲策略；目录结构设计；权限管理"
+    },
+    {
+      "scenario": "进程生命周期",
+      "tags": [
+        "僵尸进程",
+        "孤儿进程"
+      ],
+      "template": "子进程回收；信号处理；daemon 化；资源清理"
+    },
+    {
+      "scenario": "调度优化",
+      "tags": [
+        "负载均衡",
+        "NUMA"
+      ],
+      "template": "线程亲和性；NUMA 感知；调度优先级；实时线程评估"
+    },
+    {
+      "scenario": "系统编程",
+      "tags": [
+        "系统调用",
+        "内核态"
+      ],
+      "template": "系统调用开销意识；用户态/内核态切换；安全系统调用；错误处理"
+    }
+  ]
+}

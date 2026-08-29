@@ -1,0 +1,137 @@
+.IMAGE DevOps
+.IMAGE 持续集成
+.IMAGE 持续交付
+.IMAGE 自动化测试
+.IMAGE 缺陷
+.IMAGE 持续部署
+.IMAGE 流水线
+.IMAGE 部署策略
+.IMAGE 容器
+.IMAGE Dockerfile
+.IMAGE 镜像
+.IMAGE 镜像仓库
+.IMAGE Kubernetes
+.IMAGE Pod
+.IMAGE Deployment
+.IMAGE Service
+.IMAGE Helm
+.IMAGE 基础设施即代码
+.IMAGE 配置漂移
+.IMAGE Terraform
+.IMAGE Ansible
+.IMAGE GitOps
+.IMAGE 可预测性
+.IMAGE 可观测性
+.IMAGE 指标
+.IMAGE 日志
+.IMAGE 链路追踪
+.IMAGE Prometheus
+.IMAGE Grafana
+.IMAGE 告警
+.IMAGE 事件响应
+.IMAGE SLO
+.IMAGE 错误预算
+.IMAGE SLA
+.IMAGE 发布节奏
+.IMAGE 容量规划
+.IMAGE 弹性伸缩
+.IMAGE 吞吐量
+.IMAGE 故障演练
+.IMAGE 可靠性
+.IMAGE 混沌工程
+.IMAGE 事后复盘
+.IMAGE 灰度发布
+.IMAGE 金丝雀发布
+.IMAGE 蓝绿部署
+.IMAGE 回滚
+.IMAGE 特性开关
+.IMAGE 安全扫描
+.IMAGE 安全
+.IMAGE 镜像签名
+.IMAGE 密钥管理
+.IMAGE 最小权限
+.IMAGE 多环境
+.IMAGE 环境隔离
+.IMAGE 配置管理
+.IMAGE 服务网格
+.IMAGE 服务发现
+.IMAGE 负载均衡
+.IMAGE 限流
+.IMAGE 服务可用性
+.IMAGE 熔断
+.IMAGE 高可用
+.IMAGE 容灾
+.IMAGE 备份
+.IMAGE 恢复演练
+.IMAGE 变更管理
+.IMAGE 可维护性
+.IMAGE 代码规范
+.FIELD DevOps
+.FIELD CI/CD
+.FIELD 容器
+.FIELD 编排
+.FIELD IaC
+.FIELD 可观测
+.FIELD SRE
+.FIELD 发布
+.FIELD 安全
+.FIELD 环境
+.FIELD 网络
+.FIELD 流程
+.FIELD 价值
+SUPPORT DevOps 持续集成 .WEIGHT 0.800 .FIELD DevOps
+SUPPORT DevOps 持续交付 .WEIGHT 0.800 .FIELD DevOps
+SUPPORT 持续集成 自动化测试 .WEIGHT 0.800 .FIELD CI/CD
+UNDERMINE 持续集成 缺陷 .WEIGHT 0.600 .FIELD CI/CD
+SUPPORT 持续交付 持续部署 .WEIGHT 0.800 .FIELD CI/CD
+SUPPORT 流水线 持续集成 .WEIGHT 0.700 .FIELD CI/CD
+IF 持续部署 部署策略 .WEIGHT 0.700 .FIELD CI/CD
+IF 容器 Dockerfile .WEIGHT 0.800 .FIELD 容器
+SUPPORT Dockerfile 镜像 .WEIGHT 0.800 .FIELD 容器
+IF 镜像 镜像仓库 .WEIGHT 0.700 .FIELD 容器
+ENTAIL Kubernetes Pod .WEIGHT 0.800 .FIELD 编排
+BELONG Pod Deployment .WEIGHT 0.800 .FIELD 编排
+SUPPORT Deployment Service .WEIGHT 0.700 .FIELD 编排
+SUPPORT Helm Kubernetes .WEIGHT 0.700 .FIELD 编排
+UNDERMINE 基础设施即代码 配置漂移 .WEIGHT 0.700 .FIELD IaC
+SUPPORT Terraform 基础设施即代码 .WEIGHT 0.800 .FIELD IaC
+SUPPORT Ansible 基础设施即代码 .WEIGHT 0.700 .FIELD IaC
+SUPPORT GitOps 基础设施即代码 .WEIGHT 0.700 .FIELD IaC
+UNDERMINE 配置漂移 可预测性 .WEIGHT 0.600 .FIELD IaC
+IF 可观测性 指标 .WEIGHT 0.800 .FIELD 可观测
+IF 可观测性 日志 .WEIGHT 0.800 .FIELD 可观测
+IF 可观测性 链路追踪 .WEIGHT 0.700 .FIELD 可观测
+SUPPORT Prometheus 指标 .WEIGHT 0.800 .FIELD 可观测
+SUPPORT Grafana 指标 .WEIGHT 0.700 .FIELD 可观测
+IF 告警 事件响应 .WEIGHT 0.800 .FIELD 可观测
+IF SLO 错误预算 .WEIGHT 0.800 .FIELD SRE
+IF SLA SLO .WEIGHT 0.700 .FIELD SRE
+SUPPORT 错误预算 发布节奏 .WEIGHT 0.600 .FIELD SRE
+IF 容量规划 弹性伸缩 .WEIGHT 0.700 .FIELD SRE
+SUPPORT 弹性伸缩 吞吐量 .WEIGHT 0.700 .FIELD SRE
+SUPPORT 故障演练 可靠性 .WEIGHT 0.700 .FIELD SRE
+SUPPORT 混沌工程 故障演练 .WEIGHT 0.700 .FIELD SRE
+SUPPORT 事件响应 事后复盘 .WEIGHT 0.800 .FIELD SRE
+SUPPORT 事后复盘 可靠性 .WEIGHT 0.600 .FIELD SRE
+BELONG 灰度发布 部署策略 .WEIGHT 0.700 .FIELD 发布
+SUPPORT 金丝雀发布 灰度发布 .WEIGHT 0.800 .FIELD 发布
+BELONG 蓝绿部署 部署策略 .WEIGHT 0.700 .FIELD 发布
+IF 回滚 部署策略 .WEIGHT 0.700 .FIELD 发布
+SUPPORT 特性开关 灰度发布 .WEIGHT 0.700 .FIELD 发布
+SUPPORT 安全扫描 安全 .WEIGHT 0.700 .FIELD 安全
+SUPPORT 镜像签名 安全 .WEIGHT 0.700 .FIELD 安全
+SUPPORT 密钥管理 安全 .WEIGHT 0.800 .FIELD 安全
+SUPPORT 最小权限 安全 .WEIGHT 0.800 .FIELD 安全
+SUPPORT 多环境 环境隔离 .WEIGHT 0.700 .FIELD 环境
+SUPPORT 配置管理 多环境 .WEIGHT 0.600 .FIELD 环境
+SUPPORT 服务网格 可观测性 .WEIGHT 0.700 .FIELD 网络
+SUPPORT 服务发现 Kubernetes .WEIGHT 0.700 .FIELD 网络
+SUPPORT 负载均衡 吞吐量 .WEIGHT 0.600 .FIELD 网络
+SUPPORT 限流 服务可用性 .WEIGHT 0.700 .FIELD 网络
+SUPPORT 熔断 服务可用性 .WEIGHT 0.700 .FIELD 网络
+SUPPORT 高可用 可靠性 .WEIGHT 0.800 .FIELD SRE
+SUPPORT 容灾 高可用 .WEIGHT 0.800 .FIELD SRE
+SUPPORT 备份 容灾 .WEIGHT 0.700 .FIELD SRE
+SUPPORT 恢复演练 容灾 .WEIGHT 0.700 .FIELD SRE
+UNDERMINE 变更管理 事件响应 .WEIGHT 0.500 .FIELD 流程
+SUPPORT 可维护性 代码规范 .WEIGHT 0.500 .FIELD 价值

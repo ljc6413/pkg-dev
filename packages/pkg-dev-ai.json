@@ -1,0 +1,1196 @@
+﻿{
+    "id":  "pkg-dev-ai",
+    "name":  "AI 数据工程",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "AI开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "LLM 应用",
+                       "modality":  "text",
+                       "tags":  [
+                                    "场景"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "Prompt 工程",
+                       "modality":  "text",
+                       "tags":  [
+                                    "LLM"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "RAG",
+                       "modality":  "text",
+                       "tags":  [
+                                    "LLM"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "向量检索",
+                       "modality":  "text",
+                       "tags":  [
+                                    "LLM"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "向量数据库",
+                       "modality":  "text",
+                       "tags":  [
+                                    "LLM"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "Embedding",
+                       "modality":  "text",
+                       "tags":  [
+                                    "LLM"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "上下文窗口",
+                       "modality":  "text",
+                       "tags":  [
+                                    "LLM"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "Token 管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "LLM"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "幻觉",
+                       "modality":  "text",
+                       "tags":  [
+                                    "风险"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "工具调用",
+                       "modality":  "text",
+                       "tags":  [
+                                    "LLM"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "Agent",
+                       "modality":  "text",
+                       "tags":  [
+                                    "LLM"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "多轮对话",
+                       "modality":  "text",
+                       "tags":  [
+                                    "LLM"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "数据管道",
+                       "modality":  "text",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "数据清洗",
+                       "modality":  "text",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "特征工程",
+                       "modality":  "text",
+                       "tags":  [
+                                    "ML"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "模型训练",
+                       "modality":  "text",
+                       "tags":  [
+                                    "ML"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "模型评估",
+                       "modality":  "text",
+                       "tags":  [
+                                    "ML"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "过拟合",
+                       "modality":  "text",
+                       "tags":  [
+                                    "ML"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "欠拟合",
+                       "modality":  "text",
+                       "tags":  [
+                                    "ML"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "数据漂移",
+                       "modality":  "text",
+                       "tags":  [
+                                    "ML"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "MLOps",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "模型版本管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "模型注册表",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "实验追踪",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "A/B 测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "可观测性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "成本控制",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "延迟",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "吞吐量",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "缓存",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "批处理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "流式输出",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "隐私合规",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "constraint",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "数据脱敏",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "越狱攻击",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "提示注入",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "内容审核",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "数据质量",
+                       "modality":  "text",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "标注",
+                       "modality":  "text",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "微调",
+                       "modality":  "text",
+                       "tags":  [
+                                    "ML"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "少样本学习",
+                       "modality":  "text",
+                       "tags":  [
+                                    "ML"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "评估指标",
+                       "modality":  "text",
+                       "tags":  [
+                                    "ML"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "基准集",
+                       "modality":  "text",
+                       "tags":  [
+                                    "ML"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "人机回环",
+                       "modality":  "text",
+                       "tags":  [
+                                    "ML"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "反馈收集",
+                       "modality":  "text",
+                       "tags":  [
+                                    "ML"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "知识库",
+                       "modality":  "text",
+                       "tags":  [
+                                    "RAG"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "文档解析",
+                       "modality":  "text",
+                       "tags":  [
+                                    "RAG"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "分块",
+                       "modality":  "text",
+                       "tags":  [
+                                    "RAG"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "重排序",
+                       "modality":  "text",
+                       "tags":  [
+                                    "RAG"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "混合检索",
+                       "modality":  "text",
+                       "tags":  [
+                                    "RAG"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "可靠性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "准确性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "可解释性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "可维护性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "缺陷",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "单元测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "回归",
+                       "modality":  "text",
+                       "tags":  [
+                                    "质量"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "性能瓶颈",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "数据管道调度",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "血缘追踪",
+                       "modality":  "text",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "数据湖",
+                       "modality":  "text",
+                       "tags":  [
+                                    "数据"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "特征存储",
+                       "modality":  "text",
+                       "tags":  [
+                                    "ML"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "在线推理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "ML"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "批量推理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "ML"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "ai"
+                   },
+                   {
+                       "content":  "代码可读性",
+                       "kind":  "value",
+                       "category":  "shared",
+                       "tags":  [
+
+                                ],
+                       "modality":  "text",
+                       "confidence":  1
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#LLM",
+                          "to":  "Prompt 工程",
+                          "from":  "LLM 应用",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#LLM",
+                          "to":  "幻觉",
+                          "from":  "Prompt 工程",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#LLM",
+                          "to":  "幻觉",
+                          "from":  "RAG",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#LLM",
+                          "to":  "向量检索",
+                          "from":  "RAG",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#LLM",
+                          "to":  "向量数据库",
+                          "from":  "向量检索",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#LLM",
+                          "to":  "向量检索",
+                          "from":  "Embedding",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#RAG",
+                          "to":  "RAG",
+                          "from":  "知识库",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#RAG",
+                          "to":  "知识库",
+                          "from":  "文档解析",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#RAG",
+                          "to":  "向量检索",
+                          "from":  "分块",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#RAG",
+                          "to":  "准确性",
+                          "from":  "重排序",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#RAG",
+                          "to":  "准确性",
+                          "from":  "混合检索",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#LLM",
+                          "to":  "Token 管理",
+                          "from":  "上下文窗口",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#LLM",
+                          "to":  "成本控制",
+                          "from":  "Token 管理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#LLM",
+                          "to":  "Agent",
+                          "from":  "工具调用",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#LLM",
+                          "to":  "上下文窗口",
+                          "from":  "多轮对话",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#LLM",
+                          "to":  "人机回环",
+                          "from":  "Agent",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#数据",
+                          "to":  "数据清洗",
+                          "from":  "数据管道",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#数据",
+                          "to":  "数据质量",
+                          "from":  "数据清洗",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#数据",
+                          "to":  "准确性",
+                          "from":  "数据质量",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#ML",
+                          "to":  "模型训练",
+                          "from":  "特征工程",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#ML",
+                          "to":  "准确性",
+                          "from":  "过拟合",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#ML",
+                          "to":  "准确性",
+                          "from":  "欠拟合",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#ML",
+                          "to":  "过拟合",
+                          "from":  "模型评估",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#ML",
+                          "to":  "准确性",
+                          "from":  "数据漂移",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#工程",
+                          "to":  "模型版本管理",
+                          "from":  "MLOps",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "模型注册表",
+                          "from":  "模型版本管理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "可解释性",
+                          "from":  "实验追踪",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "可观测性",
+                          "from":  "A/B 测试",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#性能",
+                          "to":  "延迟",
+                          "from":  "缓存",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#性能",
+                          "to":  "吞吐量",
+                          "from":  "批处理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#性能",
+                          "to":  "延迟",
+                          "from":  "流式输出",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#安全",
+                          "to":  "数据脱敏",
+                          "from":  "隐私合规",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#安全",
+                          "to":  "隐私合规",
+                          "from":  "数据脱敏",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "越狱攻击",
+                          "from":  "提示注入",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#安全",
+                          "to":  "越狱攻击",
+                          "from":  "内容审核",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#数据",
+                          "to":  "数据质量",
+                          "from":  "标注",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#ML",
+                          "to":  "准确性",
+                          "from":  "微调",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#ML",
+                          "to":  "微调",
+                          "from":  "少样本学习",
+                          "type":  "oppose",
+                          "directed":  false
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#ML",
+                          "to":  "模型评估",
+                          "from":  "评估指标",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#ML",
+                          "to":  "评估指标",
+                          "from":  "基准集",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#ML",
+                          "to":  "人机回环",
+                          "from":  "反馈收集",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "可靠性",
+                          "from":  "可解释性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#价值",
+                          "to":  "可靠性",
+                          "from":  "准确性",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#质量",
+                          "to":  "缺陷",
+                          "from":  "测试",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#质量",
+                          "to":  "测试",
+                          "from":  "单元测试",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#质量",
+                          "to":  "准确性",
+                          "from":  "回归",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "数据管道",
+                          "from":  "数据管道调度",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#数据",
+                          "to":  "可解释性",
+                          "from":  "血缘追踪",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#ML",
+                          "to":  "特征工程",
+                          "from":  "特征存储",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#ML",
+                          "to":  "延迟",
+                          "from":  "在线推理",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#ML",
+                          "to":  "吞吐量",
+                          "from":  "批量推理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#LLM",
+                          "to":  "成本控制",
+                          "from":  "LLM 应用",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#性能",
+                          "to":  "延迟",
+                          "from":  "性能瓶颈",
+                          "type":  "similar",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#数据",
+                          "to":  "数据管道",
+                          "from":  "数据湖",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "代码可读性",
+                          "from":  "可维护性",
+                          "type":  "support",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "RAG 系统设计",
+                        "tags":  [
+                                     "RAG",
+                                     "向量检索"
+                                 ],
+                        "template":  "先建知识库与分块策略；Embedding 选型与索引调优；混合检索+重排序提准；评估集验证回答质量"
+                    },
+                    {
+                        "scenario":  "Prompt 工程",
+                        "tags":  [
+                                     "Prompt 工程",
+                                     "幻觉"
+                                 ],
+                        "template":  "任务指令+上下文+输出格式三段式；few-shot 示例带边界；幻觉高风险场景强制引用来源；留白追问"
+                    },
+                    {
+                        "scenario":  "Agent 设计",
+                        "tags":  [
+                                     "Agent",
+                                     "工具调用"
+                                 ],
+                        "template":  "定义工具契约与调用权限；循环上限与超时；中间步骤可观测；人机回环接管高风险动作"
+                    },
+                    {
+                        "scenario":  "LLM 成本与延迟优化",
+                        "tags":  [
+                                     "成本控制",
+                                     "Token 管理"
+                                 ],
+                        "template":  "上下文裁剪与摘要压缩；缓存高频问答；批处理非交互请求；模型分级（小模型兜底）"
+                    },
+                    {
+                        "scenario":  "数据管道构建",
+                        "tags":  [
+                                     "数据管道",
+                                     "数据清洗"
+                                 ],
+                        "template":  "抽取-清洗-校验-加载四段；数据质量门禁卡脏数据；血缘追踪可回溯；调度重跑幂等"
+                    },
+                    {
+                        "scenario":  "模型评估与防漂移",
+                        "tags":  [
+                                     "模型评估",
+                                     "数据漂移"
+                                 ],
+                        "template":  "评估集与基准集固定；离线+在线指标双轨；数据漂移监控阈值告警；定期重训节奏留白"
+                    },
+                    {
+                        "scenario":  "LLM 安全防护",
+                        "tags":  [
+                                     "提示注入",
+                                     "隐私合规"
+                                 ],
+                        "template":  "输入输出双向过滤；系统提示隔离；敏感数据脱敏后再入上下文；越狱/注入样本集持续扩充"
+                    },
+                    {
+                        "scenario":  "MLOps 落地",
+                        "tags":  [
+                                     "MLOps",
+                                     "模型版本管理"
+                                 ],
+                        "template":  "训练-评估-注册-部署流水线；实验追踪记录超参与指标；模型注册表管版本；回滚预案"
+                    },
+                    {
+                        "scenario":  "特征工程",
+                        "tags":  [
+                                     "特征工程",
+                                     "特征存储"
+                                 ],
+                        "template":  "特征先行与标签对齐；特征存储统一在线离线；缺失值与异常值策略；特征漂移监控"
+                    },
+                    {
+                        "scenario":  "LLM 应用测试",
+                        "tags":  [
+                                     "测试",
+                                     "回归"
+                                 ],
+                        "template":  "黄金问答集回归；确定性场景断言；非确定性场景评分阈值；成本与延迟基准留档"
+                    }
+                ]
+}

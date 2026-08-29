@@ -1,0 +1,122 @@
+.IMAGE 大数据
+.IMAGE 分布式计算
+.IMAGE 数据湖
+.IMAGE 湖仓一体
+.IMAGE 数据仓库
+.IMAGE HDFS
+.IMAGE 对象存储
+.IMAGE MapReduce
+.IMAGE Spark
+.IMAGE Flink
+.IMAGE RDD
+.IMAGE DataFrame
+.IMAGE 分区
+.IMAGE Shuffle
+.IMAGE 数据倾斜
+.IMAGE 宽依赖
+.IMAGE 窄依赖
+.IMAGE 性能瓶颈
+.IMAGE 小文件
+.IMAGE 流处理
+.IMAGE 批处理
+.IMAGE 流批一体
+.IMAGE 事件时间
+.IMAGE 水印
+.IMAGE 窗口计算
+.IMAGE Kafka
+.IMAGE 消息队列
+.IMAGE 分区消费
+.IMAGE 消费组
+.IMAGE Exactly-once
+.IMAGE 幂等
+.IMAGE At-least-once
+.IMAGE ETL
+.IMAGE ELT
+.IMAGE 数据管道
+.IMAGE 数据同步
+.IMAGE Hive
+.IMAGE SparkSQL
+.IMAGE Iceberg
+.IMAGE Hudi
+.IMAGE DeltaLake
+.IMAGE 血缘
+.IMAGE 数据质量
+.IMAGE 数据目录
+.IMAGE 数据脱敏
+.IMAGE 安全
+.IMAGE 数据加密
+.IMAGE YARN
+.IMAGE 资源调度
+.IMAGE 容器化
+.IMAGE 高可用
+.IMAGE 可靠性
+.IMAGE 容灾
+.IMAGE 监控告警
+.IMAGE 可扩展性
+.IMAGE 可维护性
+.IMAGE 可预测性
+.IMAGE 测试
+.IMAGE 缺陷
+.FIELD BD
+.FIELD 存储
+.FIELD 计算
+.FIELD Spark
+.FIELD 性能
+.FIELD 流式
+.FIELD 消息
+.FIELD 一致性
+.FIELD 管道
+.FIELD SQL
+.FIELD 表格式
+.FIELD 治理
+.FIELD 安全
+.FIELD 调度
+.FIELD 运维
+.FIELD 价值
+.FIELD 质量
+IF 大数据 分布式计算 .WEIGHT 0.900 .FIELD BD
+SUPPORT 大数据 数据湖 .WEIGHT 0.700 .FIELD BD
+SUPPORT 数据湖 湖仓一体 .WEIGHT 0.700 .FIELD 存储
+SUPPORT 数据仓库 湖仓一体 .WEIGHT 0.700 .FIELD 存储
+SUPPORT HDFS 数据湖 .WEIGHT 0.800 .FIELD 存储
+SUPPORT 对象存储 数据湖 .WEIGHT 0.800 .FIELD 存储
+BELONG 分布式计算 MapReduce .WEIGHT 0.700 .FIELD 计算
+BELONG 分布式计算 Spark .WEIGHT 0.800 .FIELD 计算
+BELONG 分布式计算 Flink .WEIGHT 0.800 .FIELD 计算
+IF Spark RDD .WEIGHT 0.800 .FIELD Spark
+IF Spark DataFrame .WEIGHT 0.800 .FIELD Spark
+SUPPORT 分区 DataFrame .WEIGHT 0.700 .FIELD Spark
+CAUSE Shuffle 数据倾斜 .WEIGHT 0.700 .FIELD Spark
+CAUSE 宽依赖 Shuffle .WEIGHT 0.800 .FIELD Spark
+UNDERMINE 窄依赖 Shuffle .WEIGHT 0.700 .FIELD Spark
+CAUSE 数据倾斜 性能瓶颈 .WEIGHT 0.800 .FIELD 性能
+CAUSE 小文件 性能瓶颈 .WEIGHT 0.700 .FIELD 性能
+IF 流处理 Flink .WEIGHT 0.900 .FIELD 流式
+IF 批处理 Spark .WEIGHT 0.800 .FIELD 流式
+SUPPORT 流批一体 流处理 .WEIGHT 0.700 .FIELD 流式
+IF 事件时间 水印 .WEIGHT 0.900 .FIELD 流式
+IF 水印 窗口计算 .WEIGHT 0.800 .FIELD 流式
+BELONG Kafka 消息队列 .WEIGHT 0.900 .FIELD 消息
+SUPPORT 分区消费 Kafka .WEIGHT 0.800 .FIELD 消息
+IF 消费组 分区消费 .WEIGHT 0.800 .FIELD 消息
+IF Exactly-once 幂等 .WEIGHT 0.700 .FIELD 一致性
+IF At-least-once 幂等 .WEIGHT 0.600 .FIELD 一致性
+LIKE ETL ELT .WEIGHT 0.600 .FIELD 管道
+SUPPORT 数据管道 ETL .WEIGHT 0.800 .FIELD 管道
+SUPPORT 数据同步 数据管道 .WEIGHT 0.700 .FIELD 管道
+LIKE Hive SparkSQL .WEIGHT 0.600 .FIELD SQL
+SUPPORT Iceberg 湖仓一体 .WEIGHT 0.700 .FIELD 表格式
+SUPPORT Hudi 湖仓一体 .WEIGHT 0.700 .FIELD 表格式
+SUPPORT DeltaLake 湖仓一体 .WEIGHT 0.700 .FIELD 表格式
+SUPPORT 血缘 数据质量 .WEIGHT 0.700 .FIELD 治理
+SUPPORT 数据目录 血缘 .WEIGHT 0.700 .FIELD 治理
+SUPPORT 数据脱敏 安全 .WEIGHT 0.700 .FIELD 安全
+SUPPORT 数据加密 安全 .WEIGHT 0.700 .FIELD 安全
+SUPPORT YARN 资源调度 .WEIGHT 0.800 .FIELD 调度
+SUPPORT 容器化 资源调度 .WEIGHT 0.700 .FIELD 调度
+SUPPORT 高可用 可靠性 .WEIGHT 0.800 .FIELD 运维
+SUPPORT 容灾 高可用 .WEIGHT 0.700 .FIELD 运维
+SUPPORT 监控告警 可靠性 .WEIGHT 0.600 .FIELD 运维
+SUPPORT 可扩展性 可维护性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可靠性 可预测性 .WEIGHT 0.600 .FIELD 价值
+UNDERMINE 测试 缺陷 .WEIGHT 0.600 .FIELD 质量

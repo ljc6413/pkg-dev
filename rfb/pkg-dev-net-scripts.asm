@@ -1,0 +1,73 @@
+﻿.IMAGE HTTP
+.IMAGE gRPC
+.IMAGE WebSocket
+.IMAGE QUIC
+.IMAGE 连接池
+.IMAGE 长连接
+.IMAGE 超时控制
+.IMAGE 重试机制
+.IMAGE 消息编解码
+.IMAGE 粘包拆包
+.IMAGE 序列化
+.IMAGE 网络延迟
+.IMAGE 吞吐量
+.IMAGE 抓包
+.IMAGE Wireshark
+.IMAGE TCP三次握手
+.IMAGE 负载均衡
+.IMAGE API网关
+.IMAGE 限流
+.IMAGE TLS
+.IMAGE 证书
+.IMAGE 异步模型
+.IMAGE 协程
+.IMAGE 背压
+.IMAGE 测试
+.IMAGE 缺陷
+.FIELD 场景
+.IMAGE 协议选型
+SUPPORT 协议选型 HTTP .WEIGHT 0.7 .FIELD 场景
+SUPPORT 协议选型 gRPC .WEIGHT 0.7 .FIELD 场景
+SUPPORT 协议选型 HTTP .WEIGHT 0.5 .FIELD 场景
+SUPPORT 协议选型 gRPC .WEIGHT 0.5 .FIELD 场景
+SUPPORT 协议选型 WebSocket .WEIGHT 0.5 .FIELD 场景
+SUPPORT 协议选型 QUIC .WEIGHT 0.5 .FIELD 场景
+.IMAGE 连接管理
+SUPPORT 连接管理 连接池 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 连接管理 长连接 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 连接管理 长连接 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 可靠传输
+SUPPORT 可靠传输 超时控制 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 可靠传输 重试机制 .WEIGHT 0.7 .FIELD 场景
+.IMAGE 消息协议设计
+SUPPORT 消息协议设计 消息编解码 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 消息协议设计 粘包拆包 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 消息协议设计 粘包拆包 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 消息协议设计 序列化 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 性能优化
+SUPPORT 性能优化 网络延迟 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 性能优化 吞吐量 .WEIGHT 0.7 .FIELD 场景
+.IMAGE 网络调试
+SUPPORT 网络调试 抓包 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 网络调试 Wireshark .WEIGHT 0.7 .FIELD 场景
+SUPPORT 网络调试 抓包 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 网络调试 TCP三次握手 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 架构设计
+SUPPORT 架构设计 负载均衡 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 架构设计 API网关 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 架构设计 负载均衡 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 架构设计 限流 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 安全传输
+SUPPORT 安全传输 TLS .WEIGHT 0.7 .FIELD 场景
+SUPPORT 安全传输 证书 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 安全传输 TLS .WEIGHT 0.5 .FIELD 场景
+SUPPORT 安全传输 证书 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 异步编程
+SUPPORT 异步编程 异步模型 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 异步编程 协程 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 异步编程 协程 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 异步编程 背压 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 网络测试
+SUPPORT 网络测试 测试 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 网络测试 缺陷 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 网络测试 测试 .WEIGHT 0.5 .FIELD 场景

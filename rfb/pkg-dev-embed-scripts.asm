@@ -1,0 +1,42 @@
+.FIELD 场景
+.IMAGE RTOS任务设计
+SUPPORT RTOS任务设计 RTOS .WEIGHT 0.7 .FIELD 场景
+SUPPORT RTOS任务设计 任务调度 .WEIGHT 0.7 .FIELD 场景
+SUPPORT RTOS任务设计 优先级反转 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 低功耗设计
+SUPPORT 低功耗设计 低功耗 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 低功耗设计 睡眠模式 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 低功耗设计 唤醒源 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 中断处理
+SUPPORT 中断处理 中断 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 中断处理 实时性 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 中断处理 中断 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 设备驱动开发
+SUPPORT 设备驱动开发 设备驱动 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 设备驱动开发 寄存器 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 设备驱动开发 寄存器 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 设备驱动开发 中断 .WEIGHT 0.5 .FIELD 场景
+.IMAGE OTA升级
+SUPPORT OTA升级 OTA .WEIGHT 0.7 .FIELD 场景
+SUPPORT OTA升级 固件升级 .WEIGHT 0.7 .FIELD 场景
+.IMAGE 内存管理
+SUPPORT 内存管理 内存布局 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 内存管理 内存碎片 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 内存管理 静态分配 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 无线通信选型
+SUPPORT 无线通信选型 蓝牙 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 无线通信选型 WiFi .WEIGHT 0.7 .FIELD 场景
+SUPPORT 无线通信选型 低功耗 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 无线通信选型 Zigbee .WEIGHT 0.5 .FIELD 场景
+.IMAGE 实时性保障
+SUPPORT 实时性保障 实时性 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 实时性保障 确定性 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 实时性保障 中断 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 实时性保障 任务调度 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 实时性保障 看门狗 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 安全启动
+SUPPORT 安全启动 数据加密 .WEIGHT 0.7 .FIELD 场景
+.IMAGE 嵌入式测试
+SUPPORT 嵌入式测试 单元测试 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 嵌入式测试 硬件在环 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 嵌入式测试 静态分析 .WEIGHT 0.5 .FIELD 场景

@@ -1,0 +1,124 @@
+.IMAGE C/C++
+.IMAGE 指针
+.IMAGE 内存管理
+.IMAGE 引用
+.IMAGE RAII
+.IMAGE 内存泄漏
+.IMAGE 智能指针
+.IMAGE unique_ptr
+.IMAGE shared_ptr
+.IMAGE 可靠性
+.IMAGE 悬垂指针
+.IMAGE 缺陷
+.IMAGE 模板
+.IMAGE 泛型
+.IMAGE 模板元编程
+.IMAGE 虚函数
+.IMAGE 多态
+.IMAGE 可扩展性
+.IMAGE STL
+.IMAGE 容器
+.IMAGE 算法库
+.IMAGE 迭代器
+.IMAGE 异常
+.IMAGE 异常安全
+.IMAGE CMake
+.IMAGE 链接
+.IMAGE 编译器
+.IMAGE 编译单元
+.IMAGE GCC
+.IMAGE Clang
+.IMAGE GDB
+.IMAGE 调试器
+.IMAGE Sanitizer
+.IMAGE Valgrind
+.IMAGE 静态分析
+.IMAGE 线程
+.IMAGE 并发
+.IMAGE 互斥锁
+.IMAGE 数据竞争
+.IMAGE 条件变量
+.IMAGE 原子操作
+.IMAGE 移动语义
+.IMAGE 性能
+.IMAGE 右值引用
+.IMAGE 拷贝
+.IMAGE 内联
+.IMAGE 零成本抽象
+.IMAGE Catch2
+.IMAGE 单元测试
+.IMAGE 测试
+.IMAGE 嵌入式
+.IMAGE 实时系统
+.IMAGE 游戏开发
+.IMAGE 系统编程
+.IMAGE C语言
+.IMAGE 结构体
+.IMAGE 位操作
+.IMAGE 可维护性
+.IMAGE 代码可读性
+.IMAGE 可预测性
+.FIELD CPP
+.FIELD 内存
+.FIELD 反模式
+.FIELD 泛型
+.FIELD 多态
+.FIELD 库
+.FIELD 错误
+.FIELD 构建
+.FIELD 工具
+.FIELD 调试
+.FIELD 质量
+.FIELD 并发
+.FIELD 优化
+.FIELD 价值
+.FIELD 测试
+.FIELD 场景
+.FIELD 语言
+.FIELD 语法
+ENTAIL C/C++ 指针 .WEIGHT 0.900 .FIELD CPP
+IF 指针 内存管理 .WEIGHT 0.800 .FIELD CPP
+LIKE 引用 指针 .WEIGHT 0.600 .FIELD CPP
+UNDERMINE RAII 内存泄漏 .WEIGHT 0.900 .FIELD 内存
+UNDERMINE 智能指针 内存泄漏 .WEIGHT 0.800 .FIELD 内存
+BELONG unique_ptr 智能指针 .WEIGHT 0.900 .FIELD 内存
+BELONG shared_ptr 智能指针 .WEIGHT 0.900 .FIELD 内存
+UNDERMINE 内存泄漏 可靠性 .WEIGHT 0.700 .FIELD 内存
+CAUSE 悬垂指针 缺陷 .WEIGHT 0.900 .FIELD 反模式
+SUPPORT 模板 泛型 .WEIGHT 0.900 .FIELD 泛型
+SUPPORT 模板元编程 模板 .WEIGHT 0.800 .FIELD 泛型
+IF 虚函数 多态 .WEIGHT 0.900 .FIELD 多态
+SUPPORT 多态 可扩展性 .WEIGHT 0.700 .FIELD 多态
+IF STL 容器 .WEIGHT 0.800 .FIELD 库
+IF STL 算法库 .WEIGHT 0.800 .FIELD 库
+SUPPORT 迭代器 容器 .WEIGHT 0.700 .FIELD 库
+IF 异常 异常安全 .WEIGHT 0.700 .FIELD 错误
+SUPPORT 异常安全 可靠性 .WEIGHT 0.800 .FIELD 错误
+IF CMake 链接 .WEIGHT 0.700 .FIELD 构建
+IF 编译器 编译单元 .WEIGHT 0.800 .FIELD 工具
+BELONG GCC 编译器 .WEIGHT 0.800 .FIELD 工具
+BELONG Clang 编译器 .WEIGHT 0.800 .FIELD 工具
+BELONG GDB 调试器 .WEIGHT 0.800 .FIELD 调试
+IF Sanitizer 内存泄漏 .WEIGHT 0.800 .FIELD 质量
+IF Valgrind 内存泄漏 .WEIGHT 0.800 .FIELD 质量
+UNDERMINE 静态分析 缺陷 .WEIGHT 0.600 .FIELD 质量
+SUPPORT 线程 并发 .WEIGHT 0.800 .FIELD 并发
+UNDERMINE 互斥锁 数据竞争 .WEIGHT 0.800 .FIELD 并发
+SUPPORT 条件变量 线程 .WEIGHT 0.700 .FIELD 并发
+UNDERMINE 原子操作 数据竞争 .WEIGHT 0.700 .FIELD 并发
+CAUSE 数据竞争 缺陷 .WEIGHT 0.800 .FIELD 反模式
+SUPPORT 移动语义 性能 .WEIGHT 0.800 .FIELD 优化
+IF 右值引用 移动语义 .WEIGHT 0.900 .FIELD 优化
+UNDERMINE 移动语义 拷贝 .WEIGHT 0.700 .FIELD 优化
+SUPPORT 内联 性能 .WEIGHT 0.500 .FIELD 优化
+SUPPORT 零成本抽象 性能 .WEIGHT 0.800 .FIELD 价值
+SUPPORT Catch2 单元测试 .WEIGHT 0.800 .FIELD 测试
+BELONG 单元测试 测试 .WEIGHT 0.800 .FIELD 测试
+UNDERMINE 测试 缺陷 .WEIGHT 0.700 .FIELD 测试
+SUPPORT 嵌入式 实时系统 .WEIGHT 0.700 .FIELD 场景
+IF 游戏开发 性能 .WEIGHT 0.800 .FIELD 场景
+IF 系统编程 内存管理 .WEIGHT 0.800 .FIELD 场景
+IF C语言 结构体 .WEIGHT 0.800 .FIELD 语言
+SUPPORT 位操作 性能 .WEIGHT 0.500 .FIELD 语法
+SUPPORT 可维护性 代码可读性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可靠性 可预测性 .WEIGHT 0.600 .FIELD 价值

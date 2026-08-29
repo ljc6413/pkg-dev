@@ -1,0 +1,151 @@
+.IMAGE Java
+.IMAGE JVM
+.IMAGE 垃圾回收
+.IMAGE 内存泄漏
+.IMAGE OOM
+.IMAGE Optional
+.IMAGE 空指针
+.IMAGE 受检异常
+.IMAGE 异常处理
+.IMAGE 可靠性
+.IMAGE 接口
+.IMAGE 可扩展性
+.IMAGE 抽象类
+.IMAGE 泛型
+.IMAGE 类型安全
+.IMAGE 反射
+.IMAGE 可维护性
+.IMAGE Stream
+.IMAGE 代码可读性
+.IMAGE lambda
+.IMAGE 线程
+.IMAGE 并发
+.IMAGE 线程池
+.IMAGE 锁
+.IMAGE 并发安全
+.IMAGE synchronized
+.IMAGE CompletableFuture
+.IMAGE 虚拟线程
+.IMAGE 吞吐量
+.IMAGE Spring
+.IMAGE 依赖注入
+.IMAGE SpringBoot
+.IMAGE 自动配置
+.IMAGE AOP
+.IMAGE 事务管理
+.IMAGE 数据一致性
+.IMAGE SpringDataJPA
+.IMAGE MyBatis
+.IMAGE REST控制器
+.IMAGE 接口设计
+.IMAGE SpringSecurity
+.IMAGE 安全
+.IMAGE Maven
+.IMAGE 依赖管理
+.IMAGE Gradle
+.IMAGE 多模块
+.IMAGE 模块化
+.IMAGE 配置文件
+.IMAGE 环境隔离
+.IMAGE Profile
+.IMAGE JUnit
+.IMAGE 单元测试
+.IMAGE Mockito
+.IMAGE 测试
+.IMAGE 集成测试
+.IMAGE 测试容器
+.IMAGE 测试覆盖率
+.IMAGE 缺陷
+.IMAGE Checkstyle
+.IMAGE 代码规范
+.IMAGE SonarQube
+.IMAGE 性能瓶颈
+.IMAGE 性能剖析
+.IMAGE JFR
+.IMAGE SpringCloud
+.IMAGE 微服务
+.IMAGE 服务注册发现
+.IMAGE 配置中心
+.IMAGE 网关
+.IMAGE 熔断
+.IMAGE 服务可用性
+.IMAGE 分布式事务
+.IMAGE 消息队列
+.IMAGE Redis
+.IMAGE 缓存
+.IMAGE 可预测性
+.FIELD JAVA
+.FIELD 并发
+.FIELD Spring
+.FIELD 数据
+.FIELD Web
+.FIELD 安全
+.FIELD 构建
+.FIELD 配置
+.FIELD 测试
+.FIELD 规范
+.FIELD 性能
+.FIELD 微服务
+.FIELD 集成
+.FIELD 缓存
+.FIELD 价值
+.FIELD 质量
+ENTAIL Java JVM .WEIGHT 0.900 .FIELD JAVA
+IF JVM 垃圾回收 .WEIGHT 0.800 .FIELD JAVA
+UNDERMINE 垃圾回收 内存泄漏 .WEIGHT 0.600 .FIELD JAVA
+UNDERMINE 垃圾回收 OOM .WEIGHT 0.500 .FIELD JAVA
+UNDERMINE Optional 空指针 .WEIGHT 0.800 .FIELD JAVA
+SUPPORT 受检异常 异常处理 .WEIGHT 0.600 .FIELD JAVA
+SUPPORT 异常处理 可靠性 .WEIGHT 0.700 .FIELD JAVA
+SUPPORT 接口 可扩展性 .WEIGHT 0.700 .FIELD JAVA
+LIKE 抽象类 接口 .WEIGHT 0.600 .FIELD JAVA
+SUPPORT 泛型 类型安全 .WEIGHT 0.700 .FIELD JAVA
+UNDERMINE 反射 可维护性 .WEIGHT 0.500 .FIELD JAVA
+SUPPORT Stream 代码可读性 .WEIGHT 0.600 .FIELD JAVA
+SUPPORT lambda Stream .WEIGHT 0.600 .FIELD JAVA
+SUPPORT 线程 并发 .WEIGHT 0.700 .FIELD 并发
+SUPPORT 线程池 线程 .WEIGHT 0.800 .FIELD 并发
+SUPPORT 锁 并发安全 .WEIGHT 0.700 .FIELD 并发
+BELONG synchronized 锁 .WEIGHT 0.700 .FIELD 并发
+SUPPORT CompletableFuture 并发 .WEIGHT 0.700 .FIELD 并发
+SUPPORT 虚拟线程 吞吐量 .WEIGHT 0.600 .FIELD 并发
+ENTAIL Spring 依赖注入 .WEIGHT 0.900 .FIELD Spring
+SUPPORT 依赖注入 可维护性 .WEIGHT 0.700 .FIELD Spring
+SUPPORT SpringBoot Spring .WEIGHT 0.800 .FIELD Spring
+SUPPORT 自动配置 SpringBoot .WEIGHT 0.800 .FIELD Spring
+SUPPORT AOP 事务管理 .WEIGHT 0.700 .FIELD Spring
+SUPPORT 事务管理 数据一致性 .WEIGHT 0.800 .FIELD 数据
+SUPPORT SpringDataJPA 事务管理 .WEIGHT 0.700 .FIELD 数据
+BUT MyBatis SpringDataJPA .WEIGHT 0.500 .FIELD 数据
+SUPPORT REST控制器 接口设计 .WEIGHT 0.700 .FIELD Web
+SUPPORT SpringSecurity 安全 .WEIGHT 0.800 .FIELD 安全
+SUPPORT Maven 依赖管理 .WEIGHT 0.800 .FIELD 构建
+SUPPORT Gradle 依赖管理 .WEIGHT 0.800 .FIELD 构建
+SUPPORT 多模块 模块化 .WEIGHT 0.700 .FIELD 构建
+SUPPORT 配置文件 环境隔离 .WEIGHT 0.600 .FIELD 配置
+SUPPORT Profile 环境隔离 .WEIGHT 0.700 .FIELD 配置
+SUPPORT JUnit 单元测试 .WEIGHT 0.800 .FIELD 测试
+SUPPORT Mockito 单元测试 .WEIGHT 0.700 .FIELD 测试
+BELONG 单元测试 测试 .WEIGHT 0.800 .FIELD 测试
+BELONG 集成测试 测试 .WEIGHT 0.800 .FIELD 测试
+SUPPORT 测试容器 集成测试 .WEIGHT 0.700 .FIELD 测试
+SUPPORT 测试覆盖率 测试 .WEIGHT 0.600 .FIELD 测试
+UNDERMINE 测试 缺陷 .WEIGHT 0.700 .FIELD 测试
+SUPPORT Checkstyle 代码规范 .WEIGHT 0.700 .FIELD 规范
+SUPPORT SonarQube 代码规范 .WEIGHT 0.700 .FIELD 规范
+CAUSE 内存泄漏 性能瓶颈 .WEIGHT 0.700 .FIELD 性能
+CAUSE OOM 性能瓶颈 .WEIGHT 0.800 .FIELD 性能
+IF 性能剖析 性能瓶颈 .WEIGHT 0.700 .FIELD 性能
+SUPPORT JFR 性能剖析 .WEIGHT 0.800 .FIELD 性能
+SUPPORT SpringCloud 微服务 .WEIGHT 0.800 .FIELD 微服务
+SUPPORT 服务注册发现 SpringCloud .WEIGHT 0.800 .FIELD 微服务
+SUPPORT 配置中心 SpringCloud .WEIGHT 0.700 .FIELD 微服务
+SUPPORT 网关 SpringCloud .WEIGHT 0.700 .FIELD 微服务
+SUPPORT 熔断 服务可用性 .WEIGHT 0.700 .FIELD 微服务
+UNDERMINE 分布式事务 数据一致性 .WEIGHT 0.600 .FIELD 微服务
+SUPPORT 消息队列 微服务 .WEIGHT 0.600 .FIELD 集成
+SUPPORT Redis 缓存 .WEIGHT 0.800 .FIELD 缓存
+SUPPORT 可维护性 代码可读性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可扩展性 可维护性 .WEIGHT 0.600 .FIELD 价值
+SUPPORT 可靠性 可预测性 .WEIGHT 0.600 .FIELD 价值
+LIKE 空指针 缺陷 .WEIGHT 0.600 .FIELD 质量

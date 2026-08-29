@@ -1,0 +1,715 @@
+{
+  "id": "pkg-dev-evolve",
+  "name": "编程包自主进化",
+  "industry": "软件开发",
+  "version": "1.0.0",
+  "namespace": "EVOLVE开发",
+  "owner": "yidev",
+  "tier": "pro",
+  "license_required": true,
+  "imagos": [
+    {
+      "content": "自主扩展",
+      "kind": "intent",
+      "category": "evolve",
+      "tags": [
+        "进化",
+        "扩展"
+      ],
+      "modality": "text",
+      "confidence": 0.9
+    },
+    {
+      "content": "知识缺口",
+      "kind": "proposition",
+      "category": "evolve",
+      "tags": [
+        "检测"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "孤立意象",
+      "kind": "proposition",
+      "category": "evolve",
+      "tags": [
+        "缺口"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "低连接节点",
+      "kind": "proposition",
+      "category": "evolve",
+      "tags": [
+        "缺口"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "补丁提案",
+      "kind": "proposition",
+      "category": "evolve",
+      "tags": [
+        "扩展"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "扩展优先级",
+      "kind": "proposition",
+      "category": "evolve",
+      "tags": [
+        "决策"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "进化循环",
+      "kind": "proposition",
+      "category": "evolve",
+      "tags": [
+        "方法论"
+      ],
+      "modality": "text",
+      "confidence": 0.9
+    },
+    {
+      "content": "自主学习",
+      "kind": "intent",
+      "category": "learn",
+      "tags": [
+        "学习"
+      ],
+      "modality": "text",
+      "confidence": 0.9
+    },
+    {
+      "content": "反馈闭环",
+      "kind": "proposition",
+      "category": "learn",
+      "tags": [
+        "学习"
+      ],
+      "modality": "text",
+      "confidence": 0.9
+    },
+    {
+      "content": "奖惩队列",
+      "kind": "proposition",
+      "category": "learn",
+      "tags": [
+        "反馈"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "经验沉淀",
+      "kind": "proposition",
+      "category": "learn",
+      "tags": [
+        "沉淀"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "脚本案例化",
+      "kind": "proposition",
+      "category": "learn",
+      "tags": [
+        "沉淀"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "决策缓存",
+      "kind": "proposition",
+      "category": "token",
+      "tags": [
+        "省token"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "RFB本地执行",
+      "kind": "proposition",
+      "category": "token",
+      "tags": [
+        "省token"
+      ],
+      "modality": "text",
+      "confidence": 0.9
+    },
+    {
+      "content": "脚本预匹配",
+      "kind": "proposition",
+      "category": "token",
+      "tags": [
+        "省token"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "Token节省",
+      "kind": "proposition",
+      "category": "token",
+      "tags": [
+        "成本"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "本地优先",
+      "kind": "proposition",
+      "category": "token",
+      "tags": [
+        "策略"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "进化共享",
+      "kind": "intent",
+      "category": "share",
+      "tags": [
+        "共享"
+      ],
+      "modality": "text",
+      "confidence": 0.9
+    },
+    {
+      "content": "增量包",
+      "kind": "proposition",
+      "category": "share",
+      "tags": [
+        "共享"
+      ],
+      "modality": "text",
+      "confidence": 0.9
+    },
+    {
+      "content": "Delta导出",
+      "kind": "proposition",
+      "category": "share",
+      "tags": [
+        "共享"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "跨实例同步",
+      "kind": "proposition",
+      "category": "share",
+      "tags": [
+        "共享"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "版本演进",
+      "kind": "proposition",
+      "category": "evolve",
+      "tags": [
+        "治理"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "知识资产",
+      "kind": "entity",
+      "category": "evolve",
+      "tags": [
+        "治理"
+      ],
+      "modality": "text",
+      "confidence": 0.9
+    },
+    {
+      "content": "意象",
+      "kind": "entity",
+      "category": "evolve",
+      "tags": [
+        "资产"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "关系",
+      "kind": "entity",
+      "category": "evolve",
+      "tags": [
+        "资产"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "脚本",
+      "kind": "entity",
+      "category": "evolve",
+      "tags": [
+        "资产"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "可维护性",
+      "kind": "value",
+      "category": "evolve",
+      "tags": [
+        "质量"
+      ],
+      "modality": "text",
+      "confidence": 0.7
+    },
+    {
+      "content": "覆盖率",
+      "kind": "proposition",
+      "category": "evolve",
+      "tags": [
+        "质量"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "相关性",
+      "kind": "proposition",
+      "category": "evolve",
+      "tags": [
+        "质量"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "测试",
+      "kind": "proposition",
+      "category": "quality",
+      "tags": [
+        "质量"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "缺陷",
+      "kind": "proposition",
+      "category": "quality",
+      "tags": [
+        "质量"
+      ],
+      "modality": "text",
+      "confidence": 0.8
+    },
+    {
+      "content": "可预测性",
+      "kind": "value",
+      "category": "evolve",
+      "tags": [
+        "质量"
+      ],
+      "modality": "text",
+      "confidence": 0.7
+    }
+  ],
+  "relations": [
+    {
+      "from": "自主扩展",
+      "to": "知识缺口",
+      "type": "condition",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#进化"
+    },
+    {
+      "from": "知识缺口",
+      "to": "孤立意象",
+      "type": "entail",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#检测"
+    },
+    {
+      "from": "知识缺口",
+      "to": "低连接节点",
+      "type": "entail",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#检测"
+    },
+    {
+      "from": "知识缺口",
+      "to": "补丁提案",
+      "type": "condition",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#扩展"
+    },
+    {
+      "from": "补丁提案",
+      "to": "扩展优先级",
+      "type": "condition",
+      "weight": 0.7,
+      "directed": true,
+      "context_tag": "#决策"
+    },
+    {
+      "from": "补丁提案",
+      "to": "进化循环",
+      "type": "support",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#方法论"
+    },
+    {
+      "from": "进化循环",
+      "to": "版本演进",
+      "type": "support",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#治理"
+    },
+    {
+      "from": "自主学习",
+      "to": "反馈闭环",
+      "type": "condition",
+      "weight": 0.9,
+      "directed": true,
+      "context_tag": "#学习"
+    },
+    {
+      "from": "反馈闭环",
+      "to": "奖惩队列",
+      "type": "condition",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#学习"
+    },
+    {
+      "from": "奖惩队列",
+      "to": "经验沉淀",
+      "type": "condition",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#沉淀"
+    },
+    {
+      "from": "经验沉淀",
+      "to": "脚本案例化",
+      "type": "support",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#沉淀"
+    },
+    {
+      "from": "脚本案例化",
+      "to": "知识资产",
+      "type": "support",
+      "weight": 0.7,
+      "directed": true,
+      "context_tag": "#治理"
+    },
+    {
+      "from": "RFB本地执行",
+      "to": "Token节省",
+      "type": "support",
+      "weight": 0.9,
+      "directed": true,
+      "context_tag": "#省token"
+    },
+    {
+      "from": "决策缓存",
+      "to": "Token节省",
+      "type": "support",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#省token"
+    },
+    {
+      "from": "脚本预匹配",
+      "to": "Token节省",
+      "type": "support",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#省token"
+    },
+    {
+      "from": "本地优先",
+      "to": "RFB本地执行",
+      "type": "support",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#策略"
+    },
+    {
+      "from": "本地优先",
+      "to": "脚本预匹配",
+      "type": "support",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#策略"
+    },
+    {
+      "from": "进化共享",
+      "to": "增量包",
+      "type": "condition",
+      "weight": 0.9,
+      "directed": true,
+      "context_tag": "#共享"
+    },
+    {
+      "from": "增量包",
+      "to": "Delta导出",
+      "type": "condition",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#共享"
+    },
+    {
+      "from": "Delta导出",
+      "to": "跨实例同步",
+      "type": "support",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#共享"
+    },
+    {
+      "from": "跨实例同步",
+      "to": "知识资产",
+      "type": "support",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#治理"
+    },
+    {
+      "from": "知识资产",
+      "to": "意象",
+      "type": "belong",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#资产"
+    },
+    {
+      "from": "知识资产",
+      "to": "关系",
+      "type": "belong",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#资产"
+    },
+    {
+      "from": "知识资产",
+      "to": "脚本",
+      "type": "belong",
+      "weight": 0.8,
+      "directed": true,
+      "context_tag": "#资产"
+    },
+    {
+      "from": "覆盖率",
+      "to": "知识缺口",
+      "type": "undermine",
+      "weight": 0.7,
+      "directed": true,
+      "context_tag": "#质量"
+    },
+    {
+      "from": "相关性",
+      "to": "补丁提案",
+      "type": "support",
+      "weight": 0.7,
+      "directed": true,
+      "context_tag": "#质量"
+    },
+    {
+      "from": "可维护性",
+      "to": "知识资产",
+      "type": "support",
+      "weight": 0.7,
+      "directed": true,
+      "context_tag": "#质量"
+    },
+    {
+      "from": "自主扩展",
+      "to": "自主学习",
+      "type": "support",
+      "weight": 0.7,
+      "directed": true,
+      "context_tag": "#进化"
+    },
+    {
+      "from": "自主学习",
+      "to": "进化共享",
+      "type": "support",
+      "weight": 0.7,
+      "directed": true,
+      "context_tag": "#学习"
+    },
+    {
+      "from": "进化共享",
+      "to": "自主扩展",
+      "type": "support",
+      "weight": 0.7,
+      "directed": true,
+      "context_tag": "#共享"
+    },
+    {
+      "from": "Token节省",
+      "to": "自主学习",
+      "type": "support",
+      "weight": 0.6,
+      "directed": true,
+      "context_tag": "#省token"
+    },
+    {
+      "from": "测试",
+      "to": "缺陷",
+      "type": "undermine",
+      "weight": 0.6,
+      "directed": true,
+      "context_tag": "#质量"
+    },
+    {
+      "from": "补丁提案",
+      "to": "可维护性",
+      "type": "support",
+      "weight": 0.6,
+      "directed": true,
+      "context_tag": "#质量"
+    },
+    {
+      "from": "可预测性",
+      "to": "进化循环",
+      "type": "support",
+      "weight": 0.6,
+      "directed": true,
+      "context_tag": "#方法论"
+    }
+  ],
+  "scripts": [
+    {
+      "scenario": "发现知识缺口",
+      "tags": [
+        "自主扩展",
+        "缺口检测",
+        "知识缺口",
+        "怎么扩展知识",
+        "自主扩展",
+        "检测缺口"
+      ],
+      "template": "统计包内孤立意象与低连接节点；按影响度排序生成补丁提案；先补核心概念再补边缘"
+    },
+    {
+      "scenario": "生成补丁提案",
+      "tags": [
+        "自主扩展",
+        "补丁",
+        "补丁提案",
+        "怎么补知识",
+        "扩展方案"
+      ],
+      "template": "对低连接节点检索语义相关意象；用 similar/support 关系连接；标注置信度与扩展理由"
+    },
+    {
+      "scenario": "反馈沉淀案例",
+      "tags": [
+        "自主学习",
+        "沉淀",
+        "反馈沉淀",
+        "学习反馈",
+        "沉淀经验"
+      ],
+      "template": "收集采纳/拒绝反馈；高置信采纳路径脚本化；拒绝路径记反例；奖惩入队列异步应用"
+    },
+    {
+      "scenario": "本地优先决策",
+      "tags": [
+        "省token",
+        "策略",
+        "省token",
+        "减少token",
+        "本地执行",
+        "省钱"
+      ],
+      "template": "先查决策缓存；再跑 RFB 经验库；再脚本预匹配；全未命中才走完整推演"
+    },
+    {
+      "scenario": "导出进化增量",
+      "tags": [
+        "进化共享",
+        "增量",
+        "导出增量",
+        "进化共享",
+        "delta包"
+      ],
+      "template": "对比基线导出新意象/新关系/新脚本为 delta 包；附带版本号与变更说明；供跨实例导入合并"
+    },
+    {
+      "scenario": "跨实例同步",
+      "tags": [
+        "进化共享",
+        "同步",
+        "跨实例",
+        "同步知识",
+        "共享知识"
+      ],
+      "template": "导入增量包并集合并；冲突取高置信；更新版本演进记录；回归冒烟"
+    },
+    {
+      "scenario": "进化循环评估",
+      "tags": [
+        "进化",
+        "评估"
+      ],
+      "template": "每轮进化后测覆盖率与决策质量；未达预期回退补丁；达到则固化版本"
+    },
+    {
+      "scenario": "脚本案例化",
+      "tags": [
+        "自主学习",
+        "案例",
+        "脚本化",
+        "案例沉淀",
+        "经验脚本"
+      ],
+      "template": "高频成功决策转脚本模板；标注适用场景与期望意象；入库脚本池供预匹配"
+    },
+    {
+      "scenario": "Token消耗审计",
+      "tags": [
+        "省token",
+        "审计",
+        "token审计",
+        "消耗多少",
+        "成本审计"
+      ],
+      "template": "统计 reason/RFB/脚本/缓存命中分布；定位可本地化场景；输出节省报告与优化建议"
+    },
+    {
+      "scenario": "知识资产治理",
+      "tags": [
+        "治理",
+        "质量"
+      ],
+      "template": "按可维护性/覆盖率/相关性检视资产；清理冗余；补缺口；版本演进留痕"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+﻿.IMAGE 策略
+.IMAGE 工厂方法
+.IMAGE 单例
+.IMAGE 建造者
+.IMAGE 原型
+.IMAGE 适配器
+.IMAGE 装饰器
+.IMAGE 代理
+.IMAGE 外观
+.IMAGE 观察者
+.IMAGE 状态
+.IMAGE 命令
+.IMAGE 上帝对象
+.IMAGE 面条代码
+.IMAGE 单一职责
+.IMAGE 开闭原则
+.IMAGE 接口隔离
+.IMAGE 依赖倒置
+.IMAGE 组合
+.IMAGE 设计模式
+.IMAGE 过度设计
+.IMAGE 反模式
+.IMAGE 可维护性
+.FIELD 场景
+.IMAGE 模式选型
+SUPPORT 模式选型 策略 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 模式选型 工厂方法 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 模式选型 策略 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 创建型设计
+SUPPORT 创建型设计 单例 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 创建型设计 建造者 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 创建型设计 单例 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 创建型设计 建造者 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 创建型设计 原型 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 结构型设计
+SUPPORT 结构型设计 适配器 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 结构型设计 装饰器 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 结构型设计 适配器 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 结构型设计 装饰器 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 结构型设计 代理 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 结构型设计 外观 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 行为型设计
+SUPPORT 行为型设计 观察者 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 行为型设计 状态 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 行为型设计 观察者 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 行为型设计 状态 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 行为型设计 命令 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 行为型设计 策略 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 反模式识别
+SUPPORT 反模式识别 上帝对象 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 反模式识别 面条代码 .WEIGHT 0.7 .FIELD 场景
+.IMAGE SOLID实践
+SUPPORT SOLID实践 单一职责 .WEIGHT 0.7 .FIELD 场景
+SUPPORT SOLID实践 开闭原则 .WEIGHT 0.7 .FIELD 场景
+SUPPORT SOLID实践 接口隔离 .WEIGHT 0.5 .FIELD 场景
+SUPPORT SOLID实践 依赖倒置 .WEIGHT 0.5 .FIELD 场景
+SUPPORT SOLID实践 组合 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 设计评审
+SUPPORT 设计评审 设计模式 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 设计评审 过度设计 .WEIGHT 0.7 .FIELD 场景
+.IMAGE 遗留重构
+SUPPORT 遗留重构 反模式 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 遗留重构 可维护性 .WEIGHT 0.7 .FIELD 场景
+.IMAGE 领域模型设计
+SUPPORT 领域模型设计 策略 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 领域模型设计 状态 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 领域模型设计 策略 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 领域模型设计 状态 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 框架应用
+SUPPORT 框架应用 观察者 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 框架应用 命令 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 框架应用 命令 .WEIGHT 0.5 .FIELD 场景

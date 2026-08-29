@@ -1,0 +1,1094 @@
+{
+  "id": "pkg-dev-bigdata",
+  "name": "大数据工程",
+  "industry": "软件开发",
+  "version": "1.0.0",
+  "namespace": "BD开发",
+  "owner": "developer",
+  "tier": "pro",
+  "license_required": true,
+  "imagos": [
+    {
+      "content": "大数据",
+      "modality": "text",
+      "tags": [
+        "领域"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "数据湖",
+      "modality": "text",
+      "tags": [
+        "存储"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "数据仓库",
+      "modality": "text",
+      "tags": [
+        "存储"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "湖仓一体",
+      "modality": "text",
+      "tags": [
+        "存储"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "HDFS",
+      "modality": "text",
+      "tags": [
+        "存储"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "对象存储",
+      "modality": "text",
+      "tags": [
+        "存储"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "分布式计算",
+      "modality": "text",
+      "tags": [
+        "计算"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "MapReduce",
+      "modality": "text",
+      "tags": [
+        "计算"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "Spark",
+      "modality": "text",
+      "tags": [
+        "计算"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "Flink",
+      "modality": "text",
+      "tags": [
+        "计算"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "RDD",
+      "modality": "text",
+      "tags": [
+        "Spark"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "DataFrame",
+      "modality": "text",
+      "tags": [
+        "Spark"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "分区",
+      "modality": "text",
+      "tags": [
+        "Spark"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "Shuffle",
+      "modality": "text",
+      "tags": [
+        "Spark"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "宽依赖",
+      "modality": "text",
+      "tags": [
+        "Spark"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "窄依赖",
+      "modality": "text",
+      "tags": [
+        "Spark"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "流处理",
+      "modality": "text",
+      "tags": [
+        "流式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "批处理",
+      "modality": "text",
+      "tags": [
+        "流式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "流批一体",
+      "modality": "text",
+      "tags": [
+        "流式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "事件时间",
+      "modality": "text",
+      "tags": [
+        "流式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "水印",
+      "modality": "text",
+      "tags": [
+        "流式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "窗口计算",
+      "modality": "text",
+      "tags": [
+        "流式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "Kafka",
+      "modality": "text",
+      "tags": [
+        "消息"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "消息队列",
+      "modality": "text",
+      "tags": [
+        "消息"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "分区消费",
+      "modality": "text",
+      "tags": [
+        "消息"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "消费组",
+      "modality": "text",
+      "tags": [
+        "消息"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "Exactly-once",
+      "modality": "text",
+      "tags": [
+        "一致性"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "bd"
+    },
+    {
+      "content": "At-least-once",
+      "modality": "text",
+      "tags": [
+        "一致性"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "bd"
+    },
+    {
+      "content": "幂等",
+      "modality": "text",
+      "tags": [
+        "一致性"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "bd"
+    },
+    {
+      "content": "ETL",
+      "modality": "text",
+      "tags": [
+        "管道"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "ELT",
+      "modality": "text",
+      "tags": [
+        "管道"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "数据管道",
+      "modality": "text",
+      "tags": [
+        "管道"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "数据同步",
+      "modality": "text",
+      "tags": [
+        "管道"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "Hive",
+      "modality": "text",
+      "tags": [
+        "SQL"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "Spark SQL",
+      "modality": "text",
+      "tags": [
+        "SQL"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "Iceberg",
+      "modality": "text",
+      "tags": [
+        "表格式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "Hudi",
+      "modality": "text",
+      "tags": [
+        "表格式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "Delta Lake",
+      "modality": "text",
+      "tags": [
+        "表格式"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "数据倾斜",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "bd"
+    },
+    {
+      "content": "小文件",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "bd"
+    },
+    {
+      "content": "性能瓶颈",
+      "modality": "text",
+      "tags": [
+        "性能"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "bd"
+    },
+    {
+      "content": "血缘",
+      "modality": "text",
+      "tags": [
+        "治理"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "数据质量",
+      "modality": "text",
+      "tags": [
+        "治理"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "bd"
+    },
+    {
+      "content": "数据目录",
+      "modality": "text",
+      "tags": [
+        "治理"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "数据脱敏",
+      "modality": "text",
+      "tags": [
+        "安全"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "数据加密",
+      "modality": "text",
+      "tags": [
+        "安全"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "安全",
+      "modality": "text",
+      "tags": [
+        "安全"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "bd"
+    },
+    {
+      "content": "YARN",
+      "modality": "text",
+      "tags": [
+        "调度"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "资源调度",
+      "modality": "text",
+      "tags": [
+        "调度"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "容器化",
+      "modality": "text",
+      "tags": [
+        "调度"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "高可用",
+      "modality": "text",
+      "tags": [
+        "运维"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "bd"
+    },
+    {
+      "content": "容灾",
+      "modality": "text",
+      "tags": [
+        "运维"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "监控告警",
+      "modality": "text",
+      "tags": [
+        "运维"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    },
+    {
+      "content": "可扩展性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "bd"
+    },
+    {
+      "content": "可靠性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "bd"
+    },
+    {
+      "content": "可预测性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "bd"
+    },
+    {
+      "content": "可维护性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "bd"
+    },
+    {
+      "content": "代码可读性",
+      "modality": "text",
+      "tags": [
+        "价值"
+      ],
+      "confidence": 1,
+      "kind": "value",
+      "category": "bd"
+    },
+    {
+      "content": "缺陷",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "state",
+      "category": "bd"
+    },
+    {
+      "content": "测试",
+      "modality": "text",
+      "tags": [
+        "质量"
+      ],
+      "confidence": 1,
+      "kind": "entity",
+      "category": "bd"
+    }
+  ],
+  "relations": [
+    {
+      "weight": 0.9,
+      "context_tag": "#BD",
+      "to": "分布式计算",
+      "from": "大数据",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#BD",
+      "to": "数据湖",
+      "from": "大数据",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#存储",
+      "to": "湖仓一体",
+      "from": "数据湖",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#存储",
+      "to": "湖仓一体",
+      "from": "数据仓库",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#存储",
+      "to": "数据湖",
+      "from": "HDFS",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#存储",
+      "to": "数据湖",
+      "from": "对象存储",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#计算",
+      "to": "MapReduce",
+      "from": "分布式计算",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#计算",
+      "to": "Spark",
+      "from": "分布式计算",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#计算",
+      "to": "Flink",
+      "from": "分布式计算",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#Spark",
+      "to": "RDD",
+      "from": "Spark",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#Spark",
+      "to": "DataFrame",
+      "from": "Spark",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#Spark",
+      "to": "DataFrame",
+      "from": "分区",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#Spark",
+      "to": "数据倾斜",
+      "from": "Shuffle",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#Spark",
+      "to": "Shuffle",
+      "from": "宽依赖",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#Spark",
+      "to": "Shuffle",
+      "from": "窄依赖",
+      "type": "undermine",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#性能",
+      "to": "性能瓶颈",
+      "from": "数据倾斜",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#性能",
+      "to": "性能瓶颈",
+      "from": "小文件",
+      "type": "causal",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#流式",
+      "to": "Flink",
+      "from": "流处理",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#流式",
+      "to": "Spark",
+      "from": "批处理",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#流式",
+      "to": "流处理",
+      "from": "流批一体",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#流式",
+      "to": "水印",
+      "from": "事件时间",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#流式",
+      "to": "窗口计算",
+      "from": "水印",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.9,
+      "context_tag": "#消息",
+      "to": "消息队列",
+      "from": "Kafka",
+      "type": "belong",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#消息",
+      "to": "Kafka",
+      "from": "分区消费",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#消息",
+      "to": "分区消费",
+      "from": "消费组",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#一致性",
+      "to": "幂等",
+      "from": "Exactly-once",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#一致性",
+      "to": "幂等",
+      "from": "At-least-once",
+      "type": "condition",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#管道",
+      "to": "ELT",
+      "from": "ETL",
+      "type": "similar",
+      "directed": false
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#管道",
+      "to": "ETL",
+      "from": "数据管道",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#管道",
+      "to": "数据管道",
+      "from": "数据同步",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#SQL",
+      "to": "Spark SQL",
+      "from": "Hive",
+      "type": "similar",
+      "directed": false
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#表格式",
+      "to": "湖仓一体",
+      "from": "Iceberg",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#表格式",
+      "to": "湖仓一体",
+      "from": "Hudi",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#表格式",
+      "to": "湖仓一体",
+      "from": "Delta Lake",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#治理",
+      "to": "数据质量",
+      "from": "血缘",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#治理",
+      "to": "血缘",
+      "from": "数据目录",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#安全",
+      "to": "安全",
+      "from": "数据脱敏",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#安全",
+      "to": "安全",
+      "from": "数据加密",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#调度",
+      "to": "资源调度",
+      "from": "YARN",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#调度",
+      "to": "资源调度",
+      "from": "容器化",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.8,
+      "context_tag": "#运维",
+      "to": "可靠性",
+      "from": "高可用",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.7,
+      "context_tag": "#运维",
+      "to": "高可用",
+      "from": "容灾",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#运维",
+      "to": "可靠性",
+      "from": "监控告警",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "可维护性",
+      "from": "可扩展性",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#价值",
+      "to": "可预测性",
+      "from": "可靠性",
+      "type": "support",
+      "directed": true
+    },
+    {
+      "weight": 0.6,
+      "context_tag": "#质量",
+      "to": "缺陷",
+      "from": "测试",
+      "type": "undermine",
+      "directed": true
+    }
+  ],
+  "scripts": [
+    {
+      "scenario": "批处理作业优化",
+      "tags": [
+        "Spark",
+        "Shuffle",
+        "批处理",
+        "离线报表",
+        "Spark优化",
+        "作业太慢"
+      ],
+      "template": "窄依赖优先；减少 Shuffle；分区数合理；广播小表；数据倾斜处理"
+    },
+    {
+      "scenario": "流处理设计",
+      "tags": [
+        "Flink",
+        "水印",
+        "流处理",
+        "Flink",
+        "实时计算",
+        "流批一体"
+      ],
+      "template": "事件时间与处理时间权衡；水印策略；窗口类型选择；状态后端选型；Exactly-once 配置"
+    },
+    {
+      "scenario": "消息队列选型",
+      "tags": [
+        "Kafka",
+        "消费组",
+        "消息队列",
+        "Kafka",
+        "用哪个MQ"
+      ],
+      "template": "吞吐与延迟权衡；分区与消费者并行度；消费组 rebalance 控制；顺序性保证评估"
+    },
+    {
+      "scenario": "湖仓架构",
+      "tags": [
+        "湖仓一体",
+        "Iceberg",
+        "湖仓一体",
+        "数据湖",
+        "数据仓库"
+      ],
+      "template": "存储与计算分离；表格式选型（Iceberg/Hudi/Delta）；增量读取；数据治理"
+    },
+    {
+      "scenario": "数据管道",
+      "tags": [
+        "数据管道",
+        "ETL",
+        "数据管道",
+        "ETL",
+        "数据同步"
+      ],
+      "template": "ETL vs ELT 权衡；调度与重试；幂等写入；数据质量门禁；血缘追踪"
+    },
+    {
+      "scenario": "数据倾斜治理",
+      "tags": [
+        "数据倾斜",
+        "Shuffle",
+        "数据倾斜",
+        "Shuffle",
+        "倾斜怎么治"
+      ],
+      "template": "定位倾斜 Key；加盐打散；两阶段聚合；广播替代 Join；动态调整并行度"
+    },
+    {
+      "scenario": "一致性保障",
+      "tags": [
+        "Exactly-once",
+        "幂等",
+        "Exactly-once",
+        "数据一致性",
+        "幂等"
+      ],
+      "template": "端到端一致性分析；幂等写入下游；事务与 checkpoint；重复消费防护"
+    },
+    {
+      "scenario": "小文件治理",
+      "tags": [
+        "小文件",
+        "性能瓶颈",
+        "小文件",
+        "文件太多"
+      ],
+      "template": "合并小文件；分区策略优化；压缩格式（Parquet/ORC）；表维护任务"
+    },
+    {
+      "scenario": "大数据安全",
+      "tags": [
+        "数据脱敏",
+        "数据加密",
+        "数据脱敏",
+        "数据安全"
+      ],
+      "template": "行级/列级权限；敏感字段加密；脱敏管道；审计日志；合规要求"
+    },
+    {
+      "scenario": "集群运维",
+      "tags": [
+        "高可用",
+        "容灾",
+        "集群运维",
+        "高可用",
+        "容灾"
+      ],
+      "template": "组件高可用配置；容量规划；监控告警体系；容灾演练；滚动升级"
+    }
+  ]
+}

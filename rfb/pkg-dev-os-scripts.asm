@@ -1,0 +1,81 @@
+﻿.IMAGE 进程
+.IMAGE 线程
+.IMAGE 协程
+.IMAGE 互斥
+.IMAGE 信号量
+.IMAGE 条件变量
+.IMAGE 死锁
+.IMAGE I/O多路复用
+.IMAGE epoll
+.IMAGE 异步I/O
+.IMAGE 虚拟内存
+.IMAGE 内存映射
+.IMAGE 分页
+.IMAGE 内存占用
+.IMAGE OOMKiller
+.IMAGE 管道
+.IMAGE 共享内存
+.IMAGE 消息队列
+.IMAGE CPU占用
+.IMAGE 上下文切换开销
+.IMAGE 上下文切换
+.IMAGE 系统调用
+.IMAGE 文件描述符
+.IMAGE I/O模型
+.IMAGE 僵尸进程
+.IMAGE 孤儿进程
+.IMAGE 负载均衡
+.IMAGE NUMA
+.IMAGE 内核态
+.FIELD 场景
+.IMAGE 进程线程模型
+SUPPORT 进程线程模型 进程 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 进程线程模型 线程 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 进程线程模型 进程 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 进程线程模型 协程 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 并发同步
+SUPPORT 并发同步 互斥 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 并发同步 信号量 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 并发同步 条件变量 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 并发同步 死锁 .WEIGHT 0.5 .FIELD 场景
+.IMAGE I/O模型选型
+SUPPORT I/O模型选型 I/O多路复用 .WEIGHT 0.7 .FIELD 场景
+SUPPORT I/O模型选型 epoll .WEIGHT 0.7 .FIELD 场景
+SUPPORT I/O模型选型 epoll .WEIGHT 0.5 .FIELD 场景
+SUPPORT I/O模型选型 异步I/O .WEIGHT 0.5 .FIELD 场景
+.IMAGE 内存管理
+SUPPORT 内存管理 虚拟内存 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 内存管理 内存映射 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 内存管理 分页 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 内存管理 内存映射 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 内存管理 内存占用 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 内存管理 OOMKiller .WEIGHT 0.5 .FIELD 场景
+.IMAGE IPC设计
+SUPPORT IPC设计 管道 .WEIGHT 0.7 .FIELD 场景
+SUPPORT IPC设计 共享内存 .WEIGHT 0.7 .FIELD 场景
+SUPPORT IPC设计 管道 .WEIGHT 0.5 .FIELD 场景
+SUPPORT IPC设计 共享内存 .WEIGHT 0.5 .FIELD 场景
+SUPPORT IPC设计 消息队列 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 性能诊断
+SUPPORT 性能诊断 CPU占用 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 性能诊断 上下文切换开销 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 性能诊断 上下文切换 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 性能诊断 系统调用 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 文件系统
+SUPPORT 文件系统 文件描述符 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 文件系统 文件描述符 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 文件系统 I/O模型 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 进程生命周期
+SUPPORT 进程生命周期 僵尸进程 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 进程生命周期 孤儿进程 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 进程生命周期 进程 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 调度优化
+SUPPORT 调度优化 负载均衡 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 调度优化 NUMA .WEIGHT 0.7 .FIELD 场景
+SUPPORT 调度优化 线程 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 调度优化 NUMA .WEIGHT 0.5 .FIELD 场景
+.IMAGE 系统编程
+SUPPORT 系统编程 系统调用 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 系统编程 内核态 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 系统编程 系统调用 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 系统编程 内核态 .WEIGHT 0.5 .FIELD 场景
