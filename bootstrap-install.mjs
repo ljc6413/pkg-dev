@@ -94,7 +94,7 @@ function reportInstall() {
       event: 'install',
       os: process.platform,
       channel: 'release-zip',
-      version: '1.0.0',
+      version: '1.1.0',
       time: Math.floor(Date.now() / 1000),
     }
     const ctrl = new AbortController()
