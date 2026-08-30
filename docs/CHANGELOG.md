@@ -5,6 +5,12 @@
 
 ## 运行状态（2026-08-29）
 
+- **转化诊断与增长改进（2026-08-30）· 痛点导向 + 在线体验 + 统计净化**：
+  - **诊断结论**：浏览→转化 0% 的根因是流量几乎全是爬虫/扫描器（342 首页访问中 Censys/zgrab/PaloAlto/leakix 等明确扫描器 30+，iPhone 统一 UA 扫描 63，真人访客 <5）；34 个下载 IP 中约 30 个未访问首页（爬虫直打 /download）——推广尚未触达目标人群，统计上无转化可言
+  - **首页重写（痛点→收益）**：标题改为「AI 写代码总跑偏、答得泛、还烧 token？」；三痛点卡（答非所问/烧 token/知识不沉淀）→ 对应解法；徽章 + 双 CTA（在线体验/免费下载）
+  - **在线体验（真实内核）**：新增公开端点 `POST /api/demo/reason`（IP 限流 3 次/分钟、走 Rust 内核真推理、不计费）；首页嵌入交互演示——输入「缓存用 Redis 还是本地内存？」→ 返回结构化决策 + 置信度（实测「采用缓存」0.779）
+  - **统计净化**：快照爬虫过滤扩展（+censys/zgrab/paloalto/cyberconvoy/leakix/l9scan/cl0q/iLunascape/iPhone 13_2_3 统一 UA/老旧 Chrome 等）→ 新增 `visits_real/today_real/home_real/days30_real` 真实口径；仪表盘 KPI 改「今日真实访问/30 天真实访问」、漏斗首层改真实访问、趋势图用真实数据
+  - **社区推广**：Discussion 5018 首条重写为痛点导向（#discussioncomment-18197918）；回复 #5068「dsh 有没有安全防护插件」（#discussioncomment-18206187，四层安全 + 规则清单链接）
 - **运营口径修正（2026-08-30）· 下载 vs 安装诊断**：
   - **诊断结论**：49 次下载中 13 次为自测（122.51.212.20+curl）、约 20 次为爬虫/扫描（云段 IP 批量抓取 + iPhone 统一 UA）——真实下载仅个位数；3 份回传全部是开发测试实例，**真实安装回传为 0**
   - **快照口径升级**：`ops-snapshot.mjs` 排除自测 IP 与爬虫 UA（curl/wget/python/bot/spider/crawl/scan 等）→ 新增 `downloads_real` 字段；telemetry 排除测试实例（test-*/VM-0-3-ubuntu*）→ 新增 `real` 计数；漏斗改真实口径并新增 `install_rate`（下载→安装转化率）
