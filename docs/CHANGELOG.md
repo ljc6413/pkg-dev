@@ -5,6 +5,15 @@
 
 ## 运行状态（2026-08-29）
 
+- **v1.1.0 发布（2026-08-30）· GitHub 推广与维护批次**：
+  - **Release v1.1.0**：`github.com/ljc6413/pkg-dev/releases/tag/v1.1.0` —— 3 资产（pkg-dev-release-v1.1.0.zip 129 文件 / yihe-pkg-dev-1.1.0.tgz / yihe-preset-dist.zip），下载站同步切换 v1.1.0（/download 250KB、/npm-package 188KB）
+  - **仓库元数据**：description 更新 + homepage 指向 zhiyiwei.cn + topics 打标（deepseek-harness/dsh/dsh-plugin/cognitive/knowledge-graph/rfb/programming-assistant/ai/llm）——REST PATCH 不支持 topics，改用专用 `PUT /topics` 端点
+  - **README 重写**：徽章（License/Packs/RFB/Tools/Version/CI/Site/Ops）+ 亮点（本地优先省 token/四层安全/商业化/可观测）+ 工具表（15 工具）+ 文档导航 + 运营增长章节
+  - **CI 冒烟**：`.github/workflows/smoke.yml` —— push/PR 自动跑 27 包完整性 + 55 RFB 结构 + 全部工具语法检查 + 数量断言
+  - **CONTRIBUTING.md / SECURITY.md**：贡献指南（开发流程/提交规范/CI 门禁）+ 安全策略（四层防护/漏洞报告/隐私说明）
+  - **仓库整洁**：删除根目录误提交的 tgz 产物；.gitignore 增 `*.tgz`/`*.zip`
+  - **推广跟进**：Discussion 5018 发布 v1.1.0 更新评论（#discussioncomment-18202963，含埋点/试用提醒/仪表盘/PR 链接）；awesome PR #334 更新评论（#issuecomment-5466131341 指向 v1.1.0）
+  - **版本同步**：package.json / postinstall-report.mjs / bootstrap-install.mjs 全部 1.0.0 → 1.1.0
 - **运营增长三件事（推广触达 / 埋点回传 / 试用提醒）**：
   - **推广触达**：DeepSeek Harness 官方 Discussion #5018 发布使用数据与架构亮点（`https://github.com/deepseek-ai/deepseek-harness/discussions/5018#discussioncomment-18197918`）；向 awesome-deepseek-harness 提交收录 PR（Coding 章节，27 子包/认知内核/团队许可/商业站点亮点，`Dominic789654/awesome-deepseek-harness#334`）
   - **安装埋点自动回传（三渠道）**：preset-zip（install.sh/install.ps1 装完即 POST）、npm（`postinstall` → tools/postinstall-report.mjs，channel=npm）、release-zip（bootstrap-install.mjs 运行即上报，channel=release-zip）——匿名（instance 盐化、不含内容）上报 `POST /api/telemetry`（schema yihe-telemetry-v1），失败静默不影响安装；**已实测**：三渠道均落盘（tel-*.json 含 schema/instance/event/channel）
