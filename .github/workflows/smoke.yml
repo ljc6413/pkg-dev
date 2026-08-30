@@ -1,0 +1,29 @@
+name: smoke
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: 包完整性自检
+        run: node tools/smoke-test.mjs --selfcheck
+      - name: RFB 汇编结构检查
+        run: node tools/smoke-test.mjs --rfb
+      - name: 工具语法检查
+        run: |
+          for f in tools/*.mjs bootstrap-install.mjs; do
+            node --check "$f"
+          done
+      - name: 包数量断言（27 包 / 55 rfb）
+        run: |
+          test "$(ls packages/*.json | wc -l)" = "27"
+          test "$(ls rfb/*.asm | wc -l)" = "55"
