@@ -1,6 +1,6 @@
 {
   "name": "@yihe/pkg-dev",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "YiHe 编程开发辅助 · 会进化的编程认知内核（27 领域包 + RFB 经验库 + 工程工具链）",
   "license": "Apache-2.0",
   "type": "module",
