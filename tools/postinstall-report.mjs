@@ -3,7 +3,7 @@
 // 端点: https://www.zhiyiwei.cn/api/telemetry (schema: yihe-telemetry-v1)
 import os from 'os'
 
-const VERSION = '1.0.0'
+const VERSION = '1.1.0'
 
 async function main() {
   try {
