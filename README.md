@@ -33,6 +33,8 @@
 
 ## 🚀 快速开始
 
+**先在线体验（真实内核）**：https://www.zhiyiwei.cn —— 输入「缓存用 Redis 还是本地内存？」这类真实技术问题，看三阶段决策与置信度。
+
 ```bash
 # 下载发行包：https://www.zhiyiwei.cn （或本仓库 Release）
 node bootstrap-install.mjs --dry-run   # 预览安装计划（27 包 + 55 库 + 配置）
