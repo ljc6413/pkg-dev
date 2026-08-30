@@ -5,6 +5,13 @@
 
 ## 运行状态（2026-08-29）
 
+- **运营口径修正（2026-08-30）· 下载 vs 安装诊断**：
+  - **诊断结论**：49 次下载中 13 次为自测（122.51.212.20+curl）、约 20 次为爬虫/扫描（云段 IP 批量抓取 + iPhone 统一 UA）——真实下载仅个位数；3 份回传全部是开发测试实例，**真实安装回传为 0**
+  - **快照口径升级**：`ops-snapshot.mjs` 排除自测 IP 与爬虫 UA（curl/wget/python/bot/spider/crawl/scan 等）→ 新增 `downloads_real` 字段；telemetry 排除测试实例（test-*/VM-0-3-ubuntu*）→ 新增 `real` 计数；漏斗改真实口径并新增 `install_rate`（下载→安装转化率）
+  - **激活口径修正**：漏斗"激活"改为统计经 `/api/activate` 真实激活的密钥（activated_at），不再用签发数
+  - **回传健壮性**：npm `postinstall-report.mjs` 失败重试一次（共 2 次，6s 超时）；preset `install.sh`/`install.ps1` 同样加重试——解决 npm ignore-scripts/网络抖动导致的回传丢失
+  - **仪表盘展示**：KPI 显示"总下载 + 真实下载（已滤爬虫）"、安装回传"真实/总（含自测）"；新增"下载→安装转化"卡片；漏斗标注真实口径
+  - **资产同步**：preset zip（54.6KB）+ npm tgz（189.3KB）重建并同步服务器与 GitHub Release v1.1.0（替换资产）；postinstall-report.mjs 推送仓库（fc13d41）
 - **v1.1.0 发布（2026-08-30）· GitHub 推广与维护批次**：
   - **Release v1.1.0**：`github.com/ljc6413/pkg-dev/releases/tag/v1.1.0` —— 3 资产（pkg-dev-release-v1.1.0.zip 129 文件 / yihe-pkg-dev-1.1.0.tgz / yihe-preset-dist.zip），下载站同步切换 v1.1.0（/download 250KB、/npm-package 188KB）
   - **仓库元数据**：description 更新 + homepage 指向 zhiyiwei.cn + topics 打标（deepseek-harness/dsh/dsh-plugin/cognitive/knowledge-graph/rfb/programming-assistant/ai/llm）——REST PATCH 不支持 topics，改用专用 `PUT /topics` 端点
