@@ -1,0 +1,60 @@
+.IMAGE 图计算
+.IMAGE 节点
+.IMAGE 边
+.IMAGE 图遍历
+.IMAGE 广度优先
+.IMAGE 深度优先
+.IMAGE 最短路径
+.IMAGE 社区发现
+.IMAGE PageRank
+.IMAGE 图嵌入
+.IMAGE 图神经网络
+.IMAGE 图数据库
+.IMAGE Cypher
+.IMAGE Gremlin
+.IMAGE 属性图
+.IMAGE 知识图谱
+.IMAGE RDF
+.IMAGE Neo4j
+.IMAGE 推荐系统
+.IMAGE 欺诈检测
+.IMAGE 社交网络
+.IMAGE 子图
+.IMAGE 模式匹配
+.IMAGE 图着色
+.IMAGE 查询性能
+.IMAGE 分布式图计算
+.IMAGE 中心性
+.FIELD 基础
+.FIELD 算法
+.FIELD 前沿
+.FIELD 查询
+.FIELD 模型
+.FIELD 工具
+.FIELD 应用
+.FIELD 评估
+IF 图计算 节点 .WEIGHT 0.900 .FIELD 基础
+IF 图计算 边 .WEIGHT 0.900 .FIELD 基础
+BELONG 图计算 图遍历 .WEIGHT 0.800 .FIELD 算法
+BELONG 图遍历 广度优先 .WEIGHT 0.800 .FIELD 算法
+BELONG 图遍历 深度优先 .WEIGHT 0.800 .FIELD 算法
+BELONG 图计算 最短路径 .WEIGHT 0.700 .FIELD 算法
+BELONG 图计算 社区发现 .WEIGHT 0.700 .FIELD 算法
+BELONG 图计算 PageRank .WEIGHT 0.700 .FIELD 算法
+BELONG 图计算 图嵌入 .WEIGHT 0.600 .FIELD 前沿
+CAUSE 图嵌入 图神经网络 .WEIGHT 0.600 .FIELD 前沿
+SUPPORT 图数据库 Cypher .WEIGHT 0.600 .FIELD 查询
+SUPPORT 图数据库 Gremlin .WEIGHT 0.600 .FIELD 查询
+IF 图数据库 属性图 .WEIGHT 0.700 .FIELD 模型
+IF 知识图谱 RDF .WEIGHT 0.600 .FIELD 模型
+BELONG 图数据库 Neo4j .WEIGHT 0.700 .FIELD 工具
+SUPPORT 图数据库 知识图谱 .WEIGHT 0.700 .FIELD 应用
+SUPPORT 图计算 推荐系统 .WEIGHT 0.700 .FIELD 应用
+SUPPORT 图计算 欺诈检测 .WEIGHT 0.700 .FIELD 应用
+SUPPORT 图计算 社交网络 .WEIGHT 0.600 .FIELD 应用
+IF 节点 子图 .WEIGHT 0.600 .FIELD 基础
+SUPPORT Cypher 模式匹配 .WEIGHT 0.600 .FIELD 查询
+BELONG 图计算 图着色 .WEIGHT 0.500 .FIELD 算法
+IF 图数据库 查询性能 .WEIGHT 0.500 .FIELD 评估
+BELONG 图计算 分布式图计算 .WEIGHT 0.500 .FIELD 前沿
+LIKE PageRank 中心性 .WEIGHT 0.600 .FIELD 算法
