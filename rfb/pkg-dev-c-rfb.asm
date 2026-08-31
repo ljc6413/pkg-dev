@@ -1,0 +1,65 @@
+.IMAGE C语言
+.IMAGE 指针
+.IMAGE 内存管理
+.IMAGE 内存泄漏
+.IMAGE 悬垂指针
+.IMAGE 缓冲区溢出
+.IMAGE 未定义行为
+.IMAGE 结构体
+.IMAGE 联合体
+.IMAGE 宏
+.IMAGE 头文件
+.IMAGE 编译链接
+.IMAGE 函数指针
+.IMAGE 位运算
+.IMAGE volatile
+.IMAGE extern
+.IMAGE static
+.IMAGE make
+.IMAGE CMake
+.IMAGE GCC
+.IMAGE Valgrind
+.IMAGE 线程
+.IMAGE 互斥锁
+.IMAGE 系统调用
+.IMAGE errno
+.IMAGE 返回值错误
+.IMAGE C11标准
+.FIELD 核心
+.FIELD 内存
+.FIELD 安全
+.FIELD 预处理器
+.FIELD 工程
+.FIELD 进阶
+.FIELD 构建
+.FIELD 工具链
+.FIELD 并发
+.FIELD 系统
+.FIELD 错误处理
+.FIELD 标准
+IF C语言 指针 .WEIGHT 0.900 .FIELD 核心
+IF C语言 内存管理 .WEIGHT 0.900 .FIELD 核心
+CAUSE 内存管理 内存泄漏 .WEIGHT 0.800 .FIELD 内存
+CAUSE 指针 悬垂指针 .WEIGHT 0.800 .FIELD 内存
+CAUSE 指针 缓冲区溢出 .WEIGHT 0.700 .FIELD 安全
+CAUSE C语言 未定义行为 .WEIGHT 0.700 .FIELD 安全
+BELONG C语言 结构体 .WEIGHT 0.800 .FIELD 核心
+BELONG C语言 联合体 .WEIGHT 0.700 .FIELD 核心
+BELONG C语言 宏 .WEIGHT 0.700 .FIELD 预处理器
+IF C语言 头文件 .WEIGHT 0.700 .FIELD 工程
+IF C语言 编译链接 .WEIGHT 0.700 .FIELD 工程
+BELONG 指针 函数指针 .WEIGHT 0.600 .FIELD 进阶
+BELONG C语言 位运算 .WEIGHT 0.600 .FIELD 进阶
+BELONG C语言 volatile .WEIGHT 0.600 .FIELD 进阶
+IF 编译链接 extern .WEIGHT 0.600 .FIELD 工程
+IF 编译链接 static .WEIGHT 0.600 .FIELD 工程
+SUPPORT C语言 make .WEIGHT 0.600 .FIELD 构建
+SUPPORT C语言 CMake .WEIGHT 0.600 .FIELD 构建
+SUPPORT C语言 GCC .WEIGHT 0.600 .FIELD 工具链
+SUPPORT 内存泄漏 Valgrind .WEIGHT 0.600 .FIELD 工具链
+BELONG C语言 线程 .WEIGHT 0.600 .FIELD 并发
+IF 线程 互斥锁 .WEIGHT 0.600 .FIELD 并发
+BELONG C语言 系统调用 .WEIGHT 0.600 .FIELD 系统
+IF C语言 errno .WEIGHT 0.700 .FIELD 错误处理
+IF C语言 返回值错误 .WEIGHT 0.700 .FIELD 错误处理
+IF C语言 C11标准 .WEIGHT 0.500 .FIELD 标准

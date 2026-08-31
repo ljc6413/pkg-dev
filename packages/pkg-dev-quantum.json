@@ -1,74 +1,587 @@
 {
-  "id": "pkg-dev-quantum",
-  "name": "量子计算编程",
-  "industry": "软件开发",
-  "version": "1.0.0",
-  "namespace": "QUANTUM开发",
-  "owner": "developer",
-  "tier": "pro",
-  "license_required": true,
-  "imagos": [
-    {"content": "量子计算", "modality": "text", "tags": ["领域"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "量子比特", "modality": "text", "tags": ["基础"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "叠加态", "modality": "text", "tags": ["基础"], "confidence": 1, "kind": "state", "category": "quantum"},
-    {"content": "纠缠", "modality": "text", "tags": ["基础"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "测量坍缩", "modality": "text", "tags": ["基础"], "confidence": 1, "kind": "event", "category": "quantum"},
-    {"content": "量子门", "modality": "text", "tags": ["基础"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "量子电路", "modality": "text", "tags": ["实现"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "Qiskit", "modality": "text", "tags": ["工具链"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "量子算法", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "Shor 算法", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "Grover 算法", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "量子退相干", "modality": "text", "tags": ["噪声"], "confidence": 1, "kind": "event", "category": "quantum"},
-    {"content": "量子纠错", "modality": "text", "tags": ["噪声"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "量子模拟", "modality": "text", "tags": ["应用"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "量子优势", "modality": "text", "tags": ["评估"], "confidence": 1, "kind": "value", "category": "quantum"},
-    {"content": "噪声", "modality": "text", "tags": ["噪声"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "经典比特", "modality": "text", "tags": ["对比"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "布洛赫球", "modality": "text", "tags": ["可视化"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "量子门深度", "modality": "text", "tags": ["评估"], "confidence": 1, "kind": "value", "category": "quantum"},
-    {"content": "采样问题", "modality": "text", "tags": ["应用"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "变分量子本征求解器", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "量子密钥分发", "modality": "text", "tags": ["应用"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "量子比特数", "modality": "text", "tags": ["评估"], "confidence": 1, "kind": "value", "category": "quantum"},
-    {"content": "量子体积", "modality": "text", "tags": ["评估"], "confidence": 1, "kind": "value", "category": "quantum"},
-    {"content": "云量子服务", "modality": "text", "tags": ["工具链"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "混合量子经典", "modality": "text", "tags": ["架构"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "退火", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "quantum"},
-    {"content": "量子线路优化", "modality": "text", "tags": ["实现"], "confidence": 1, "kind": "entity", "category": "quantum"}
-  ],
-  "relations": [
-    {"weight": 0.9, "context_tag": "#量子", "to": "量子比特", "from": "量子计算", "type": "condition", "directed": true},
-    {"weight": 0.8, "context_tag": "#量子", "to": "叠加态", "from": "量子比特", "type": "condition", "directed": true},
-    {"weight": 0.8, "context_tag": "#量子", "to": "纠缠", "from": "量子比特", "type": "condition", "directed": true},
-    {"weight": 0.9, "context_tag": "#量子", "to": "测量坍缩", "from": "叠加态", "type": "causal", "directed": true},
-    {"weight": 0.8, "context_tag": "#实现", "to": "量子电路", "from": "量子门", "type": "condition", "directed": true},
-    {"weight": 0.7, "context_tag": "#实现", "to": "量子电路", "from": "量子比特", "type": "condition", "directed": true},
-    {"weight": 0.6, "context_tag": "#工具链", "to": "Qiskit", "from": "量子电路", "type": "support", "directed": true},
-    {"weight": 0.7, "context_tag": "#算法", "to": "量子算法", "from": "量子计算", "type": "belong", "directed": true},
-    {"weight": 0.7, "context_tag": "#算法", "to": "Shor 算法", "from": "量子算法", "type": "belong", "directed": true},
-    {"weight": 0.7, "context_tag": "#算法", "to": "Grover 算法", "from": "量子算法", "type": "belong", "directed": true},
-    {"weight": 0.8, "context_tag": "#噪声", "to": "量子退相干", "from": "噪声", "type": "causal", "directed": true},
-    {"weight": 0.8, "context_tag": "#噪声", "to": "量子纠错", "from": "量子退相干", "type": "oppose", "directed": false},
-    {"weight": 0.7, "context_tag": "#评估", "to": "量子优势", "from": "量子算法", "type": "condition", "directed": true},
-    {"weight": 0.6, "context_tag": "#对比", "to": "叠加态", "from": "经典比特", "type": "oppose", "directed": false},
-    {"weight": 0.6, "context_tag": "#可视化", "to": "叠加态", "from": "布洛赫球", "type": "support", "directed": true},
-    {"weight": 0.5, "context_tag": "#评估", "to": "量子门深度", "from": "量子电路", "type": "condition", "directed": true},
-    {"weight": 0.6, "context_tag": "#算法", "to": "变分量子本征求解器", "from": "量子算法", "type": "belong", "directed": true},
-    {"weight": 0.6, "context_tag": "#架构", "to": "混合量子经典", "from": "量子计算", "type": "belong", "directed": true},
-    {"weight": 0.6, "context_tag": "#应用", "to": "量子密钥分发", "from": "量子计算", "type": "belong", "directed": true},
-    {"weight": 0.5, "context_tag": "#算法", "to": "退火", "from": "量子计算", "type": "belong", "directed": true},
-    {"weight": 0.6, "context_tag": "#实现", "to": "量子线路优化", "from": "量子电路", "type": "support", "directed": true},
-    {"weight": 0.5, "context_tag": "#评估", "to": "量子体积", "from": "量子比特数", "type": "similar", "directed": false},
-    {"weight": 0.6, "context_tag": "#噪声", "to": "量子纠错", "from": "噪声", "type": "oppose", "directed": false},
-    {"weight": 0.5, "context_tag": "#实现", "to": "量子线路优化", "from": "Qiskit", "type": "support", "directed": true}
-  ],
-  "scripts": [
-    {"scenario": "量子计算技术选型", "tags": ["量子计算", "量子计算机", "选型", "量子还是经典"], "template": "明确问题是否有量子优势潜力（分解/搜索/模拟/采样）；NISQ 阶段优先混合量子经典；评估量子比特数与噪声水平；退相干风险与纠错成本权衡"},
-    {"scenario": "量子电路设计", "tags": ["量子电路", "量子门", "电路怎么设计", "Qiskit"], "template": "先定义问题编码到量子比特；常用门组合（H/CNOT/旋转门）；控制门深度与纠缠结构；测量基选择；用模拟器验证再上真机"},
-    {"scenario": "量子算法选择", "tags": ["量子算法", "Shor", "Grover", "用什么算法"], "template": "因式分解用 Shor；无序搜索用 Grover；分子模拟用 VQE；优化问题考虑退火；评估是否真的需要量子而非经典近似"},
-    {"scenario": "噪声与纠错处理", "tags": ["退相干", "噪声", "纠错", "量子误差"], "template": "量化退相干时间与门保真度；浅电路优先（门深度小）；需要长计算必须量子纠错；误差缓解技术（测量校准/零噪声外推）评估"},
-    {"scenario": "量子项目可行性", "tags": ["量子计算", "可行性", "值不值得", "量子优势"], "template": "经典算法是否已够用（量子优势门槛高）；数据规模是否匹配；量子体积 vs 问题需求；团队量子素养评估；试点小问题验证管线"},
-    {"scenario": "量子计算学习路径", "tags": ["量子计算", "怎么学", "入门"], "template": "先学量子比特与叠加/纠缠概念；布洛赫球可视化直觉；Qiskit 模拟器实操入门电路；再学算法与纠错；跟踪云量子服务实践"}
-  ]
+    "id":  "pkg-dev-quantum",
+    "name":  "量子计算编程",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "QUANTUM开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "量子计算",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "量子比特",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "叠加态",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "state",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "纠缠",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "测量坍缩",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "量子门",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "量子电路",
+                       "modality":  "text",
+                       "tags":  [
+                                    "实现"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "Qiskit",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具链"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "量子算法",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "Shor 算法",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "Grover 算法",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "量子退相干",
+                       "modality":  "text",
+                       "tags":  [
+                                    "噪声"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "量子纠错",
+                       "modality":  "text",
+                       "tags":  [
+                                    "噪声"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "量子模拟",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "量子优势",
+                       "modality":  "text",
+                       "tags":  [
+                                    "评估"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "噪声",
+                       "modality":  "text",
+                       "tags":  [
+                                    "噪声"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "经典比特",
+                       "modality":  "text",
+                       "tags":  [
+                                    "对比"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "布洛赫球",
+                       "modality":  "text",
+                       "tags":  [
+                                    "可视化"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "量子门深度",
+                       "modality":  "text",
+                       "tags":  [
+                                    "评估"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "采样问题",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "变分量子本征求解器",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "量子密钥分发",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "量子比特数",
+                       "modality":  "text",
+                       "tags":  [
+                                    "评估"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "量子体积",
+                       "modality":  "text",
+                       "tags":  [
+                                    "评估"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "云量子服务",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具链"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "混合量子经典",
+                       "modality":  "text",
+                       "tags":  [
+                                    "架构"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "退火",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   },
+                   {
+                       "content":  "量子线路优化",
+                       "modality":  "text",
+                       "tags":  [
+                                    "实现"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "quantum"
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#量子",
+                          "to":  "量子比特",
+                          "from":  "量子计算",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#量子",
+                          "to":  "叠加态",
+                          "from":  "量子比特",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#量子",
+                          "to":  "纠缠",
+                          "from":  "量子比特",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#量子",
+                          "to":  "测量坍缩",
+                          "from":  "叠加态",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#实现",
+                          "to":  "量子电路",
+                          "from":  "量子门",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#实现",
+                          "to":  "量子电路",
+                          "from":  "量子比特",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#工具链",
+                          "to":  "Qiskit",
+                          "from":  "量子电路",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#算法",
+                          "to":  "量子算法",
+                          "from":  "量子计算",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#算法",
+                          "to":  "Shor 算法",
+                          "from":  "量子算法",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#算法",
+                          "to":  "Grover 算法",
+                          "from":  "量子算法",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#噪声",
+                          "to":  "量子退相干",
+                          "from":  "噪声",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#噪声",
+                          "to":  "量子纠错",
+                          "from":  "量子退相干",
+                          "type":  "oppose",
+                          "directed":  false
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#评估",
+                          "to":  "量子优势",
+                          "from":  "量子算法",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#对比",
+                          "to":  "叠加态",
+                          "from":  "经典比特",
+                          "type":  "oppose",
+                          "directed":  false
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#可视化",
+                          "to":  "叠加态",
+                          "from":  "布洛赫球",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#评估",
+                          "to":  "量子门深度",
+                          "from":  "量子电路",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#算法",
+                          "to":  "变分量子本征求解器",
+                          "from":  "量子算法",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#架构",
+                          "to":  "混合量子经典",
+                          "from":  "量子计算",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#应用",
+                          "to":  "量子密钥分发",
+                          "from":  "量子计算",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#算法",
+                          "to":  "退火",
+                          "from":  "量子计算",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#实现",
+                          "to":  "量子线路优化",
+                          "from":  "量子电路",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#评估",
+                          "to":  "量子体积",
+                          "from":  "量子比特数",
+                          "type":  "similar",
+                          "directed":  false
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#噪声",
+                          "to":  "量子纠错",
+                          "from":  "噪声",
+                          "type":  "oppose",
+                          "directed":  false
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#实现",
+                          "to":  "量子线路优化",
+                          "from":  "Qiskit",
+                          "type":  "support",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "量子计算技术选型",
+                        "tags":  [
+                                     "量子计算",
+                                     "量子计算机",
+                                     "选型",
+                                     "量子还是经典"
+                                 ],
+                        "template":  "明确问题是否有量子优势潜力（分解/搜索/模拟/采样）；NISQ 阶段优先混合量子经典；评估量子比特数与噪声水平；退相干风险与纠错成本权衡"
+                    },
+                    {
+                        "scenario":  "量子电路设计",
+                        "tags":  [
+                                     "量子电路",
+                                     "量子门",
+                                     "电路怎么设计",
+                                     "Qiskit"
+                                 ],
+                        "template":  "先定义问题编码到量子比特；常用门组合（H/CNOT/旋转门）；控制门深度与纠缠结构；测量基选择；用模拟器验证再上真机"
+                    },
+                    {
+                        "scenario":  "量子算法选择",
+                        "tags":  [
+                                     "量子算法",
+                                     "Shor",
+                                     "Grover",
+                                     "用什么算法"
+                                 ],
+                        "template":  "因式分解用 Shor；无序搜索用 Grover；分子模拟用 VQE；优化问题考虑退火；评估是否真的需要量子而非经典近似"
+                    },
+                    {
+                        "scenario":  "噪声与纠错处理",
+                        "tags":  [
+                                     "退相干",
+                                     "噪声",
+                                     "纠错",
+                                     "量子误差"
+                                 ],
+                        "template":  "量化退相干时间与门保真度；浅电路优先（门深度小）；需要长计算必须量子纠错；误差缓解技术（测量校准/零噪声外推）评估"
+                    },
+                    {
+                        "scenario":  "量子项目可行性",
+                        "tags":  [
+                                     "量子计算",
+                                     "可行性",
+                                     "值不值得",
+                                     "量子优势"
+                                 ],
+                        "template":  "经典算法是否已够用（量子优势门槛高）；数据规模是否匹配；量子体积 vs 问题需求；团队量子素养评估；试点小问题验证管线"
+                    },
+                    {
+                        "scenario":  "量子计算学习路径",
+                        "tags":  [
+                                     "量子计算",
+                                     "怎么学",
+                                     "入门"
+                                 ],
+                        "template":  "先学量子比特与叠加/纠缠概念；布洛赫球可视化直觉；Qiskit 模拟器实操入门电路；再学算法与纠错；跟踪云量子服务实践"
+                    },
+                    {
+                        "scenario":  "量子纠错实现",
+                        "tags":  [
+                                     "量子纠错",
+                                     "Shor码",
+                                     "容错",
+                                     "怎么实现"
+                                 ],
+                        "template":  "表面码容错阈值；逻辑量子比特编码物理比特；错误检测与校正循环；纠错开销评估；容错量子计算可行性"
+                    },
+                    {
+                        "scenario":  "量子退火应用",
+                        "tags":  [
+                                     "量子退火",
+                                     "优化问题",
+                                     "D-Wave",
+                                     "怎么用"
+                                 ],
+                        "template":  "组合优化映射 Ising 模型；约束转惩罚项；退火参数调优；与经典求解器对比；小规模验证再扩展"
+                    },
+                    {
+                        "scenario":  "量子模拟实践",
+                        "tags":  [
+                                     "量子模拟",
+                                     "分子模拟",
+                                     "量子化学",
+                                     "怎么做"
+                                 ],
+                        "template":  "哈密顿量编码；VQE 与量子相位估计对比；基组与噪声权衡；经典预计算辅助；误差缓解结合"
+                    },
+                    {
+                        "scenario":  "量子云服务使用",
+                        "tags":  [
+                                     "量子云",
+                                     "云服务",
+                                     "IBM",
+                                     "真机"
+                                 ],
+                        "template":  "模拟器先验证；真机配额与排队；噪声特性标定；电路编译优化；结果统计显著性"
+                    }
+                ]
 }

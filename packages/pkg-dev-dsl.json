@@ -1,75 +1,597 @@
 {
-  "id": "pkg-dev-dsl",
-  "name": "DSL 与元编程",
-  "industry": "软件开发",
-  "version": "1.0.0",
-  "namespace": "DSL开发",
-  "owner": "developer",
-  "tier": "pro",
-  "license_required": true,
-  "imagos": [
-    {"content": "领域特定语言", "modality": "text", "tags": ["领域"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "DSL 设计", "modality": "text", "tags": ["设计"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "元编程", "modality": "text", "tags": ["领域"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "AST", "modality": "text", "tags": ["核心"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "解释器模式", "modality": "text", "tags": ["模式"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "代码生成", "modality": "text", "tags": ["应用"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "宏", "modality": "text", "tags": ["元编程"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "内嵌 DSL", "modality": "text", "tags": ["类型"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "外部 DSL", "modality": "text", "tags": ["类型"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "语法设计", "modality": "text", "tags": ["设计"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "语义模型", "modality": "text", "tags": ["核心"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "Lisp 宏", "modality": "text", "tags": ["元编程"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "模板引擎", "modality": "text", "tags": ["应用"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "表达式树", "modality": "text", "tags": ["元编程"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "反射", "modality": "text", "tags": ["元编程"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "注解处理", "modality": "text", "tags": ["元编程"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "可读性", "modality": "text", "tags": ["价值"], "confidence": 1, "kind": "value", "category": "dsl"},
-    {"content": "表达力", "modality": "text", "tags": ["价值"], "confidence": 1, "kind": "value", "category": "dsl"},
-    {"content": "学习成本", "modality": "text", "tags": ["评估"], "confidence": 1, "kind": "value", "category": "dsl"},
-    {"content": "DSL 调试", "modality": "text", "tags": ["挑战"], "confidence": 1, "kind": "event", "category": "dsl"},
-    {"content": "配置即代码", "modality": "text", "tags": ["应用"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "脚手架生成", "modality": "text", "tags": ["应用"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "DSL 演进", "modality": "text", "tags": ["设计"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "声明式", "modality": "text", "tags": ["风格"], "confidence": 1, "kind": "value", "category": "dsl"},
-    {"content": "组合性", "modality": "text", "tags": ["价值"], "confidence": 1, "kind": "value", "category": "dsl"},
-    {"content": "类型安全 DSL", "modality": "text", "tags": ["实践"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "DSL 测试", "modality": "text", "tags": ["实践"], "confidence": 1, "kind": "entity", "category": "dsl"},
-    {"content": "Gradle DSL", "modality": "text", "tags": ["案例"], "confidence": 1, "kind": "entity", "category": "dsl"}
-  ],
-  "relations": [
-    {"weight": 0.9, "context_tag": "#核心", "to": "AST", "from": "DSL 设计", "type": "condition", "directed": true},
-    {"weight": 0.8, "context_tag": "#核心", "to": "语义模型", "from": "AST", "type": "condition", "directed": true},
-    {"weight": 0.7, "context_tag": "#模式", "to": "解释器模式", "from": "DSL 设计", "type": "support", "directed": true},
-    {"weight": 0.6, "context_tag": "#类型", "to": "内嵌 DSL", "from": "领域特定语言", "type": "belong", "directed": true},
-    {"weight": 0.6, "context_tag": "#类型", "to": "外部 DSL", "from": "领域特定语言", "type": "belong", "directed": true},
-    {"weight": 0.7, "context_tag": "#设计", "to": "语法设计", "from": "外部 DSL", "type": "condition", "directed": true},
-    {"weight": 0.6, "context_tag": "#元编程", "to": "宏", "from": "元编程", "type": "belong", "directed": true},
-    {"weight": 0.6, "context_tag": "#元编程", "to": "Lisp 宏", "from": "宏", "type": "belong", "directed": true},
-    {"weight": 0.6, "context_tag": "#元编程", "to": "表达式树", "from": "元编程", "type": "belong", "directed": true},
-    {"weight": 0.6, "context_tag": "#元编程", "to": "反射", "from": "元编程", "type": "belong", "directed": true},
-    {"weight": 0.5, "context_tag": "#元编程", "to": "注解处理", "from": "元编程", "type": "belong", "directed": true},
-    {"weight": 0.7, "context_tag": "#应用", "to": "代码生成", "from": "AST", "type": "support", "directed": true},
-    {"weight": 0.6, "context_tag": "#应用", "to": "模板引擎", "from": "代码生成", "type": "support", "directed": true},
-    {"weight": 0.6, "context_tag": "#价值", "to": "可读性", "from": "领域特定语言", "type": "support", "directed": true},
-    {"weight": 0.6, "context_tag": "#价值", "to": "表达力", "from": "领域特定语言", "type": "support", "directed": true},
-    {"weight": 0.5, "context_tag": "#评估", "to": "学习成本", "from": "外部 DSL", "type": "condition", "directed": true},
-    {"weight": 0.6, "context_tag": "#挑战", "to": "DSL 调试", "from": "DSL 设计", "type": "undermine", "directed": true},
-    {"weight": 0.6, "context_tag": "#应用", "to": "配置即代码", "from": "领域特定语言", "type": "belong", "directed": true},
-    {"weight": 0.5, "context_tag": "#应用", "to": "脚手架生成", "from": "代码生成", "type": "belong", "directed": true},
-    {"weight": 0.6, "context_tag": "#设计", "to": "DSL 演进", "from": "DSL 设计", "type": "condition", "directed": true},
-    {"weight": 0.7, "context_tag": "#风格", "to": "声明式", "from": "领域特定语言", "type": "support", "directed": true},
-    {"weight": 0.6, "context_tag": "#价值", "to": "组合性", "from": "内嵌 DSL", "type": "support", "directed": true},
-    {"weight": 0.6, "context_tag": "#实践", "to": "类型安全 DSL", "from": "内嵌 DSL", "type": "support", "directed": true},
-    {"weight": 0.5, "context_tag": "#实践", "to": "DSL 测试", "from": "DSL 设计", "type": "condition", "directed": true},
-    {"weight": 0.5, "context_tag": "#案例", "to": "Gradle DSL", "from": "内嵌 DSL", "type": "belong", "directed": true}
-  ],
-  "scripts": [
-    {"scenario": "DSL 设计决策", "tags": ["DSL", "领域特定语言", "要不要做", "怎么设计"], "template": "高频重复配置/规则才值得 DSL；先评估内嵌 vs 外部；语义模型先行再定语法；控制学习成本；能复用通用语言就别造"},
-    {"scenario": "内嵌 DSL 实现", "tags": ["内嵌DSL", "DSL", "实现", "怎么实现"], "template": "利用宿主语言语法（链式/重载/闭包）；类型安全优先（强类型宿主）；组合性设计；文档与示例驱动；限制黑魔法保持可读"},
-    {"scenario": "外部 DSL 实现", "tags": ["外部DSL", "语法", "解析", "怎么实现"], "template": "词法→语法→语义三段式；AST 到语义模型映射；错误信息友好带位置；版本兼容演进；测试用例覆盖语法"},
-    {"scenario": "元编程应用", "tags": ["元编程", "宏", "反射", "代码生成", "怎么用"], "template": "宏适合语法级抽象但难调试；反射灵活但破坏类型安全；注解处理生成样板代码；代码生成可追溯（生成器可运行）；克制使用"},
-    {"scenario": "代码生成实践", "tags": ["代码生成", "脚手架", "模板", "怎么生成"], "template": "模型定义单一来源；模板与模型分离；生成代码标记勿手改；可重生成幂等；生成物纳入版本控制；评审生成规则"},
-    {"scenario": "DSL 演进与维护", "tags": ["DSL", "演进", "维护", "兼容"], "template": "版本化语法；废弃特性保留过渡期；文档与示例同步更新；错误信息持续打磨；使用统计指导精简；克制新语法"}
-  ]
+    "id":  "pkg-dev-dsl",
+    "name":  "DSL 与元编程",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "DSL开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "领域特定语言",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "DSL 设计",
+                       "modality":  "text",
+                       "tags":  [
+                                    "设计"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "元编程",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "AST",
+                       "modality":  "text",
+                       "tags":  [
+                                    "核心"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "解释器模式",
+                       "modality":  "text",
+                       "tags":  [
+                                    "模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "代码生成",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "宏",
+                       "modality":  "text",
+                       "tags":  [
+                                    "元编程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "内嵌 DSL",
+                       "modality":  "text",
+                       "tags":  [
+                                    "类型"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "外部 DSL",
+                       "modality":  "text",
+                       "tags":  [
+                                    "类型"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "语法设计",
+                       "modality":  "text",
+                       "tags":  [
+                                    "设计"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "语义模型",
+                       "modality":  "text",
+                       "tags":  [
+                                    "核心"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "Lisp 宏",
+                       "modality":  "text",
+                       "tags":  [
+                                    "元编程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "模板引擎",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "表达式树",
+                       "modality":  "text",
+                       "tags":  [
+                                    "元编程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "反射",
+                       "modality":  "text",
+                       "tags":  [
+                                    "元编程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "注解处理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "元编程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "可读性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "表达力",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "学习成本",
+                       "modality":  "text",
+                       "tags":  [
+                                    "评估"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "DSL 调试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "挑战"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "配置即代码",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "脚手架生成",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "DSL 演进",
+                       "modality":  "text",
+                       "tags":  [
+                                    "设计"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "声明式",
+                       "modality":  "text",
+                       "tags":  [
+                                    "风格"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "组合性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "类型安全 DSL",
+                       "modality":  "text",
+                       "tags":  [
+                                    "实践"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "DSL 测试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "实践"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   },
+                   {
+                       "content":  "Gradle DSL",
+                       "modality":  "text",
+                       "tags":  [
+                                    "案例"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "dsl"
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#核心",
+                          "to":  "AST",
+                          "from":  "DSL 设计",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#核心",
+                          "to":  "语义模型",
+                          "from":  "AST",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#模式",
+                          "to":  "解释器模式",
+                          "from":  "DSL 设计",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#类型",
+                          "to":  "内嵌 DSL",
+                          "from":  "领域特定语言",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#类型",
+                          "to":  "外部 DSL",
+                          "from":  "领域特定语言",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#设计",
+                          "to":  "语法设计",
+                          "from":  "外部 DSL",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#元编程",
+                          "to":  "宏",
+                          "from":  "元编程",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#元编程",
+                          "to":  "Lisp 宏",
+                          "from":  "宏",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#元编程",
+                          "to":  "表达式树",
+                          "from":  "元编程",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#元编程",
+                          "to":  "反射",
+                          "from":  "元编程",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#元编程",
+                          "to":  "注解处理",
+                          "from":  "元编程",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#应用",
+                          "to":  "代码生成",
+                          "from":  "AST",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#应用",
+                          "to":  "模板引擎",
+                          "from":  "代码生成",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "可读性",
+                          "from":  "领域特定语言",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "表达力",
+                          "from":  "领域特定语言",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#评估",
+                          "to":  "学习成本",
+                          "from":  "外部 DSL",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#挑战",
+                          "to":  "DSL 调试",
+                          "from":  "DSL 设计",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#应用",
+                          "to":  "配置即代码",
+                          "from":  "领域特定语言",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#应用",
+                          "to":  "脚手架生成",
+                          "from":  "代码生成",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#设计",
+                          "to":  "DSL 演进",
+                          "from":  "DSL 设计",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#风格",
+                          "to":  "声明式",
+                          "from":  "领域特定语言",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "组合性",
+                          "from":  "内嵌 DSL",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#实践",
+                          "to":  "类型安全 DSL",
+                          "from":  "内嵌 DSL",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#实践",
+                          "to":  "DSL 测试",
+                          "from":  "DSL 设计",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#案例",
+                          "to":  "Gradle DSL",
+                          "from":  "内嵌 DSL",
+                          "type":  "belong",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "DSL 设计决策",
+                        "tags":  [
+                                     "DSL",
+                                     "领域特定语言",
+                                     "要不要做",
+                                     "怎么设计"
+                                 ],
+                        "template":  "高频重复配置/规则才值得 DSL；先评估内嵌 vs 外部；语义模型先行再定语法；控制学习成本；能复用通用语言就别造"
+                    },
+                    {
+                        "scenario":  "内嵌 DSL 实现",
+                        "tags":  [
+                                     "内嵌DSL",
+                                     "DSL",
+                                     "实现",
+                                     "怎么实现"
+                                 ],
+                        "template":  "利用宿主语言语法（链式/重载/闭包）；类型安全优先（强类型宿主）；组合性设计；文档与示例驱动；限制黑魔法保持可读"
+                    },
+                    {
+                        "scenario":  "外部 DSL 实现",
+                        "tags":  [
+                                     "外部DSL",
+                                     "语法",
+                                     "解析",
+                                     "怎么实现"
+                                 ],
+                        "template":  "词法→语法→语义三段式；AST 到语义模型映射；错误信息友好带位置；版本兼容演进；测试用例覆盖语法"
+                    },
+                    {
+                        "scenario":  "元编程应用",
+                        "tags":  [
+                                     "元编程",
+                                     "宏",
+                                     "反射",
+                                     "代码生成",
+                                     "怎么用"
+                                 ],
+                        "template":  "宏适合语法级抽象但难调试；反射灵活但破坏类型安全；注解处理生成样板代码；代码生成可追溯（生成器可运行）；克制使用"
+                    },
+                    {
+                        "scenario":  "代码生成实践",
+                        "tags":  [
+                                     "代码生成",
+                                     "脚手架",
+                                     "模板",
+                                     "怎么生成"
+                                 ],
+                        "template":  "模型定义单一来源；模板与模型分离；生成代码标记勿手改；可重生成幂等；生成物纳入版本控制；评审生成规则"
+                    },
+                    {
+                        "scenario":  "DSL 演进与维护",
+                        "tags":  [
+                                     "DSL",
+                                     "演进",
+                                     "维护",
+                                     "兼容"
+                                 ],
+                        "template":  "版本化语法；废弃特性保留过渡期；文档与示例同步更新；错误信息持续打磨；使用统计指导精简；克制新语法"
+                    },
+                    {
+                        "scenario":  "DSL 语法设计",
+                        "tags":  [
+                                     "DSL",
+                                     "语法",
+                                     "设计",
+                                     "可读性"
+                                 ],
+                        "template":  "领域词汇优先；最少语法噪音；错误信息友好；示例驱动设计；限制表达自由保一致"
+                    },
+                    {
+                        "scenario":  "DSL 错误处理",
+                        "tags":  [
+                                     "DSL",
+                                     "错误",
+                                     "诊断",
+                                     "报错"
+                                 ],
+                        "template":  "错误定位（行列）；语义错误上下文；lint 建议；编辑器集成；错误分类统计"
+                    },
+                    {
+                        "scenario":  "DSL 性能优化",
+                        "tags":  [
+                                     "DSL",
+                                     "性能",
+                                     "解释",
+                                     "优化"
+                                 ],
+                        "template":  "AST 缓存；JIT 热路径；预编译到目标语言；解析器性能剖析；基准测试"
+                    },
+                    {
+                        "scenario":  "DSL 文档与示例",
+                        "tags":  [
+                                     "DSL",
+                                     "文档",
+                                     "示例",
+                                     "教程"
+                                 ],
+                        "template":  "示例优先文档；交互式 playground；迁移指南；版本化文档；社区反馈渠道"
+                    }
+                ]
 }

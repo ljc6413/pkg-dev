@@ -1,76 +1,604 @@
 {
-  "id": "pkg-dev-sci",
-  "name": "科学计算与数值方法",
-  "industry": "软件开发",
-  "version": "1.0.0",
-  "namespace": "SCI开发",
-  "owner": "developer",
-  "tier": "pro",
-  "license_required": true,
-  "imagos": [
-    {"content": "科学计算", "modality": "text", "tags": ["领域"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "数值方法", "modality": "text", "tags": ["领域"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "浮点误差", "modality": "text", "tags": ["核心"], "confidence": 1, "kind": "event", "category": "sci"},
-    {"content": "矩阵运算", "modality": "text", "tags": ["核心"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "线性方程组", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "特征值", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "傅里叶变换", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "FFT", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "数值积分", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "微分方程", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "蒙特卡洛", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "优化算法", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "梯度下降", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "NumPy", "modality": "text", "tags": ["工具"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "SciPy", "modality": "text", "tags": ["工具"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "数值稳定性", "modality": "text", "tags": ["核心"], "confidence": 1, "kind": "value", "category": "sci"},
-    {"content": "条件数", "modality": "text", "tags": ["评估"], "confidence": 1, "kind": "value", "category": "sci"},
-    {"content": "插值", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "拟合", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "最小二乘", "modality": "text", "tags": ["算法"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "高维计算", "modality": "text", "tags": ["挑战"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "并行计算", "modality": "text", "tags": ["工程"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "GPU 加速", "modality": "text", "tags": ["工程"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "模拟", "modality": "text", "tags": ["应用"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "验证与确认", "modality": "text", "tags": ["工程"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "误差传播", "modality": "text", "tags": ["核心"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "求解器", "modality": "text", "tags": ["工具"], "confidence": 1, "kind": "entity", "category": "sci"},
-    {"content": "数据驱动建模", "modality": "text", "tags": ["前沿"], "confidence": 1, "kind": "entity", "category": "sci"}
-  ],
-  "relations": [
-    {"weight": 0.8, "context_tag": "#核心", "to": "数值方法", "from": "科学计算", "type": "condition", "directed": true},
-    {"weight": 0.8, "context_tag": "#核心", "to": "浮点误差", "from": "数值方法", "type": "causal", "directed": true},
-    {"weight": 0.7, "context_tag": "#核心", "to": "误差传播", "from": "浮点误差", "type": "causal", "directed": true},
-    {"weight": 0.9, "context_tag": "#核心", "to": "矩阵运算", "from": "科学计算", "type": "condition", "directed": true},
-    {"weight": 0.7, "context_tag": "#算法", "to": "线性方程组", "from": "矩阵运算", "type": "belong", "directed": true},
-    {"weight": 0.7, "context_tag": "#算法", "to": "特征值", "from": "矩阵运算", "type": "belong", "directed": true},
-    {"weight": 0.6, "context_tag": "#算法", "to": "傅里叶变换", "from": "科学计算", "type": "belong", "directed": true},
-    {"weight": 0.7, "context_tag": "#算法", "to": "FFT", "from": "傅里叶变换", "type": "condition", "directed": true},
-    {"weight": 0.6, "context_tag": "#算法", "to": "数值积分", "from": "数值方法", "type": "belong", "directed": true},
-    {"weight": 0.6, "context_tag": "#算法", "to": "微分方程", "from": "数值方法", "type": "belong", "directed": true},
-    {"weight": 0.6, "context_tag": "#算法", "to": "蒙特卡洛", "from": "数值方法", "type": "belong", "directed": true},
-    {"weight": 0.7, "context_tag": "#算法", "to": "优化算法", "from": "科学计算", "type": "belong", "directed": true},
-    {"weight": 0.7, "context_tag": "#算法", "to": "梯度下降", "from": "优化算法", "type": "belong", "directed": true},
-    {"weight": 0.6, "context_tag": "#工具", "to": "NumPy", "from": "科学计算", "type": "support", "directed": true},
-    {"weight": 0.6, "context_tag": "#工具", "to": "SciPy", "from": "科学计算", "type": "support", "directed": true},
-    {"weight": 0.8, "context_tag": "#核心", "to": "数值稳定性", "from": "浮点误差", "type": "oppose", "directed": false},
-    {"weight": 0.6, "context_tag": "#评估", "to": "条件数", "from": "数值稳定性", "type": "condition", "directed": true},
-    {"weight": 0.6, "context_tag": "#算法", "to": "插值", "from": "数值方法", "type": "belong", "directed": true},
-    {"weight": 0.6, "context_tag": "#算法", "to": "拟合", "from": "数值方法", "type": "belong", "directed": true},
-    {"weight": 0.7, "context_tag": "#算法", "to": "最小二乘", "from": "拟合", "type": "condition", "directed": true},
-    {"weight": 0.5, "context_tag": "#挑战", "to": "高维计算", "from": "科学计算", "type": "condition", "directed": true},
-    {"weight": 0.6, "context_tag": "#工程", "to": "并行计算", "from": "科学计算", "type": "support", "directed": true},
-    {"weight": 0.6, "context_tag": "#工程", "to": "GPU 加速", "from": "并行计算", "type": "support", "directed": true},
-    {"weight": 0.6, "context_tag": "#应用", "to": "模拟", "from": "科学计算", "type": "support", "directed": true},
-    {"weight": 0.6, "context_tag": "#工程", "to": "验证与确认", "from": "模拟", "type": "condition", "directed": true},
-    {"weight": 0.5, "context_tag": "#前沿", "to": "数据驱动建模", "from": "科学计算", "type": "belong", "directed": true}
-  ],
-  "scripts": [
-    {"scenario": "数值方法选型", "tags": ["数值方法", "选型", "怎么算", "数值计算"], "template": "矩阵规模定算法（直接/迭代）；病态问题先看条件数；FFT 处理频域；高维用蒙特卡洛；求解器库优先自研"},
-    {"scenario": "浮点误差处理", "tags": ["浮点", "误差", "精度", "数值不稳定"], "template": "避免灾难性抵消（相减相近数）；缩放避免溢出下溢；Kahan 求和提精度；误差传播分析关键路径；比较用容差"},
-    {"scenario": "矩阵计算优化", "tags": ["矩阵", "NumPy", "线性代数", "优化"], "template": "向量化替代循环；BLAS/LAPACK 后端；稀疏矩阵用稀疏格式；内存布局（C/F 序）匹配；分块计算控缓存"},
-    {"scenario": "微分方程求解", "tags": ["微分方程", "ODE", "PDE", "求解"], "template": "显式方法简单但步长受限；刚性系统用隐式；自适应步长提效率；边界条件先行；稳定性分析再实现"},
-    {"scenario": "模拟与验证", "tags": ["模拟", "验证", "确认", "可靠性"], "template": "解析解对比验证；网格/步长收敛性检验；不确定度量化（蒙特卡洛传播）；版本化复现环境；结果物理合理性审查"},
-    {"scenario": "科学计算性能", "tags": ["科学计算", "性能", "GPU", "并行"], "template": "profiling 定位热点；向量化与缓存局部性；并行化（线程/进程）负载均衡；GPU 适合高吞吐矩阵；Numba/Cython 加速热路径"}
-  ]
+    "id":  "pkg-dev-sci",
+    "name":  "科学计算与数值方法",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "SCI开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "科学计算",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "数值方法",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "浮点误差",
+                       "modality":  "text",
+                       "tags":  [
+                                    "核心"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "矩阵运算",
+                       "modality":  "text",
+                       "tags":  [
+                                    "核心"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "线性方程组",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "特征值",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "傅里叶变换",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "FFT",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "数值积分",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "微分方程",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "蒙特卡洛",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "优化算法",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "梯度下降",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "NumPy",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "SciPy",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "数值稳定性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "核心"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "条件数",
+                       "modality":  "text",
+                       "tags":  [
+                                    "评估"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "插值",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "拟合",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "最小二乘",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "高维计算",
+                       "modality":  "text",
+                       "tags":  [
+                                    "挑战"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "并行计算",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "GPU 加速",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "模拟",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "验证与确认",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "误差传播",
+                       "modality":  "text",
+                       "tags":  [
+                                    "核心"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "求解器",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   },
+                   {
+                       "content":  "数据驱动建模",
+                       "modality":  "text",
+                       "tags":  [
+                                    "前沿"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "sci"
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#核心",
+                          "to":  "数值方法",
+                          "from":  "科学计算",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#核心",
+                          "to":  "浮点误差",
+                          "from":  "数值方法",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#核心",
+                          "to":  "误差传播",
+                          "from":  "浮点误差",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#核心",
+                          "to":  "矩阵运算",
+                          "from":  "科学计算",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#算法",
+                          "to":  "线性方程组",
+                          "from":  "矩阵运算",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#算法",
+                          "to":  "特征值",
+                          "from":  "矩阵运算",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#算法",
+                          "to":  "傅里叶变换",
+                          "from":  "科学计算",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#算法",
+                          "to":  "FFT",
+                          "from":  "傅里叶变换",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#算法",
+                          "to":  "数值积分",
+                          "from":  "数值方法",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#算法",
+                          "to":  "微分方程",
+                          "from":  "数值方法",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#算法",
+                          "to":  "蒙特卡洛",
+                          "from":  "数值方法",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#算法",
+                          "to":  "优化算法",
+                          "from":  "科学计算",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#算法",
+                          "to":  "梯度下降",
+                          "from":  "优化算法",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#工具",
+                          "to":  "NumPy",
+                          "from":  "科学计算",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#工具",
+                          "to":  "SciPy",
+                          "from":  "科学计算",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#核心",
+                          "to":  "数值稳定性",
+                          "from":  "浮点误差",
+                          "type":  "oppose",
+                          "directed":  false
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#评估",
+                          "to":  "条件数",
+                          "from":  "数值稳定性",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#算法",
+                          "to":  "插值",
+                          "from":  "数值方法",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#算法",
+                          "to":  "拟合",
+                          "from":  "数值方法",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#算法",
+                          "to":  "最小二乘",
+                          "from":  "拟合",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#挑战",
+                          "to":  "高维计算",
+                          "from":  "科学计算",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#工程",
+                          "to":  "并行计算",
+                          "from":  "科学计算",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#工程",
+                          "to":  "GPU 加速",
+                          "from":  "并行计算",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#应用",
+                          "to":  "模拟",
+                          "from":  "科学计算",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#工程",
+                          "to":  "验证与确认",
+                          "from":  "模拟",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#前沿",
+                          "to":  "数据驱动建模",
+                          "from":  "科学计算",
+                          "type":  "belong",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "数值方法选型",
+                        "tags":  [
+                                     "数值方法",
+                                     "选型",
+                                     "怎么算",
+                                     "数值计算"
+                                 ],
+                        "template":  "矩阵规模定算法（直接/迭代）；病态问题先看条件数；FFT 处理频域；高维用蒙特卡洛；求解器库优先自研"
+                    },
+                    {
+                        "scenario":  "浮点误差处理",
+                        "tags":  [
+                                     "浮点",
+                                     "误差",
+                                     "精度",
+                                     "数值不稳定"
+                                 ],
+                        "template":  "避免灾难性抵消（相减相近数）；缩放避免溢出下溢；Kahan 求和提精度；误差传播分析关键路径；比较用容差"
+                    },
+                    {
+                        "scenario":  "矩阵计算优化",
+                        "tags":  [
+                                     "矩阵",
+                                     "NumPy",
+                                     "线性代数",
+                                     "优化"
+                                 ],
+                        "template":  "向量化替代循环；BLAS/LAPACK 后端；稀疏矩阵用稀疏格式；内存布局（C/F 序）匹配；分块计算控缓存"
+                    },
+                    {
+                        "scenario":  "微分方程求解",
+                        "tags":  [
+                                     "微分方程",
+                                     "ODE",
+                                     "PDE",
+                                     "求解"
+                                 ],
+                        "template":  "显式方法简单但步长受限；刚性系统用隐式；自适应步长提效率；边界条件先行；稳定性分析再实现"
+                    },
+                    {
+                        "scenario":  "模拟与验证",
+                        "tags":  [
+                                     "模拟",
+                                     "验证",
+                                     "确认",
+                                     "可靠性"
+                                 ],
+                        "template":  "解析解对比验证；网格/步长收敛性检验；不确定度量化（蒙特卡洛传播）；版本化复现环境；结果物理合理性审查"
+                    },
+                    {
+                        "scenario":  "科学计算性能",
+                        "tags":  [
+                                     "科学计算",
+                                     "性能",
+                                     "GPU",
+                                     "并行"
+                                 ],
+                        "template":  "profiling 定位热点；向量化与缓存局部性；并行化（线程/进程）负载均衡；GPU 适合高吞吐矩阵；Numba/Cython 加速热路径"
+                    },
+                    {
+                        "scenario":  "线性代数优化",
+                        "tags":  [
+                                     "线性代数",
+                                     "矩阵",
+                                     "BLAS",
+                                     "优化"
+                                 ],
+                        "template":  "BLAS/LAPACK 后端选型；稀疏矩阵格式（CSR）；内存布局调优；分块与缓存；GPU 批量计算"
+                    },
+                    {
+                        "scenario":  "数值稳定性检查",
+                        "tags":  [
+                                     "数值",
+                                     "稳定性",
+                                     "病态",
+                                     "检查"
+                                 ],
+                        "template":  "条件数估算；矩阵缩放；正交化替代正规方程；高精度类型必要时；误差界报告"
+                    },
+                    {
+                        "scenario":  "随机模拟设计",
+                        "tags":  [
+                                     "蒙特卡洛",
+                                     "随机",
+                                     "模拟",
+                                     "方差"
+                                 ],
+                        "template":  "随机数种子管理；方差缩减（对偶/分层）；收敛诊断；并行批次；结果不确定性量化"
+                    },
+                    {
+                        "scenario":  "数值软件测试",
+                        "tags":  [
+                                     "数值",
+                                     "测试",
+                                     "断言",
+                                     "容差"
+                                 ],
+                        "template":  "相对/绝对容差断言；解析解基准；回归测试套件；极值输入覆盖；平台一致性"
+                    }
+                ]
 }

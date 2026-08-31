@@ -56,6 +56,10 @@ const PACKS = [
   { id: 'pkg-dev-dsl',   ns: 'DSL开发',    q: '该不该为配置规则设计 DSL',              expect: ['领域特定语言', 'DSL设计', '语义模型'] },
   { id: 'pkg-dev-chaos', ns: 'CHAOS开发',  q: '混沌工程怎么小成本起步',                expect: ['混沌工程', '故障注入', '爆炸半径'] },
   { id: 'pkg-dev-re',    ns: 'RE开发',     q: '无符号二进制怎么开始逆向分析',          expect: ['逆向工程', '反汇编', '静态分析'] },
+  { id: 'pkg-dev-kotlin',ns: 'KOTLIN开发', q: 'Android 异步任务协程还是回调',          expect: ['协程', '结构化并发', '挂起函数'] },
+  { id: 'pkg-dev-swift', ns: 'SWIFT开发',  q: 'SwiftUI 状态管理怎么设计',               expect: ['SwiftUI', '视图状态', '数据绑定'] },
+  { id: 'pkg-dev-c',     ns: 'C开发',      q: 'C 内存泄漏和悬垂指针怎么防',             expect: ['指针', '内存管理', '悬垂指针'] },
+  { id: 'pkg-dev-web3',  ns: 'WEB3开发',   q: '智能合约重入攻击怎么防',                 expect: ['智能合约', '重入攻击', 'Solidity'] },
   { id: 'pkg-dev',     ns: '开发',     q: '技术栈升级要注意什么',                   expect: ['版本管理', '技术选型', '回滚'] },
 ]
 

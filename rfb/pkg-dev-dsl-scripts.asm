@@ -20,3 +20,9 @@ SUPPORT 元编程应用 代码生成 .WEIGHT 0.5 .FIELD 场景
 .IMAGE 代码生成实践
 SUPPORT 代码生成实践 代码生成 .WEIGHT 0.7 .FIELD 场景
 .IMAGE DSL演进与维护
+.IMAGE DSL语法设计
+SUPPORT DSL语法设计 可读性 .WEIGHT 0.7 .FIELD 场景
+.IMAGE DSL错误处理
+.IMAGE DSL性能优化
+SUPPORT DSL性能优化 AST .WEIGHT 0.5 .FIELD 场景
+.IMAGE DSL文档与示例

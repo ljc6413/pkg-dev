@@ -17,3 +17,11 @@ SUPPORT 模拟与验证 蒙特卡洛 .WEIGHT 0.5 .FIELD 场景
 .IMAGE 科学计算性能
 SUPPORT 科学计算性能 科学计算 .WEIGHT 0.7 .FIELD 场景
 SUPPORT 科学计算性能 GPU加速 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 线性代数优化
+SUPPORT 线性代数优化 GPU加速 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 数值稳定性检查
+SUPPORT 数值稳定性检查 条件数 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 随机模拟设计
+SUPPORT 随机模拟设计 蒙特卡洛 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 随机模拟设计 模拟 .WEIGHT 0.7 .FIELD 场景
+.IMAGE 数值软件测试

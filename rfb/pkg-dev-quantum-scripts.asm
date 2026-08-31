@@ -28,3 +28,14 @@ SUPPORT 量子计算学习路径 量子比特 .WEIGHT 0.5 .FIELD 场景
 SUPPORT 量子计算学习路径 布洛赫球 .WEIGHT 0.5 .FIELD 场景
 SUPPORT 量子计算学习路径 Qiskit .WEIGHT 0.5 .FIELD 场景
 SUPPORT 量子计算学习路径 云量子服务 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 量子纠错实现
+SUPPORT 量子纠错实现 量子纠错 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 量子纠错实现 量子比特 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 量子纠错实现 量子计算 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 量子退火应用
+SUPPORT 量子退火应用 退火 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 量子模拟实践
+SUPPORT 量子模拟实践 量子模拟 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 量子模拟实践 噪声 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 量子云服务使用
+SUPPORT 量子云服务使用 噪声 .WEIGHT 0.5 .FIELD 场景

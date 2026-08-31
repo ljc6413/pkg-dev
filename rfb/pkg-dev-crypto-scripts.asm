@@ -14,3 +14,8 @@ SUPPORT 零知识证明应用 同态加密 .WEIGHT 0.5 .FIELD 场景
 SUPPORT 密码学实现安全 密码学 .WEIGHT 0.7 .FIELD 场景
 SUPPORT 密码学实现安全 时间攻击 .WEIGHT 0.5 .FIELD 场景
 SUPPORT 密码学实现安全 密码学 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 数字签名设计
+SUPPORT 数字签名设计 数字签名 .WEIGHT 0.7 .FIELD 场景
+.IMAGE 证书管理
+.IMAGE 加密协议设计
+.IMAGE 数据脱敏加密

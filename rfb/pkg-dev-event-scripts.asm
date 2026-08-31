@@ -19,3 +19,14 @@ SUPPORT 流处理设计 背压 .WEIGHT 0.5 .FIELD 场景
 SUPPORT Saga实现 重放 .WEIGHT 0.5 .FIELD 场景
 .IMAGE 事件设计规范
 SUPPORT 事件设计规范 事件 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 事件Schema治理
+SUPPORT 事件Schema治理 事件 .WEIGHT 0.7 .FIELD 场景
+.IMAGE 事件溯源存储
+SUPPORT 事件溯源存储 事件溯源 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 事件溯源存储 快照 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 事件溯源存储 事件 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 事件溯源存储 快照 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 事件溯源存储 投影 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 消息可靠性
+.IMAGE 事件驱动监控
+SUPPORT 事件驱动监控 事件 .WEIGHT 0.5 .FIELD 场景

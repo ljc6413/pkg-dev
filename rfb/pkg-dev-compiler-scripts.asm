@@ -25,3 +25,16 @@ SUPPORT 解释器还是编译器 优化 .WEIGHT 0.5 .FIELD 场景
 .IMAGE 调试编译器错误
 SUPPORT 调试编译器错误 编译器 .WEIGHT 0.7 .FIELD 场景
 SUPPORT 调试编译器错误 代码生成 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 优化pass开发
+SUPPORT 优化pass开发 优化 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 优化pass开发 LLVM .WEIGHT 0.7 .FIELD 场景
+SUPPORT 优化pass开发 数据流分析 .WEIGHT 0.5 .FIELD 场景
+.IMAGE IR设计选择
+SUPPORT IR设计选择 中间表示 .WEIGHT 0.7 .FIELD 场景
+SUPPORT IR设计选择 优化 .WEIGHT 0.5 .FIELD 场景
+.IMAGE JIT实现
+SUPPORT JIT实现 优化 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 语言前端测试
+SUPPORT 语言前端测试 编译器 .WEIGHT 0.7 .FIELD 场景
+SUPPORT 语言前端测试 语法错误恢复 .WEIGHT 0.5 .FIELD 场景
+SUPPORT 语言前端测试 语义分析 .WEIGHT 0.5 .FIELD 场景

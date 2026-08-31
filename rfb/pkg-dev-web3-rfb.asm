@@ -1,0 +1,64 @@
+.IMAGE 区块链
+.IMAGE 智能合约
+.IMAGE 去中心化
+.IMAGE 共识机制
+.IMAGE 工作量证明
+.IMAGE 权益证明
+.IMAGE 以太坊
+.IMAGE EVM
+.IMAGE Solidity
+.IMAGE Gas费
+.IMAGE 钱包
+.IMAGE 代币标准
+.IMAGE ERC-20
+.IMAGE ERC-721
+.IMAGE 去中心化应用
+.IMAGE 去中心化金融
+.IMAGE 预言机
+.IMAGE 跨链
+.IMAGE 重入攻击
+.IMAGE 整数溢出
+.IMAGE 闪电贷
+.IMAGE 审计
+.IMAGE 密钥管理
+.IMAGE 部署
+.IMAGE 测试网
+.IMAGE 链上治理
+.IMAGE NFT
+.IMAGE Layer2
+.FIELD 核心
+.FIELD 共识
+.FIELD 平台
+.FIELD 语言
+.FIELD 成本
+.FIELD 应用
+.FIELD 标准
+.FIELD 基础设施
+.FIELD 安全
+.FIELD 开发
+.FIELD 扩展
+IF 区块链 智能合约 .WEIGHT 0.900 .FIELD 核心
+IF 区块链 去中心化 .WEIGHT 0.800 .FIELD 核心
+IF 区块链 共识机制 .WEIGHT 0.800 .FIELD 核心
+BELONG 共识机制 工作量证明 .WEIGHT 0.700 .FIELD 共识
+BELONG 共识机制 权益证明 .WEIGHT 0.700 .FIELD 共识
+BELONG 区块链 以太坊 .WEIGHT 0.700 .FIELD 平台
+IF 以太坊 EVM .WEIGHT 0.700 .FIELD 平台
+IF EVM Solidity .WEIGHT 0.700 .FIELD 语言
+IF EVM Gas费 .WEIGHT 0.800 .FIELD 成本
+SUPPORT 区块链 钱包 .WEIGHT 0.600 .FIELD 应用
+BELONG 代币标准 ERC-20 .WEIGHT 0.600 .FIELD 标准
+BELONG 代币标准 ERC-721 .WEIGHT 0.600 .FIELD 标准
+SUPPORT 区块链 去中心化应用 .WEIGHT 0.600 .FIELD 应用
+SUPPORT 智能合约 去中心化金融 .WEIGHT 0.600 .FIELD 应用
+SUPPORT 智能合约 预言机 .WEIGHT 0.600 .FIELD 基础设施
+BELONG 区块链 跨链 .WEIGHT 0.600 .FIELD 基础设施
+UNDERMINE 智能合约 重入攻击 .WEIGHT 0.700 .FIELD 安全
+UNDERMINE 智能合约 整数溢出 .WEIGHT 0.700 .FIELD 安全
+CAUSE 去中心化金融 闪电贷 .WEIGHT 0.600 .FIELD 安全
+IF 智能合约 审计 .WEIGHT 0.700 .FIELD 安全
+IF 钱包 密钥管理 .WEIGHT 0.700 .FIELD 安全
+IF 部署 测试网 .WEIGHT 0.600 .FIELD 开发
+BELONG 区块链 链上治理 .WEIGHT 0.500 .FIELD 应用
+SUPPORT ERC-721 NFT .WEIGHT 0.500 .FIELD 应用
+SUPPORT 以太坊 Layer2 .WEIGHT 0.600 .FIELD 扩展

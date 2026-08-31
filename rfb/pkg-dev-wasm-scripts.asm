@@ -23,3 +23,14 @@ SUPPORT 边缘计算实践 边缘计算 .WEIGHT 0.7 .FIELD 场景
 SUPPORT 边缘计算实践 函数即服务 .WEIGHT 0.5 .FIELD 场景
 SUPPORT 边缘计算实践 确定性 .WEIGHT 0.5 .FIELD 场景
 SUPPORT 边缘计算实践 wasmtime .WEIGHT 0.5 .FIELD 场景
+.IMAGE wasm体积优化
+SUPPORT wasm体积优化 wasm工具链 .WEIGHT 0.5 .FIELD 场景
+SUPPORT wasm体积优化 调试 .WEIGHT 0.5 .FIELD 场景
+.IMAGE wasm调试
+SUPPORT wasm调试 调试 .WEIGHT 0.7 .FIELD 场景
+SUPPORT wasm调试 调试 .WEIGHT 0.5 .FIELD 场景
+SUPPORT wasm调试 wasm工具链 .WEIGHT 0.5 .FIELD 场景
+.IMAGE 组件模型集成
+SUPPORT 组件模型集成 组件模型 .WEIGHT 0.7 .FIELD 场景
+.IMAGE wasm安全加固
+SUPPORT wasm安全加固 WASI .WEIGHT 0.5 .FIELD 场景
