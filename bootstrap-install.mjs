@@ -31,12 +31,13 @@ const PACKS = [
   'pkg-dev-crypto', 'pkg-dev-graph', 'pkg-dev-sci', 'pkg-dev-fp',
   'pkg-dev-event', 'pkg-dev-dsl', 'pkg-dev-chaos', 'pkg-dev-re',
   'pkg-dev-kotlin', 'pkg-dev-swift', 'pkg-dev-c', 'pkg-dev-web3',
+  'pkg-dev-growth',
 ]
 
 function steps() {
   const out = []
   // 1) 导入全部包
-  out.push({ phase: '导入编程包（43 个）', cmds: [] })
+  out.push({ phase: '导入编程包（44 个）', cmds: [] })
   for (const id of PACKS) {
     const f = path.join(PACK_DIR, id + '.json')
     if (!fs.existsSync(f)) { console.error(`[✗] 缺少 ${f}`); process.exit(1) }

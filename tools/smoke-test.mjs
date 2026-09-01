@@ -60,6 +60,7 @@ const PACKS = [
   { id: 'pkg-dev-swift', ns: 'SWIFT开发',  q: 'SwiftUI 状态管理怎么设计',               expect: ['SwiftUI', '视图状态', '数据绑定'] },
   { id: 'pkg-dev-c',     ns: 'C开发',      q: 'C 内存泄漏和悬垂指针怎么防',             expect: ['指针', '内存管理', '悬垂指针'] },
   { id: 'pkg-dev-web3',  ns: 'WEB3开发',   q: '智能合约重入攻击怎么防',                 expect: ['智能合约', '重入攻击', 'Solidity'] },
+  { id: 'pkg-dev-growth',ns: 'GROWTH开发', q: '转化率低怎么诊断是流量还是文案问题',      expect: ['转化漏斗', '真实访客', '爬虫过滤'] },
   { id: 'pkg-dev',     ns: '开发',     q: '技术栈升级要注意什么',                   expect: ['版本管理', '技术选型', '回滚'] },
 ]
 

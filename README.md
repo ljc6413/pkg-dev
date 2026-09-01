@@ -1,17 +1,17 @@
 # YiHe 编程开发辅助 · pkg-dev
 
-> **会进化的编程认知内核** — 43 个领域包 · 87 个 RFB 经验库 · 越用越省 · 越多开发者用越快
+> **会进化的编程认知内核** — 44 个领域包 · 89 个 RFB 经验库 · 越用越省 · 越多开发者用越快
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Packs](https://img.shields.io/badge/packs-43-green)]()
-[![RFB Libs](https://img.shields.io/badge/rfb_libs-87-orange)]()
+[![Packs](https://img.shields.io/badge/packs-44-green)]()
+[![RFB Libs](https://img.shields.io/badge/rfb_libs-89-orange)]()
 [![Tools](https://img.shields.io/badge/tools-15-blue)]()
 [![Version](https://img.shields.io/badge/version-1.2.0-purple)]()
 [![CI](https://img.shields.io/badge/CI-smoke%20passing-brightgreen)](.github/workflows/smoke.yml)
 [![Site](https://img.shields.io/badge/site-zhiyiwei.cn-blue)](https://www.zhiyiwei.cn)
 [![Ops](https://img.shields.io/badge/ops-dashboard-purple)](https://www.zhiyiwei.cn/ops)
 
-给 DeepSeek Harness 装一个会进化的编程领域知识库：43 个编程领域包（语言/框架/理论/实践 + 前沿探索 + 进化方法论），
+给 DeepSeek Harness 装一个会进化的编程领域知识库：44 个编程领域包（语言/框架/理论/实践 + 前沿探索 + 进化方法论），
 每个包 = 一个命名空间的关系网（意象/关系/脚本），随会话自动装载，让 AI 在熟悉的领域给出高质量决策。
 
 ```
@@ -24,6 +24,7 @@
         event（事件驱动）/ dsl（DSL·元编程）/ chaos（混沌工程）/ re（逆向·二进制分析）
         web3（区块链·Web3）
 进化：  evolve（自主扩展 / 学习 / 省 token / 共享方法论）
+        growth（独立开发者增长运营：推广 / UTM / 转化诊断 / 裂变）
 ```
 
 ## ✨ 亮点
@@ -54,8 +55,8 @@ npm install https://www.zhiyiwei.cn/npm-package
 ## 📦 目录
 
 ```
-packages/            43 个编程包 JSON（意象/关系/脚本）
-rfb/                 87 个 RFB 汇编源（→ yihe_rfb lib.save）
+packages/            44 个编程包 JSON（意象/关系/脚本）
+rfb/                 89 个 RFB 汇编源（→ yihe_rfb lib.save）
 tools/               15 个工具（构建/冒烟/可视化/进化/安全/埋点/试用提醒）
 docs/                25 份文档（使用/商业/安全/汇总/进化）
 server-dashboard/    运营增长仪表盘（ops.html + 快照聚合器）
