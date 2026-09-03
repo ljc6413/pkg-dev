@@ -5,6 +5,15 @@
 
 ## 运行状态（2026-08-29）
 
+- **运维常规操作沉淀（2026-09-03）· pkg-dev-runbook 省 token**：
+  - **背景**：项目后期发布/部署/运维操作反复出现、重复烧 token——把会话中的确定性常规操作固化为包脚本，命中即 0 token
+  - **pkg-dev-runbook**（45 包 / 91 RFB，PRO_PACKS 45→46 三处同步，Rust cargo check 通过）：
+    - 意象 28：发布/部署/运维/脚本短路/三处同步/PRO_PACKS/release zip/服务器部署/GitHub 推送/幂等/令牌消耗
+    - 脚本 12：重建 release zip（正斜杠）/ 重建 npm tgz / PRO_PACKS 三处同步 / 服务器部署新包 / GitHub 推送（git data API）/ Release 资产替换 / 跑冒烟测试 / 更新 bootstrap 包列表 / 证书域名排查 / 运营快照重跑 / **避免重复烧 token（沉淀方法论）** / 工具链语法预检
+  - **OPS-RUNBOOK.md**：运维手册（仓库根目录）——11 个常规操作完整命令固化 + 通用原则（幂等/可复现/凭据注入/省 token 飞轮），供人/agent 直接查
+  - **冒烟**：PACKS 48 条断言 + 91 asm 全通过；bootstrap 45 包
+  - **部署**：服务器 45/45 包 + 45 命名空间路由（内核日志确认）
+  - **省 token 飞轮**：新常规操作出现 → 补进 runbook 脚本 → 下次 script_hit 命中 0 token
 - **实战经验沉淀包（2026-09-01）· pkg-dev-growth 独立开发者增长运营**：
   - **背景**：把这两天真实做过的增长/推广/数据诊断/裂变/投稿经验，沉淀为可复用的决策知识包
   - **pkg-dev-growth**（44 包 / 89 RFB，PRO_PACKS 44→45 三处同步，Rust cargo check 通过）：
