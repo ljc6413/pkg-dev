@@ -5,6 +5,127 @@
 
 ## 运行状态（2026-08-29）
 
+- **获客转向内容钩子（2026-09-04）· Showcase 现场实录**：
+  - **诊断**：6 天推广审计——真人下载≈0、star=0、Discussion 互动全是自己 → 问题不是转化，是"被动发布"没触达会行动的人；PR #334 实为成功（维护者合并进 #346，awesome 收录已生效）
+  - **转向内容钩子（方案 B）**：与其发功能清单，不如给一个"能惊艳"的对比素材——同一难题通用 AI 绕话术 vs YiHe 直接给方案
+  - **/showcase 页**：8 个真实开发难题（缓存一致性/微服务拆分/重构/Kafka 可靠性/goroutine 泄漏/.NET 并发/Agent 安全/口令存储）→ YiHe 结构化秒答 + 领域标注 + 0 token/置信标注；深色卡片可复制，含 CTA（体验/仓库）——零依赖可分享
+  - **首页「现场实录」入口**：下载区上方绿色高亮卡，引导看 8 连问
+  - **传播文案包**：`docs/promo-showcase.md`——X 英文/中文帖、即刻/朋友圈短钩子、掘金/知乎长文（含"普通 AI vs YiHe"对比示例）+ 发布清单 + UTM（?utm_source=SHOWCASE）追踪
+  - **实测**：showcase 200（6.4KB）、首页入口/内容齐全
+- **测试数据教训沉淀（2026-09-04）· 支付回调测试污染台账**：
+  - **事件**：核对台账发现"paid 订单 ¥99"——实为测试时模拟合法签名支付回调（OD）留下的伪 paid 订单（paid_at 与 created_at 仅差 1 秒，真实用户不可能）；用户核实无真实支付
+  - **清理**：移除 2 条测试订单 + 2 个测试密钥 + 测试用量 → 台账归零，重建干净基线备份；仪表盘口径恢复真实（paid=0/营收=0）
+  - **沉淀**：growth 包「数据净化」强化 + 新增「测试数据治理」脚本（11 脚本）——判断伪支付特征（时间间隔极短/测试 buyer/非真实交易号）→ 清理 → 重建基线 → 先剔除测试再读商业指标；同步本地「开发」命名空间，实测短路命中
+- **风险保护机制（2026-09-04）· YiHe 全资产备份与恢复体系**：
+  - **背景**：DSH Desktop 非官方社区版更新可能覆盖 yihe-shared 内核修改 → 为 YiHe 项目本身建立完整风险保护
+  - **服务器自动备份**：`scripts/yihe-server-backup.sh`——每日 3:30 cron 打包 data(密钥/订单/用量/回传) + 代码(server.js/xunhupay/scripts) + 内核包 + nginx 配置 + cron 清单 + 环境变量名 → `/opt/yihe-server/backups/` 保留 14 份；**实测**：可解压、含全部台账（keys/orders/referral/usage/telemetry）
+  - **本地异地备份**：`yihe-offsite-backup.ps1`——触发服务器备份并拉取到本地 + 打包 44 包/repo/release/preset + 内置插件（含 PRO_PACKS）→ `D:\dsh\yihe-backups\` 保留 30 份；**实测**：拉取 16 文件 + 本地 zip 1MB
+  - **恢复手册**：`docs/DISASTER-RECOVERY.md`——5 场景恢复步骤（数据损坏/代码损坏/插件被覆盖/意外升级/包误删）+ 凭据清单与轮换提醒
+  - **凭据风险披露**：GitHub token / ADMIN_TOKEN / Xunhupay appsecret / OPC 密码在对话多次出现 → 建议立即轮换（手册含命令速查）
+  - **内置插件与更新源冻结备份**：`D:\dsh\backups\` 存有 yihe-shared-index-*.js（150KB）与 app-update-*.yml
+- **runbook 定位调整（2026-09-04）· 方案 B：运维经验归 YiHe 常用，不随商业包分发**：
+  - **决策**：RUNBOOK（发布/部署/运维自己项目）受众是维护者本人，放进商业 pkg-dev 分发等于把服务器运维手册白送给购买者、污染"编程决策知识"定位 → 转为本机「开发」命名空间常用脚本
+  - **落地**：12 个 runbook 脚本并入本机「开发」主命名空间（默认命中、0 token、无需带 namespace，实测「重建 release zip」「GitHub 推送失败怎么处理」直接返回脚本模板）；pkg-dev-runbook 包文件 + OPS-RUNBOOK.md 退出商业分发（repo/release zip/npm tgz/服务器 PACK_DIR/GitHub 仓库全部移除，commit f7bef24）
+  - **计数回退**：PRO_PACKS 46→45 三处同步（Rust cargo check 通过）；bootstrap 45→44 包；smoke 48→47 条断言（89 asm）；release zip 320KB（176 文件）
+  - **growth 保留**：独立开发者增长方法论对用户有普遍价值，继续作为商业包（44 包含 growth）
+  - **部署**：服务器 44/44 包加载（runbook 已移除）
+- **运维常规操作沉淀（2026-09-03）· pkg-dev-runbook 省 token**：
+  - **背景**：项目后期发布/部署/运维操作反复出现、重复烧 token——把会话中的确定性常规操作固化为包脚本，命中即 0 token
+  - **pkg-dev-runbook**（45 包 / 91 RFB，PRO_PACKS 45→46 三处同步，Rust cargo check 通过）：
+    - 意象 28：发布/部署/运维/脚本短路/三处同步/PRO_PACKS/release zip/服务器部署/GitHub 推送/幂等/令牌消耗
+    - 脚本 12：重建 release zip（正斜杠）/ 重建 npm tgz / PRO_PACKS 三处同步 / 服务器部署新包 / GitHub 推送（git data API）/ Release 资产替换 / 跑冒烟测试 / 更新 bootstrap 包列表 / 证书域名排查 / 运营快照重跑 / **避免重复烧 token（沉淀方法论）** / 工具链语法预检
+  - **OPS-RUNBOOK.md**：运维手册（仓库根目录）——11 个常规操作完整命令固化 + 通用原则（幂等/可复现/凭据注入/省 token 飞轮），供人/agent 直接查
+  - **冒烟**：PACKS 48 条断言 + 91 asm 全通过；bootstrap 45 包
+  - **部署**：服务器 45/45 包 + 45 命名空间路由（内核日志确认）
+  - **省 token 飞轮**：新常规操作出现 → 补进 runbook 脚本 → 下次 script_hit 命中 0 token
+- **实战经验沉淀包（2026-09-01）· pkg-dev-growth 独立开发者增长运营**：
+  - **背景**：把这两天真实做过的增长/推广/数据诊断/裂变/投稿经验，沉淀为可复用的决策知识包
+  - **pkg-dev-growth**（44 包 / 89 RFB，PRO_PACKS 44→45 三处同步，Rust cargo check 通过）：
+    - 意象 29：推广触达/转化漏斗/UTM 追踪/埋点回传/推荐裂变/运营仪表盘/真实访客/爬虫过滤/用户证词/痛点文案/冷启动/增长闭环
+    - 关系 26：获客→真实访客→漏斗→转化 因果链、UTM→渠道效果→投放决策、推荐码→裂变、证词→信任→付费
+    - 脚本 10：转化率诊断（先分流量质量再谈漏斗）/ UTM 渠道设计 / 埋点方案 / 推荐裂变设计 / 运营仪表盘建设 / 痛点文案写作 / 用户证词沉淀 / 冷启动渠道选择 / 试用到期提醒 / 数据净化（爬虫过滤）
+  - **冒烟**：PACKS 47 条断言 + 89 asm 全通过；bootstrap 44 包
+  - **部署**：服务器 44/44 包 + 44 命名空间路由（内核日志确认）；路由实测「转化率诊断」→ GROWTH开发
+  - **发布**：release zip 318KB（176 文件）/ npm tgz 重建
+- **OPC 中国渠道（2026-08-31）· 一人公司 AI 工具库投稿包**：
+  - **调研**：opc.cn = 一人公司（OPC）成长社区，AI 工具库按用途/赛道收录（含定价/适用场景/实测评价，tool_shape=Agent/MCP 筛选），投稿入口 /submit/ 需登录
+  - **价值再包装**：从「DSH 编程包」转为「一人公司的 AI 技术助手」——省 token（本地短路 0 token）、省时（技术决策一次问对）、越用越强
+  - **投稿包**：`opc-submit-guide.md`（站点 /opc 可访问）——分类建议（Agent 类优先）+ 逐字段文案（名称/简介/描述/官网/定价/适用场景/实测评价/截图建议）+ 提交后社区互动小动作 + UTM（?utm_source=opc）
+  - **promo-copy 更新**：渠道钩子加 OPC 入口，链接指向 /opc
+  - **待用户操作**：注册/登录 opc.cn → /submit/ 粘贴投稿包 → 提交后社区互动
+- **全新推广体系（2026-08-31）· 可度量渠道 + 裂变 + 成套物料**：
+  - **UTM 渠道追踪**：快照解析 `?utm_source=` 参数 → 新增 `channels.utm/utm_real`；仪表盘新增「推广渠道」卡片（各渠道访问量对比，哪渠道有效一目了然）；实测 5 渠道各记录 1 次
+  - **推荐裂变机制**：`/api/referral`（密钥查推荐码 + 邀请链接）、`/api/referrals`（admin 台账）；购买可填推荐码，支付成功后**推荐人与新买家各得 1000 次超额额度**（referral.json 台账，pay/notify 自动发放）；首页新增「推荐有奖」区；**端到端实测**：签发→查码→带码下单→合法签名回调→grant 发放 ✅
+  - **推广物料 v2**：`promo-copy.md` 全新重写——43 包卖点 + 短/中/长三档文案 + 渠道专属钩子（V2EX/掘金/知乎/公众号）+ UTM 对照表 + 发布操作清单
+  - **SEO**：首页补 meta description/keywords/OG 标签（"43 个领域包"可被搜索引擎收录）
+  - **GitHub 全新推广帖**：Discussion #5183「从 27 到 43：一个会进化的 DSH 编程知识库是怎么长出来的」（Show Your Plugins 分类，13 前沿方向 + 自动路由 + 推荐有奖）；回复 #5180（插件形态）、#3858（插件市场）、#5171（推理层）三条相关讨论（#discussioncomment-18213484/86/87）
+- **前沿加深 + 新语言包（2026-08-30）· 43 包深度升级**：
+  - **新增 4 个高价值包**（39 → 43 包，PRO_PACKS 40 → 44 三处同步：内置插件/工作区 JS/Rust 网关 cargo check 通过）：
+    - `pkg-dev-kotlin` Kotlin 移动与后端（协程/Flow/结构化并发/Compose/Ktor/KMP）
+    - `pkg-dev-swift` Swift 与 iOS（值语义/SwiftUI/async-await/Actor/内存管理）
+    - `pkg-dev-c` C 语言系统编程（指针/内存安全/宏/头文件/嵌入式 C）
+    - `pkg-dev-web3` 区块链与 Web3（智能合约/Solidity/Gas/DeFi/合约安全/升级）
+  - **12 个前沿包深化**：quantum/formal/compiler/wasm/crypto/graph/sci/fp/event/dsl/chaos/re 全部从 6-7 脚本加深到 **10 脚本**（+45 脚本），补错误处理/性能/测试/落地实践等深度维度
+  - **合计新增**：4 包 × 28 意象 + 深化脚本 → 全库 43 包 / 87 asm / ~2400 意象 / ~2000 关系 / ~440 脚本
+  - **冒烟**：PACKS 增至 46 条断言（含 4 新包），selfcheck + rfb（87 文件）全通过
+  - **部署**：服务器 PACK_DIR 43 包 + 43 命名空间路由（内核日志确认）；bootstrap-install 43 包
+- **前沿探索包扩展（2026-08-30）· 编程领域未知方向探索与创新**：
+  - **12 个前沿领域包新增**（27 → 39 包，PRO_PACKS 28 → 40 三处同步：内置插件/工作区 JS/Rust 网关）：
+    - `pkg-dev-quantum` 量子计算编程（量子比特/叠加/纠缠/Shor/Grover/VQE/退相干/纠错）
+    - `pkg-dev-formal` 形式化验证与定理证明（TLA+/Coq/Lean/不变式/模型检验/符号执行）
+    - `pkg-dev-compiler` 编译器与解释器（词法/语法/IR/优化 pass/代码生成/LLVM/JIT）
+    - `pkg-dev-wasm` WebAssembly 与边缘计算（WASI/组件模型/沙箱/插件系统）
+    - `pkg-dev-crypto` 密码学工程与零知识（对称/非对称/密钥管理/零知识/同态/后量子）
+    - `pkg-dev-graph` 图计算与图数据库（Neo4j/Cypher/PageRank/社区发现/GNN）
+    - `pkg-dev-sci` 科学计算与数值方法（浮点误差/FFT/微分方程/蒙特卡洛/GPU）
+    - `pkg-dev-fp` 函数式编程范式（纯函数/Monad/类型类/惰性求值/尾递归）
+    - `pkg-dev-event` 事件驱动与流式架构（事件溯源/CQRS/Saga/幂等/背压）
+    - `pkg-dev-dsl` DSL 与元编程（内嵌/外部 DSL/AST/宏/代码生成）
+    - `pkg-dev-chaos` 混沌工程与系统韧性（故障注入/爆炸半径/演练/稳态假设）
+    - `pkg-dev-re` 逆向工程与二进制分析（反汇编/反编译/静态动态分析/协议逆向）
+  - **每个包**：28 意象 + ~25 关系 + 6 脚本（合计 336 意象 / 300 关系 / 71 脚本新增）
+  - **RFB 同步**：新增 24 个 asm（12 full + 12 scripts）→ 79 个 RFB 源；冒烟测试 PACKS 增至 42 条（含 12 新包断言），selfcheck + rfb 全通过
+  - **安装器**：bootstrap-install.mjs 包列表 27 → 39（自动建 78 库）；Rust gateway cargo check 通过
+  - **部署**：服务器 PACK_DIR 39 包就绪；release zip 重建（39 包/79 asm）
+- **真实使用证词（2026-08-30）· 早期使用者口碑沉淀**：
+  - 早期使用者反馈「体验强过市面上大多数 agent 工具，日常真的在用」
+  - 六个体验维度沉淀：决策深度（专业具体非模板）/ 省 token（本地短路）/ 领域广度（27 包）/ 进化能力（越用越懂项目）/ 安全感（四层护栏）/ 易用性（上手快）
+  - 落地：首页「真实体验」区块（证词 + 六维度卡）；README「真实体验」段；Discussion 5018 追加证词评论（#discussioncomment-18206295）
+- **转化诊断与增长改进（2026-08-30）· 痛点导向 + 在线体验 + 统计净化**：
+  - **诊断结论**：浏览→转化 0% 的根因是流量几乎全是爬虫/扫描器（342 首页访问中 Censys/zgrab/PaloAlto/leakix 等明确扫描器 30+，iPhone 统一 UA 扫描 63，真人访客 <5）；34 个下载 IP 中约 30 个未访问首页（爬虫直打 /download）——推广尚未触达目标人群，统计上无转化可言
+  - **首页重写（痛点→收益）**：标题改为「AI 写代码总跑偏、答得泛、还烧 token？」；三痛点卡（答非所问/烧 token/知识不沉淀）→ 对应解法；徽章 + 双 CTA（在线体验/免费下载）
+  - **在线体验（真实内核）**：新增公开端点 `POST /api/demo/reason`（IP 限流 3 次/分钟、走 Rust 内核真推理、不计费）；首页嵌入交互演示——输入「缓存用 Redis 还是本地内存？」→ 返回结构化决策 + 置信度（实测「采用缓存」0.779）
+  - **统计净化**：快照爬虫过滤扩展（+censys/zgrab/paloalto/cyberconvoy/leakix/l9scan/cl0q/iLunascape/iPhone 13_2_3 统一 UA/老旧 Chrome 等）→ 新增 `visits_real/today_real/home_real/days30_real` 真实口径；仪表盘 KPI 改「今日真实访问/30 天真实访问」、漏斗首层改真实访问、趋势图用真实数据
+  - **社区推广**：Discussion 5018 首条重写为痛点导向（#discussioncomment-18197918）；回复 #5068「dsh 有没有安全防护插件」（#discussioncomment-18206187，四层安全 + 规则清单链接）
+- **运营口径修正（2026-08-30）· 下载 vs 安装诊断**：
+  - **诊断结论**：49 次下载中 13 次为自测（122.51.212.20+curl）、约 20 次为爬虫/扫描（云段 IP 批量抓取 + iPhone 统一 UA）——真实下载仅个位数；3 份回传全部是开发测试实例，**真实安装回传为 0**
+  - **快照口径升级**：`ops-snapshot.mjs` 排除自测 IP 与爬虫 UA（curl/wget/python/bot/spider/crawl/scan 等）→ 新增 `downloads_real` 字段；telemetry 排除测试实例（test-*/VM-0-3-ubuntu*）→ 新增 `real` 计数；漏斗改真实口径并新增 `install_rate`（下载→安装转化率）
+  - **激活口径修正**：漏斗"激活"改为统计经 `/api/activate` 真实激活的密钥（activated_at），不再用签发数
+  - **回传健壮性**：npm `postinstall-report.mjs` 失败重试一次（共 2 次，6s 超时）；preset `install.sh`/`install.ps1` 同样加重试——解决 npm ignore-scripts/网络抖动导致的回传丢失
+  - **仪表盘展示**：KPI 显示"总下载 + 真实下载（已滤爬虫）"、安装回传"真实/总（含自测）"；新增"下载→安装转化"卡片；漏斗标注真实口径
+  - **资产同步**：preset zip（54.6KB）+ npm tgz（189.3KB）重建并同步服务器与 GitHub Release v1.1.0（替换资产）；postinstall-report.mjs 推送仓库（fc13d41）
+- **v1.1.0 发布（2026-08-30）· GitHub 推广与维护批次**：
+  - **Release v1.1.0**：`github.com/ljc6413/pkg-dev/releases/tag/v1.1.0` —— 3 资产（pkg-dev-release-v1.1.0.zip 129 文件 / yihe-pkg-dev-1.1.0.tgz / yihe-preset-dist.zip），下载站同步切换 v1.1.0（/download 250KB、/npm-package 188KB）
+  - **仓库元数据**：description 更新 + homepage 指向 zhiyiwei.cn + topics 打标（deepseek-harness/dsh/dsh-plugin/cognitive/knowledge-graph/rfb/programming-assistant/ai/llm）——REST PATCH 不支持 topics，改用专用 `PUT /topics` 端点
+  - **README 重写**：徽章（License/Packs/RFB/Tools/Version/CI/Site/Ops）+ 亮点（本地优先省 token/四层安全/商业化/可观测）+ 工具表（15 工具）+ 文档导航 + 运营增长章节
+  - **CI 冒烟**：`.github/workflows/smoke.yml` —— push/PR 自动跑 27 包完整性 + 55 RFB 结构 + 全部工具语法检查 + 数量断言
+  - **CONTRIBUTING.md / SECURITY.md**：贡献指南（开发流程/提交规范/CI 门禁）+ 安全策略（四层防护/漏洞报告/隐私说明）
+  - **仓库整洁**：删除根目录误提交的 tgz 产物；.gitignore 增 `*.tgz`/`*.zip`
+  - **推广跟进**：Discussion 5018 发布 v1.1.0 更新评论（#discussioncomment-18202963，含埋点/试用提醒/仪表盘/PR 链接）；awesome PR #334 更新评论（#issuecomment-5466131341 指向 v1.1.0）
+  - **版本同步**：package.json / postinstall-report.mjs / bootstrap-install.mjs 全部 1.0.0 → 1.1.0
+- **运营增长三件事（推广触达 / 埋点回传 / 试用提醒）**：
+  - **推广触达**：DeepSeek Harness 官方 Discussion #5018 发布使用数据与架构亮点（`https://github.com/deepseek-ai/deepseek-harness/discussions/5018#discussioncomment-18197918`）；向 awesome-deepseek-harness 提交收录 PR（Coding 章节，27 子包/认知内核/团队许可/商业站点亮点，`Dominic789654/awesome-deepseek-harness#334`）
+  - **安装埋点自动回传（三渠道）**：preset-zip（install.sh/install.ps1 装完即 POST）、npm（`postinstall` → tools/postinstall-report.mjs，channel=npm）、release-zip（bootstrap-install.mjs 运行即上报，channel=release-zip）——匿名（instance 盐化、不含内容）上报 `POST /api/telemetry`（schema yihe-telemetry-v1），失败静默不影响安装；**已实测**：三渠道均落盘（tel-*.json 含 schema/instance/event/channel）
+  - **发行包跨平台修复**：Windows Compress-Archive 生成的 zip 用反斜杠分隔符导致 Linux/macOS unzip 解出错误文件名 → 改为服务器端 `zip` 命令重建（正斜杠），preset/release 两个 zip 均验证 Linux 解压通过
+  - **试用到期提醒（服务器端落地）**：`/api/issue-key` 支持 `trial_days` 签发试用密钥（is_trial/trial_until）；`/api/validate`/`/api/activate` 返回 `trial.days_left`，剩余 ≤3 天附带购买提醒 notice，过期 fail-closed（TRIAL_EXPIRED + promo 链接）；`/v1/reason` 对过期试用密钥返回 402 `code=TRIAL_EXPIRED` + 购买地址；新增管理端点 `GET/POST /api/trials?token=&within=` 列出 N 天内到期试用（按剩余天数排序，运营跟进转化）；**已实测**：签发 2 天试用 → validate 带 notice → /api/trials 命中 → 回拨 trial_until 模拟过期 → validate 报 trial_expired、/v1/reason 402
+  - **运营统计升级**：ops-stats.sh 新增「试用到期提醒」区块（试用总数 / 7 天内到期 / 已过期未转化清单，含 buyer/剩余天数/promo 跟进链接）
+  - **本地试用/配额提醒工具**：`tools/trial-remind.mjs`（bin `yihe-pkg-remind`）——读 `$DSH_HOME/yihe-host.json` 计算套餐配额余量（free 500/pro 10000/team 50000/enterprise 不限，与内核 PLANS 一致），配额临尽（≤10% 或 ≤50 次）提示购买、用尽 fail-locked；`--key <密钥>` 可选查询服务器端试用剩余天数（临期 ≤3 天提醒、过期锁定）；退出码 0/2/3 供脚本判断；**已实测**：near-quota→exit2、exhausted→exit3、healthy→exit0、试用临期/过期 --key 查询均正确
+- **运营增长仪表盘（/ops Web 仪表盘）**：
+  - **页面**：`https://www.zhiyiwei.cn/ops`（公开页面，数据接口需 admin token）——KPI 卡片（今日访问/30 天访问/总下载/安装回传/激活密钥/付费订单/营收/试用临期）+ 转化漏斗（访问→下载→回传→激活→付费）+ 访问 30 天趋势柱状图 + 安装回传 7 天趋势 + GitHub 增长卡（仓库星标/PR #334 状态/Discussion 5018 评论数/Release 下载）+ 试用临期清单 + 最近回传/渠道分布 + 运营快照明细；零第三方依赖（内联 CSS/JS），60s 自动刷新
+  - **数据链路**：`scripts/ops-snapshot.mjs`（cron 每 10 分钟）→ `data/ops-snapshot.json`（schema yihe-ops-snapshot-v1）→ `GET /api/ops?token=`；聚合源：nginx access.log（sudo 读，解析访问/下载/API + 30 天趋势）、keys/orders/usage 台账、telemetry 回传目录、GitHub REST+GraphQL（PR #334 状态、Discussion 5018 评论数）
+  - **首页入口**：index.html 页脚加「运营后台 ↗」链接
+  - **实测**：快照生成正常（visits 395 / downloads 39 / telemetry 3 / gh=ok）；`/ops` HTTP 200；`/api/ops` 带 token 返回快照、未授权 403；cron 已配置
+  - **部署文档**：DEPLOY-TENCENT.md 增「运营增长仪表盘」与「试用到期提醒」运营章节
 - **27 个编程包商业许可全部激活**（PRO_PACKS 28 三处同步后重启生效；26 包于首轮重启激活，pkg-dev-evolve 于 PRO_PACKS 28 重启后激活）
 - **团队版 team 档落地**：PLANS 增 `team`（¥299/月 / 50000 次 / 超额 ¥0.03/次），三处同步（内置插件/工作区 JS/Rust gateway），`activateLicense` 支持 `TEAM-` 密钥前缀，`tierOf` 升序链 enterprise > team > pro > free，Rust 测试补 TEAM- 断言通过
 - **本地优先·脚本预匹配短路落地**：`script_hit_threshold` 配置（默认 0=关闭，>0 开启）——开启后问题命中高分脚本（score≥阈值）→ 免 reason 直接返回脚本模板结论（gateway=script_hit，bump script 免费计量，0 token）；`matchScripts` 增关键词通道（问题含场景名/标签词提升分数，弥补中文语义鸿沟）；三处同步 + Rust 测试 `reason_script_hit_shortcircuit_via_rpc` 通过（34/34）；开启方式：`yihe_admin op=config action=set key=script_hit_threshold value=0.5`；**已实测**：重启后开启 0.5，「这个模块要不要重构」→ 直接返回重构决策脚本模板（dec-4716 入库，reason 不 +1，script 计量 +1）
@@ -224,3 +345,14 @@
 - 一键构建：`node yihe-packs/build-pack-rfb.mjs <pkg.json>`
 - 冒烟测试：`node yihe-packs/smoke-test.mjs`（见 pkg-dev-smoke 文档）
 - 重启恢复：`pkg-dev-restore-checklist.md`
+
+## 2026-09-04 · 执行护栏包 pkg-dev-exec-guards（v1.0.0）
+
+- **新增商业包** `pkg-dev-exec-guards`（ns=开发，脚本 19 条，三组）：
+  - Computer Use 护栏 ×8：点击前观察校验 / 网格低置信重读 / 危险动作审批 / 空白重试 / 动作后验证 / 托盘唤醒 / 快照失效 / 敏感不代输
+  - dsh-kanban 护栏 ×5：建卡查重 / 工作区隔离 / 列迁移合法性 / 卡片留痕 / 实况对账
+  - 插件安装评审 ×6：同名甄别 / 兼容性预检 / 信誉热度 / 安全扫描 / 评审结论 / 批量事务
+- **PRO_PACKS 45→46 三处同步**：builtin（app.asar.unpacked，重启生效）/ workspace static-fixed / preset-dist（整表回填对齐 46）
+- **服务器**：license.rs [&str;46] + gateway 重建 + PACK_DIR 45 包 + yihe-server 重启 → `已加载 45/45 编程包（44 命名空间路由）`
+- bootstrap-install.mjs PACKS 44→45；docs/ 增 yihe-exec-guards.md、AB-test-computer-use-guards.md、plugin-install-review.md
+- 说明：guards 纯脚本无 imago/relations，不参与 smoke selfcheck 行（CI 不受影响）

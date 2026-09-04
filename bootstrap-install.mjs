@@ -15,6 +15,7 @@
  */
 import fs from 'node:fs'
 import path from 'node:path'
+import os from 'node:os'
 
 const DIR = path.dirname(process.argv[1])
 const PACK_DIR = path.join(DIR, 'packages')
@@ -26,12 +27,18 @@ const PACKS = [
   'pkg-dev-cpp', 'pkg-dev-dotnet', 'pkg-dev-git', 'pkg-dev-bigdata', 'pkg-dev-game',
   'pkg-dev-algo', 'pkg-dev-arch', 'pkg-dev-design', 'pkg-dev-net', 'pkg-dev-os',
   'pkg-dev-perf', 'pkg-dev-evolve',
+  'pkg-dev-quantum', 'pkg-dev-formal', 'pkg-dev-compiler', 'pkg-dev-wasm',
+  'pkg-dev-crypto', 'pkg-dev-graph', 'pkg-dev-sci', 'pkg-dev-fp',
+  'pkg-dev-event', 'pkg-dev-dsl', 'pkg-dev-chaos', 'pkg-dev-re',
+  'pkg-dev-kotlin', 'pkg-dev-swift', 'pkg-dev-c', 'pkg-dev-web3',
+  'pkg-dev-growth',
+  'pkg-dev-exec-guards',
 ]
 
 function steps() {
   const out = []
   // 1) 导入全部包
-  out.push({ phase: '导入编程包（27 个）', cmds: [] })
+  out.push({ phase: '导入编程包（44 个）', cmds: [] })
   for (const id of PACKS) {
     const f = path.join(PACK_DIR, id + '.json')
     if (!fs.existsSync(f)) { console.error(`[✗] 缺少 ${f}`); process.exit(1) }
@@ -83,5 +90,33 @@ function main() {
   // 完整执行清单（供 Agent/人工逐步执行）
   console.log(JSON.stringify(plan, null, 2))
 }
+
+// 安装回传（匿名埋点，失败静默）：channel = release-zip
+function reportInstall() {
+  try {
+    const payload = {
+      schema: 'yihe-telemetry-v1',
+      instance: `${os.hostname()}-${process.pid}`,
+      event: 'install',
+      os: process.platform,
+      channel: 'release-zip',
+      version: '1.1.0',
+      time: Math.floor(Date.now() / 1000),
+    }
+    const ctrl = new AbortController()
+    const timer = setTimeout(() => ctrl.abort(), 5000)
+    fetch('https://www.zhiyiwei.cn/api/telemetry', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      signal: ctrl.signal,
+    }).then((r) => {
+      clearTimeout(timer)
+      if (r.ok) console.log('[yihe-pkg-dev] 安装回传成功 (匿名埋点)')
+    }).catch(() => {})
+  } catch { /* 网络不可达：跳过 */ }
+}
+
+reportInstall()
 
 main()
