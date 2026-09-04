@@ -16,3 +16,4 @@ SUPPORT 推广文案写作 在线体验 .WEIGHT 0.5 .FIELD 场景
 SUPPORT 冷启动渠道选择 冷启动 .WEIGHT 0.7 .FIELD 场景
 .IMAGE 试用到期提醒设计
 .IMAGE 数据净化
+.IMAGE 测试数据治理
