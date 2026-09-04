@@ -5,6 +5,17 @@
 
 ## 运行状态（2026-08-29）
 
+- **测试数据教训沉淀（2026-09-04）· 支付回调测试污染台账**：
+  - **事件**：核对台账发现"paid 订单 ¥99"——实为测试时模拟合法签名支付回调（OD）留下的伪 paid 订单（paid_at 与 created_at 仅差 1 秒，真实用户不可能）；用户核实无真实支付
+  - **清理**：移除 2 条测试订单 + 2 个测试密钥 + 测试用量 → 台账归零，重建干净基线备份；仪表盘口径恢复真实（paid=0/营收=0）
+  - **沉淀**：growth 包「数据净化」强化 + 新增「测试数据治理」脚本（11 脚本）——判断伪支付特征（时间间隔极短/测试 buyer/非真实交易号）→ 清理 → 重建基线 → 先剔除测试再读商业指标；同步本地「开发」命名空间，实测短路命中
+- **风险保护机制（2026-09-04）· YiHe 全资产备份与恢复体系**：
+  - **背景**：DSH Desktop 非官方社区版更新可能覆盖 yihe-shared 内核修改 → 为 YiHe 项目本身建立完整风险保护
+  - **服务器自动备份**：`scripts/yihe-server-backup.sh`——每日 3:30 cron 打包 data(密钥/订单/用量/回传) + 代码(server.js/xunhupay/scripts) + 内核包 + nginx 配置 + cron 清单 + 环境变量名 → `/opt/yihe-server/backups/` 保留 14 份；**实测**：可解压、含全部台账（keys/orders/referral/usage/telemetry）
+  - **本地异地备份**：`yihe-offsite-backup.ps1`——触发服务器备份并拉取到本地 + 打包 44 包/repo/release/preset + 内置插件（含 PRO_PACKS）→ `D:\dsh\yihe-backups\` 保留 30 份；**实测**：拉取 16 文件 + 本地 zip 1MB
+  - **恢复手册**：`docs/DISASTER-RECOVERY.md`——5 场景恢复步骤（数据损坏/代码损坏/插件被覆盖/意外升级/包误删）+ 凭据清单与轮换提醒
+  - **凭据风险披露**：GitHub token / ADMIN_TOKEN / Xunhupay appsecret / OPC 密码在对话多次出现 → 建议立即轮换（手册含命令速查）
+  - **内置插件与更新源冻结备份**：`D:\dsh\backups\` 存有 yihe-shared-index-*.js（150KB）与 app-update-*.yml
 - **runbook 定位调整（2026-09-04）· 方案 B：运维经验归 YiHe 常用，不随商业包分发**：
   - **决策**：RUNBOOK（发布/部署/运维自己项目）受众是维护者本人，放进商业 pkg-dev 分发等于把服务器运维手册白送给购买者、污染"编程决策知识"定位 → 转为本机「开发」命名空间常用脚本
   - **落地**：12 个 runbook 脚本并入本机「开发」主命名空间（默认命中、0 token、无需带 namespace，实测「重建 release zip」「GitHub 推送失败怎么处理」直接返回脚本模板）；pkg-dev-runbook 包文件 + OPS-RUNBOOK.md 退出商业分发（repo/release zip/npm tgz/服务器 PACK_DIR/GitHub 仓库全部移除，commit f7bef24）
