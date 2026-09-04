@@ -5,6 +5,12 @@
 
 ## 运行状态（2026-08-29）
 
+- **runbook 定位调整（2026-09-04）· 方案 B：运维经验归 YiHe 常用，不随商业包分发**：
+  - **决策**：RUNBOOK（发布/部署/运维自己项目）受众是维护者本人，放进商业 pkg-dev 分发等于把服务器运维手册白送给购买者、污染"编程决策知识"定位 → 转为本机「开发」命名空间常用脚本
+  - **落地**：12 个 runbook 脚本并入本机「开发」主命名空间（默认命中、0 token、无需带 namespace，实测「重建 release zip」「GitHub 推送失败怎么处理」直接返回脚本模板）；pkg-dev-runbook 包文件 + OPS-RUNBOOK.md 退出商业分发（repo/release zip/npm tgz/服务器 PACK_DIR/GitHub 仓库全部移除，commit f7bef24）
+  - **计数回退**：PRO_PACKS 46→45 三处同步（Rust cargo check 通过）；bootstrap 45→44 包；smoke 48→47 条断言（89 asm）；release zip 320KB（176 文件）
+  - **growth 保留**：独立开发者增长方法论对用户有普遍价值，继续作为商业包（44 包含 growth）
+  - **部署**：服务器 44/44 包加载（runbook 已移除）
 - **运维常规操作沉淀（2026-09-03）· pkg-dev-runbook 省 token**：
   - **背景**：项目后期发布/部署/运维操作反复出现、重复烧 token——把会话中的确定性常规操作固化为包脚本，命中即 0 token
   - **pkg-dev-runbook**（45 包 / 91 RFB，PRO_PACKS 45→46 三处同步，Rust cargo check 通过）：
