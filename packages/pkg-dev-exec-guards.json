@@ -1,0 +1,250 @@
+{
+  "id": "pkg-dev-exec-guards",
+  "name": "插件执行护栏（ComputerUse/看板/安装评审）",
+  "industry": "软件工程",
+  "version": "1.0.0",
+  "namespace": "开发",
+  "owner": "developer",
+  "tier": "pro",
+  "license_required": true,
+  "imagos": [],
+  "relations": [],
+  "scripts": [
+    {
+      "scenario": "computer点击前观察校验",
+      "tags": [
+        "computer_click",
+        "点击",
+        "观察",
+        "过期",
+        "element_index",
+        "坐标",
+        "重新观察"
+      ],
+      "template": "点击/拖拽前必须基于最近一次 computer_observe 返回：目标必须存在于当前 observation（element_index 或 A1-C3 单元格）；observation 已失效或早于上一个动作则先重新 observe；禁止凭记忆或凭空坐标点击。标准控件优先 element_index；UIA 树为空才走 ModLens 网格路径。"
+    },
+    {
+      "scenario": "ModLens网格读数低置信重读",
+      "tags": [
+        "modlens_read_image",
+        "网格",
+        "低置信",
+        "uncertainty",
+        "重读",
+        "computer_zoom",
+        "读数"
+      ],
+      "template": "读图结果带 uncertainty/低置信或与目标不符时：先 computer_zoom 定位单元格再读，最多重读 2 次；仍不一致则放弃该格，改用 element_index 或窗口文本；禁止在低置信读数上执行点击或拖拽。"
+    },
+    {
+      "scenario": "computer危险动作审批",
+      "tags": [
+        "删除",
+        "发送",
+        "提交",
+        "支付",
+        "不可逆",
+        "审批",
+        "approval",
+        "确认"
+      ],
+      "template": "对删除/发送/提交/支付等不可逆动作：先停下向用户说明影响并取得确认（标注对应风险级别）；观察证据不足以判断后果时拒绝执行并说明原因；确认后仍按 观察→动作→验证 顺序执行。"
+    },
+    {
+      "scenario": "computer观察空白重试",
+      "tags": [
+        "computer_observe",
+        "空白",
+        "遮挡",
+        "未激活",
+        "重试",
+        "抬窗",
+        "前台"
+      ],
+      "template": "首帧空白/被遮挡/窗口未激活：先重新激活目标窗口（置前台）再截一次；托盘应用先 computer_tray 点图标唤醒；仍失败则明确报错，不得返回错误窗口截图继续操作。"
+    },
+    {
+      "scenario": "computer动作后验证",
+      "tags": [
+        "computer_observe",
+        "动作后",
+        "验证",
+        "结果",
+        "复查",
+        "diff"
+      ],
+      "template": "每个状态变更动作（点击/输入/按键）后重新 computer_observe 复核结果；与预期不符则记录失败原因并尝试等价路径（graft），不得静默继续下一步。"
+    },
+    {
+      "scenario": "computer快捷键与托盘唤醒",
+      "tags": [
+        "computer_tray",
+        "托盘",
+        "隐藏",
+        "快捷键",
+        "唤醒",
+        "热键"
+      ],
+      "template": "进程在托盘无窗口：先 computer_tray 列图标按 tooltip 唤醒；有约定热键（如 ctrl+alt+w）用 computer_hotkey；禁止猜测窗口 id 或对无关窗口操作。"
+    },
+    {
+      "scenario": "观察快照失效处理",
+      "tags": [
+        "observation_id",
+        "快照",
+        "失效",
+        "expired",
+        "invalidated",
+        "重新观察"
+      ],
+      "template": "工具提示 observation/快照已失效或过期：先重新 computer_observe 取得新 observation_id 再继续；不要在旧快照元素上重试动作。"
+    },
+    {
+      "scenario": "敏感信息不代输",
+      "tags": [
+        "密码",
+        "口令",
+        "OTP",
+        "API key",
+        "密钥",
+        "敏感输入",
+        "authentication"
+      ],
+      "template": "密码/验证码/API 密钥等敏感信息一律不代输：提示用户手动输入或改走非敏感路径；确需输入时操作标注 risk=sensitive/authentication 对应级别。"
+    },
+    {
+      "scenario": "看板建卡先查重",
+      "tags": [
+        "建卡",
+        "去重",
+        "重复",
+        "kanban_add_card",
+        "先查",
+        "相似卡"
+      ],
+      "template": "建卡前先 kanban_get 查询目标列/全局是否已有同主题卡；已存在则改为更新该卡或在备注说明差异后再建；同一工作项不得重复建卡。"
+    },
+    {
+      "scenario": "看板工作区隔离",
+      "tags": [
+        "看板",
+        "工作区",
+        "项目",
+        "隔离",
+        "跨项目",
+        "workspace"
+      ],
+      "template": "操作卡片前确认卡所属 workspace/项目与当前会话上下文一致；多项目并行时逐卡核对归属，禁止跨项目移动/修改卡片。"
+    },
+    {
+      "scenario": "看板列迁移合法性",
+      "tags": [
+        "迁移",
+        "列",
+        "状态机",
+        "跳步",
+        "kanban_move_card",
+        "流程"
+      ],
+      "template": "列迁移须按流程相邻推进（如 Todo→In Progress→Review→Done）；跳步或回退需在卡片备注原因；目标列不存在时先建列再迁移。"
+    },
+    {
+      "scenario": "看板卡片留痕",
+      "tags": [
+        "卡片",
+        "备注",
+        "评论",
+        "留痕",
+        "追溯",
+        "kanban_add_comment"
+      ],
+      "template": "卡片状态/决策变化时在卡片上留 comment（含原因、会话或 commit 引用），保证跨会话可追溯；避免只改状态不留上下文。"
+    },
+    {
+      "scenario": "看板与实况对账",
+      "tags": [
+        "看板",
+        "对账",
+        "同步",
+        "不一致",
+        "收尾",
+        "状态核对"
+      ],
+      "template": "阶段性收尾前核对所有进行中卡片与实际执行结果：不一致以实际执行为准更新卡片状态；空跑/废弃项移入对应列并备注原因。"
+    },
+    {
+      "scenario": "插件同名甄别",
+      "tags": [
+        "同名",
+        "甄别",
+        "装错",
+        "插件",
+        "dsh plugin",
+        "候选"
+      ],
+      "template": "社区同名插件常见（同名可多家）：安装前逐项核对 npm 包名、owner、GitHub 仓库与市场条目是否同一实体；存在歧义时列出候选让用户确认，禁止凭名称直接装。"
+    },
+    {
+      "scenario": "插件兼容性预检",
+      "tags": [
+        "peerDependencies",
+        "engines",
+        "cordis",
+        "dsh-settings",
+        "schemastery",
+        "兼容",
+        "版本"
+      ],
+      "template": "安装前核对：peerDependencies（cordis/dsh-settings/schemastery 区间）与 engines（node/dsh）是否覆盖本机内置（cordis 4.0.1、dsh-settings 0.1.1-rc.2、node≥22.19）；不满足先警告，高风险缓装并说明。"
+    },
+    {
+      "scenario": "插件信誉热度核查",
+      "tags": [
+        "下载量",
+        "stars",
+        "维护",
+        "活跃",
+        "最近发布",
+        "更新时间",
+        "owner"
+      ],
+      "template": "以 npm downloads、市场条目、最近发布时间与维护记录判断活跃度；零下载/长期未更/来源不明需警惕；优先市场收录且持续更新的插件。"
+    },
+    {
+      "scenario": "插件安装前安全扫描",
+      "tags": [
+        "安全",
+        "扫描",
+        "危险模式",
+        "权限",
+        "高权限",
+        "yihe_sec",
+        "审批"
+      ],
+      "template": "安装/评审前对插件说明与安装脚本做语义安全扫描；声明高权限或改动配置的插件按 high risk 交用户确认；发现异常先停装并上报。"
+    },
+    {
+      "scenario": "插件安装评审结论",
+      "tags": [
+        "评审",
+        "结论",
+        "安装建议",
+        "checklist",
+        "缓装"
+      ],
+      "template": "按 甄别-兼容-热度-安全 四步逐项核对后给结论：建议安装 / 缓装（附理由与条件）/ 选同名替代 / 不装；结论附依据（包名/版本/来源），并存入决策轨迹备查。"
+    },
+    {
+      "scenario": "多插件批量安装事务",
+      "tags": [
+        "批量",
+        "一次装齐",
+        "多包",
+        "dsh plugin add",
+        "事务",
+        "重启"
+      ],
+      "template": "需装多个插件时用单条 dsh plugin add A B C（同一恢复事务）；每次 add 会 seal 为 awaiting-restart 阻塞后续 add 直到 DSH 重启提交；勿逐条连续 add；装完提醒用户重启一次完成校验激活。"
+    }
+  ]
+}
