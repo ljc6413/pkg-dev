@@ -3,6 +3,10 @@ node_modules/
 *.log
 npm-debug.log*
 
+# 打包产物（由 Release 资产提供，不入库）
+*.tgz
+*.zip
+
 # OS
 .DS_Store
 Thumbs.db

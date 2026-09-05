@@ -1,0 +1,596 @@
+{
+    "id":  "pkg-dev-event",
+    "name":  "事件驱动与流式架构",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "EVENT开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "事件驱动架构",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "事件溯源",
+                       "modality":  "text",
+                       "tags":  [
+                                    "模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "CQRS",
+                       "modality":  "text",
+                       "tags":  [
+                                    "模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "事件",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "消息总线",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "发布订阅",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "背压",
+                       "modality":  "text",
+                       "tags":  [
+                                    "挑战"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "幂等性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "关键"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "事件顺序",
+                       "modality":  "text",
+                       "tags":  [
+                                    "挑战"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "至少一次",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语义"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "恰好一次",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语义"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "Kafka",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "事件总线",
+                       "modality":  "text",
+                       "tags":  [
+                                    "模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "Saga 模式",
+                       "modality":  "text",
+                       "tags":  [
+                                    "模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "流处理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "窗口计算",
+                       "modality":  "text",
+                       "tags":  [
+                                    "流"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "事件模式匹配",
+                       "modality":  "text",
+                       "tags":  [
+                                    "流"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "事件版本化",
+                       "modality":  "text",
+                       "tags":  [
+                                    "关键"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "快照",
+                       "modality":  "text",
+                       "tags":  [
+                                    "模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "重放",
+                       "modality":  "text",
+                       "tags":  [
+                                    "模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "投影",
+                       "modality":  "text",
+                       "tags":  [
+                                    "模式"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "事件风暴",
+                       "modality":  "text",
+                       "tags":  [
+                                    "设计"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "领域事件",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "死信队列",
+                       "modality":  "text",
+                       "tags":  [
+                                    "可靠性"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "重试机制",
+                       "modality":  "text",
+                       "tags":  [
+                                    "可靠性"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "事件延迟",
+                       "modality":  "text",
+                       "tags":  [
+                                    "评估"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "吞吐",
+                       "modality":  "text",
+                       "tags":  [
+                                    "评估"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "event"
+                   },
+                   {
+                       "content":  "事件消费者",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "event"
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#基础",
+                          "to":  "事件",
+                          "from":  "事件驱动架构",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#基础",
+                          "to":  "消息总线",
+                          "from":  "事件驱动架构",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#基础",
+                          "to":  "发布订阅",
+                          "from":  "消息总线",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#模式",
+                          "to":  "事件溯源",
+                          "from":  "事件驱动架构",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#模式",
+                          "to":  "CQRS",
+                          "from":  "事件驱动架构",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#模式",
+                          "to":  "Saga 模式",
+                          "from":  "事件驱动架构",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#关键",
+                          "to":  "幂等性",
+                          "from":  "事件消费者",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#语义",
+                          "to":  "至少一次",
+                          "from":  "消息总线",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#语义",
+                          "to":  "恰好一次",
+                          "from":  "至少一次",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工具",
+                          "to":  "Kafka",
+                          "from":  "消息总线",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#挑战",
+                          "to":  "背压",
+                          "from":  "流处理",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#挑战",
+                          "to":  "事件顺序",
+                          "from":  "事件",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#流",
+                          "to":  "窗口计算",
+                          "from":  "流处理",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#流",
+                          "to":  "事件模式匹配",
+                          "from":  "流处理",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#关键",
+                          "to":  "事件版本化",
+                          "from":  "事件",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#模式",
+                          "to":  "快照",
+                          "from":  "事件溯源",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#模式",
+                          "to":  "重放",
+                          "from":  "事件溯源",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#模式",
+                          "to":  "投影",
+                          "from":  "CQRS",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#设计",
+                          "to":  "事件风暴",
+                          "from":  "领域事件",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#可靠性",
+                          "to":  "死信队列",
+                          "from":  "消息总线",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#可靠性",
+                          "to":  "重试机制",
+                          "from":  "死信队列",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#评估",
+                          "to":  "事件延迟",
+                          "from":  "消息总线",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#评估",
+                          "to":  "吞吐",
+                          "from":  "消息总线",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#基础",
+                          "to":  "事件消费者",
+                          "from":  "发布订阅",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#基础",
+                          "to":  "领域事件",
+                          "from":  "事件",
+                          "type":  "belong",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "事件驱动选型",
+                        "tags":  [
+                                     "事件驱动",
+                                     "选型",
+                                     "什么时候用",
+                                     "消息队列"
+                                 ],
+                        "template":  "解耦/异步/广播场景适合；强一致事务场景慎用；评估事件延迟与吞吐需求；Kafka 适合流与重放、轻量总线适合解耦；小系统别过度设计"
+                    },
+                    {
+                        "scenario":  "事件溯源落地",
+                        "tags":  [
+                                     "事件溯源",
+                                     "ES",
+                                     "CQRS",
+                                     "怎么落地"
+                                 ],
+                        "template":  "事件即事实只增不改；命令→事件→投影三段式；快照控制重放成本；事件版本化兼容演进；CQRS 读写分离按需引入"
+                    },
+                    {
+                        "scenario":  "幂等与顺序",
+                        "tags":  [
+                                     "幂等",
+                                     "事件顺序",
+                                     "重复消息",
+                                     "怎么处理"
+                                 ],
+                        "template":  "消费者按业务键幂等去重；分区内保序、跨分区不承诺；至少一次语义下必须幂等；乱序用序列号/时间戳补偿；死信兜底"
+                    },
+                    {
+                        "scenario":  "流处理设计",
+                        "tags":  [
+                                     "流处理",
+                                     "窗口",
+                                     "背压",
+                                     "怎么设计"
+                                 ],
+                        "template":  "窗口类型匹配业务（滚动/滑动/会话）；水位线处理乱序；背压策略（限流/丢弃/缓冲）；状态存储选型；端到端延迟预算"
+                    },
+                    {
+                        "scenario":  "Saga 实现",
+                        "tags":  [
+                                     "Saga",
+                                     "分布式事务",
+                                     "补偿",
+                                     "怎么实现"
+                                 ],
+                        "template":  "编排式集中控制、 choreography 去中心；每步带补偿动作；幂等补偿防重放；超时与挂起处理；人工干预入口"
+                    },
+                    {
+                        "scenario":  "事件设计规范",
+                        "tags":  [
+                                     "事件设计",
+                                     "命名",
+                                     "版本",
+                                     "Schema"
+                                 ],
+                        "template":  "过去时命名（OrderPlaced）；含聚合根 ID 与时间戳；Schema 演进兼容（加字段不删）；事件风暴对齐领域语言；文档化事件目录"
+                    },
+                    {
+                        "scenario":  "事件 Schema 治理",
+                        "tags":  [
+                                     "事件",
+                                     "Schema",
+                                     "演进",
+                                     "治理"
+                                 ],
+                        "template":  "Schema Registry 集中管理；兼容性规则（加字段安全）；版本标记；跨团队契约测试；废弃生命周期"
+                    },
+                    {
+                        "scenario":  "事件溯源存储",
+                        "tags":  [
+                                     "事件溯源",
+                                     "存储",
+                                     "快照",
+                                     "性能"
+                                 ],
+                        "template":  "事件存储选型（专用 vs 通用）；快照策略（频率/大小）；投影重建优化；归档与压缩；一致性读取"
+                    },
+                    {
+                        "scenario":  "消息可靠性",
+                        "tags":  [
+                                     "消息",
+                                     "可靠性",
+                                     "丢失",
+                                     "重复"
+                                 ],
+                        "template":  "生产者确认机制；消费者偏移管理；死信与重试策略；幂等消费者；端到端链路追踪"
+                    },
+                    {
+                        "scenario":  "事件驱动监控",
+                        "tags":  [
+                                     "事件驱动",
+                                     "监控",
+                                     "延迟",
+                                     "可观测"
+                                 ],
+                        "template":  "事件延迟指标；消费积压监控；链路追踪传播；告警阈值；容量规划"
+                    }
+                ]
+}

@@ -1,0 +1,596 @@
+{
+    "id":  "pkg-dev-crypto",
+    "name":  "密码学工程与零知识",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "CRYPTO开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "密码学",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "对称加密",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "非对称加密",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "哈希函数",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "数字签名",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "密钥管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "密钥交换",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "认证加密",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "零知识证明",
+                       "modality":  "text",
+                       "tags":  [
+                                    "前沿"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "同态加密",
+                       "modality":  "text",
+                       "tags":  [
+                                    "前沿"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "安全多方计算",
+                       "modality":  "text",
+                       "tags":  [
+                                    "前沿"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "随机数安全",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "TLS",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "RSA",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "椭圆曲线",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "AES",
+                       "modality":  "text",
+                       "tags":  [
+                                    "算法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "侧信道攻击",
+                       "modality":  "text",
+                       "tags":  [
+                                    "威胁"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "时间攻击",
+                       "modality":  "text",
+                       "tags":  [
+                                    "威胁"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "密码学随机数",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "密钥轮换",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "盐值",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "消息认证码",
+                       "modality":  "text",
+                       "tags":  [
+                                    "基础"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "数字证书",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "密码学强度",
+                       "modality":  "text",
+                       "tags":  [
+                                    "评估"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "量子威胁",
+                       "modality":  "text",
+                       "tags":  [
+                                    "前沿"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "后量子密码",
+                       "modality":  "text",
+                       "tags":  [
+                                    "前沿"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "口令存储",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   },
+                   {
+                       "content":  "密钥托管",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工程"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "crypto"
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#基础",
+                          "to":  "对称加密",
+                          "from":  "密码学",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#基础",
+                          "to":  "非对称加密",
+                          "from":  "密码学",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#基础",
+                          "to":  "哈希函数",
+                          "from":  "密码学",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#基础",
+                          "to":  "数字签名",
+                          "from":  "非对称加密",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#基础",
+                          "to":  "密钥交换",
+                          "from":  "非对称加密",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#工程",
+                          "to":  "密钥管理",
+                          "from":  "密码学",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#前沿",
+                          "to":  "零知识证明",
+                          "from":  "密码学",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#前沿",
+                          "to":  "同态加密",
+                          "from":  "密码学",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#前沿",
+                          "to":  "安全多方计算",
+                          "from":  "密码学",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "随机数安全",
+                          "from":  "密钥管理",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#应用",
+                          "to":  "TLS",
+                          "from":  "数字证书",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#应用",
+                          "to":  "TLS",
+                          "from":  "密钥交换",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#算法",
+                          "to":  "椭圆曲线",
+                          "from":  "非对称加密",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#算法",
+                          "to":  "AES",
+                          "from":  "对称加密",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#威胁",
+                          "to":  "侧信道攻击",
+                          "from":  "密码学",
+                          "type":  "undermine",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#威胁",
+                          "to":  "时间攻击",
+                          "from":  "侧信道攻击",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#工程",
+                          "to":  "密码学随机数",
+                          "from":  "随机数安全",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "密钥轮换",
+                          "from":  "密钥管理",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工程",
+                          "to":  "盐值",
+                          "from":  "口令存储",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#基础",
+                          "to":  "消息认证码",
+                          "from":  "对称加密",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#应用",
+                          "to":  "数字证书",
+                          "from":  "非对称加密",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#评估",
+                          "to":  "密码学强度",
+                          "from":  "密码学",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#前沿",
+                          "to":  "后量子密码",
+                          "from":  "量子威胁",
+                          "type":  "oppose",
+                          "directed":  false
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#工程",
+                          "to":  "密钥托管",
+                          "from":  "密钥管理",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#工程",
+                          "to":  "认证加密",
+                          "from":  "对称加密",
+                          "type":  "support",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "加密方案选型",
+                        "tags":  [
+                                     "加密",
+                                     "选型",
+                                     "AES还是RSA",
+                                     "怎么加密"
+                                 ],
+                        "template":  "数据加密用 AES-GCM 认证加密；密钥分发用非对称（椭圆曲线优先）；完整性用哈希；混合方案：非对称换密钥+对称加密数据"
+                    },
+                    {
+                        "scenario":  "密钥管理实践",
+                        "tags":  [
+                                     "密钥管理",
+                                     "密钥怎么存",
+                                     "轮换"
+                                 ],
+                        "template":  "密钥与代码分离；硬件安全模块或托管服务存储；定期轮换并支持双密钥过渡；访问控制最小权限；审计密钥使用"
+                    },
+                    {
+                        "scenario":  "口令存储",
+                        "tags":  [
+                                     "口令",
+                                     "密码存储",
+                                     "加盐",
+                                     "怎么存密码"
+                                 ],
+                        "template":  "绝不明文/弱哈希；用专门口令哈希（bcrypt/argon2）；每用户随机盐；工作因子平衡性能；登录限速防爆破"
+                    },
+                    {
+                        "scenario":  "TLS 配置",
+                        "tags":  [
+                                     "TLS",
+                                     "HTTPS",
+                                     "证书",
+                                     "怎么配置"
+                                 ],
+                        "template":  "证书链完整；禁用弱协议与旧密码套件；OCSP 装订；HSTS 开启；密钥长度与哈希强度符合现行标准"
+                    },
+                    {
+                        "scenario":  "零知识证明应用",
+                        "tags":  [
+                                     "零知识",
+                                     "ZK",
+                                     "同态",
+                                     "隐私",
+                                     "怎么用"
+                                 ],
+                        "template":  "明确可验证但需隐藏的数据；ZK-SNARK 性能好但需可信设置；ZK-STARK 无需可信设置；同态加密适合外包计算；评估证明生成成本"
+                    },
+                    {
+                        "scenario":  "密码学实现安全",
+                        "tags":  [
+                                     "密码学",
+                                     "实现",
+                                     "安全",
+                                     "别自己写"
+                                 ],
+                        "template":  "优先用审计过的库而非自研；恒定时间比较防时间攻击；随机数用密码学安全源；关注弃用算法迁移（MD5/SHA1）"
+                    },
+                    {
+                        "scenario":  "数字签名设计",
+                        "tags":  [
+                                     "数字签名",
+                                     "签名",
+                                     "验签",
+                                     "怎么设计"
+                                 ],
+                        "template":  "签名算法选型（Ed25519 优先）；密钥生成与存储；签名与验证流程；防重放时间戳；撤销机制"
+                    },
+                    {
+                        "scenario":  "证书管理",
+                        "tags":  [
+                                     "证书",
+                                     "PKI",
+                                     "TLS证书",
+                                     "管理"
+                                 ],
+                        "template":  "证书生命周期自动化；私钥安全存储；轮换与撤销；内部 CA 评估；监控过期"
+                    },
+                    {
+                        "scenario":  "加密协议设计",
+                        "tags":  [
+                                     "协议",
+                                     "加密",
+                                     "握手",
+                                     "设计"
+                                 ],
+                        "template":  "先认证后加密；前向保密优先；协议版本协商；防降级攻击；形式化验证协议"
+                    },
+                    {
+                        "scenario":  "数据脱敏加密",
+                        "tags":  [
+                                     "脱敏",
+                                     "加密",
+                                     "数据保护",
+                                     "怎么做"
+                                 ],
+                        "template":  "静态加密与字段级加密；密钥分层（主密钥/数据密钥）；脱敏规则一致性；合规审计；恢复与灾难备份"
+                    }
+                ]
+}

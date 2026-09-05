@@ -1,0 +1,611 @@
+{
+    "id":  "pkg-dev-compiler",
+    "name":  "编译器与解释器",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "COMPILER开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "编译器",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "解释器",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "词法分析",
+                       "modality":  "text",
+                       "tags":  [
+                                    "前端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "语法分析",
+                       "modality":  "text",
+                       "tags":  [
+                                    "前端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "抽象语法树",
+                       "modality":  "text",
+                       "tags":  [
+                                    "前端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "中间表示",
+                       "modality":  "text",
+                       "tags":  [
+                                    "中端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "优化",
+                       "modality":  "text",
+                       "tags":  [
+                                    "中端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "代码生成",
+                       "modality":  "text",
+                       "tags":  [
+                                    "后端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "LLVM",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具链"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "寄存器分配",
+                       "modality":  "text",
+                       "tags":  [
+                                    "后端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "指令选择",
+                       "modality":  "text",
+                       "tags":  [
+                                    "后端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "数据流分析",
+                       "modality":  "text",
+                       "tags":  [
+                                    "中端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "控制流图",
+                       "modality":  "text",
+                       "tags":  [
+                                    "中端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "类型检查",
+                       "modality":  "text",
+                       "tags":  [
+                                    "前端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "递归下降",
+                       "modality":  "text",
+                       "tags":  [
+                                    "前端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "正则表达式",
+                       "modality":  "text",
+                       "tags":  [
+                                    "词法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "语法错误恢复",
+                       "modality":  "text",
+                       "tags":  [
+                                    "前端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "JIT 编译",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运行时"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "字节码",
+                       "modality":  "text",
+                       "tags":  [
+                                    "解释器"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "虚拟机",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运行时"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "内联",
+                       "modality":  "text",
+                       "tags":  [
+                                    "优化"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "死代码消除",
+                       "modality":  "text",
+                       "tags":  [
+                                    "优化"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "常量折叠",
+                       "modality":  "text",
+                       "tags":  [
+                                    "优化"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "循环优化",
+                       "modality":  "text",
+                       "tags":  [
+                                    "优化"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "语义分析",
+                       "modality":  "text",
+                       "tags":  [
+                                    "前端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "SSA 形式",
+                       "modality":  "text",
+                       "tags":  [
+                                    "中端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "编译期错误",
+                       "modality":  "text",
+                       "tags":  [
+                                    "前端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "compiler"
+                   },
+                   {
+                       "content":  "链接",
+                       "modality":  "text",
+                       "tags":  [
+                                    "后端"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "compiler"
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#前端",
+                          "to":  "词法分析",
+                          "from":  "编译器",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#前端",
+                          "to":  "语法分析",
+                          "from":  "词法分析",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#前端",
+                          "to":  "抽象语法树",
+                          "from":  "语法分析",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#前端",
+                          "to":  "类型检查",
+                          "from":  "抽象语法树",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#中端",
+                          "to":  "中间表示",
+                          "from":  "类型检查",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#中端",
+                          "to":  "优化",
+                          "from":  "中间表示",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#后端",
+                          "to":  "代码生成",
+                          "from":  "优化",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工具链",
+                          "to":  "LLVM",
+                          "from":  "中间表示",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#后端",
+                          "to":  "寄存器分配",
+                          "from":  "代码生成",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#后端",
+                          "to":  "指令选择",
+                          "from":  "代码生成",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#中端",
+                          "to":  "数据流分析",
+                          "from":  "优化",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#中端",
+                          "to":  "控制流图",
+                          "from":  "中间表示",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#中端",
+                          "to":  "SSA 形式",
+                          "from":  "中间表示",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#前端",
+                          "to":  "递归下降",
+                          "from":  "语法分析",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#词法",
+                          "to":  "正则表达式",
+                          "from":  "词法分析",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#前端",
+                          "to":  "语法错误恢复",
+                          "from":  "语法分析",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#运行时",
+                          "to":  "JIT 编译",
+                          "from":  "解释器",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#解释器",
+                          "to":  "字节码",
+                          "from":  "解释器",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#运行时",
+                          "to":  "虚拟机",
+                          "from":  "字节码",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#优化",
+                          "to":  "内联",
+                          "from":  "优化",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#优化",
+                          "to":  "死代码消除",
+                          "from":  "优化",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#优化",
+                          "to":  "常量折叠",
+                          "from":  "优化",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#优化",
+                          "to":  "循环优化",
+                          "from":  "优化",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#前端",
+                          "to":  "语义分析",
+                          "from":  "类型检查",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#后端",
+                          "to":  "链接",
+                          "from":  "代码生成",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#前端",
+                          "to":  "编译期错误",
+                          "from":  "语义分析",
+                          "type":  "causal",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "编译器架构设计",
+                        "tags":  [
+                                     "编译器",
+                                     "架构",
+                                     "怎么设计",
+                                     "自己写编译器"
+                                 ],
+                        "template":  "前后端分离（前端语言相关、后端目标相关）；中间表示解耦；优化 pass 管道化；错误处理贯穿各阶段；先用最小可运行版本迭代"
+                    },
+                    {
+                        "scenario":  "词法分析器实现",
+                        "tags":  [
+                                     "词法分析",
+                                     "token",
+                                     "怎么实现"
+                                 ],
+                        "template":  "手写状态机或正则转 DFA；最长匹配原则；保留字与标识符区分；错误 token 报告带位置；关键字表优先"
+                    },
+                    {
+                        "scenario":  "语法分析器实现",
+                        "tags":  [
+                                     "语法分析",
+                                     "parser",
+                                     "递归下降",
+                                     "AST"
+                                 ],
+                        "template":  "表达式优先递归下降 + 优先级爬升；语句级设计产生式；左递归消除；错误恢复（同步 token 集）；生成 AST 带源码位置"
+                    },
+                    {
+                        "scenario":  "类型检查设计",
+                        "tags":  [
+                                     "类型检查",
+                                     "类型系统",
+                                     "怎么设计"
+                                 ],
+                        "template":  "先定类型格与子类型规则；环境作用域嵌套；变量解析与类型推导；错误信息具体到位置与期望/实际类型；泛型/重载渐进加入"
+                    },
+                    {
+                        "scenario":  "中间表示与优化",
+                        "tags":  [
+                                     "中间表示",
+                                     "IR",
+                                     "优化",
+                                     "pass"
+                                 ],
+                        "template":  "SSA 形式利于数据流分析；优化顺序：常量折叠→死代码消除→内联→循环优化；每次 pass 保持语义等价；基准验证优化收益"
+                    },
+                    {
+                        "scenario":  "解释器还是编译器",
+                        "tags":  [
+                                     "解释器",
+                                     "编译器",
+                                     "怎么选",
+                                     "JIT"
+                                 ],
+                        "template":  "开发迭代快选解释器+字节码；性能敏感选编译+优化；动态语言考虑 JIT；混合：解释起步热路径编译；VM 抽象统一两种路径"
+                    },
+                    {
+                        "scenario":  "调试编译器错误",
+                        "tags":  [
+                                     "编译器",
+                                     "编译错误",
+                                     "调试"
+                                 ],
+                        "template":  "最小复现用例；分阶段隔离（词法/语法/语义/代码生成）；IR dump 对比预期；测试驱动：golden 测试+负面用例；错误信息可操作性"
+                    },
+                    {
+                        "scenario":  "优化 pass 开发",
+                        "tags":  [
+                                     "优化",
+                                     "pass",
+                                     "LLVM",
+                                     "开发"
+                                 ],
+                        "template":  "数据流分析框架；pass 顺序与依赖；保语义验证；基准收益量化；IR 测试用例"
+                    },
+                    {
+                        "scenario":  "IR 设计选择",
+                        "tags":  [
+                                     "IR",
+                                     "中间表示",
+                                     "SSA",
+                                     "怎么设计"
+                                 ],
+                        "template":  "SSA 利优化；层级 IR（HIR/MIR/LIR）；类型信息保留程度；调试信息兼容；IR 转换正确性验证"
+                    },
+                    {
+                        "scenario":  "JIT 实现",
+                        "tags":  [
+                                     "JIT",
+                                     "运行时",
+                                     "编译",
+                                     "怎么实现"
+                                 ],
+                        "template":  "解释起步热路径识别；分层编译阈值；去优化安全点；代码缓存管理；性能基准监控"
+                    },
+                    {
+                        "scenario":  "语言前端测试",
+                        "tags":  [
+                                     "前端",
+                                     "测试",
+                                     "编译器",
+                                     "测试用例"
+                                 ],
+                        "template":  "词法/语法 golden 测试；错误恢复用例；语义分析负面用例；模糊测试输入；回归基线"
+                    }
+                ]
+}

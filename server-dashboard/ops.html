@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YiHe 运营增长仪表盘</title>
+<style>
+  :root {
+    --bg: #0d1117; --card: #161b22; --card2: #1c2333; --line: #2d333b;
+    --txt: #e6edf3; --dim: #8b949e; --accent: #58a6ff; --green: #3fb950;
+    --yellow: #d29922; --red: #f85149; --purple: #bc8cff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--txt); font: 14px/1.5 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; padding: 20px; }
+  a { color: var(--accent); text-decoration: none; }
+  .wrap { max-width: 1200px; margin: 0 auto; }
+  header { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 18px; }
+  header h1 { font-size: 20px; font-weight: 700; }
+  header .meta { color: var(--dim); font-size: 12px; }
+  header .spacer { flex: 1; }
+  button { background: var(--card2); color: var(--txt); border: 1px solid var(--line); border-radius: 6px; padding: 5px 12px; cursor: pointer; font-size: 13px; }
+  button:hover { border-color: var(--accent); }
+  .badge { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+  .b-green { background: rgba(63,185,80,.15); color: var(--green); }
+  .b-yellow { background: rgba(210,153,34,.15); color: var(--yellow); }
+  .b-red { background: rgba(248,81,73,.15); color: var(--red); }
+  .b-gray { background: rgba(139,148,158,.15); color: var(--dim); }
+  .b-blue { background: rgba(88,166,255,.15); color: var(--accent); }
+
+  .kpis { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin-bottom: 16px; }
+  .kpi { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .kpi .label { color: var(--dim); font-size: 12px; }
+  .kpi .value { font-size: 26px; font-weight: 700; margin-top: 2px; }
+  .kpi .sub { color: var(--dim); font-size: 11px; margin-top: 2px; }
+  .kpi .value.red { color: var(--red); } .kpi .value.yellow { color: var(--yellow); }
+  .kpi .value.green { color: var(--green); } .kpi .value.blue { color: var(--accent); }
+
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  .card h3 { font-size: 14px; margin-bottom: 10px; color: var(--txt); display: flex; align-items: center; gap: 8px; }
+  .card h3 .hint { color: var(--dim); font-weight: 400; font-size: 11px; }
+
+  /* 漏斗 */
+  .funnel { display: flex; flex-direction: column; gap: 6px; }
+  .frow { display: grid; grid-template-columns: 90px 1fr 60px; align-items: center; gap: 10px; font-size: 13px; }
+  .frow .bar { height: 26px; border-radius: 6px; background: linear-gradient(90deg, rgba(88,166,255,.25), rgba(88,166,255,.55)); min-width: 4px; display: flex; align-items: center; }
+  .frow .bar span { margin-left: 8px; font-size: 12px; color: var(--txt); font-weight: 600; white-space: nowrap; }
+  .frow .num { text-align: right; color: var(--dim); font-variant-numeric: tabular-nums; }
+
+  /* 柱状趋势 */
+  .chart { display: flex; align-items: flex-end; gap: 3px; height: 110px; padding-top: 6px; }
+  .chart .col { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 3px; height: 100%; }
+  .chart .col .bar { width: 70%; background: linear-gradient(180deg, var(--accent), rgba(88,166,255,.35)); border-radius: 3px 3px 0 0; }
+  .chart .col .bar.hot { background: linear-gradient(180deg, var(--green), rgba(63,185,80,.3)); }
+  .chart .col .d { font-size: 9px; color: var(--dim); transform: rotate(-45deg); transform-origin: top center; white-space: nowrap; }
+  .chart .col .v { font-size: 9px; color: var(--dim); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  th { color: var(--dim); font-weight: 600; font-size: 11.5px; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tr:hover td { background: rgba(88,166,255,.05); }
+
+  .pill { display: inline-flex; gap: 10px; align-items: center; background: var(--card2); border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; font-size: 13px; }
+  .pill b { font-size: 18px; }
+  .empty { color: var(--dim); font-size: 12px; padding: 12px 0; text-align: center; }
+  .err { color: var(--red); padding: 30px; text-align: center; }
+  .foot { color: var(--dim); font-size: 11px; margin-top: 18px; text-align: center; }
+  .muted { color: var(--dim); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📈 YiHe 运营增长仪表盘</h1>
+    <span class="meta" id="meta">加载中…</span>
+    <span class="spacer"></span>
+    <button id="refresh" onclick="load()">⟳ 刷新</button>
+    <label style="font-size:12px;color:var(--dim)"><input type="checkbox" id="auto" checked> 60s 自动刷新</label>
+  </header>
+
+  <div id="body">
+    <div class="err">正在加载数据…</div>
+  </div>
+
+  <div class="foot">数据源：nginx 访问日志 · 密钥/订单/用量台账 · 安装回传 · GitHub API ｜ 快照由 cron 每 10 分钟生成</div>
+</div>
+
+<script>
+const TOKEN = (new URLSearchParams(location.search).get('token')) || sessionStorage.getItem('opsToken') || (prompt('输入运营管理 token：') || '');
+if (TOKEN) sessionStorage.setItem('opsToken', TOKEN);
+
+const fmt = {
+  time: (ts) => ts ? new Date(ts).toLocaleString('zh-CN', { hour12: false }) : '—',
+  day: (d) => d,
+  num: (n) => (n == null ? '—' : Number(n).toLocaleString('zh-CN')),
+  money: (n) => '¥' + Number(n || 0).toFixed(2),
+};
+
+function esc(s) { return String(s ?? '').replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c])); }
+
+function kpi(label, value, sub, cls) {
+  return `<div class="kpi"><div class="label">${label}</div><div class="value ${cls || ''}">${value}</div><div class="sub">${sub || ''}</div></div>`;
+}
+function barChart(days, hot) {
+  if (!days || !days.length) return '<div class="empty">无数据</div>';
+  const max = Math.max(...days.map(d => d.count), 1);
+  return `<div class="chart">` + days.map(d => {
+    const h = Math.max(3, Math.round((d.count / max) * 100));
+    return `<div class="col" title="${fmt.day(d.date)}: ${d.count}"><div class="bar ${hot && d.count >= Math.max(1, max * 0.8) ? 'hot' : ''}" style="height:${h}%"></div><div class="v">${d.count}</div><div class="d">${String(d.date).slice(5)}</div></div>`;
+  }).join('') + `</div>`;
+}
+
+function load() {
+  if (!TOKEN) { document.getElementById('body').innerHTML = '<div class="err">缺少管理 token（URL 加 ?token=…）</div>'; return; }
+  fetch('/api/ops?token=' + encodeURIComponent(TOKEN))
+    .then(r => r.json())
+    .then(d => {
+      if (!d.ok) throw new Error(d.note || d.error || '接口返回异常');
+      render(d);
+    })
+    .catch(e => {
+      document.getElementById('body').innerHTML = `<div class="err">加载失败：${esc(e.message)}<br><br><button onclick="load()">重试</button></div>`;
+    });
+}
+
+function render(d) {
+  document.getElementById('meta').textContent = '快照时间 ' + fmt.time(d.generated_at) + ' ｜ 日志覆盖 ' + (d.log_span ? d.log_span.days : 0) + ' 天';
+  const v = d.visits || {}, dl = d.downloads || {}, tel = d.telemetry || {}, k = d.keys || {}, o = d.orders || {}, u = d.usage || {}, g = d.github || {};
+
+  // KPI
+  const kpis = [
+    kpi('今日访问', fmt.num(v.today), '首页 ' + fmt.num(v.home)),
+    kpi('30 天访问', fmt.num((v.days30 || []).reduce((s, x) => s + x.count, 0)), '日志累计 ' + fmt.num(v.total_log)),
+    kpi('总下载', fmt.num(dl.total), `zip ${fmt.num(dl.pkg)} · preset ${fmt.num(dl.preset)} · npm ${fmt.num(dl.npm)}`, 'blue'),
+    kpi('安装回传', fmt.num(tel.total), '渠道 ' + Object.keys(tel.by_channel || {}).length + ' 种'),
+    kpi('激活密钥', fmt.num(k.active), '签发 ' + fmt.num(k.total), 'green'),
+    kpi('付费订单', fmt.num(o.paid), '待支付 ' + fmt.num(o.pending), 'green'),
+    kpi('营收', fmt.money(o.amount_paid), 'API 计费 ' + fmt.money(u.revenue)),
+    kpi('试用临期(7d)', fmt.num(k.expiring_7d), '试用中 ' + fmt.num(k.trials) + ' · 过期未转化 ' + fmt.num(k.expired), k.expiring_7d > 0 ? 'yellow' : ''),
+  ];
+  let html = `<div class="kpis">${kpis.join('')}</div>`;
+
+  // 漏斗
+  const f = d.funnel || {};
+  const fmax = Math.max(f.visits || 0, 1);
+  const funnel = [
+    ['首页访问', f.visits || 0], ['下载发行包', f.downloads || 0], ['安装回传', f.telemetry || 0], ['激活密钥', f.activated || 0], ['付费转化', f.paid || 0],
+  ].map(([n, c]) => `<div class="frow"><span>${n}</span><div class="bar" style="width:${Math.max(4, (c / fmax) * 100)}%"><span>${fmt.num(c)}</span></div><span class="num">${c && f.visits ? ((c / f.visits) * 100).toFixed(1) + '%' : '—'}</span></div>`).join('');
+
+  // GitHub
+  const ghCards = [];
+  if (g.repo) ghCards.push(`<div class="pill">⭐ 星标 <b>${fmt.num(g.repo.stars)}</b></div><div class="pill">⑂ Fork <b>${fmt.num(g.repo.forks)}</b></div>`);
+  if (g.pr334) {
+    const st = g.pr334.merged ? '<span class="badge b-green">已合并</span>' : g.pr334.state === 'open' ? '<span class="badge b-blue">Open</span>' : `<span class="badge b-gray">${esc(g.pr334.state)}</span>`;
+    ghCards.push(`<div class="pill">awesome PR #334 ${st} <a href="${esc(g.pr334.html)}" target="_blank">查看 ↗</a></div>`);
+  }
+  if (g.discussion5018) ghCards.push(`<div class="pill">Discussion 5018 评论 <b>${fmt.num(g.discussion5018.comments)}</b></div>`);
+  if (g.releases && g.releases.length) ghCards.push(`<div class="pill">Release 下载 <b>${fmt.num(g.releases.reduce((s, r) => s + (r.downloads || 0), 0))}</b></div>`);
+  if (!ghCards.length) ghCards.push('<div class="empty">GitHub 数据暂不可达</div>');
+
+  // 试用清单
+  const tl = (k.expiring_list || []).map(x => `<tr><td>${esc(x.key)}</td><td>${esc(x.buyer)}</td><td>${x.days_left <= 1 ? '<span class="badge b-red">今明到期</span>' : x.days_left <= 3 ? '<span class="badge b-yellow">' + x.days_left + ' 天</span>' : x.days_left + ' 天'}</td><td class="num">${x.activated ? '已激活' : '未激活'}</td></tr>`).join('');
+  const tlBody = tl || '<tr><td colspan="4" class="empty">暂无临期试用</td></tr>';
+
+  // 最近回传
+  const tr = (tel.recent || []).map(x => `<tr><td>${esc(x.channel)}</td><td>${esc(x.event)}</td><td>${esc(x.os || '—')}</td><td class="num">${x.time ? fmt.time(x.time * 1000) : '—'}</td></tr>`).join('');
+  const trBody = tr || '<tr><td colspan="4" class="empty">暂无回传</td></tr>';
+
+  // 渠道分布
+  const ch = Object.entries(tel.by_channel || {}).map(([c, n]) => `<tr><td>${esc(c)}</td><td class="num">${fmt.num(n)}</td></tr>`).join('');
+  const chBody = ch || '<tr><td colspan="2" class="empty">暂无</td></tr>';
+
+  html += `
+  <div class="grid">
+    <div class="card"><h3>转化漏斗 <span class="hint">访问 → 下载 → 回传 → 激活 → 付费</span></h3><div class="funnel">${funnel}</div></div>
+    <div class="card"><h3>GitHub 增长 <span class="hint">仓库 / PR / Discussion / Release</span></h3><div style="display:flex;flex-wrap:wrap;gap:10px">${ghCards.join('')}</div></div>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>访问趋势（近 30 天）</h3>${barChart(v.days30, true)}</div>
+    <div class="card"><h3>安装回传（近 7 天）</h3>${barChart(tel.by_day ? Object.keys(tel.by_day).sort().slice(-7).map(kk => ({ date: kk, count: tel.by_day[kk] })) : [], false)}</div>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>试用到期提醒 <span class="hint">7 天内到期</span></h3>
+      <table><thead><tr><th>密钥</th><th>买主</th><th>剩余</th><th class="num">状态</th></tr></thead><tbody>${tlBody}</tbody></table></div>
+    <div class="card"><h3>最近安装回传 <span class="hint">渠道分布</span></h3>
+      <table><thead><tr><th>渠道</th><th>事件</th><th>系统</th><th class="num">时间</th></tr></thead><tbody>${trBody}</tbody></table>
+      <div style="margin-top:8px;border-top:1px solid var(--line)"></div>
+      <table style="margin-top:6px"><thead><tr><th>渠道</th><th class="num">数量</th></tr></thead><tbody>${chBody}</tbody></table></div>
+  </div>
+  <div class="card"><h3>运营快照明细</h3>
+    <table>
+      <thead><tr><th>指标</th><th class="num">值</th><th>指标</th><th class="num">值</th></tr></thead>
+      <tbody>
+        <tr><td>API 调用（reason）</td><td class="num">${fmt.num(u.reason_calls)}</td><td>API 消费方</td><td class="num">${fmt.num(u.consumers)}</td></tr>
+        <tr><td>订单总数</td><td class="num">${fmt.num(o.total)}</td><td>支付金额合计</td><td class="num">${fmt.money(o.amount_paid)}</td></tr>
+        <tr><td>密钥总数</td><td class="num">${fmt.num(k.total)}</td><td>试用中</td><td class="num">${fmt.num(k.trials)}</td></tr>
+        <tr><td>试用已过期未转化</td><td class="num" style="color:${k.expired ? 'var(--red)' : 'inherit'}">${fmt.num(k.expired)}</td><td>最后日志时间</td><td class="num">${fmt.time(d.log_span && d.log_span.last_seen)}</td></tr>
+      </tbody>
+    </table>
+  </div>`;
+  document.getElementById('body').innerHTML = html;
+}
+
+setInterval(() => { if (document.getElementById('auto').checked) load(); }, 60000);
+load();
+</script>
+</body>
+</html>

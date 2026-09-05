@@ -1,0 +1,603 @@
+{
+    "id":  "pkg-dev-wasm",
+    "name":  "WebAssembly 与边缘计算",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "WASM开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "WebAssembly",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "WASI",
+                       "modality":  "text",
+                       "tags":  [
+                                    "生态"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "组件模型",
+                       "modality":  "text",
+                       "tags":  [
+                                    "生态"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "线性内存",
+                       "modality":  "text",
+                       "tags":  [
+                                    "核心"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "wasm 工具链",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "Rust 编译",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "C 编译",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "AssemblyScript",
+                       "modality":  "text",
+                       "tags":  [
+                                    "语言"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "沙箱安全",
+                       "modality":  "text",
+                       "tags":  [
+                                    "安全"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "性能",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "边缘计算",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "插件系统",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "跨语言互操作",
+                       "modality":  "text",
+                       "tags":  [
+                                    "生态"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "导入导出",
+                       "modality":  "text",
+                       "tags":  [
+                                    "核心"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "内存管理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "核心"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "Web 前端",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "服务端",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "wasmtime",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运行时"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "wasmer",
+                       "modality":  "text",
+                       "tags":  [
+                                    "运行时"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "函数即服务",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "启动时间",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "体积优化",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "SIMD",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性能"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "线程",
+                       "modality":  "text",
+                       "tags":  [
+                                    "核心"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "异常处理",
+                       "modality":  "text",
+                       "tags":  [
+                                    "核心"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "WASI 预览版",
+                       "modality":  "text",
+                       "tags":  [
+                                    "生态"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "确定性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "wasm"
+                   },
+                   {
+                       "content":  "调试",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "wasm"
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#核心",
+                          "to":  "线性内存",
+                          "from":  "WebAssembly",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#核心",
+                          "to":  "导入导出",
+                          "from":  "WebAssembly",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#生态",
+                          "to":  "WASI",
+                          "from":  "WebAssembly",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#生态",
+                          "to":  "组件模型",
+                          "from":  "WebAssembly",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#语言",
+                          "to":  "Rust 编译",
+                          "from":  "WebAssembly",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#语言",
+                          "to":  "C 编译",
+                          "from":  "WebAssembly",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#语言",
+                          "to":  "AssemblyScript",
+                          "from":  "WebAssembly",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#安全",
+                          "to":  "沙箱安全",
+                          "from":  "WebAssembly",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#价值",
+                          "to":  "性能",
+                          "from":  "WebAssembly",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#应用",
+                          "to":  "边缘计算",
+                          "from":  "WASI",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#应用",
+                          "to":  "插件系统",
+                          "from":  "沙箱安全",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#生态",
+                          "to":  "跨语言互操作",
+                          "from":  "组件模型",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#核心",
+                          "to":  "内存管理",
+                          "from":  "线性内存",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#应用",
+                          "to":  "Web 前端",
+                          "from":  "WebAssembly",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#应用",
+                          "to":  "服务端",
+                          "from":  "WebAssembly",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#运行时",
+                          "to":  "wasmtime",
+                          "from":  "WebAssembly",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#运行时",
+                          "to":  "wasmer",
+                          "from":  "WebAssembly",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#应用",
+                          "to":  "函数即服务",
+                          "from":  "边缘计算",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#性能",
+                          "to":  "启动时间",
+                          "from":  "WebAssembly",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#性能",
+                          "to":  "体积优化",
+                          "from":  "WebAssembly",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#性能",
+                          "to":  "SIMD",
+                          "from":  "WebAssembly",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#核心",
+                          "to":  "线程",
+                          "from":  "WebAssembly",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#核心",
+                          "to":  "异常处理",
+                          "from":  "WebAssembly",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#生态",
+                          "to":  "WASI 预览版",
+                          "from":  "WASI",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#价值",
+                          "to":  "确定性",
+                          "from":  "WebAssembly",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#工具",
+                          "to":  "调试",
+                          "from":  "WebAssembly",
+                          "type":  "condition",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "WebAssembly 技术选型",
+                        "tags":  [
+                                     "WebAssembly",
+                                     "wasm",
+                                     "选型",
+                                     "什么时候用"
+                                 ],
+                        "template":  "性能敏感或复用原生库选 wasm；插件安全隔离是强场景；跨语言共享逻辑选组件模型；纯 Web 逻辑优先 JS 保持简单；评估体积与启动成本"
+                    },
+                    {
+                        "scenario":  "Rust 编译到 wasm",
+                        "tags":  [
+                                     "Rust",
+                                     "wasm",
+                                     "wasm-pack",
+                                     "怎么编译"
+                                 ],
+                        "template":  "wasm-pack 或 cargo build --target wasm32；wasm-bindgen 处理类型桥接；优化体积用 wasm-opt；wasm32-wasi 用于服务端/边缘"
+                    },
+                    {
+                        "scenario":  "内存与数据传递",
+                        "tags":  [
+                                     "wasm",
+                                     "内存",
+                                     "线性内存",
+                                     "数据传递"
+                                 ],
+                        "template":  "数字标量直接传参；字符串/数组拷贝到线性内存；避免频繁跨边界；大对象共享内存零拷贝；边界所有权清晰"
+                    },
+                    {
+                        "scenario":  "插件系统设计",
+                        "tags":  [
+                                     "wasm",
+                                     "插件系统",
+                                     "沙箱",
+                                     "怎么设计"
+                                 ],
+                        "template":  "宿主定义导入 API 白名单；插件导出标准接口；线性内存隔离；WASI 能力按需授予；版本兼容用组件模型接口"
+                    },
+                    {
+                        "scenario":  "wasm 性能优化",
+                        "tags":  [
+                                     "wasm",
+                                     "性能",
+                                     "优化"
+                                 ],
+                        "template":  "热点留在 wasm 内部减少边界；SIMD 向量化；线程并行（共享内存）；wasm-opt 优化；启动用 streaming compile 与缓存"
+                    },
+                    {
+                        "scenario":  "边缘计算实践",
+                        "tags":  [
+                                     "wasm",
+                                     "边缘计算",
+                                     "FaaS",
+                                     "怎么用"
+                                 ],
+                        "template":  "函数即服务冷启动敏感选 wasm 运行时（毫秒级）；确定性利于复现；资源受限用轻量运行时（wasmtime/wasmer）；多租户靠沙箱隔离"
+                    },
+                    {
+                        "scenario":  "wasm 体积优化",
+                        "tags":  [
+                                     "wasm",
+                                     "体积",
+                                     "优化",
+                                     "二进制大小"
+                                 ],
+                        "template":  "wasm-opt 优化级别；strip 调试符号；代码去重；LTO 链接时优化；gzip/brotli 压缩"
+                    },
+                    {
+                        "scenario":  "wasm 调试",
+                        "tags":  [
+                                     "wasm",
+                                     "调试",
+                                     "调试器",
+                                     "怎么调试"
+                                 ],
+                        "template":  "DWARF 调试信息；wasmtime 调试支持；日志桥接宿主；source map 映射；分步执行验证"
+                    },
+                    {
+                        "scenario":  "组件模型集成",
+                        "tags":  [
+                                     "组件模型",
+                                     "wasm",
+                                     "接口",
+                                     "集成"
+                                 ],
+                        "template":  "wit 接口定义；组件组合与依赖注入；版本语义化；跨语言适配层；生态工具链"
+                    },
+                    {
+                        "scenario":  "wasm 安全加固",
+                        "tags":  [
+                                     "wasm",
+                                     "安全",
+                                     "沙箱",
+                                     "加固"
+                                 ],
+                        "template":  "能力白名单最小化；内存边界审查；WASI 权限收窄；供应链验证；运行时版本更新"
+                    }
+                ]
+}

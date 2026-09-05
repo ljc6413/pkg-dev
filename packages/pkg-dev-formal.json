@@ -1,0 +1,594 @@
+{
+    "id":  "pkg-dev-formal",
+    "name":  "形式化验证与定理证明",
+    "industry":  "软件开发",
+    "version":  "1.0.0",
+    "namespace":  "FORMAL开发",
+    "owner":  "developer",
+    "tier":  "pro",
+    "license_required":  true,
+    "imagos":  [
+                   {
+                       "content":  "形式化验证",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "定理证明",
+                       "modality":  "text",
+                       "tags":  [
+                                    "领域"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "不变式",
+                       "modality":  "text",
+                       "tags":  [
+                                    "核心概念"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "模型检验",
+                       "modality":  "text",
+                       "tags":  [
+                                    "方法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "状态空间爆炸",
+                       "modality":  "text",
+                       "tags":  [
+                                    "挑战"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "规约",
+                       "modality":  "text",
+                       "tags":  [
+                                    "核心概念"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "TLA+",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "Coq",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "Lean",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "Isabelle",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "可靠性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "价值"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "安全关键系统",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "符号执行",
+                       "modality":  "text",
+                       "tags":  [
+                                    "方法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "SMT 求解",
+                       "modality":  "text",
+                       "tags":  [
+                                    "方法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "不变式归纳",
+                       "modality":  "text",
+                       "tags":  [
+                                    "方法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "反例",
+                       "modality":  "text",
+                       "tags":  [
+                                    "核心概念"
+                                ],
+                       "confidence":  1,
+                       "kind":  "event",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "一致性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性质"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "活性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性质"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "终止性",
+                       "modality":  "text",
+                       "tags":  [
+                                    "性质"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "验证编译器",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "依赖类型",
+                       "modality":  "text",
+                       "tags":  [
+                                    "理论"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "证明助手",
+                       "modality":  "text",
+                       "tags":  [
+                                    "工具"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "轻量形式化",
+                       "modality":  "text",
+                       "tags":  [
+                                    "实践"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "验证成本",
+                       "modality":  "text",
+                       "tags":  [
+                                    "评估"
+                                ],
+                       "confidence":  1,
+                       "kind":  "value",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "边界条件",
+                       "modality":  "text",
+                       "tags":  [
+                                    "实践"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "定理证明自动化",
+                       "modality":  "text",
+                       "tags":  [
+                                    "方法"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "协议验证",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   },
+                   {
+                       "content":  "并发验证",
+                       "modality":  "text",
+                       "tags":  [
+                                    "应用"
+                                ],
+                       "confidence":  1,
+                       "kind":  "entity",
+                       "category":  "formal"
+                   }
+               ],
+    "relations":  [
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#核心概念",
+                          "to":  "规约",
+                          "from":  "形式化验证",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.9,
+                          "context_tag":  "#核心概念",
+                          "to":  "不变式",
+                          "from":  "规约",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#方法",
+                          "to":  "模型检验",
+                          "from":  "形式化验证",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#方法",
+                          "to":  "定理证明",
+                          "from":  "形式化验证",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#挑战",
+                          "to":  "状态空间爆炸",
+                          "from":  "模型检验",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#核心概念",
+                          "to":  "反例",
+                          "from":  "模型检验",
+                          "type":  "causal",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#工具",
+                          "to":  "TLA+",
+                          "from":  "并发验证",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工具",
+                          "to":  "Coq",
+                          "from":  "证明助手",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工具",
+                          "to":  "Lean",
+                          "from":  "证明助手",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#工具",
+                          "to":  "Isabelle",
+                          "from":  "证明助手",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#理论",
+                          "to":  "依赖类型",
+                          "from":  "Coq",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#价值",
+                          "to":  "可靠性",
+                          "from":  "形式化验证",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.8,
+                          "context_tag":  "#应用",
+                          "to":  "安全关键系统",
+                          "from":  "形式化验证",
+                          "type":  "support",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#方法",
+                          "to":  "符号执行",
+                          "from":  "形式化验证",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#方法",
+                          "to":  "SMT 求解",
+                          "from":  "符号执行",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#性质",
+                          "to":  "一致性",
+                          "from":  "不变式",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#性质",
+                          "to":  "活性",
+                          "from":  "规约",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#性质",
+                          "to":  "终止性",
+                          "from":  "定理证明",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#应用",
+                          "to":  "验证编译器",
+                          "from":  "形式化验证",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#应用",
+                          "to":  "协议验证",
+                          "from":  "形式化验证",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.7,
+                          "context_tag":  "#应用",
+                          "to":  "并发验证",
+                          "from":  "形式化验证",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.6,
+                          "context_tag":  "#评估",
+                          "to":  "验证成本",
+                          "from":  "形式化验证",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#实践",
+                          "to":  "轻量形式化",
+                          "from":  "形式化验证",
+                          "type":  "belong",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#实践",
+                          "to":  "边界条件",
+                          "from":  "轻量形式化",
+                          "type":  "condition",
+                          "directed":  true
+                      },
+                      {
+                          "weight":  0.5,
+                          "context_tag":  "#方法",
+                          "to":  "定理证明自动化",
+                          "from":  "定理证明",
+                          "type":  "support",
+                          "directed":  true
+                      }
+                  ],
+    "scripts":  [
+                    {
+                        "scenario":  "形式化验证选型",
+                        "tags":  [
+                                     "形式化验证",
+                                     "选型",
+                                     "怎么选",
+                                     "TLA+还是Coq"
+                                 ],
+                        "template":  "并发协议与系统设计用 TLA+；需要机器可证属性用 Coq/Lean；网络协议用模型检验；评估验证成本与可靠性收益的平衡"
+                    },
+                    {
+                        "scenario":  "不变式设计",
+                        "tags":  [
+                                     "不变式",
+                                     "怎么设计",
+                                     "循环不变式"
+                                 ],
+                        "template":  "先定关键状态变量；归纳初始条件与保持条件；反例驱动修正；用断言在实现中落地不变式检查"
+                    },
+                    {
+                        "scenario":  "模型检验应用",
+                        "tags":  [
+                                     "模型检验",
+                                     "状态爆炸",
+                                     "怎么用"
+                                 ],
+                        "template":  "抽象简化状态空间；聚焦关键并发交互；先查活性/一致性性质；状态爆炸时用抽象与对称归约"
+                    },
+                    {
+                        "scenario":  "定理证明落地",
+                        "tags":  [
+                                     "定理证明",
+                                     "Coq",
+                                     "Lean",
+                                     "证明怎么写"
+                                 ],
+                        "template":  "先定义规约与引理层次；归纳证明为主；自动化策略辅助（auto/tactic）；小步验证降低证明成本"
+                    },
+                    {
+                        "scenario":  "验证价值评估",
+                        "tags":  [
+                                     "形式化验证",
+                                     "值不值得",
+                                     "成本",
+                                     "什么时候用"
+                                 ],
+                        "template":  "安全关键/协议/并发核心优先；计算验证成本 vs 故障成本；轻量形式化起步（不变式+断言）；渐进增强"
+                    },
+                    {
+                        "scenario":  "符号执行实践",
+                        "tags":  [
+                                     "符号执行",
+                                     "SMT",
+                                     "漏洞",
+                                     "路径"
+                                 ],
+                        "template":  "目标函数建模符号变量；SMT 求解路径约束；结合具体执行找反例；处理路径爆炸用启发式优先"
+                    },
+                    {
+                        "scenario":  "TLA+ 建模实践",
+                        "tags":  [
+                                     "TLA+",
+                                     "建模",
+                                     "并发",
+                                     "怎么用"
+                                 ],
+                        "template":  "系统状态与动作建模；不变式与活性断言；TLC 模型检验小状态空间；反例驱动修正；逐步抽象降复杂度"
+                    },
+                    {
+                        "scenario":  "Coq 证明开发",
+                        "tags":  [
+                                     "Coq",
+                                     "证明",
+                                     "引理",
+                                     "怎么开发"
+                                 ],
+                        "template":  "定义与规范先行；引理分解小步；归纳证明策略组合；依赖类型表达约束；编译期验证闭环"
+                    },
+                    {
+                        "scenario":  "验证集成 CI",
+                        "tags":  [
+                                     "形式化",
+                                     "CI",
+                                     "验证",
+                                     "集成"
+                                 ],
+                        "template":  "模型检验进流水线；关键路径属性回归；证明文件版本化；验证超时与资源控制；失败通知与阻断"
+                    },
+                    {
+                        "scenario":  "验证范围选择",
+                        "tags":  [
+                                     "验证",
+                                     "范围",
+                                     "选什么",
+                                     "怎么选"
+                                 ],
+                        "template":  "安全关键与资金路径优先；协议核心状态机；错误处理路径；成本收益评估；渐进扩大范围"
+                    }
+                ]
+}
